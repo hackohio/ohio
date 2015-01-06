@@ -1,0 +1,131 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  color: #303030; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+header {
+  width: 100%;
+  height: 75px; }
+
+.outer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .outer:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+body {
+  font-family: Proxima Nova, Helvetica, Sans-Serif; }
+
+header div ul {
+  list-style-type: none;
+  overflow: hidden;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%; }
+  header div ul:last-child {
+    margin-right: 0; }
+  header div ul li {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 17.72593%;
+    float: left;
+    display: block;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20pt;
+    font-weight: 100; }
+    header div ul li:last-child {
+      margin-right: 0; }
+    header div ul li a {
+      -webkit-transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
+      transition: all 0.2s ease-in;
+      text-decoration: none;
+      letter-spacing: -0.5px; }
+      header div ul li a:hover {
+        text-decoration: none; }
+
+header.atTop {
+  position: absolute;
+  color: white; }
+  header.atTop div ul li[id="logo"] {
+    visibility: hidden; }
+  header.atTop div ul li a {
+    color: white; }
+    header.atTop div ul li a:hover {
+      color: #bb0000; }
+
+header.scrolled {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #bb0000;
+  position: fixed;
+  top: 0; }
+  header.scrolled div ul li[id="logo"] {
+    visibility: visible; }
+  header.scrolled div ul li a {
+    color: #bb0000; }
+    header.scrolled div ul li a:hover {
+      color: white; }
+
+svg g g rect, svg g g path {
+  -webkit-transition: fill 0.2s ease-in, stroke 0.2s ease-in;
+  -moz-transition: fill 0.2s ease-in, stroke 0.2s ease-in;
+  transition: fill 0.2s ease-in, stroke 0.2s ease-in; }
+
+a:hover > svg > g > g rect {
+  stroke: white; }
+a:hover > svg > g > g path {
+  stroke: white; }
+a:hover > svg > g > g #Rectangle-9 {
+  fill: white; }
+
+/*# sourceMappingURL=main.css.map */

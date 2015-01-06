@@ -1,0 +1,88 @@
+header div ul {
+
+	list-style-type: none;
+	overflow: hidden;
+	@include span-columns(10);
+	@include shift(1);
+
+	li {
+		@include span-columns(2 of 10);
+		float: left;
+		display: block;
+		text-align: center;
+		line-height: 75px;
+		font-size: 20pt;
+		font-weight: 100;
+		
+		a {
+
+			@include transition(all 0.2s ease-in);
+			text-decoration: none;
+			letter-spacing: -0.5px;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+header.atTop {
+	position: absolute;
+	color: $white;
+
+	div ul {
+		li[id="logo"] {
+			visibility: hidden;
+		}
+
+		li a {
+			color: white;
+
+			&:hover {
+				color: $scarlet;
+			}
+		}
+	} 
+}
+
+header.scrolled {
+	background-color: rgba(255,255,255,0.5);
+	color: $scarlet;
+	position: fixed;
+	top: 0;
+	
+	div ul {
+		li[id="logo"] {
+			visibility: visible;
+		}
+
+		li a {
+			color: $scarlet;
+
+			&:hover {
+				color: white;
+			}
+		}	
+	}
+}
+
+svg g g rect, svg g g path {
+	@include transition(fill 0.2s ease-in, stroke 0.2s ease-in);
+}
+
+a {
+	&:hover > svg > g > g  {
+		rect {
+			stroke: white;
+		}
+
+		path {
+			stroke: white;
+		}
+
+		#Rectangle-9 {
+			fill: white;
+		}
+	}
+	
+}

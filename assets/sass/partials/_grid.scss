@@ -1,0 +1,8 @@
+header {
+	width: 100%;
+	height: 75px;
+}
+
+.outer {
+	@include outer-container();
+}
