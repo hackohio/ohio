@@ -128,4 +128,33 @@ a:hover > svg > g > g path {
 a:hover > svg > g > g #Rectangle-9 {
   fill: white; }
 
+.intro-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #666666;
+  margin: 0;
+  z-index: -1; }
+
+.intro-content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%; }
+  .intro-content:last-child {
+    margin-right: 0; }
+
+.intro-logo-house {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  margin-top: 50px;
+  max-height: 500px;
+  height: 60%; }
+  .intro-logo-house:last-child {
+    margin-right: 0; }
+
 /*# sourceMappingURL=main.css.map */
