@@ -1,0 +1,17 @@
+{
+  "name": "jquery-tubular",
+  "dependencies": {
+    "jquery": "~1.10.2"
+  },
+  "homepage": "https://github.com/monkeymonk/jquery-tubular",
+  "_release": "4ff67a0819",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "4ff67a081947300e40a72b8fc53c1093e78254e4"
+  },
+  "_source": "git://github.com/monkeymonk/jquery-tubular.git",
+  "_target": "*",
+  "_originalSource": "jquery-tubular",
+  "_direct": true
+}

@@ -62,6 +62,9 @@ header {
 body {
   font-family: Proxima Nova, Helvetica, Sans-Serif; }
 
+.bold {
+  font-weight: 600; }
+
 header div ul {
   list-style-type: none;
   overflow: hidden;
@@ -89,6 +92,7 @@ header div ul {
       -webkit-transition: all 0.2s ease-in;
       -moz-transition: all 0.2s ease-in;
       transition: all 0.2s ease-in;
+      text-transform: uppercase;
       text-decoration: none;
       letter-spacing: -0.5px; }
       header div ul li a:hover {
@@ -110,7 +114,8 @@ header.scrolled {
   position: fixed;
   top: 0; }
   header.scrolled div ul li[id="logo"] {
-    visibility: visible; }
+    visibility: visible;
+    margin-top: 6px; }
   header.scrolled div ul li a {
     color: #bb0000; }
     header.scrolled div ul li a:hover {
@@ -133,6 +138,7 @@ a:hover > svg > g > g #Rectangle-9 {
   width: 100%;
   position: absolute;
   background-color: #666666;
+  background-image: url("/images/temp.jpg");
   margin: 0;
   z-index: -1; }
 
@@ -140,8 +146,10 @@ a:hover > svg > g > g #Rectangle-9 {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 25.58941%; }
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  margin-top: 50px;
+  text-align: center; }
   .intro-content:last-child {
     margin-right: 0; }
 
@@ -151,10 +159,22 @@ a:hover > svg > g > g #Rectangle-9 {
   margin-right: 2.35765%;
   width: 65.88078%;
   margin-left: 17.05961%;
-  margin-top: 50px;
+  margin-top: 150px;
   max-height: 500px;
   height: 60%; }
   .intro-logo-house:last-child {
     margin-right: 0; }
+
+.title {
+  color: white;
+  font-size: 32pt;
+  font-weight: 100; }
+
+.subtitle {
+  margin: 5px;
+  color: white;
+  font-size: 24pt;
+  font-weight: 600;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */

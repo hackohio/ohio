@@ -1,0 +1,30 @@
+{
+  "name": "walkway",
+  "version": "0.0.5",
+  "homepage": "https://github.com/ConnorAtherton/walkway",
+  "authors": [
+    "Connor Atherton"
+  ],
+  "description": "An easy way to animate simple svg elements.",
+  "main": "src/walkway.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "svg",
+    "animate"
+  ],
+  "license": "MIT",
+  "_release": "0.0.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.5",
+    "commit": "754133b1ac10f69ae83fafa74a8da2d4f5f70bb7"
+  },
+  "_source": "git://github.com/ConnorAtherton/walkway.git",
+  "_target": "~0.0.5",
+  "_originalSource": "walkway.js",
+  "_direct": true
+}
