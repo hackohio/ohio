@@ -65,11 +65,10 @@ header {
   color: white;
   padding: 5px 15px 5px 15px;
   font-size: 16pt;
-  font-weight: 100;
+  font-weight: 300;
   border-color: #bb0000;
   border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
+  border-width: 2px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in; }
@@ -80,148 +79,16 @@ header {
 .bold {
   font-weight: 300; }
 
+section {
+  position: relative;
+  background-color: white; }
+
 body {
   font-family: 'proximanova', Helvetica, Sans-Serif;
   font-weight: 300; }
 
 .bold {
   font-weight: 400; }
-
-header div ul {
-  list-style-type: none;
-  overflow: hidden;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 82.94039%;
-  margin-left: 8.5298%; }
-  header div ul:last-child {
-    margin-right: 0; }
-  header div ul li {
-    float: left;
-    display: block;
-    margin-right: 2.84259%;
-    width: 17.72593%;
-    float: left;
-    display: block;
-    text-align: center;
-    line-height: 75px;
-    font-size: 20pt;
-    font-weight: 100; }
-    header div ul li:last-child {
-      margin-right: 0; }
-    header div ul li a {
-      -webkit-transition: all 0.2s ease-in;
-      -moz-transition: all 0.2s ease-in;
-      transition: all 0.2s ease-in;
-      text-transform: uppercase;
-      text-decoration: none;
-      letter-spacing: -0.5px; }
-      header div ul li a:hover {
-        text-decoration: none; }
-
-header.atTop {
-  position: relative;
-  color: white;
-  background-color: white; }
-  header.atTop div ul li[id="logo"] {
-    visibility: hidden; }
-  header.atTop div ul li a {
-    color: white; }
-    header.atTop div ul li a:hover {
-      color: #bb0000; }
-
-header.scrolled {
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #bb0000;
-  position: fixed;
-  top: 0; }
-  header.scrolled div ul li[id="logo"] {
-    visibility: visible;
-    margin-top: 6px; }
-  header.scrolled div ul li a {
-    color: #bb0000; }
-    header.scrolled div ul li a:hover {
-      color: white; }
-
-header {
-  margin-top: 100%;
-  display: inline-block; }
-
-svg g g rect, svg g g path {
-  -webkit-transition: fill 0.2s ease-in, stroke 0.2s ease-in;
-  -moz-transition: fill 0.2s ease-in, stroke 0.2s ease-in;
-  transition: fill 0.2s ease-in, stroke 0.2s ease-in; }
-
-a:hover > svg > g > g rect {
-  stroke: white; }
-a:hover > svg > g > g path {
-  stroke: white; }
-a:hover > svg > g > g #Rectangle-9 {
-  fill: white; }
-
-section.intro {
-  height: calc(100% - 75px);
-  position: fixed;
-  z-index: -1; }
-
-.intro-background {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  background-color: #666666;
-  background-image: url("/images/temp.jpg");
-  margin: 0;
-  z-index: -5; }
-
-.intro-content {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 82.94039%;
-  margin-left: 8.5298%;
-  margin-top: 50px;
-  text-align: center;
-  z-index: -4; }
-  .intro-content:last-child {
-    margin-right: 0; }
-
-.intro-logo-house {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
-  margin-left: 17.05961%;
-  margin-top: 50px;
-  max-height: 500px;
-  height: 60%; }
-  .intro-logo-house:last-child {
-    margin-right: 0; }
-
-.title {
-  color: white;
-  font-size: 32pt;
-  font-weight: 100; }
-
-.subtitle {
-  margin: 5px;
-  color: white;
-  font-size: 24pt;
-  font-weight: 600;
-  text-transform: uppercase; }
-
-hr {
-  width: 80%;
-  border: 0;
-  height: 1px;
-  background-color: white;
-  box-shadow: none; }
-
-.about {
-  background-color: white; }
-
-.button {
-  text-decoration: none; }
 
 .section-block {
   background-color: rgba(187, 0, 0, 0.6);
@@ -239,24 +106,36 @@ hr {
     margin-top: 0; }
     .section-block hr:last-child {
       margin-right: 0; }
-  .section-block.hacking02 {
-    background: linear-gradient(rgba(187, 0, 0, 0.6), rgba(187, 0, 0, 0.6)), url("/images/hacking02.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-origin: border-box;
-    background-size: cover; }
+
+.about {
+  margin-top: 100%; }
+
+.about > .section-block {
+  background: linear-gradient(rgba(187, 0, 0, 0.6), rgba(187, 0, 0, 0.6)), url("/images/hacking02.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-origin: border-box;
+  background-size: cover; }
+
+.events > .section-block {
+  background: linear-gradient(rgba(187, 0, 0, 0.6), rgba(187, 0, 0, 0.6)), url("/images/onStage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-origin: border-box;
+  background-size: cover; }
 
 .section-title {
   font-weight: 100;
   text-transform: uppercase;
   font-size: 42pt;
-  margin: 100px 0 3px 15px;
+  margin: 120px 0 3px 15px;
   margin-left: 12.79471%; }
 
 .section-subtitle {
   font-size: 24pt;
   font-weight: 600;
-  letter-spacing: -0.5px;
   margin: 0 0 3px 15px;
   margin-left: 12.79471%; }
 
@@ -282,6 +161,47 @@ hr {
   .maincontent h3:first-of-type {
     margin-top: 20px; }
   .maincontent div {
-    text-align: center; }
+    margin-bottom: 25px; }
+
+.intro {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/temp.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-origin: border-box;
+  background-size: cover;
+  z-index: 0; }
+
+.logo {
+  height: 80%;
+  width: auto;
+  margin: 0;
+  text-align: center; }
+
+.intro-content {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%; }
+  .intro-content:last-child {
+    margin-right: 0; }
+
+.intro-title {
+  font-size: 32pt;
+  color: white;
+  text-align: center;
+  font-weight: 100; }
+
+.intro-subtitle {
+  font-size: 28pt;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */

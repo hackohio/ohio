@@ -13,13 +13,12 @@
 	color: $white;
 	padding: 5px 15px 5px 15px;
 	font-size: 16pt;
-	font-weight: 100;
+	font-weight: 300;
 
 	border: {
 		color: $scarlet;
 		style: solid;
-		width: 1px;
-		radius: 5px;
+		width: 2px;
 	}
 
 
@@ -34,4 +33,10 @@
 
 .bold {
 	font-weight: 300;
+}
+
+
+section {
+	position: relative;
+	background-color: white;
 }

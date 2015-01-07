@@ -12,17 +12,36 @@
 		@include shift(1.5);
 		margin-top: 0;
 	}
+}
 
-	&.hacking02 {
+.about {
+	margin-top: 100%;
+}
+
+.about > .section-block {
 	background: linear-gradient(
 	  $scarlet_trans2, 
 	  $scarlet_trans2
 	), url("/images/hacking02.jpg");
+	background-position: center;
 	background-repeat: no-repeat;
 	background-clip: border-box;
 	background-origin: border-box;
-	background-size: cover;
-	}
+	background-size: cover;	
+}
+
+
+.events > .section-block {
+
+	background: linear-gradient(
+	  $scarlet_trans2, 
+	  $scarlet_trans2
+	), url("/images/onStage.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-clip: border-box;
+	background-origin: border-box;
+	background-size: cover;	
 }
 
 
@@ -30,12 +49,11 @@
 	
 	// typeface
 	font-weight: 100;
-	// letter-spacing: -0.5px;
 	text-transform: uppercase;
 	font-size: 42pt;
 
 	// grid
-	margin: 100px 0 3px 15px;
+	margin: 120px 0 3px 15px;
 	@include shift(1.5);
 }
 
@@ -44,7 +62,6 @@
 	// typeface
 	font-size: 24pt;
 	font-weight: 600;
-	letter-spacing: -0.5px;
 
 	// grid
 	margin: 0 0 3px 15px;
@@ -81,6 +98,7 @@
 	}
 
 	div {
-		text-align: center;
+		// text-align: center;
+		margin-bottom: 25px;
 	}
 }

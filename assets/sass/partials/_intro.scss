@@ -1,0 +1,45 @@
+.intro {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	background: linear-gradient(
+	  $black_trans, 
+	  $black_trans
+	), url("/images/temp.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-clip: border-box;
+	background-origin: border-box;
+	background-size: cover;
+	z-index: 0;	
+}
+
+.logo {	
+	height: 80%;
+	width: auto;
+
+	margin: 0;
+	text-align: center;
+	// media query to adjust height
+}
+
+.intro-content {
+	@include span-columns(10);
+	@include shift(1);
+}
+
+.intro-title {
+	font-size: 32pt;
+	color: white;
+	text-align: center; 
+	font-weight: 100;
+}
+
+.intro-subtitle {
+	font-size: 28pt;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}

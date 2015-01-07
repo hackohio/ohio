@@ -1,167 +1,165 @@
-// header 
+// // header 
 
-header div ul {
+// header div ul {
 
 
-	list-style-type: none;
-	overflow: hidden;
-	@include span-columns(10);
-	@include shift(1);
+// 	list-style-type: none;
+// 	overflow: hidden;
+// 	@include span-columns(10);
+// 	@include shift(1);
 
-	li {
-		@include span-columns(2 of 10);
-		float: left;
-		display: block;
-		text-align: center;
-		line-height: 75px;
-		font-size: 20pt;
-		font-weight: 100;
+// 	li {
+// 		@include span-columns(2 of 10);
+// 		float: left;
+// 		display: block;
+// 		text-align: center;
+// 		line-height: 75px;
+// 		font-size: 20pt;
+// 		font-weight: 100;
 		
-		a {
-			@include transition(all 0.2s ease-in);
-			text-transform: uppercase;
-			text-decoration: none;
-			letter-spacing: -0.5px;
-			&:hover {
-				text-decoration: none;
-			}
-		}
-	}
-}
+// 		a {
+// 			@include transition(all 0.2s ease-in);
+// 			text-transform: uppercase;
+// 			text-decoration: none;
+// 			letter-spacing: -0.5px;
+// 			&:hover {
+// 				text-decoration: none;
+// 			}
+// 		}
+// 	}
+// }
 
-header.atTop {
-	position: relative;
-	color: $white;
-	background-color: white;
-	div ul {
-		li[id="logo"] {
-			visibility: hidden;
-		}
+// header.atTop {
+// 	position: relative;
+// 	color: $white;
+// 	background-color: white;
+// 	div ul {
+// 		li[id="logo"] {
+// 			visibility: hidden;
+// 		}
 
-		li a {
-			color: white;
+// 		li a {
+// 			color: white;
 
-			&:hover {
-				color: $scarlet;
-			}
-		}
-	} 
-}
+// 			&:hover {
+// 				color: $scarlet;
+// 			}
+// 		}
+// 	} 
+// }
 
-header.scrolled {
-	background-color: rgba(255,255,255,0.5);
-	color: $scarlet;
-	position: fixed;
-	top: 0;
+// header.scrolled {
+// 	background-color: rgba(255,255,255,0.5);
+// 	color: $scarlet;
+// 	position: fixed;
+// 	top: 0;
 	
-	div ul {
-		li[id="logo"] {
-			visibility: visible;
-			margin-top: 6px;
-		}
+// 	div ul {
+// 		li[id="logo"] {
+// 			visibility: visible;
+// 			margin-top: 6px;
+// 		}
 
-		li a {
-			color: $scarlet;
+// 		li a {
+// 			color: $scarlet;
 
-			&:hover {
-				color: white;
-			}
-		}	
-	}
-}
+// 			&:hover {
+// 				color: white;
+// 			}
+// 		}	
+// 	}
+// }
 
-header {
-	margin-top: 100%;
-	display: inline-block;
-}
+// header {
+// 	margin-top: 100%;
+// 	display: inline-block;
+// }
 
-svg g g rect, svg g g path {
-	@include transition(fill 0.2s ease-in, stroke 0.2s ease-in);
-}
+// svg g g rect, svg g g path {
+// 	@include transition(fill 0.2s ease-in, stroke 0.2s ease-in);
+// }
 
-a {
-	&:hover > svg > g > g  {
-		rect {
-			stroke: white;
-		}
+// a {
+// 	&:hover > svg > g > g  {
+// 		rect {
+// 			stroke: white;
+// 		}
 
-		path {
-			stroke: white;
-		}
+// 		path {
+// 			stroke: white;
+// 		}
 
-		#Rectangle-9 {
-			fill: white;
-		}
-	}
+// 		#Rectangle-9 {
+// 			fill: white;
+// 		}
+// 	}
 	
-}
+// }
 
-// intro
+// // intro
 
-section.intro {
-	height: calc(100% - 75px); 
-	position: fixed;
-	z-index: -1;
-}
+// section.intro {
+// 	height: calc(100% - 75px); 
+// 	position: fixed;
+// 	z-index: -1;
+// }
 
-.intro-background {
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	background-color: $grey;
-	background-image: url('/images/temp.jpg');
-	margin: 0;
-	z-index: -5;
-}
+// .intro-background {
+// 	height: 100%;
+// 	width: 100%;
+// 	position: fixed;
+// 	background-color: $grey;
+// 	background-image: url('/images/temp.jpg');
+// 	margin: 0;
+// 	z-index: -5;
+// }
 
-.intro-content {
-	@include span-columns(10);
-	@include shift(1);
-	margin-top: 50px;
-	text-align: center;
-	z-index: -4;
-}
+// .intro-content {
+// 	@include span-columns(10);
+// 	@include shift(1);
+// 	margin-top: 50px;
+// 	text-align: center;
+// 	z-index: -4;
+// }
 
-.intro-logo-house {
-	@include span-columns(8);
-	@include shift(2);
-	margin-top: 50px;
-	max-height: 500px;
-	height: 60%;
-}
-
-
-.title {
-	color: white;
-	font-size: 32pt;
-	font-weight: 100;
-}
-
-.subtitle {
-	margin: 5px;
-	color: white;
-	font-size: 24pt;
-	font-weight: 600;	
-	text-transform: uppercase;
-}
+// .intro-logo-house {
+// 	@include span-columns(8);
+// 	@include shift(2);
+// 	margin-top: 50px;
+// 	max-height: 500px;
+// 	height: 60%;
+// }
 
 
+// .title {
+// 	color: white;
+// 	font-size: 32pt;
+// 	font-weight: 100;
+// }
 
-hr {
-	width: 80%;
-	border: 0;
-	height: 1px;
-	background-color: white;
-	box-shadow: none;
-}
+// .subtitle {
+// 	margin: 5px;
+// 	color: white;
+// 	font-size: 24pt;
+// 	font-weight: 600;	
+// 	text-transform: uppercase;
+// }
 
 
 
-.about {
-	background-color: white;
-}
+// hr {
+// 	width: 80%;
+// 	border: 0;
+// 	height: 1px;
+// 	background-color: white;
+// 	box-shadow: none;
+// }
 
 
+
+// .about {
+// 	background-color: white;
+// }
 
 
 
@@ -192,7 +190,9 @@ hr {
 
 
 
-.button {
-	text-decoration: none;
+
+
+// .button {
+// 	text-decoration: none;
 		
-}
+// }
