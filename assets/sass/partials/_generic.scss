@@ -1,0 +1,37 @@
+@mixin background-ImageFill ($image, $position: top) {
+	background: url($image) no-repeat $position center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+}
+
+
+.button {
+	background-color: white;
+	text-decoration: none;
+	color: $white;
+	padding: 5px 15px 5px 15px;
+	font-size: 16pt;
+	font-weight: 100;
+
+	border: {
+		color: $scarlet;
+		style: solid;
+		width: 1px;
+		radius: 5px;
+	}
+
+
+	@include transition(all 0.2s ease-in);
+
+	&:hover {
+		background-color: $scarlet;
+		color: white;
+	}
+}
+
+
+.bold {
+	font-weight: 300;
+}

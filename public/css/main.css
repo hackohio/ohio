@@ -59,11 +59,33 @@ header {
     display: table;
     clear: both; }
 
-body {
-  font-family: Proxima Nova, Helvetica, Sans-Serif; }
+.button {
+  background-color: white;
+  text-decoration: none;
+  color: white;
+  padding: 5px 15px 5px 15px;
+  font-size: 16pt;
+  font-weight: 100;
+  border-color: #bb0000;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+  .button:hover {
+    background-color: #bb0000;
+    color: white; }
 
 .bold {
-  font-weight: 600; }
+  font-weight: 300; }
+
+body {
+  font-family: 'proximanova', Helvetica, Sans-Serif;
+  font-weight: 300; }
+
+.bold {
+  font-weight: 400; }
 
 header div ul {
   list-style-type: none;
@@ -99,8 +121,9 @@ header div ul {
         text-decoration: none; }
 
 header.atTop {
-  position: absolute;
-  color: white; }
+  position: relative;
+  color: white;
+  background-color: white; }
   header.atTop div ul li[id="logo"] {
     visibility: hidden; }
   header.atTop div ul li a {
@@ -121,6 +144,10 @@ header.scrolled {
     header.scrolled div ul li a:hover {
       color: white; }
 
+header {
+  margin-top: 100%;
+  display: inline-block; }
+
 svg g g rect, svg g g path {
   -webkit-transition: fill 0.2s ease-in, stroke 0.2s ease-in;
   -moz-transition: fill 0.2s ease-in, stroke 0.2s ease-in;
@@ -133,14 +160,19 @@ a:hover > svg > g > g path {
 a:hover > svg > g > g #Rectangle-9 {
   fill: white; }
 
+section.intro {
+  height: calc(100% - 75px);
+  position: fixed;
+  z-index: -1; }
+
 .intro-background {
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   background-color: #666666;
   background-image: url("/images/temp.jpg");
   margin: 0;
-  z-index: -1; }
+  z-index: -5; }
 
 .intro-content {
   float: left;
@@ -149,7 +181,8 @@ a:hover > svg > g > g #Rectangle-9 {
   width: 82.94039%;
   margin-left: 8.5298%;
   margin-top: 50px;
-  text-align: center; }
+  text-align: center;
+  z-index: -4; }
   .intro-content:last-child {
     margin-right: 0; }
 
@@ -159,7 +192,7 @@ a:hover > svg > g > g #Rectangle-9 {
   margin-right: 2.35765%;
   width: 65.88078%;
   margin-left: 17.05961%;
-  margin-top: 150px;
+  margin-top: 50px;
   max-height: 500px;
   height: 60%; }
   .intro-logo-house:last-child {
@@ -176,5 +209,79 @@ a:hover > svg > g > g #Rectangle-9 {
   font-size: 24pt;
   font-weight: 600;
   text-transform: uppercase; }
+
+hr {
+  width: 80%;
+  border: 0;
+  height: 1px;
+  background-color: white;
+  box-shadow: none; }
+
+.about {
+  background-color: white; }
+
+.button {
+  text-decoration: none; }
+
+.section-block {
+  background-color: rgba(187, 0, 0, 0.6);
+  color: white;
+  display: block;
+  overflow: auto; }
+  .section-block hr {
+    height: 1px;
+    background-color: white;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+    margin-left: 12.79471%;
+    margin-top: 0; }
+    .section-block hr:last-child {
+      margin-right: 0; }
+  .section-block.hacking02 {
+    background: linear-gradient(rgba(187, 0, 0, 0.6), rgba(187, 0, 0, 0.6)), url("/images/hacking02.jpg");
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-origin: border-box;
+    background-size: cover; }
+
+.section-title {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 42pt;
+  margin: 100px 0 3px 15px;
+  margin-left: 12.79471%; }
+
+.section-subtitle {
+  font-size: 24pt;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin: 0 0 3px 15px;
+  margin-left: 12.79471%; }
+
+.maincontent {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  margin-left: 12.79471%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14pt; }
+  .maincontent:last-child {
+    margin-right: 0; }
+  .maincontent a {
+    color: #bb0000; }
+  .maincontent h3 {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 16pt; }
+  .maincontent p {
+    margin-bottom: 25px; }
+  .maincontent h3:first-of-type {
+    margin-top: 20px; }
+  .maincontent div {
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

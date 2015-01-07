@@ -2,6 +2,7 @@
 
 header div ul {
 
+
 	list-style-type: none;
 	overflow: hidden;
 	@include span-columns(10);
@@ -29,9 +30,9 @@ header div ul {
 }
 
 header.atTop {
-	position: absolute;
+	position: relative;
 	color: $white;
-
+	background-color: white;
 	div ul {
 		li[id="logo"] {
 			visibility: hidden;
@@ -69,6 +70,11 @@ header.scrolled {
 	}
 }
 
+header {
+	margin-top: 100%;
+	display: inline-block;
+}
+
 svg g g rect, svg g g path {
 	@include transition(fill 0.2s ease-in, stroke 0.2s ease-in);
 }
@@ -92,14 +98,20 @@ a {
 
 // intro
 
+section.intro {
+	height: calc(100% - 75px); 
+	position: fixed;
+	z-index: -1;
+}
+
 .intro-background {
 	height: 100%;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	background-color: $grey;
 	background-image: url('/images/temp.jpg');
 	margin: 0;
-	z-index: -1;
+	z-index: -5;
 }
 
 .intro-content {
@@ -107,13 +119,13 @@ a {
 	@include shift(1);
 	margin-top: 50px;
 	text-align: center;
-
+	z-index: -4;
 }
 
 .intro-logo-house {
 	@include span-columns(8);
 	@include shift(2);
-	margin-top: 150px;
+	margin-top: 50px;
 	max-height: 500px;
 	height: 60%;
 }
@@ -131,4 +143,56 @@ a {
 	font-size: 24pt;
 	font-weight: 600;	
 	text-transform: uppercase;
+}
+
+
+
+hr {
+	width: 80%;
+	border: 0;
+	height: 1px;
+	background-color: white;
+	box-shadow: none;
+}
+
+
+
+.about {
+	background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button {
+	text-decoration: none;
+		
 }
