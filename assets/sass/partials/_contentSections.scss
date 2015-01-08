@@ -26,6 +26,18 @@
 	background-size: cover;	
 }
 
+.stats > .section-block {
+	background: linear-gradient(
+	  $grey_trans, 
+	  $grey_trans
+	), url("/images/onStage.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-clip: border-box;
+	background-origin: border-box;
+	background-size: cover;	
+}
+
 
 .events > .section-block {
 
@@ -87,6 +99,10 @@
 
 	p {
 		margin-bottom: 25px;
+		margin-top: 10px;
+		font-weight: 400;
+		line-height: 15pt;
+		text-align: justify;
 	}
 
 	h3:first-of-type {

@@ -8,8 +8,8 @@ var words = [
 	"wonderful",
 	"innovative",
 	"complex",
-	"fancy",
-	"birght",
+	"so fancy",
+	"bright",
 	"amazing"
 ];
 
@@ -19,6 +19,25 @@ $(document).ready(function() {
 
 	$header = $("header");
 	$intro = $(".intro");
+	$input = $(".maillist-input");
+
+	$input.focus(function(event) {
+		var $label = $(".maillist-label");
+		$label.addClass('maillist-label-full');
+		$label.removeClass('maillist-label-empty');
+		$label.click(function(event) {
+			addToMailingList();
+		});
+	});
+
+	$input.blur(function(event) {
+		var $label = $(".maillist-label");
+		if (! $input.val().length) {
+			$label.addClass('maillist-label-empty');
+			$label.removeClass('maillist-label-full');
+		}
+	});
+
 
 	$(window).scroll(function () {
      var scroll = $(window).scrollTop();     
@@ -59,4 +78,9 @@ function replaceText(words) {
 	};
 
 	setInterval(updateText, 2000);
+}
+
+function addToMailingList() {
+	email = $(".maillist-input").val();
+	console.log(email);
 }

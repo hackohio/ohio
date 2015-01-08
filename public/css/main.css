@@ -115,6 +115,14 @@ body {
   background-origin: border-box;
   background-size: cover; }
 
+.stats > .section-block {
+  background: linear-gradient(rgba(102, 102, 102, 0.8), rgba(102, 102, 102, 0.8)), url("/images/onStage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-origin: border-box;
+  background-size: cover; }
+
 .events > .section-block {
   background: linear-gradient(rgba(187, 0, 0, 0.6), rgba(187, 0, 0, 0.6)), url("/images/onStage.jpg");
   background-position: center;
@@ -154,7 +162,11 @@ body {
     font-weight: 700;
     font-size: 16pt; }
   .maincontent p {
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 15pt;
+    text-align: justify; }
   .maincontent h3:first-of-type {
     margin-top: 20px; }
   .maincontent div {
@@ -183,9 +195,9 @@ body {
   transition: height 0.2s ease-in; }
   @media screen and (max-width: 480px) {
     .logo {
-      height: 350px;
-      margin-top: 25px;
-      margin-bottom: 25px; } }
+      height: 150px;
+      margin-top: 0px;
+      margin-bottom: 0px; } }
 
 .intro-content {
   float: left;
@@ -210,6 +222,9 @@ body {
   color: white;
   text-align: center;
   font-weight: 100; }
+  @media screen and (max-width: 480px) {
+    .intro-title {
+      font-size: 32pt; } }
 
 .intro-subtitle {
   font-size: 28pt;
@@ -219,15 +234,100 @@ body {
   text-transform: uppercase; }
   @media screen and (max-width: 480px) {
     .intro-subtitle {
-      font-size: 20pt; } }
+      font-size: 18pt; } }
 
 .maillist {
   margin-top: 35px;
   margin-bottom: 35px;
-  text-align: center; }
-  .maillist > .button {
-    padding-left: 25px;
-    padding-right: 25px; }
+  position: relative;
+  text-align: center;
+  height: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%; }
+  .maillist:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 750px) {
+    .maillist {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%; }
+      .maillist:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .maillist {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%;
+      margin-left: 8.5298%; }
+      .maillist:last-child {
+        margin-right: 0; } }
+  .maillist input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 18pt;
+    border-color: #bb0000;
+    padding: 0 5px 0 5px;
+    border-width: 2px;
+    border-style: solid;
+    color: #bb0000;
+    font-family: 'proximanova'; }
+    .maillist input:focus {
+      outline: none; }
+    .maillist input:hover {
+      outline: none; }
+    .maillist input:hover + .maillist-label-empty {
+      color: white;
+      background-color: #bb0000;
+      font-size: 20pt; }
+      @media screen and (max-width: 480px) {
+        .maillist input:hover + .maillist-label-empty {
+          font-size: 18pt; } }
+
+.maillist-label-empty {
+  pointer-events: none;
+  background-color: white; }
+
+.maillist-label {
+  position: absolute;
+  line-height: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 18pt;
+  color: #bb0000;
+  top: 0;
+  border-color: #bb0000;
+  border-width: 2px;
+  border-style: solid;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+  @media screen and (max-width: 480px) {
+    .maillist-label {
+      font-size: 16pt; } }
+
+.maillist-label-full {
+  top: 50px;
+  font-size: 20pt;
+  background-color: #bb0000;
+  color: white;
+  cursor: pointer; }
+  @media screen and (max-width: 480px) {
+    .maillist-label-full {
+      font-size: 18pt; } }
+
+button {
+  display: none; }
 
 .slot {
   -webkit-transition: all 0.5s ease-in;
