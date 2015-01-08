@@ -1,0 +1,20 @@
+
+/* This is the part you will want to copy if you want to use the font-face glyphs on your own websites */
+@font-face {
+  font-family: Socialglyphs;
+  font-family: "Socialglyphs";
+  src: url(type/socialglyphs-regular.svg#socialglyphs-regular) format("svg"),
+    url(type/socialglyphs-regular.ttf) format("truetype"),    
+    url(type/socialglyphs-regular.woff) format("woff"),
+    url(type/socialglyphs-regular.eot);
+}
+
+/* Styling for the header. You can ignore this */
+
+.socialglyphs {
+	font-family: Socialglyphs, sans-serif;
+	font-size: 24pt;
+	line-height: 54px;
+}
+  
+ 

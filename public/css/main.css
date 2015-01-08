@@ -62,7 +62,7 @@ header {
 .button {
   background-color: white;
   text-decoration: none;
-  color: white;
+  color: #bb0000;
   padding: 5px 15px 5px 15px;
   font-size: 16pt;
   font-weight: 300;
@@ -174,10 +174,18 @@ body {
   z-index: 0; }
 
 .logo {
-  height: 80%;
   width: auto;
   margin: 0;
-  text-align: center; }
+  text-align: center;
+  height: 550px;
+  -webkit-transition: height 0.2s ease-in;
+  -moz-transition: height 0.2s ease-in;
+  transition: height 0.2s ease-in; }
+  @media screen and (max-width: 480px) {
+    .logo {
+      height: 350px;
+      margin-top: 25px;
+      margin-bottom: 25px; } }
 
 .intro-content {
   float: left;
@@ -187,9 +195,18 @@ body {
   margin-left: 8.5298%; }
   .intro-content:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 750px) {
+    .intro-content {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 91.4702%;
+      margin-left: 4.2649%; }
+      .intro-content:last-child {
+        margin-right: 0; } }
 
 .intro-title {
-  font-size: 32pt;
+  font-size: 38pt;
   color: white;
   text-align: center;
   font-weight: 100; }
@@ -200,15 +217,55 @@ body {
   color: white;
   text-align: center;
   text-transform: uppercase; }
+  @media screen and (max-width: 480px) {
+    .intro-subtitle {
+      font-size: 20pt; } }
 
+.maillist {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: center; }
+  .maillist > .button {
+    padding-left: 25px;
+    padding-right: 25px; }
+
+.slot {
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in; }
+
+.slot-visible {
+  -webkit-animation: anim 1s; }
+
+.slot-hidden {
+  display: none; }
+
+@-webkit-keyframes anim {
+  0% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transition-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transition-timing-function: ease-in; }
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+  100% {
+    transform: perspective(400px); } }
 header {
   margin-top: calc(100vh - 65px);
   position: relative;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.95);
   height: 65px;
   -webkit-transition: box-shadow 0.2s ease-in;
   -moz-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in; }
+  header ul .minilogo {
+    display: hidden;
+    opacity: 0; }
 
 header.fixed {
   position: fixed;
@@ -217,5 +274,47 @@ header.fixed {
   margin: 0;
   z-index: 1;
   box-shadow: 0 0px 15px 5px rgba(102, 102, 102, 0.8); }
+  header.fixed ul .minilogo {
+    display: block;
+    opacity: 1; }
+
+svg g g rect, svg g g path {
+  -webkit-transition: fill 0.2s ease-in, stroke 0.2s ease-in;
+  -moz-transition: fill 0.2s ease-in, stroke 0.2s ease-in;
+  transition: fill 0.2s ease-in, stroke 0.2s ease-in; }
+
+.minilogo {
+  float: left;
+  height: 55px;
+  width: 55px;
+  line-height: 65px;
+  margin: 5px 0px 5px 5px;
+  -webkit-transition: opacity 0.2s ease-in;
+  -moz-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in; }
+  .minilogo a:hover > svg > g > g rect {
+    stroke: #bb0000; }
+  .minilogo a:hover > svg > g > g path {
+    stroke: #bb0000; }
+  .minilogo a:hover > svg > g > g #Rectangle-9 {
+    fill: #bb0000; }
+
+header ul li {
+  display: block;
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+  line-height: 65px; }
+  header ul li a {
+    -webkit-transition: color 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in;
+    transition: color 0.3s ease-in;
+    font-size: 18pt;
+    font-weight: 400;
+    color: #666666;
+    text-decoration: none; }
+    header ul li a:hover {
+      color: #bb0000; }
 
 /*# sourceMappingURL=main.css.map */

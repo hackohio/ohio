@@ -16,21 +16,32 @@
 }
 
 .logo {	
-	height: 80%;
 	width: auto;
-
 	margin: 0;
 	text-align: center;
-	// media query to adjust height
+	height: 550px;
+
+	@include transition(height 0.2s ease-in);
+
+	@include media($mobile) {
+		height: 350px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
 }
 
 .intro-content {
 	@include span-columns(10);
 	@include shift(1);
+
+	@include media($little-screen) {
+		@include span-columns(11);
+		@include shift(0.5);
+	}
 }
 
 .intro-title {
-	font-size: 32pt;
+	font-size: 38pt;
 	color: white;
 	text-align: center; 
 	font-weight: 100;
@@ -42,4 +53,58 @@
 	color: white;
 	text-align: center;
 	text-transform: uppercase;
+
+	@include media($mobile) {
+		font-size: 20pt;
+	}
+}
+
+.maillist {
+	margin-top: 35px;
+	margin-bottom: 35px;
+	text-align: center;
+
+	> .button {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+}
+
+.slot {
+	@include transition(all 0.5s ease-in);
+}
+
+.slot-visible {
+ 	-webkit-animation: anim 1s;
+}
+
+.slot-hidden {
+	display: none;
+}
+
+// FROM ANIMATE.CSS
+@-webkit-keyframes anim {
+	0% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transition-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    transform: perspective(400px);
+  }
 }
