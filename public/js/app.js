@@ -3,12 +3,23 @@
 
 
 var $header;
+var set = false;
 
 $(document).ready(function() {
 
 	$header = $("header");
-	$(window).scroll(function(event) {
-		/* Act on the event */
+	$(window).scroll(function () {
+       var scroll = $(window).scrollTop();
+       
+       if (scroll > (window.innerHeight - 65) && !set) {
+	       $header.addClass('fixed');
+	       $(".about").css('margin-top', '100vh');
+				 set = true;
+       } else if (scroll < (window.innerHeight - 65) && set) {
+	       $header.removeClass('fixed');
+		     $(".about").css('margin-top', '0');
+		     set = false;
+       }
 	});	
 });
 
