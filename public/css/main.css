@@ -287,11 +287,7 @@ body {
       outline: none; }
     .maillist input:hover + .maillist-label-empty {
       color: white;
-      background-color: #bb0000;
-      font-size: 20pt; }
-      @media screen and (max-width: 480px) {
-        .maillist input:hover + .maillist-label-empty {
-          font-size: 18pt; } }
+      background-color: #bb0000; }
 
 .maillist-label-empty {
   pointer-events: none;
@@ -318,13 +314,9 @@ body {
 
 .maillist-label-full {
   top: 50px;
-  font-size: 20pt;
   background-color: #bb0000;
   color: white;
   cursor: pointer; }
-  @media screen and (max-width: 480px) {
-    .maillist-label-full {
-      font-size: 18pt; } }
 
 button {
   display: none; }

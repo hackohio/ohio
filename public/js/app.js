@@ -20,6 +20,7 @@ $(document).ready(function() {
 	$header = $("header");
 	$intro = $(".intro");
 	$input = $(".maillist-input");
+	var $about = $(".about");
 
 	$input.focus(function(event) {
 		var $label = $(".maillist-label");
@@ -36,6 +37,7 @@ $(document).ready(function() {
 			$label.addClass('maillist-label-empty');
 			$label.removeClass('maillist-label-full');
 		}
+
 	});
 
 
@@ -43,11 +45,13 @@ $(document).ready(function() {
      var scroll = $(window).scrollTop();     
      if (scroll > (window.innerHeight - 65) && !set) {
        $header.addClass('fixed');
-       $(".about").css('margin-top', '100vh');
+       $about.css('margin-top', '100vh');
+	     $intro.css('display', 'none');
 			 set = true;
      } else if (scroll < (window.innerHeight - 65) && set) {
        $header.removeClass('fixed');
-	     $(".about").css('margin-top', '0');
+	     $about.css('margin-top', '0');
+ 	     $intro.css('display', 'block');
 	     set = false;
      }
 	});	
@@ -83,4 +87,11 @@ function replaceText(words) {
 function addToMailingList() {
 	email = $(".maillist-input").val();
 	console.log(email);
+	// post 
+
+}
+
+function emailSuccess() {
+	$label = $(".maillist-label-full");
+	$label.html("EmailSent");
 }
