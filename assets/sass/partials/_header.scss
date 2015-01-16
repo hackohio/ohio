@@ -1,5 +1,5 @@
 header {
-	margin-top: calc(100vh - 65px);
+	// margin-top: calc(100vh - 65px);
 	position: relative;
 	background-color: rgba(255,255,255,0.95);
 	height: 65px;
@@ -16,13 +16,18 @@ header.fixed {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	margin: 0;
+	// margin: 0;
 	z-index: 1;
 	box-shadow: 0 0px 15px 5px $grey_trans;
 
 	ul .minilogo {
 		display: block;
 		opacity: 1;
+
+			@include media($mobile) {
+			display: none;
+	}
+
 	}
 }
 
@@ -36,7 +41,11 @@ svg g g rect, svg g g path {
 	width: 55px;
 	line-height: 65px;
 	margin: 5px 0px 5px 5px;
-		
+	
+	@include media($mobile) {
+			display: none;
+	}
+
 	@include transition(opacity 0.2s ease-in);
 
 	a {
@@ -72,6 +81,10 @@ header ul li {
 		font-weight: 400;
 		color: $grey;
 		text-decoration: none;
+
+		@include media($mobile) {
+			font-size: 12pt;
+		}
 
 		&:hover {
 			color: $scarlet;

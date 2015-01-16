@@ -59,6 +59,9 @@ header {
     display: table;
     clear: both; }
 
+section {
+  position: relative; }
+
 .button {
   background-color: white;
   text-decoration: none;
@@ -66,6 +69,8 @@ header {
   padding: 5px 15px 5px 15px;
   font-size: 16pt;
   font-weight: 300;
+  display: inline-block;
+  margin: 0 10px 0 0px;
   border-color: #bb0000;
   border-style: solid;
   border-width: 2px;
@@ -84,7 +89,7 @@ section {
   background-color: white; }
 
 body {
-  font-family: 'proximanova', Helvetica, Sans-Serif;
+  font-family: 'proximanova', Proxima Nova, Helvetica, Sans-Serif;
   font-weight: 300; }
 
 .bold {
@@ -169,13 +174,27 @@ body {
     text-align: justify; }
   .maincontent h3:first-of-type {
     margin-top: 20px; }
-  .maincontent div {
-    margin-bottom: 25px; }
+
+.sub {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 48.41578%; }
+  .sub:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 900px) {
+    .sub {
+      float: left;
+      display: block;
+      margin-right: 3.16844%;
+      width: 100%; }
+      .sub:last-child {
+        margin-right: 0; } }
 
 .intro {
-  height: 100%;
+  height: calc(100% - 65px);
   width: 100%;
-  position: fixed;
+  position: relative;
   top: 0px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/temp.jpg");
   background-position: center;
@@ -189,11 +208,16 @@ body {
   width: auto;
   margin: 0;
   text-align: center;
-  height: 550px;
+  height: 450px;
   -webkit-transition: height 0.2s ease-in;
   -moz-transition: height 0.2s ease-in;
   transition: height 0.2s ease-in; }
   @media screen and (max-width: 480px) {
+    .logo {
+      height: 150px;
+      margin-top: 0px;
+      margin-bottom: 0px; } }
+  @media screen and (max-height: 800px) {
     .logo {
       height: 150px;
       margin-top: 0px;
@@ -207,7 +231,7 @@ body {
   margin-left: 8.5298%; }
   .intro-content:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 900px) {
     .intro-content {
       float: left;
       display: block;
@@ -230,8 +254,8 @@ body {
   font-size: 28pt;
   font-weight: 600;
   color: white;
-  text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
   @media screen and (max-width: 480px) {
     .intro-subtitle {
       font-size: 18pt; } }
@@ -252,7 +276,7 @@ body {
   margin-left: 25.58941%; }
   .maillist:last-child {
     margin-right: 0; }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 900px) {
     .maillist {
       float: left;
       display: block;
@@ -324,7 +348,13 @@ button {
 .slot {
   -webkit-transition: all 0.5s ease-in;
   -moz-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in; }
+  transition: all 0.5s ease-in;
+  width: 220px;
+  display: inline-block;
+  text-align: left; }
+  @media screen and (max-width: 900px) {
+    .slot {
+      text-align: center; } }
 
 .slot-visible {
   -webkit-animation: anim 1s; }
@@ -347,8 +377,40 @@ button {
     transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
   100% {
     transform: perspective(400px); } }
+.row {
+  width: 100%;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  margin-bottom: 0;
+  margin-top: 0; }
+  @media screen and (max-width: 900px) {
+    .row {
+      display: block; }
+      .row:after {
+        content: "";
+        display: table;
+        clear: both; } }
+
+.table-item {
+  display: table-cell;
+  width: 33.33333%;
+  padding: 2.35765%;
+  text-align: center;
+  border: solid;
+  height: 150px;
+  margin-bottom: 0;
+  margin-top: 0; }
+  @media screen and (max-width: 900px) {
+    .table-item {
+      float: left;
+      display: block;
+      margin-right: 3.16844%;
+      width: 100%; }
+      .table-item:last-child {
+        margin-right: 0; } }
+
 header {
-  margin-top: calc(100vh - 65px);
   position: relative;
   background-color: rgba(255, 255, 255, 0.95);
   height: 65px;
@@ -363,12 +425,14 @@ header.fixed {
   position: fixed;
   top: 0;
   width: 100%;
-  margin: 0;
   z-index: 1;
   box-shadow: 0 0px 15px 5px rgba(102, 102, 102, 0.8); }
   header.fixed ul .minilogo {
     display: block;
     opacity: 1; }
+    @media screen and (max-width: 480px) {
+      header.fixed ul .minilogo {
+        display: none; } }
 
 svg g g rect, svg g g path {
   -webkit-transition: fill 0.2s ease-in, stroke 0.2s ease-in;
@@ -384,6 +448,9 @@ svg g g rect, svg g g path {
   -webkit-transition: opacity 0.2s ease-in;
   -moz-transition: opacity 0.2s ease-in;
   transition: opacity 0.2s ease-in; }
+  @media screen and (max-width: 480px) {
+    .minilogo {
+      display: none; } }
   .minilogo a:hover > svg > g > g rect {
     stroke: #bb0000; }
   .minilogo a:hover > svg > g > g path {
@@ -406,6 +473,9 @@ header ul li {
     font-weight: 400;
     color: #666666;
     text-decoration: none; }
+    @media screen and (max-width: 480px) {
+      header ul li a {
+        font-size: 12pt; } }
     header ul li a:hover {
       color: #bb0000; }
 

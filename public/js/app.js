@@ -2,6 +2,7 @@
 var $header;
 var set = false;
 var $intro;
+var $firstSection;
 
 var words = [
 	"awesome",
@@ -9,17 +10,23 @@ var words = [
 	"innovative",
 	"complex",
 	"so fancy",
-	"bright",
-	"amazing"
+"shiny",
+	"amazing",
+	"Powerful",
+	"brand new",
+	"efficient",
+	"exciting"
 ];
 
 $(document).ready(function() {
 
-	replaceText(words);
+	var intervalID = replaceText(words);
 
 	$header = $("header");
 	$intro = $(".intro");
 	$input = $(".maillist-input");
+	$firstSection = $("section:first-of-type");
+
 	var $about = $(".about");
 
 	$input.focus(function(event) {
@@ -45,14 +52,12 @@ $(document).ready(function() {
      var scroll = $(window).scrollTop();     
      if (scroll > (window.innerHeight - 65) && !set) {
        $header.addClass('fixed');
-       $about.css('margin-top', '100vh');
-	     $intro.css('display', 'none');
+       $firstSection.css('margin-top', '65');
 			 set = true;
      } else if (scroll < (window.innerHeight - 65) && set) {
        $header.removeClass('fixed');
-	     $about.css('margin-top', '0');
- 	     $intro.css('display', 'block');
-	     set = false;
+       $firstSection.css('margin-top', '0');
+     set = false;
      }
 	});	
 });
@@ -81,7 +86,7 @@ function replaceText(words) {
 		}
 	};
 
-	setInterval(updateText, 2000);
+	return setInterval(updateText, 2000);
 }
 
 function addToMailingList() {

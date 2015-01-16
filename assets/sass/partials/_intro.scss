@@ -1,7 +1,7 @@
 .intro {
-	height: 100%;
+	height: calc(100% - 65px);
 	width: 100%;
-	position: fixed;
+	position: relative;
 	top: 0px;
 	background: linear-gradient(
 	  $black_trans, 
@@ -19,7 +19,7 @@
 	width: auto;
 	margin: 0;
 	text-align: center;
-	height: 550px;
+	height: 450px;
 
 	@include transition(height 0.2s ease-in);
 
@@ -27,6 +27,12 @@
 		height: 150px;
 		margin-top: 0px;
 		margin-bottom: 0px;
+	}
+
+	@include media($height) {
+		height: 150px;
+		margin-top: 0px;
+		margin-bottom: 0px;	
 	}
 }
 
@@ -55,8 +61,8 @@
 	font-size: 28pt;
 	font-weight: 600;
 	color: white;
-	text-align: center;
 	text-transform: uppercase;
+	text-align: center;
 
 	@include media($mobile) {
 		font-size: 18pt;
@@ -145,7 +151,6 @@
 	cursor: pointer;
 }
 
-
 button {
 	display: none;
 }
@@ -153,6 +158,13 @@ button {
 
 .slot {
 	@include transition(all 0.5s ease-in);
+	width:	220px;
+	display: inline-block;
+	text-align: left;
+
+	@include media($little-screen) {
+		text-align: center;
+	}
 }
 
 .slot-visible {

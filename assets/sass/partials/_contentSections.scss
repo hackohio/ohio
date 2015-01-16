@@ -4,7 +4,7 @@
 	color: $white;
 	display: block;
 	overflow: auto;
-
+	
 	hr {
 		height: 1px;
 		background-color: $white;
@@ -108,9 +108,13 @@
 	h3:first-of-type {
 			margin-top: 20px;
 	}
+}
 
-	div {
-		// text-align: center;
-		margin-bottom: 25px;
+
+.sub {
+	@include span-columns(4.5 of 9);
+
+	@include media($little-screen) {
+		@include span-columns(9 of 9);
 	}
 }

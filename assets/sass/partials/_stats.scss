@@ -1,0 +1,23 @@
+.row {
+	@include fill-parent();
+	@include row(table);
+	margin-bottom: 0;
+	margin-top: 0;
+	@include media($little-screen) {
+		@include row();
+	}
+}
+
+.table-item {
+	@include span-columns(3 of 9, table);
+	@include pad();
+	text-align: center;
+	border: solid;
+	height: 150px;
+	margin-bottom: 0;
+	margin-top: 0;
+	@include media($little-screen) {
+		@include span-columns(9 of 9);
+
+	}
+}
