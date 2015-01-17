@@ -97,7 +97,7 @@
 		}
 	}
 
-	p {
+	> p {
 		margin-bottom: 25px;
 		margin-top: 10px;
 		font-weight: 400;
@@ -108,6 +108,11 @@
 	h3:first-of-type {
 			margin-top: 20px;
 	}
+
+	div {
+		// text-align: center;
+		margin-bottom: 25px;
+	}
 }
 
 
@@ -117,4 +122,39 @@
 	@include media($little-screen) {
 		@include span-columns(9 of 9);
 	}
+}
+
+input, textarea {
+	
+	width: 100%;
+	height: 40px;
+	resize: none;
+	font-family: $proxima;
+	font-size: 14pt;
+	padding: 5px;
+
+	@include transition(border-color 0.2s ease-in);
+	
+	border: solid 1px $grey_trans;
+	
+	&:focus {
+		outline: none;
+		border: solid 2px $scarlet;
+	}
+}
+
+.input-label {
+	font-weight: 700;
+	font-size: 16pt;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.input {
+
+}
+
+.message {
+	width: 100%;
+	height: 100px;
 }

@@ -166,7 +166,7 @@ body {
     margin-bottom: 5px;
     font-weight: 700;
     font-size: 16pt; }
-  .maincontent p {
+  .maincontent > p {
     margin-bottom: 25px;
     margin-top: 10px;
     font-weight: 400;
@@ -174,6 +174,8 @@ body {
     text-align: justify; }
   .maincontent h3:first-of-type {
     margin-top: 20px; }
+  .maincontent div {
+    margin-bottom: 25px; }
 
 .sub {
   float: left;
@@ -190,6 +192,31 @@ body {
       width: 100%; }
       .sub:last-child {
         margin-right: 0; } }
+
+input, textarea {
+  width: 100%;
+  height: 40px;
+  resize: none;
+  font-family: "proximanova";
+  font-size: 14pt;
+  padding: 5px;
+  -webkit-transition: border-color 0.2s ease-in;
+  -moz-transition: border-color 0.2s ease-in;
+  transition: border-color 0.2s ease-in;
+  border: solid 1px rgba(102, 102, 102, 0.8); }
+  input:focus, textarea:focus {
+    outline: none;
+    border: solid 2px #bb0000; }
+
+.input-label {
+  font-weight: 700;
+  font-size: 16pt;
+  display: block;
+  margin-bottom: 5px; }
+
+.message {
+  width: 100%;
+  height: 100px; }
 
 .intro {
   height: calc(100% - 65px);
@@ -304,7 +331,7 @@ body {
     border-width: 2px;
     border-style: solid;
     color: #bb0000;
-    font-family: 'proximanova'; }
+    font-family: "proximanova"; }
     .maillist input:focus {
       outline: none; }
     .maillist input:hover {
@@ -382,7 +409,7 @@ button {
   display: table;
   width: 100%;
   table-layout: fixed;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
   margin-top: 0; }
   @media screen and (max-width: 900px) {
     .row {
@@ -395,20 +422,47 @@ button {
 .table-item {
   display: table-cell;
   width: 33.33333%;
-  padding: 2.35765%;
+  position: relative;
+  padding: 0;
   text-align: center;
   border: solid;
   height: 150px;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
   margin-top: 0; }
-  @media screen and (max-width: 900px) {
-    .table-item {
-      float: left;
-      display: block;
-      margin-right: 3.16844%;
-      width: 100%; }
-      .table-item:last-child {
-        margin-right: 0; } }
+
+@media screen and (max-width: 900px) {
+  .table-item {
+    float: left;
+    display: block;
+    margin-right: 3.16844%;
+    width: 100%; }
+    .table-item:last-child {
+      margin-right: 0; } }
+
+.number, .units {
+  margin: 0;
+  height: 50%;
+  display: block;
+  position: relative; }
+  .number p, .units p {
+    width: 100%;
+    text-align: center;
+    position: absolute; }
+
+.number {
+  font-weight: 100;
+  font-size: 32pt;
+  display: block; }
+  .number p {
+    bottom: 0; }
+
+.units {
+  font-weight: 700;
+  font-size: 18pt;
+  display: block; }
+  .units p {
+    top: 0;
+    text-transform: uppercase; }
 
 header {
   position: relative;
