@@ -52,6 +52,17 @@
 	background-size: cover;	
 }
 
+.contact > .section-block {
+	background: linear-gradient(
+	  $grey_trans, 
+	  $grey_trans
+	), url("/images/onStage.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-clip: border-box;
+	background-origin: border-box;
+	background-size: cover;	
+}
 
 .section-title {
 	
@@ -59,6 +70,10 @@
 	font-weight: 100;
 	text-transform: uppercase;
 	font-size: 42pt;
+
+	@include media($mobile) {
+		font-size: 32pt;
+	}
 
 	// grid
 	margin: 120px 0 3px 15px;
@@ -70,6 +85,10 @@
 	// typeface
 	font-size: 24pt;
 	font-weight: 600;
+
+	@include media($mobile) {
+		font-size: 18pt;
+	}
 
 	// grid
 	margin: 0 0 3px 15px;
@@ -121,6 +140,16 @@
 
 	@include media($little-screen) {
 		@include span-columns(9 of 9);
+
+		p {
+			min-height: auto;
+		}
+	}
+
+	p {
+		margin-bottom: 10px;
+		margin-top: 10px;
+		min-height: 100px;
 	}
 }
 

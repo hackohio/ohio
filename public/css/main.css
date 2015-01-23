@@ -136,18 +136,32 @@ body {
   background-origin: border-box;
   background-size: cover; }
 
+.contact > .section-block {
+  background: linear-gradient(rgba(102, 102, 102, 0.8), rgba(102, 102, 102, 0.8)), url("/images/onStage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-origin: border-box;
+  background-size: cover; }
+
 .section-title {
   font-weight: 100;
   text-transform: uppercase;
   font-size: 42pt;
   margin: 120px 0 3px 15px;
   margin-left: 12.79471%; }
+  @media screen and (max-width: 480px) {
+    .section-title {
+      font-size: 32pt; } }
 
 .section-subtitle {
   font-size: 24pt;
   font-weight: 600;
   margin: 0 0 3px 15px;
   margin-left: 12.79471%; }
+  @media screen and (max-width: 480px) {
+    .section-subtitle {
+      font-size: 18pt; } }
 
 .maincontent {
   float: left;
@@ -191,7 +205,13 @@ body {
       margin-right: 3.16844%;
       width: 100%; }
       .sub:last-child {
-        margin-right: 0; } }
+        margin-right: 0; }
+      .sub p {
+        min-height: auto; } }
+  .sub p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    min-height: 100px; }
 
 input, textarea {
   width: 100%;
@@ -411,7 +431,7 @@ button {
   table-layout: fixed;
   margin-bottom: 0 !important;
   margin-top: 0; }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 480px) {
     .row {
       display: block; }
       .row:after {
@@ -425,12 +445,11 @@ button {
   position: relative;
   padding: 0;
   text-align: center;
-  border: solid;
   height: 150px;
   margin-bottom: 0 !important;
   margin-top: 0; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 480px) {
   .table-item {
     float: left;
     display: block;

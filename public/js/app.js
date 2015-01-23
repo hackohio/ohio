@@ -22,6 +22,8 @@ $(document).ready(function() {
 
 	var intervalID = replaceText(words);
 
+	addScrollClicks();
+
 	$header = $("header");
 	$intro = $(".intro");
 	$input = $(".maillist-input");
@@ -47,6 +49,10 @@ $(document).ready(function() {
 
 	});
 
+	$("#sendit").click(function(event) {
+		event.preventDefault();
+		sendEmail(this);
+	});
 
 	$(window).scroll(function () {
      var scroll = $(window).scrollTop();     
@@ -62,6 +68,28 @@ $(document).ready(function() {
 	});	
 });
 
+function addScrollClicks() {
+	$("#contact-link").click(function(event) {
+		event.preventDefault();
+		$.scrollTo($(".contact"), 500);
+	});
+
+	$("#about-link").click(function(event) {
+		event.preventDefault();
+		$(window).scrollTo($(".about"), 500);
+	});
+
+	$("#events-link").click(function(event) {
+		event.preventDefault();
+		$(window).scrollTo($(".events"), 500);
+	});	
+
+	$("#stats-link").click(function(event) {
+		event.preventDefault();
+		$(window).scrollTo($(".stats"), 500);
+	});		
+
+}
 
 function replaceText(words) {
 	var $slot = $(".slot-visible");
@@ -89,9 +117,13 @@ function replaceText(words) {
 	return setInterval(updateText, 2000);
 }
 
-function addToMailingList() {
-	email = $(".maillist-input").val();
+function sendEmail(button) {
+	var email = $("#email").val();
+	var subject = $("#subject").val();
+	var message = $("#message").val();
 	console.log(email);
+	console.log(subject);
+	console.log(message);
 	// post 
 
 }
