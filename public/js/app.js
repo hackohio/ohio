@@ -121,10 +121,16 @@ function sendEmail(button) {
 	var email = $("#email").val();
 	var subject = $("#subject").val();
 	var message = $("#message").val();
-	console.log(email);
-	console.log(subject);
-	console.log(message);
-	// post 
+		
+	// post the email 
+	$.post('/contact', 
+	{
+		email: email,
+		subject: subject,
+		content: message
+	}, function(data, textStatus, xhr) {
+		console.log("sent");
+	});
 
 }
 
