@@ -21,8 +21,12 @@ post '/contact' do
   puts email.to_s
   email.delivery_method :sendmail
   email.deliver!
-
-  # redirect '/'
 end
+
+post '/subscribe' do
+  
+
+end
+
 
 
