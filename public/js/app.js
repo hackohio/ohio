@@ -28,20 +28,27 @@ $(document).ready(function() {
 	$intro = $(".intro");
 	$input = $(".maillist-input");
 	$firstSection = $("section:first-of-type");
+	$emailLabel = $("#email-label");
+	var $label = $(".maillist-label");
 
 	var $about = $(".about");
+
+	$("#mail-link").click(function(event) {
+		event.preventDefault();
+		$input.focus();
+	});
 
 	$input.focus(function(event) {
 		var $label = $(".maillist-label");
 		$label.addClass('maillist-label-full');
 		$label.removeClass('maillist-label-empty');
 		$label.click(function(event) {
-			addToMailingList();
+			addToMailList();
 		});
 	});
 
 	$input.blur(function(event) {
-		var $label = $(".maillist-label");
+		
 		if (! $input.val().length) {
 			$label.addClass('maillist-label-empty');
 			$label.removeClass('maillist-label-full');
@@ -52,6 +59,18 @@ $(document).ready(function() {
 	$("#sendit").click(function(event) {
 		event.preventDefault();
 		sendEmail(this);
+	});
+
+	$("#email").focus(function(event) {
+		$emailLabel.removeClass('invalid');
+	});
+
+	$("#email").blur(function(event) {
+		if (!itBeAGoodEmail($(this).val())) {
+			$emailLabel.addClass('invalid');
+		} else {
+			$emailLabel.removeClass('invalid');
+		}
 	});
 
 	$(window).scroll(function () {
@@ -88,7 +107,6 @@ function addScrollClicks() {
 		event.preventDefault();
 		$(window).scrollTo($(".stats"), 500);
 	});		
-
 }
 
 function replaceText(words) {
@@ -121,7 +139,11 @@ function sendEmail(button) {
 	var email = $("#email").val();
 	var subject = $("#subject").val();
 	var message = $("#message").val();
-		
+	
+	if (!itBeAGoodEmail(email)) {
+		return;
+	}
+
 	// post the email 
 	$.post('/contact', 
 	{
@@ -134,7 +156,21 @@ function sendEmail(button) {
 
 }
 
+function itBeAGoodEmail(email) {
+	console.log(email);
+	var emailRegex = /[a-zA-Z0-9.+%-]+[@][a-zA-Z0-9.+%-]+[.][A-Za-z]+/
+	return email.match(emailRegex);
+}
+
 function emailSuccess() {
 	$label = $(".maillist-label-full");
 	$label.html("EmailSent");
+}
+
+function addToMailList() {
+	if (isGoodEmail($input.val())) {
+		$.post('/subscribe', {email: 'email'}, function(data, textStatus, xhr) {
+			$label.html("Well keep you updated");
+		});
+	}
 }

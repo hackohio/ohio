@@ -1,5 +1,5 @@
 require 'sinatra'
-
+require 'mail'
 
 get '/' do
   erb :index

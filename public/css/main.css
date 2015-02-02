@@ -84,6 +84,12 @@ section {
 .bold {
   font-weight: 300; }
 
+.invalid:after {
+  color: #bb0000;
+  font-weight: 200;
+  font-size: 12pt;
+  content: ' invalid email'; }
+
 section {
   position: relative;
   background-color: white; }

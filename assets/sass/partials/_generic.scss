@@ -41,6 +41,14 @@ section {
 	font-weight: 300;
 }
 
+.invalid {
+	&:after {
+		color: $red;
+		font-weight: 200;
+		font-size: 12pt;
+		content: ' invalid email';
+	}
+}
 
 section {
 	position: relative;
