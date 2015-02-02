@@ -1,0 +1,6 @@
+# Environment
+.env
+
+# Sass
+.sass-cache
+*.css.map

@@ -1,28 +1,27 @@
 require 'sinatra'
 
+class App < Sinatra::Base
+  get '/' do
+    erb :index
+  end
 
-get '/' do
-  erb :index
-end
+  post '/contact' do
 
-post '/contact' do
+    from = params[:email]
+    subj =  params[:subject]
+    cont = params[:content]
 
-  from = params[:email]
-  subj =  params[:subject]
-  cont = params[:content]
-
-  email = Mail.new do
+    email = Mail.new do
       body  cont
       from  from
       subject subj
       to    'matt.faluotico+devtest@gmail.com'
+    end
+
+    puts email.to_s
+    email.delivery_method :sendmail
+    email.deliver!
+
+    # redirect '/'
   end
-
-  puts email.to_s
-  email.delivery_method :sendmail
-  email.deliver!
-
-  # redirect '/'
 end
-
-
