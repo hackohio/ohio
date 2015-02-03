@@ -53,6 +53,9 @@ html {
 header {
   width: 100%;
   height: 75px; }
+  
+.navigationheader {
+  padding-right:20px; }
 
 .outer {
   max-width: 68em;
