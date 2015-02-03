@@ -14,8 +14,15 @@ body {
   line-height: 1;
   color: #303030; }
 
-a {
+.headerlink {
   color: #bb0000;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in }
+  
+.headerlink:hover {
+  color: #666666;
   text-decoration: none }
 
 ol, ul {
