@@ -6,7 +6,7 @@
 
 * It runs Sinatra.
 * simply run `bundle install`
-* then `ruby app`
+* then `ruby app.rb`
 
 ### Sass
 
