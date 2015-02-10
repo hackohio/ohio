@@ -28,8 +28,9 @@ $(document).ready(function() {
 	$intro = $(".intro");
 	$input = $(".maillist-input");
 	$firstSection = $("section:first-of-type");
+	$label = $(".maillist-label");
 	$emailLabel = $("#email-label");
-	var $label = $(".maillist-label");
+	$label = $(".maillist-label");
 
 	var $about = $(".about");
 
@@ -39,7 +40,6 @@ $(document).ready(function() {
 	});
 
 	$input.focus(function(event) {
-		var $label = $(".maillist-label");
 		$label.addClass('maillist-label-full');
 		$label.removeClass('maillist-label-empty');
 		$label.click(function(event) {
@@ -152,6 +152,7 @@ function sendEmail(button) {
 		content: message
 	}, function(data, textStatus, xhr) {
 		console.log("sent");
+		emailSuccess(button)
 	});
 
 }
@@ -162,15 +163,23 @@ function itBeAGoodEmail(email) {
 	return email.match(emailRegex);
 }
 
-function emailSuccess() {
-	$label = $(".maillist-label-full");
-	$label.html("EmailSent");
+function emailSuccess(button) {
+	$(button).html("Sent!");
+	$(button).unbind('click');
 }
 
 function addToMailList() {
-	if (isGoodEmail($input.val())) {
-		$.post('/subscribe', {email: 'email'}, function(data, textStatus, xhr) {
-			$label.html("Well keep you updated");
+	if (itBeAGoodEmail($input.val())) {
+		$.post('/subscribe', {email: $input.val()}, function(data, textStatus, xhr) {
+			$label.html("We'll keep you updated");
+			$label.addClass('maillist-label-empty');
+			$label.removeClass('maillist-label-full');
+			$input.val('');
+
+			setTimeout(function() {
+				$label.html("Get on the mailing list");
+			}, 4000);
+
 		});
 	}
 }
