@@ -44,7 +44,7 @@
 	background: linear-gradient(
 	  $scarlet_trans2, 
 	  $scarlet_trans2
-	), url("/images/onStage.jpg");
+	), url("/images/enterEvent.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-clip: border-box;
@@ -56,7 +56,7 @@
 	background: linear-gradient(
 	  $grey_trans, 
 	  $grey_trans
-	), url("/images/onStage.jpg");
+	), url("/images/hack2.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-clip: border-box;
@@ -186,4 +186,9 @@ input, textarea {
 .message {
 	width: 100%;
 	height: 100px;
+}
+
+
+footer {
+	text-align: center;
 }
