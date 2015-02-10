@@ -17,8 +17,18 @@ def init_mailchimp
 end
 
 def subscribe (email)
-  $mailchimp.lists.subscribe('23221b96a8', { 'email' => email})
+  
+  begin
+  $mailchimp.lists.subscribe('23221b96a8', { :email => email,
+    :update_existing => true})
+  rescue Mailchimp::ListAlreadySubscribedError
+    puts "#{email} is already on the list"
+  rescue Mailchimp::Error
+    puts "error :("
+  end
+
   puts "#{email} was subscribed to the mailing list"
+  
 end
 
 # called when server launches
