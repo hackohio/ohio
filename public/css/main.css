@@ -62,6 +62,17 @@ header {
 section {
   position: relative; }
 
+a.headerlink:link {
+  color: #bb0000;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+a.headerlink:hover {
+  color: #666666;
+  text-decoration: none; }
+
 .button {
   background-color: white;
   text-decoration: none;
@@ -520,6 +531,9 @@ svg g g rect, svg g g path {
   -webkit-transition: fill 0.2s ease-in, stroke 0.2s ease-in;
   -moz-transition: fill 0.2s ease-in, stroke 0.2s ease-in;
   transition: fill 0.2s ease-in, stroke 0.2s ease-in; }
+
+.navigationheader {
+  padding-right: 20px; }
 
 .minilogo {
   float: left;
