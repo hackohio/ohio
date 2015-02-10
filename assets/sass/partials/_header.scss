@@ -1,80 +1,62 @@
 header {
-	// margin-top: calc(100vh - 65px);
 	position: relative;
 	background-color: rgba(255,255,255,0.95);
 	height: 65px;
-
 	@include transition(box-shadow 0.2s ease-in);
-
-	ul .minilogo {
-		display: hidden;
-		opacity: 0;
-	}
 }
 
 header.fixed {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	// margin: 0;
 	z-index: 1;
 	box-shadow: 0 0px 15px 5px $grey_trans;
-
-	ul .minilogo {
-		display: block;
-		opacity: 1;
-
-			@include media($mobile) {
-			display: none;
-	}
-
-	}
 }
 
-svg g g rect, svg g g path {
-	@include transition(fill 0.2s ease-in, stroke 0.2s ease-in);
+.header-open {
+	height: 100%;
 }
 
-.navigationheader {
-  padding-right:20px; }
-
-.minilogo {
-	float: left;
-	height: 55px;
-	width: 55px;
-	line-height: 65px;
-	margin: 5px 0px 5px 5px;
-	
+.hb {
+	display: none;
 	@include media($mobile) {
-			display: none;
+		display: block;
 	}
+}
 
-	@include transition(opacity 0.2s ease-in);
+#hb {
 
-	a {
-		&:hover > svg > g > g  {
-			rect {
-				stroke: $scarlet;
-			}
+}
 
-			path {
-				stroke: $scarlet;
-			}
-
-			#Rectangle-9 {
-				fill: $scarlet;
-			}
-		}
+.hb-closed {
+	@include media($mobile) {
+		display: none;
 	}
+}
+
+.hb-open {
+		display: block;
+		float: none;
+		background-color: $white;
+		width: 100%; 
+		margin-left: 0;
+		margin-right: 0;
 }
 
 header ul li {
-	display: block;
+	display: inline;
 	float: right;
 	margin-left: 10px;
 	margin-right: 10px;
-	height: 100%;
+	height: 65px;
 	line-height: 65px;
+	text-align: center;
+
+	@include media($mobile) {
+		text-align: center;
+		display: block;
+		float: none;
+	}
 
 	a {
 
@@ -85,8 +67,8 @@ header ul li {
 		color: $grey;
 		text-decoration: none;
 
-		@include media($mobile) {
-			font-size: 12pt;
+		@include media($little-screen){
+			font-size: 14pt;
 		}
 
 		&:hover {

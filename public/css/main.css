@@ -510,9 +510,6 @@ header {
   -webkit-transition: box-shadow 0.2s ease-in;
   -moz-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in; }
-  header ul .minilogo {
-    display: hidden;
-    opacity: 0; }
 
 header.fixed {
   position: fixed;
@@ -520,47 +517,41 @@ header.fixed {
   width: 100%;
   z-index: 1;
   box-shadow: 0 0px 15px 5px rgba(102, 102, 102, 0.8); }
-  header.fixed ul .minilogo {
-    display: block;
-    opacity: 1; }
-    @media screen and (max-width: 480px) {
-      header.fixed ul .minilogo {
-        display: none; } }
 
-svg g g rect, svg g g path {
-  -webkit-transition: fill 0.2s ease-in, stroke 0.2s ease-in;
-  -moz-transition: fill 0.2s ease-in, stroke 0.2s ease-in;
-  transition: fill 0.2s ease-in, stroke 0.2s ease-in; }
+.header-open {
+  height: 100%; }
 
-.navigationheader {
-  padding-right: 20px; }
-
-.minilogo {
-  float: left;
-  height: 55px;
-  width: 55px;
-  line-height: 65px;
-  margin: 5px 0px 5px 5px;
-  -webkit-transition: opacity 0.2s ease-in;
-  -moz-transition: opacity 0.2s ease-in;
-  transition: opacity 0.2s ease-in; }
+.hb {
+  display: none; }
   @media screen and (max-width: 480px) {
-    .minilogo {
-      display: none; } }
-  .minilogo a:hover > svg > g > g rect {
-    stroke: #bb0000; }
-  .minilogo a:hover > svg > g > g path {
-    stroke: #bb0000; }
-  .minilogo a:hover > svg > g > g #Rectangle-9 {
-    fill: #bb0000; }
+    .hb {
+      display: block; } }
+
+@media screen and (max-width: 480px) {
+  .hb-closed {
+    display: none; } }
+
+.hb-open {
+  display: block;
+  float: none;
+  background-color: white;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0; }
 
 header ul li {
-  display: block;
+  display: inline;
   float: right;
   margin-left: 10px;
   margin-right: 10px;
-  height: 100%;
-  line-height: 65px; }
+  height: 65px;
+  line-height: 65px;
+  text-align: center; }
+  @media screen and (max-width: 480px) {
+    header ul li {
+      text-align: center;
+      display: block;
+      float: none; } }
   header ul li a {
     -webkit-transition: color 0.3s ease-in;
     -moz-transition: color 0.3s ease-in;
@@ -569,9 +560,9 @@ header ul li {
     font-weight: 400;
     color: #666666;
     text-decoration: none; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 900px) {
       header ul li a {
-        font-size: 12pt; } }
+        font-size: 14pt; } }
     header ul li a:hover {
       color: #bb0000; }
 

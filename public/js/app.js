@@ -56,6 +56,19 @@ $(document).ready(function() {
 
 	});
 
+	$("#hb").click(function(event) {
+		event.preventDefault();
+
+		if ($header.hasClass('header-open')) {
+
+		} else {
+			$.scrollTo($(".about"), 500);
+			$("li").addClass('hb-open');
+			$header.addClass('header-open');
+		}
+	
+	});
+
 	$("#sendit").click(function(event) {
 		event.preventDefault();
 		sendEmail(this);
@@ -90,21 +103,25 @@ $(document).ready(function() {
 function addScrollClicks() {
 	$("#contact-link").click(function(event) {
 		event.preventDefault();
+		closeHeader();
 		$.scrollTo($(".contact"), 500);
 	});
 
 	$("#about-link").click(function(event) {
 		event.preventDefault();
+		closeHeader();
 		$(window).scrollTo($(".about"), 500);
 	});
 
 	$("#events-link").click(function(event) {
 		event.preventDefault();
+		closeHeader();
 		$(window).scrollTo($(".events"), 500);
 	});	
 
 	$("#stats-link").click(function(event) {
 		event.preventDefault();
+		closeHeader();
 		$(window).scrollTo($(".stats"), 500);
 	});		
 }
@@ -182,4 +199,9 @@ function addToMailList() {
 
 		});
 	}
+}
+
+function closeHeader() {
+	$header.removeClass('header-open');
+	$("li").removeClass('hb-open');
 }
