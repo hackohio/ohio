@@ -1,12 +1,11 @@
 # OHI/O Website
-## This is the official website for the Hackathon at OSU, OHI/O
-
+## This is the official website for the Hackathon at The Ohio State University: OHI/O
 
 ### Server
 
-* It runs Sinatra.
-* simply run `bundle install`
-* then `ruby app.rb`
+* It runs [Sinatra](http://www.sinatrarb.com/)
+* Simply run `bundle install`...
+* ...then `ruby app.rb`
 
 ### Sass
 
