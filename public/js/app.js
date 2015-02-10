@@ -43,6 +43,7 @@ $(document).ready(function() {
 		$label.addClass('maillist-label-full');
 		$label.removeClass('maillist-label-empty');
 		$label.click(function(event) {
+			console.log("hi");
 			addToMailList();
 		});
 	});
@@ -168,9 +169,9 @@ function emailSuccess() {
 }
 
 function addToMailList() {
-	if (isGoodEmail($input.val())) {
-		$.post('/subscribe', {email: 'email'}, function(data, textStatus, xhr) {
-			$label.html("Well keep you updated");
+	if (itBeAGoodEmail($input.val())) {
+		$.post('/subscribe', {email: $input.val()}, function(data, textStatus, xhr) {
+			$label.html("We'll keep you updated");
 		});
 	}
 }

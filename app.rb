@@ -1,12 +1,36 @@
+# --------------------------
+# OHI/O
+# The Hackathon at Ohio State
+# Matt Faluotico
+# Kevin Payravi
+# --------------------------
+
 require 'sinatra'
 require 'mail'
+require 'mailchimp'
+
+MAILCHIMP_API_KEY = "28449532bfbee447fa34d0030504254d-us10"
+
+def init_mailchimp
+  $mailchimp = Mailchimp::API.new(MAILCHIMP_API_KEY)
+  puts 'mailchimp is good' if $mailchimp
+end
+
+def subscribe (email)
+  $mailchimp.lists.subscribe('23221b96a8', { 'email' => email})
+  puts "#{email} was subscribed to the mailing list"
+end
+
+# called when server launches
+configure do
+  init_mailchimp
+end
 
 get '/' do
   erb :index
 end
 
 post '/contact' do
-
   from = params[:email]
   subj =  params[:subject]
   cont = params[:content]
@@ -15,7 +39,7 @@ post '/contact' do
       body  cont
       from  from
       subject subj
-      to    'matt.faluotico+devtest@gmail.com'
+      to    'buckeyehackers+web@gmail.com'
   end
 
   puts email.to_s
@@ -24,8 +48,6 @@ post '/contact' do
 end
 
 post '/subscribe' do
-  
+  email = params[:email]
+  subscribe email
 end
-
-
-
