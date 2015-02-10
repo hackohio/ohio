@@ -152,6 +152,7 @@ function sendEmail(button) {
 		content: message
 	}, function(data, textStatus, xhr) {
 		console.log("sent");
+		emailSuccess(button)
 	});
 
 }
@@ -162,9 +163,9 @@ function itBeAGoodEmail(email) {
 	return email.match(emailRegex);
 }
 
-function emailSuccess() {
-	$label = $(".maillist-label-full");
-	$label.html("EmailSent");
+function emailSuccess(button) {
+	$(button).html("Sent!");
+	$(button).unbind('click');
 }
 
 function addToMailList() {
