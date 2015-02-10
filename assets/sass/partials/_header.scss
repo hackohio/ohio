@@ -35,6 +35,9 @@ svg g g rect, svg g g path {
 	@include transition(fill 0.2s ease-in, stroke 0.2s ease-in);
 }
 
+.navigationheader {
+  padding-right:20px; }
+
 .minilogo {
 	float: left;
 	height: 55px;
