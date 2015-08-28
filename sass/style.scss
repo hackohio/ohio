@@ -1,0 +1,397 @@
+.button {
+
+	display: inline-block;
+	padding: 10px 15px 10px 15px;
+	margin: 5px;
+
+	text-decoration: none;
+
+	font : {
+		size: 14pt;
+		weight: 100;
+	}
+
+	@media #{$little} {
+		font-size: 16pt;
+	}
+
+
+	&.b {
+		width: 130px;
+	}
+
+	@include transition(all 0.3s);
+
+	&.white {
+		color: $red;
+		background-color: white;
+		
+		@include boarder(white);
+
+		&:hover {
+			color: white;
+			background-color: $red;
+
+			@include boarder(white);
+		}
+	}
+
+	&.scarlet {
+		color: white;
+		background-color: $red;	
+
+		@include boarder(white);
+
+		&:hover {
+			color: $red;
+			background-color: white;
+
+			@include boarder($red);
+		}
+	}
+}
+
+p {
+	margin: 0;
+	text-align: justify;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 16pt;
+	font-weight: 200;
+	line-height: 22pt;
+}
+
+h1, h2, h3 {
+	margin: 0;
+		
+	margin-bottom: 10px;	
+
+	@media #{$little} {
+		margin-bottom: 20px;
+	}
+
+}
+
+h1 {
+
+	font-weight: 800;
+	font-size: 14pt;
+	letter-spacing: 1px;
+
+	@media #{$little}  {
+		font-size: 32pt;
+	}
+
+	&.white {
+		color: white;
+	}
+}
+
+h2 {
+	font-weight: 200;
+	letter-spacing: 1px;
+
+	@media #{$little} {
+		font-size: 32pt;
+	}
+
+	&.white {
+		color: white;
+	}
+}
+
+nav {
+
+	@include transition(all 0.5s);
+
+	z-index: 1000;
+
+	$h: 40px;
+
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	height: $h;
+	// max-height: 100%;
+	top: 0;
+	left: 0;
+
+	overflow: hidden;
+
+	border-bottom: solid #E9E9E9 1px;
+
+	ul {
+		// display: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		list-style: none;
+		line-height: $h;
+	}
+
+	a {
+		color: $red;
+		text-decoration: none;
+		font-size: 16pt;
+		font-weight: 200;
+
+		&:hover {
+			border-bottom: {
+				width: 2px;
+				style: solid;
+				color: $red;
+			}
+		}
+	}
+
+	.menu-open {
+		height: 100%;
+		line-height: $h;
+	}
+
+	&.open {
+		
+		ul {
+			display: block;
+		}
+
+		height: 100%;
+	}
+
+	@media #{$little} {
+
+		text-align: center;
+
+		$h: 60px;
+
+		line-height: $h;
+		height: $h !important;
+
+		.menu-open {
+			display: none;
+		}
+
+		li {
+			display: inline-block;
+			margin-right: 15px;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+
+.intro {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	display: table;
+	text-align: center;
+	padding-top: 20px;
+
+	.sd {	
+
+		$h: 60px;
+
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: $h;
+		line-height: $h;
+		text-align: center;
+		color: $red;
+		font-weight: 200;
+		font-size: 14pt;
+	}
+}
+
+.intro-content {
+	display: table-cell;
+	width: 45%;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.logo {
+	width: auto;
+	height: 20%;
+	margin: 0;
+	margin-bottom: 20px;
+
+	@media #{$little} {
+		height: 40%;
+	}
+
+	@media #{$desktop} {
+		height: 50%;
+	}
+
+}
+
+.section-header {
+	height: 100px;
+	position: relative;
+
+	.section-title {
+		text-align: center;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+	}
+
+	.section-subtitle {
+
+	}
+}
+
+.rb {
+	background-color: $red;
+	color: white;
+}
+
+.s {
+	background-color: $red;
+}
+
+.g {
+	background-color: $grey;
+}
+
+.w {
+	background-color: white;
+}
+
+.down-house {
+	display: block;
+	height: 150px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+
+	&.s {
+		background-color: $red;
+	}
+
+	&.w {
+		background-color: white;
+	}
+}
+
+.downr {
+		position: absolute;
+    width: 50%;
+    height: 100px;
+    left: 50%;
+    top: 0px;
+
+    &.w {
+	    background: linear-gradient(to right bottom, white 50%, transparent 50%)
+    }
+
+   	&.s {
+	    background: linear-gradient(to right bottom, $red 50%, transparent 50%)
+   	}
+}
+
+.downl {
+		position: absolute;
+    width: 50%;
+    height: 100px;
+    left: 0;
+    top: 0px;
+
+	  &.w {
+	    background: linear-gradient(to left bottom, white 50%, transparent 50%);
+	  }
+
+	 	&.s {
+	    background: linear-gradient(to left bottom, $red 50%, transparent 50%);
+	 	}
+}
+
+.Q {
+	
+	.q {
+		margin: 0;
+		font-size: 16pt;
+		font-weight: 600;
+		color: white;
+		text-decoration: underline;
+	}
+}
+
+.i.large {
+	background: url('../img/intro.jpg');
+	// background-size: cover; => This results in lag
+	background-position: center;
+	height: 400px;
+}
+
+
+.g {
+	background-color: $grey;
+	color: white;
+}
+
+.judge {
+	height: 250px;
+	text-align: center;
+
+	h4, h5 {
+		margin: 0;
+		text-align: center;
+	}
+
+	h4 {
+		line-height: 30px;
+		font-size: 14pt;
+		font-weight: 500;
+	}
+
+	h5 {
+		line-height: 20px;
+		font-size: 12pt;
+		font-weight: 200;
+	}
+
+
+
+	.body {
+		margin: auto;
+		background-color: white;
+		border: solid $black 1px;
+		max-width: 200px;
+	}
+}
+
+.judge-img {
+	display: block;
+	height: 200px;
+	width: 100%;
+	background-position: center;
+}
+
+.judge-tag {
+	height: 50px;
+	background-color: $black;
+	color: white;	
+}
+
+
+footer {
+	margin-top: 100px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background-color: $red;
+	color: white;	
+	p {text-align: center};
+}
+
+img {
+	border: 0;
+}
