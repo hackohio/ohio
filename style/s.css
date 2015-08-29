@@ -397,4 +397,9 @@ img {
   .sponsor:a:hover {
     border: 0; }
 
+.fa {
+  color: #bb0000;
+  font-size: 32pt;
+  margin: 15px; }
+
 /*# sourceMappingURL=s.css.map */
