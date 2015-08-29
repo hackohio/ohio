@@ -1,0 +1,11 @@
+<div class="section-header">
+	<h1 class="section-title red">Hype Events</h1>
+</div>
+<div class="content">
+	<!-- ng-repeat -->
+	<div class="e" ng-repeat="event in events">
+		<h3 class="event"><span class="event-date">{{event.date}}</span> | {{event.name}}</h3>
+		<h4>Hosted by <a href="{{event.hostUrl}}">Mobile App Club</a></h4>
+		<p>{{event.desc}}</p>
+	</div>
+</div>

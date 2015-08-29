@@ -53,7 +53,6 @@
 
 p {
 	margin: 0;
-	text-align: justify;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-size: 16pt;
@@ -136,6 +135,7 @@ nav {
 		text-decoration: none;
 		font-size: 16pt;
 		font-weight: 200;
+		cursor: pointer;
 
 		&:hover {
 			border-bottom: {
@@ -323,6 +323,11 @@ nav {
 		color: white;
 		text-decoration: underline;
 	}
+
+	.a {
+		font-size: 14pt;
+		line-height: 16pt;
+	}
 }
 
 .i.large {
@@ -341,6 +346,7 @@ nav {
 .judge {
 	height: 250px;
 	text-align: center;
+	margin-bottom: 15px;
 
 	h4, h5 {
 		margin: 0;
@@ -358,8 +364,6 @@ nav {
 		font-size: 12pt;
 		font-weight: 200;
 	}
-
-
 
 	.body {
 		margin: auto;
@@ -394,4 +398,42 @@ footer {
 
 img {
 	border: 0;
+}
+
+.e {
+	margin-bottom: 15px;
+	
+	h4 {
+		margin: 0;
+		color: $grey;
+
+		a {
+			color:$grey;
+		}
+	}
+
+	p {
+		font-size: 14pt;
+	}
+
+	.event {
+		font-size: 16pt;
+		color: $black;
+		margin-bottom: 0;
+		.event-date {
+			color: $red;
+		}
+	}
+}
+
+
+.sponsor {
+
+	&:a {
+		&:hover {
+			border: 0;
+		}
+	}
+
+	height: auto;
 }

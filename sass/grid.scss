@@ -28,6 +28,7 @@ body {
 	width: 95%;
 	max-width: 768px;
 	margin: 0 auto;
+	padding-bottom: 25px;
 
 	@media #{$little} {
 		width: 80%;

@@ -7,7 +7,8 @@ body {
   overflow: auto;
   width: 95%;
   max-width: 768px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 25px; }
   @media (min-width: 550px) {
     .content {
       width: 80%; } }
@@ -139,7 +140,6 @@ body {
 
 p {
   margin: 0;
-  text-align: justify;
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 16pt;
@@ -195,7 +195,8 @@ nav {
     color: #bb0000;
     text-decoration: none;
     font-size: 16pt;
-    font-weight: 200; }
+    font-weight: 200;
+    cursor: pointer; }
     nav a:hover {
       border-bottom-width: 2px;
       border-bottom-style: solid;
@@ -318,6 +319,9 @@ nav {
   font-weight: 600;
   color: white;
   text-decoration: underline; }
+.Q .a {
+  font-size: 14pt;
+  line-height: 16pt; }
 
 .i.large {
   background: url("../img/intro.jpg");
@@ -330,7 +334,8 @@ nav {
 
 .judge {
   height: 250px;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 15px; }
   .judge h4, .judge h5 {
     margin: 0;
     text-align: center; }
@@ -370,5 +375,26 @@ footer {
 
 img {
   border: 0; }
+
+.e {
+  margin-bottom: 15px; }
+  .e h4 {
+    margin: 0;
+    color: #666666; }
+    .e h4 a {
+      color: #666666; }
+  .e p {
+    font-size: 14pt; }
+  .e .event {
+    font-size: 16pt;
+    color: #333333;
+    margin-bottom: 0; }
+    .e .event .event-date {
+      color: #bb0000; }
+
+.sponsor {
+  height: auto; }
+  .sponsor:a:hover {
+    border: 0; }
 
 /*# sourceMappingURL=s.css.map */
