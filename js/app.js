@@ -1,4 +1,4 @@
-var app = angular.module('hack', []);
+var app = angular.module('hack', ['duScroll']);
 
 var views = {
 	faq : 'repeat/faq.html',
@@ -158,8 +158,11 @@ var gReader = function($q) {
 	return res;
 }
 
-var Controller = function($scope, Reader) {
+var Controller = function($scope, $document, Reader) {
 		
+	$scope.scrollIt = function(ID) {
+		$document.scrollToElementAnimated(document.getElementById(ID));
+	}	
 
 	Reader.faq().then(
 		function(faqs) {	$scope.faqs = faqs;	},
@@ -181,4 +184,4 @@ var Controller = function($scope, Reader) {
 }
 
 app.factory('Reader', gReader);
-app.controller('Controller', ['$scope', 'Reader', Controller]);
+app.controller('Controller', ['$scope', '$document', 'Reader', Controller]);
