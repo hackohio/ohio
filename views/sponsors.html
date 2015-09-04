@@ -7,7 +7,11 @@
 		<p>Interested in sponosorship? <a href="mailto:sponsorship@buckhacks.org">Get In Touch</a> or <a href="http://go.osu.edu/sponsorOHIO">Learn more</a>.</p>
 	</div>
 	<div class="sponsors df">
-		<a ng-repeat="sponsor in sponsors" class="fm Q" href="{{sponsor.website}}">
+		<a 
+		ng-repeat="sponsor in sponsors" 
+		href="{{sponsor.website}}"
+		ng-class="{ff : sponsor.size == 'Y', fm : sponsor.size == 'N'}"
+		>
 			<img style="width: 100%;" src="{{sponsor.img}}" alt="{{sponsors.name}}">
 		</a>
 	</div>

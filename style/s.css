@@ -64,6 +64,10 @@ body {
     .fs {
       width: 30%; } }
 
+.ff {
+  width: 100%;
+  margin: 5px; }
+
 .fm {
   width: 100%;
   margin: 10px;

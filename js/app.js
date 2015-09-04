@@ -99,18 +99,19 @@ var gReader = function($q) {
 		return $q(function(resolve, reject) {
 			sheetrock({
 				url: urls.sponsors,
-				query: 'SELECT A,B,C',
+				query: 'SELECT A,B,C, D',
 				callback: function(error, options, response) {
 					if (!error) {
 						var rows = response.rows;
-						var NAME = 0, IMG = 1, WEBSITE = 2;
+						var NAME = 0, IMG = 1, WEBSITE = 2, SIZE = 3;
 						var sponsors = [];
 
 						for (var i = 1; i < rows.length; i++) {
 							sponsors.push({
 								name: rows[i].cellsArray[NAME],
 								img: rows[i].cellsArray[IMG],
-								website: rows[i].cellsArray[WEBSITE]
+								website: rows[i].cellsArray[WEBSITE],
+								size: rows[i].cellsArray[SIZE]
 							});
 						}
 
