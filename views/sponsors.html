@@ -6,7 +6,9 @@
 		<p>Without our sponsors, OHI/O would be nonexistant. By joining OHI/O, you'll be in touch with some of the best developers in the state. The team will ensure that you have an incredible experience.</p>
 		<p>Interested in sponosorship? <a href="mailto:sponsorship@buckhacks.org">Get In Touch</a> or <a href="http://go.osu.edu/sponsorOHIO">Learn more</a>.</p>
 	</div>
-	<div class="sponsors df" ng-repeat="sponsor in sponsors">
-		<a class="sponsor "href="{{sponsor.website}}"><img class="fs" src="{{sponsor.img}}" alt="{{sponsors.name}}"></a>
+	<div class="sponsors df">
+		<a ng-repeat="sponsor in sponsors" class="fm Q" href="{{sponsor.website}}">
+			<img style="width: 100%;" src="{{sponsor.img}}" alt="{{sponsors.name}}">
+		</a>
 	</div>
 </div>
