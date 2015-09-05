@@ -8,7 +8,7 @@ var views = {
 };
 
 
-(function() {
+(function load() {
 	var nav = document.getElementById('nav');
 	var mb = document.getElementById('mb');
 	mb.onclick = function() {
@@ -19,6 +19,10 @@ var views = {
 		}
 	}
 })();
+
+var initScroll = function initScroll() {
+	console.log("scrollingLoaded");
+}
 
 var gReader = function($q) {
 
@@ -99,18 +103,19 @@ var gReader = function($q) {
 		return $q(function(resolve, reject) {
 			sheetrock({
 				url: urls.sponsors,
-				query: 'SELECT A,B,C',
+				query: 'SELECT A,B,C, D',
 				callback: function(error, options, response) {
 					if (!error) {
 						var rows = response.rows;
-						var NAME = 0, IMG = 1, WEBSITE = 2;
+						var NAME = 0, IMG = 1, WEBSITE = 2, SIZE = 3;
 						var sponsors = [];
 
 						for (var i = 1; i < rows.length; i++) {
 							sponsors.push({
 								name: rows[i].cellsArray[NAME],
 								img: rows[i].cellsArray[IMG],
-								website: rows[i].cellsArray[WEBSITE]
+								website: rows[i].cellsArray[WEBSITE],
+								size: rows[i].cellsArray[SIZE]
 							});
 						}
 
@@ -164,6 +169,22 @@ var Controller = function($scope, $document, Reader) {
 		$document.scrollToElementAnimated(document.getElementById(ID));
 	}	
 
+	$scope.initStats = function() {
+		var height = document.getElementById('stats').offsetTop + 400;
+		var started = false;
+		var trigger = function() {
+			if (window.pageYOffset >  height) {
+				window.removeEventListener('scroll', trigger, false);
+				
+				for (var i = 0; i<=8; i++) {
+					countUp('n' + i).start();
+				}
+			}
+		}
+
+		window.addEventListener('scroll', trigger, false);
+	}
+
 	Reader.faq().then(
 		function(faqs) {	$scope.faqs = faqs;	},
 		function(error) {	console.log("faq", error);	}
@@ -185,3 +206,13 @@ var Controller = function($scope, $document, Reader) {
 
 app.factory('Reader', gReader);
 app.controller('Controller', ['$scope', '$document', 'Reader', Controller]);
+
+
+function countUp(id) {
+	var element = document.getElementById(id);
+	var limit = parseFloat(element.dataset.number); 
+	var suffix = element.dataset.suffix || "";
+	var prefix = element.dataset.prefix || "";
+	var counter = new CountUp(id, 0, limit, 0, 2, {suffix: suffix, prefix: prefix});
+	return counter;
+}

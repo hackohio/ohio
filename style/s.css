@@ -64,6 +64,10 @@ body {
     .fs {
       width: 30%; } }
 
+.ff {
+  width: 100%;
+  margin: 5px; }
+
 .fm {
   width: 100%;
   margin: 10px;
@@ -82,7 +86,8 @@ body {
 .number {
   display: block;
   font-size: 28pt;
-  font-weight: 200; }
+  font-weight: 200;
+  height: 45px; }
 
 .units {
   display: block;
