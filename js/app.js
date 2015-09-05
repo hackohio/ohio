@@ -172,14 +172,17 @@ var Controller = function($scope, $document, Reader) {
 	$scope.initStats = function() {
 		var height = document.getElementById('stats').offsetTop + 400;
 		var started = false;
-		window.onscroll = function trigger() {
-			if (window.pageYOffset >  height && !started) {
-				started = true;
+		var trigger = function() {
+			if (window.pageYOffset >  height) {
+				window.removeEventListener('scroll', trigger, false);
+				
 				for (var i = 0; i<=8; i++) {
 					countUp('n' + i).start();
 				}
 			}
 		}
+
+		window.addEventListener('scroll', trigger, false);
 	}
 
 	Reader.faq().then(
