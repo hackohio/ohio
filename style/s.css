@@ -86,7 +86,8 @@ body {
 .number {
   display: block;
   font-size: 28pt;
-  font-weight: 200; }
+  font-weight: 200;
+  height: 45px; }
 
 .units {
   display: block;

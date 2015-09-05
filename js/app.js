@@ -8,7 +8,7 @@ var views = {
 };
 
 
-(function() {
+(function load() {
 	var nav = document.getElementById('nav');
 	var mb = document.getElementById('mb');
 	mb.onclick = function() {
@@ -19,6 +19,10 @@ var views = {
 		}
 	}
 })();
+
+var initScroll = function initScroll() {
+	console.log("scrollingLoaded");
+}
 
 var gReader = function($q) {
 
@@ -165,6 +169,19 @@ var Controller = function($scope, $document, Reader) {
 		$document.scrollToElementAnimated(document.getElementById(ID));
 	}	
 
+	$scope.initStats = function() {
+		var height = document.getElementById('stats').offsetTop + 400;
+		var started = false;
+		window.onscroll = function trigger() {
+			if (window.pageYOffset >  height && !started) {
+				started = true;
+				for (var i = 0; i<=8; i++) {
+					countUp('n' + i).start();
+				}
+			}
+		}
+	}
+
 	Reader.faq().then(
 		function(faqs) {	$scope.faqs = faqs;	},
 		function(error) {	console.log("faq", error);	}
@@ -186,3 +203,13 @@ var Controller = function($scope, $document, Reader) {
 
 app.factory('Reader', gReader);
 app.controller('Controller', ['$scope', '$document', 'Reader', Controller]);
+
+
+function countUp(id) {
+	var element = document.getElementById(id);
+	var limit = parseFloat(element.dataset.number); 
+	var suffix = element.dataset.suffix || "";
+	var prefix = element.dataset.prefix || "";
+	var counter = new CountUp(id, 0, limit, 0, 2, {suffix: suffix, prefix: prefix});
+	return counter;
+}
