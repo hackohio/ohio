@@ -11,6 +11,7 @@
 		ng-repeat="sponsor in sponsors" 
 		href="{{sponsor.website}}"
 		ng-class="{ff : sponsor.size == 'Y', fm : sponsor.size == 'N'}"
+		style="padding:8px;"
 		>
 			<img style="width: 100%;" src="{{sponsor.img}}" alt="{{sponsors.name}}">
 		</a>
