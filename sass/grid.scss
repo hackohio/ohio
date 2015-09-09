@@ -122,3 +122,41 @@ body {
 .center {
 	text-align: center;
 }
+
+
+.sp-s, .sp-m, .sp-l {
+	display: inline-block;	
+	padding: 5%;
+	// float: left;
+	width: 90%;
+	border: 0;
+
+
+	&:hover {
+		border: 0 !important;
+	}
+}
+
+.sp-s {
+	height: 80px;
+
+	@media #{$little} {
+		width: 23.33333333333%;
+	}
+}
+
+.sp-m {
+
+	height: 150px;
+
+	@media #{$little} {
+		width: 40%;
+	}
+}
+
+
+.sp-l {
+	@media #{$little} {
+		width: 90%;
+	}
+}

@@ -231,6 +231,11 @@ nav {
 		height: 50%;
 	}
 
+	@include transition(all 0.2s);
+
+	&:hover {
+		transform: scale(1.1,1.1);
+	}
 }
 
 .section-header {
@@ -428,14 +433,10 @@ img {
 
 
 .sponsor {
-
-	&:a {
-		&:hover {
-			border: 0;
-		}
+	@include transition(all 0.2s);
+	&:hover {
+		transform: scale(1.1,1.1);
 	}
-
-	height: auto;
 }
 
 .fa {
