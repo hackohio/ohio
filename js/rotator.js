@@ -1,5 +1,18 @@
 $(document).ready(function(){
-  var rotators = $('.rotator');
+  if ( validBrowser() ) {
+    initRotator();
+  } else {
+    safari();
+  }
+});
+
+
+function validBrowser() {
+  return !Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
+}
+
+function initRotator() {
+    var rotators = $('.rotator');
   var length = rotators.length;
   var index = 0;
   var rb = $('.rotate-box');
@@ -42,4 +55,17 @@ $(document).ready(function(){
       $(obj).html(a.join(''));
     });
   }
-});
+}
+
+
+function safari() {
+  var rotators = $('.rotator');
+  rotators.css('opacity', '0');
+  $(rotators.get(0)).css('opacity', '1');
+  var r = rotators.get(0);
+  var mt = $('.master-title');
+  var mtw = mt.width();
+  mt.css('-webkit-transition', '0');
+  var width = mtw + $(r).width();
+  mt.width(width + "px");
+}
