@@ -1,15 +1,11 @@
 $(document).ready(function(){
-  if ( validBrowser() ) {
+  if (navigator.userAgent.indexOf('Chrome') != -1) {
     initRotator();
   } else {
     safari();
   }
 });
 
-
-function validBrowser() {
-  return !Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
-}
 
 function initRotator() {
     var rotators = $('.rotator');
@@ -43,6 +39,7 @@ function initRotator() {
   }
 
   explode(rotators);
+  rotate();
   setInterval(rotate, 3000);
 
   function explode(objs) {
