@@ -1,0 +1,73 @@
+@include keyframes(in) {
+	from { 
+	   @include transform(translate(0,30px) rotateX(90deg));
+	   opacity: 0;
+	 }
+
+	 to { 
+	   @include transform(translate(0,0) rotateX(0deg));
+	   opacity: 1;
+	 }
+}
+
+@include keyframes(out) {
+	  
+  0% { 
+    @include transform(translate(0,0) rotateX(0deg));
+    opacity: 1;
+  }
+  
+  15% { 
+    @include transform(translate(0,5px) rotateX(30deg));
+    opacity: 1;
+  }
+
+	100% { 
+    @include transform(translate(0,-30px) rotateX(-90deg));
+    opacity: 0;
+	}
+}
+
+.rotate-element {
+  opacity: 0;
+}
+
+.rotate-box {
+  position: relative;
+  display: inline-block;
+  height: 14pt;
+
+  @media #{$little}  {
+		height: 32pt;
+	}
+}
+
+.rotator {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.fly-in {
+	@include animation(in);
+	@include animation-name(in);
+	@include animation-duration(0.8s);
+	@include animation-fill-mode(forwards);
+}
+
+.fly-out {
+	@include animation(out);
+	@include animation-name(out);
+	@include animation-duration(0.7s);
+	@include animation-fill-mode(forwards);
+}
+
+.master-title {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: left;
+
+	@include transition(all 0.8s);
+	@include transition-delay(0.3s);
+}
