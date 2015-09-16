@@ -1,28 +1,28 @@
 @include keyframes(in) {
-	from { 
+	from {
 	   @include transform(translate(0,30px) rotateX(90deg));
 	   opacity: 0;
 	 }
 
-	 to { 
+	 to {
 	   @include transform(translate(0,0) rotateX(0deg));
 	   opacity: 1;
 	 }
 }
 
 @include keyframes(out) {
-	  
-  0% { 
+
+  0% {
     @include transform(translate(0,0) rotateX(0deg));
     opacity: 1;
   }
-  
-  15% { 
+
+  15% {
     @include transform(translate(0,5px) rotateX(30deg));
     opacity: 1;
   }
 
-	100% { 
+	100% {
     @include transform(translate(0,-30px) rotateX(-90deg));
     opacity: 0;
 	}
@@ -46,7 +46,7 @@
   height: 100%;
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: -3px;
 }
 
 .fly-in {
