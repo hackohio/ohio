@@ -1,0 +1,17 @@
+<div class="section-header">
+	<h1 class="section-title red">Timeline</h1>
+</div>
+<div class="content">
+	<timeline>
+	    <timeline-event ng-repeat="event in timeline">
+	      <timeline-badge class="info">
+	      </timeline-badge>
+	      <timeline-panel >
+	        <timeline-heading>
+	          <h4>{{event.name}}</h4>
+	        </timeline-heading>
+	        <p>{{event.desc}}</p>
+	      </timeline-panel>
+	    </timeline-event>
+	  </timeline>
+</div>
