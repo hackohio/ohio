@@ -4,7 +4,7 @@
 <div class="content">
 	<timeline>
 	    <timeline-event ng-repeat="event in timeline">
-	      <timeline-badge ></timeline-badge>
+	      <timeline-badge class="{{event.type}}"></timeline-badge>
 	      <timeline-panel >
 	        <timeline-heading>
 	          <h4>{{event.name}}</h4>

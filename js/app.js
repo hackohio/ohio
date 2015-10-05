@@ -165,19 +165,30 @@ var gReader = function($q) {
 		return $q(function(resolve, reject) {
 			sheetrock({
 				url: urls.timeline,
-				query: 'SELECT A,B,C',
+				query: 'SELECT A,B,C, D',
 				callback: function(error, options, response) {
 					if (!error) {
 						var rows = response.rows;
-						var TIME = 0, NAME = 1, DESC = 2;
+						var TIME = 0, NAME = 1, DESC = 2, TYPE = 3;
 						var timeline = [];
 
 						for (var i = 1; i < rows.length; i++) {
 
+							var type = "";
+							switch (rows[i].cellsArray[TYPE]) {
+								case "0" : type = "basic"; break;
+								case "1" : type = "food"; break;
+								case "2" : type = "admin"; break;
+								case "3" : type = "talk"; break;
+								default: type="basic"; break;
+							}
+
+
 							timeline.push({
 								time: rows[i].cellsArray[TIME],
 								name: rows[i].cellsArray[NAME],
-								desc: rows[i].cellsArray[DESC]
+								desc: rows[i].cellsArray[DESC],
+								type: type
 							});
 						}
 

@@ -26,12 +26,15 @@
       padding: 0.8em 1em;
       margin: 0; }
   .timeline li timeline-badge.food {
-    background-color: #2e6da4 !important; 
+    background-color: #00D95A !important; 
+  }
+  .timeline li timeline-badge.basic {
+    background-color: rgb(187,0,0) !important; 
   }
   .timeline li timeline-badge.talk {
-    background-color: #3f903f !important; }
+    background-color: #00D95A !important; }
   .timeline li timeline-badge.admin {
-    background-color: #f0ad4e !important; }
+    background-color: #222222 !important; }
   .timeline li .timeline-title {
     margin-top: 0; }
   .timeline li timeline-panel > * {
