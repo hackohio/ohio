@@ -1,4 +1,4 @@
-var app = angular.module('hack', ['duScroll']);
+var app = angular.module('hack', ['duScroll', 'angular-timeline']);
 
 var views = {
 	faq : 'repeat/faq.html',
