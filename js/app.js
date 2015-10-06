@@ -1,4 +1,4 @@
-var app = angular.module('hack', ['duScroll']);
+var app = angular.module('hack', ['duScroll', 'angular-timeline']);
 
 var views = {
 	faq : 'repeat/faq.html',
@@ -30,7 +30,8 @@ var gReader = function($q) {
 		faq: 'https://docs.google.com/spreadsheets/d/1QDJP4So8Tz8z1DF9YtOuSq78OyQ6qAw5A9PB3MWZUqY/edit#gid=0',
 		judges: 'https://docs.google.com/spreadsheets/d/13KQCh_nSdkj0yTnQMDa9SvwVjmMJgPgUz-vLxcHY4-o/edit#gid=0',
 		sponsors: 'https://docs.google.com/spreadsheets/d/1jOI_cv9HSmby8pUB5tnu0J_mX684enJ0j0kN16vz6lg/edit#gid=0',
-		events: 'https://docs.google.com/spreadsheets/d/1GHVNdyb1WzbasZSJzmo1q7LHEVGM0VnMSXTLeQhr-RA/edit#gid=0'
+		events: 'https://docs.google.com/spreadsheets/d/1GHVNdyb1WzbasZSJzmo1q7LHEVGM0VnMSXTLeQhr-RA/edit#gid=0',
+		timeline: 'https://docs.google.com/spreadsheets/d/1O3hqDJHbajSxT0R0eY-hecGui5JcmKmHAA5NmdiDFgI/edit#gid=0'
 	};
 
 	var res = {};
@@ -160,6 +161,47 @@ var gReader = function($q) {
 		});
 	}
 
+	res.timeline = function() {
+		return $q(function(resolve, reject) {
+			sheetrock({
+				url: urls.timeline,
+				query: 'SELECT A,B,C, D',
+				callback: function(error, options, response) {
+					if (!error) {
+						var rows = response.rows;
+						var TIME = 0, NAME = 1, DESC = 2, TYPE = 3;
+						var timeline = [];
+
+						for (var i = 1; i < rows.length; i++) {
+
+							var type = "";
+							switch (rows[i].cellsArray[TYPE]) {
+								case "0" : type = "basic"; break;
+								case "1" : type = "food"; break;
+								case "2" : type = "admin"; break;
+								case "3" : type = "talk"; break;
+								default: type="basic"; break;
+							}
+
+
+							timeline.push({
+								time: rows[i].cellsArray[TIME],
+								name: rows[i].cellsArray[NAME],
+								desc: rows[i].cellsArray[DESC],
+								type: type
+							});
+						}
+
+						resolve(timeline);
+
+					} else {
+						reject(error);
+					}
+				}
+			});
+		});
+	}
+
 	return res;
 }
 
@@ -200,6 +242,10 @@ var Controller = function($scope, $document, Reader) {
 	Reader.judges().then(
 		function(judges) { $scope.judges = judges; },
 		function(error) {	console.log("judges", error);	}
+	);
+	Reader.timeline().then(
+		function(timeline) { $scope.timeline = timeline; },
+		function(error) { console.log("timeline", error); }
 	);
 
 }

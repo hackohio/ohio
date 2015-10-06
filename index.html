@@ -22,6 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
 	<link rel="stylesheet" type="text/css" href="style/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="style/s.css">
+	<link rel="stylesheet" type="text/css" href="style/timeline-osu.css">
 
 </head>
 <body ng-app='hack' ng-controller='Controller'>
@@ -33,6 +34,7 @@
 				<li><a ng-click="scrollIt('about')">About</a></li>
 				<li><a ng-click="scrollIt('events')">Events</a></li>
 				<li><a ng-click="scrollIt('faq')">FAQ</a></li>
+				<li><a ng-click="scrollIt('timeline')">Timeline</a></li>
 				<li><a ng-click="scrollIt('stats')">History</a></li>
 				<li><a ng-click="scrollIt('sponsors')">Sponsors</a></li>
 			</ul>
@@ -74,6 +76,7 @@
 	<section id="about" 	ng-include 	src="'views/about.html'"></section>
 	<section id="events" 	ng-include 	src="'views/events.html'"></section>
 	<section id="faq" 		ng-include 	src="'views/faq.html'"></section>
+	<section id="timeline"ng-include 	src="'views/timeline.html'"></section>
 	<section id="stats"		ng-include 	src="'views/stats.html'" onload="initStats()"></section>
 	<section id="sponsors" ng-include src="'views/sponsors.html'" ></section>
 
@@ -86,6 +89,7 @@
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
 	<script src="bower_components/countUp.js/countUp.js"></script>
+	<script src="bower_components/angular-timeline/dist/angular-timeline.js"></script>
 	<script src="js/sheetrock.min.js"></script>
 	<script src="js/app.js"></script>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>

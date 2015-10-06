@@ -1,6 +1,6 @@
 {
   "name": "angular-scroll",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "main": "angular-scroll.js",
   "ignore": [
     "**/.*",
@@ -22,14 +22,14 @@
     "angular": "^1.2.16"
   },
   "homepage": "https://github.com/oblador/angular-scroll",
-  "_release": "0.7.2",
+  "_release": "0.7.3",
   "_resolution": {
     "type": "version",
-    "tag": "v0.7.2",
-    "commit": "da240fd487614143f4a2efda1c58f339948f9380"
+    "tag": "v0.7.3",
+    "commit": "f9b70c4341f76cec510e4c5843fcf52e05b6d1b5"
   },
   "_source": "git://github.com/oblador/angular-scroll.git",
-  "_target": "~0.7.2",
+  "_target": "~0.7.3",
   "_originalSource": "angular-scroll",
   "_direct": true
 }
