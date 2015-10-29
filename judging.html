@@ -1,0 +1,77 @@
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	
+		//From http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+		function shuffle(array) {
+	  var currentIndex = array.length, temporaryValue, randomIndex ;
+
+	  // While there remain elements to shuffle...
+	  while (0 !== currentIndex) {
+
+	    // Pick a remaining element...
+	    randomIndex = Math.floor(Math.random() * currentIndex);
+	    currentIndex -= 1;
+
+	    // And swap it with the current element.
+	    temporaryValue = array[currentIndex];
+	    array[currentIndex] = array[randomIndex];
+	    array[randomIndex] = temporaryValue;
+	  }
+
+	  return array;
+	}
+		
+		function compute() {
+			var judges = $("#judges").val().trim().split("\n");
+			console.log(judges)
+			var teams = $("#teams").val().trim().split("\n");
+			console.log(teams)
+			var times = parseInt($("#times").val());
+			console.log(times)
+			
+			var assignments = [];
+			for (var i = 0; i < times; i++) {
+				assignments = assignments.concat(teams);
+			}
+			console.log(assignments);
+			assignments = shuffle(assignments);
+			console.log(assignments);
+			
+			for (judge in judges){
+  			for (var i = 0; i < times; i++) {				
+					$("#assignments").append(judges[judge] + "\t" + assignments.pop() + "\n");
+				}
+			}
+		}
+		
+	</script>
+	<style type="text/css">
+		
+	body {
+		font-size:13pt;
+		font-family:monospace;
+	}
+  	textarea {
+  		width:25%;
+			height:80%;
+			margin:10px;
+			float:left;
+  	}
+			
+		input{
+			font-size:24pt;
+			padding:8px;
+		}
+	</style>
+</head>
+<body>
+	Enter team list and judges list (separated by newlines, paste from Google Sheets) and then hit ASSIGN<br />
+	Each team needs to be seen by <input id="times" type="number" min="1" max="50"> judges.<br />
+	<input type="button" value="ASSIGN" onclick="compute()"><br />
+	<textarea id="teams" placeholder="teams"></textarea>
+	<textarea id="judges" placeholder="judges"></textarea>
+	<textarea id="assignments" placeholder="assignments"></textarea>
+</body>
+</html>
