@@ -16,7 +16,7 @@ $font: 'proximanova', Proxima Nova, Helvetica, Sans-Serif;
 	}
 }
 
-body {	
+body {
 	margin: 0;
 	font-family: 'proximanova', Proxima Nova, Helvetica, Sans-Serif;
 	color: $black;
@@ -64,7 +64,7 @@ body {
 	float: left;
 
 	@include flex-grow(1);
-	
+
 	height: 100px;
 
 	@media #{$little} {
@@ -125,7 +125,7 @@ body {
 
 
 .sp-s, .sp-m, .sp-l {
-	display: inline-block;	
+	display: inline-block;
 	padding: 5%;
 	// float: left;
 	width: 90%;
@@ -140,14 +140,21 @@ body {
 .sp-s {
 	height: 80px;
 
+	@media #{$mobile} {
+		height: initial;
+	}
+
 	@media #{$little} {
 		width: 23.33333333333%;
 	}
 }
 
 .sp-m {
-
 	height: 150px;
+
+	@media #{$mobile} {
+		height: initial;
+	}
 
 	@media #{$little} {
 		width: 40%;
