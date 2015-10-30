@@ -20,17 +20,18 @@ function initRotator() {
     var c = rotators.get(index);
     index++;
     if (index == length) { index = 0; }
-    
+
     var r = rotators.get(index);
-    var width = mtw + $(r).width();    
+    var width = mtw + $(r).width();
     mt.width(width + "px");
+    mt.css('right', $(r).width() / 2 + "px");
 
     $(r).children().each(function(l, child) {
       setTimeout(function() {
         $(child).addClass('fly-in').removeClass('fly-out');
       }, 20 + (30 * l));
     });
-    
+
     $(c).children().each(function(l, child) {
       setTimeout(function() {
         $(child).addClass('fly-out').removeClass('fly-in');
