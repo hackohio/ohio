@@ -22,28 +22,38 @@
 
 	  return array;
 	}
+	
+	function nestedEmptyArray(arr) {
+		var r = new Array(arr.length);
+		for (var a in arr){
+			r[arr[a]] = [];
+		}
+		return r;
+	}
 		
 		function compute() {
 			var judges = $("#judges").val().trim().split("\n");
-			console.log(judges)
 			var teams = $("#teams").val().trim().split("\n");
-			console.log(teams)
 			var times = parseInt($("#times").val());
-			console.log(times)
 			
-			var assignments = [];
-			for (var i = 0; i < times; i++) {
-				assignments = assignments.concat(teams);
-			}
-			console.log(assignments);
-			assignments = shuffle(assignments);
-			console.log(assignments);
+			var judgeload = nestedEmptyArray(judges);
 			
-			for (judge in judges){
-  			for (var i = 0; i < times; i++) {				
-					$("#assignments").append(judges[judge] + "\t" + assignments.pop() + "\n");
+			//assign each team a random subset of $times judges
+			$("#assignmentsByTeam").html("");
+			for (var t in teams) {
+				panel = shuffle(judges).slice(0,times);			
+				$("#assignmentsByTeam").append(teams[t], "\t", panel + "\n");
+				for (var j in panel) {
+					judgeload[panel[j]].push(teams[t]);
 				}
 			}
+			
+			$("#assignmentsByJudge").html("");
+			for (var j in judgeload){
+				for (var t in judgeload[j]){	
+					$("#assignmentsByJudge").append(j + "\t" + judgeload[j][t] + "\n");
+				}			
+			}			
 		}
 		
 	</script>
@@ -54,7 +64,7 @@
 		font-family:monospace;
 	}
   	textarea {
-  		width:25%;
+  		width:20%;
 			height:80%;
 			margin:10px;
 			float:left;
@@ -67,11 +77,12 @@
 	</style>
 </head>
 <body>
-	Enter team list and judges list (separated by newlines, paste from Google Sheets) and then hit ASSIGN<br />
+	Enter team list and judges list (separated by newlines, paste from Google Sheets) and then hit ASSIGN repeatedly till you're happy with the assignment.<br />
 	Each team needs to be seen by <input id="times" type="number" min="1" max="50"> judges.<br />
 	<input type="button" value="ASSIGN" onclick="compute()"><br />
 	<textarea id="teams" placeholder="teams"></textarea>
 	<textarea id="judges" placeholder="judges"></textarea>
-	<textarea id="assignments" placeholder="assignments"></textarea>
+	<textarea id="assignmentsByJudge" placeholder="assignmentsByJudge"></textarea>
+	<textarea id="assignmentsByTeam" placeholder="assignmentsByTeam"></textarea>	
 </body>
 </html>
