@@ -113,12 +113,18 @@ body {
 
 .sp-s {
   height: 80px; }
+  @media (min-width: 400px) {
+    .sp-s {
+      height: initial; } }
   @media (min-width: 550px) {
     .sp-s {
       width: 23.33333333333%; } }
 
 .sp-m {
   height: 150px; }
+  @media (min-width: 400px) {
+    .sp-m {
+      height: initial; } }
   @media (min-width: 550px) {
     .sp-m {
       width: 40%; } }
@@ -558,6 +564,7 @@ img {
   display: inline-block;
   margin: 0 auto;
   text-align: left;
+  overflow: hidden;
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
   transition: all 0.8s;

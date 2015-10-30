@@ -67,6 +67,7 @@
 	display: inline-block;
 	margin: 0 auto;
 	text-align: left;
+	overflow: hidden;
 
 	@include transition(all 0.8s);
 	@include transition-delay(0.3s);
