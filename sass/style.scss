@@ -25,7 +25,7 @@
 	&.white {
 		color: $red;
 		background-color: white;
-		
+
 		@include boarder(white);
 
 		&:hover {
@@ -38,7 +38,7 @@
 
 	&.scarlet {
 		color: white;
-		background-color: $red;	
+		background-color: $red;
 
 		@include boarder(white);
 
@@ -62,7 +62,7 @@ p {
 
 h1, h2, h3 {
 	margin: auto;
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
 
 	@media #{$little} {
 		margin-bottom: 20px;
@@ -151,7 +151,6 @@ nav {
 	}
 
 	&.open {
-		
 		ul {
 			display: block;
 		}
@@ -190,10 +189,16 @@ nav {
 	width: 100%;
 	display: table;
 	text-align: center;
-	padding-top: 20px;
+	&::before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		width: 1%;
+		vertical-align: middle;
+	}
+}
 
-	.sd {	
-
+	.sd {
 		$h: 60px;
 
 		position: absolute;
@@ -211,29 +216,33 @@ nav {
 
 .intro-content {
 	display: table-cell;
-	width: 45%;
 	margin: 0;
 	vertical-align: middle;
 }
 
-.logo {
-	width: auto;
-	height: 20%;
-	margin: 0;
+.intro-buttons {
 	margin-bottom: 20px;
+}
+
+.logo {
+	height: auto;
+	width: 80%;
+	margin: 0 0 20px 0;
 
 	@media #{$little} {
-		height: 40%;
+		height: auto;
+		width: 60%;
 	}
 
 	@media #{$desktop} {
-		height: 50%;
+		height: 40%;
+		width: auto;
 	}
 
 	@include transition(all 0.2s);
 
 	&:hover {
-		transform: scale(1.1,1.1);
+		transform: scale(1.05,1.05);
 	}
 }
 
@@ -319,7 +328,7 @@ nav {
 }
 
 .Q {
-	
+
 	.q {
 		margin: 0;
 		font-size: 16pt;
@@ -374,6 +383,7 @@ nav {
 		background-color: white;
 		border: solid $black 1px;
 		max-width: 200px;
+		overflow-x: hidden;
 	}
 }
 
@@ -387,7 +397,7 @@ nav {
 .judge-tag {
 	height: 50px;
 	background-color: $black;
-	color: white;	
+	color: white;
 }
 
 
@@ -396,7 +406,7 @@ footer {
 	padding-top: 25px;
 	padding-bottom: 25px;
 	background-color: $red;
-	color: white;	
+	color: white;
 	p {text-align: center};
 }
 
@@ -406,7 +416,7 @@ img {
 
 .e {
 	margin-bottom: 15px;
-	
+
 	h4 {
 		margin: 0;
 		color: $grey;
