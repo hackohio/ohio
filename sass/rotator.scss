@@ -34,7 +34,6 @@
 
 .rotate-box {
   position: relative;
-  display: inline-block;
   height: 14pt;
 
   @media #{$little}  {
@@ -43,10 +42,8 @@
 }
 
 .rotator {
-  height: 100%;
   position: absolute;
-  left: 0;
-  bottom: -3px;
+  left: 0.25em;
 }
 
 .fly-in {
@@ -64,9 +61,17 @@
 }
 
 .master-title {
-	display: inline-block;
-	margin: 0 auto;
-	text-align: left;
+	display: inline;
+	height: 1em;
+	position: relative;
+
+	@media #{$little} {
+		font-size: 14pt;
+	}
+
+	@media #{$desktop} {
+		font-size: 32pt;
+	}
 
 	@include transition(all 0.8s);
 	@include transition-delay(0.3s);
