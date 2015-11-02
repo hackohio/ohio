@@ -5,7 +5,7 @@
 	<div class="content df">
 		<div ng-repeat="pair in faqs" class="Q fm">
 			<h3 class="q">{{pair.question}}</h3>
-			<p class="a">{{pair.answer}}</p>
+			<p ng-bind-html="pair.answer" class="a"></p>
 		</div>
 	</div>
 </div>
