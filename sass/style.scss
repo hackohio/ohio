@@ -433,6 +433,7 @@ img {
 
 .sponsor {
 	@include transition(all 0.2s);
+	overflow: hidden;
 	&:hover {
 		transform: scale(1.1,1.1);
 	}
