@@ -41,17 +41,17 @@ a{
 	margin-right: 0;
 	float: right;
 }
-@media (max-width: 750px) {
+@media (max-width: 850px) {
   .left-content {
 	float: none;
 	margin-left: auto;
-	padding: 20px 0;
+	padding: 10px 0;
 	width: 100%;
   }
   .right-content {
 	float: none;
 	margin-right: auto;
-	margin-top: 50px;
+	margin-top: 20px;
 	padding: 20px 0;
 	width: 100%;
   }
