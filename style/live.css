@@ -1,5 +1,5 @@
 body{
-    background-color: #DDD;
+    background-color: #FFF;
 }
 a{
     color: #BB0000;
@@ -12,11 +12,11 @@ a{
     color: #BB0000;
 }
 .banner{
-	background-color: #BB0000;
+	background-color: #000;
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
-	border: #BB0000 3px solid;
+	border: #000 3px solid;
 }
 .container{
 	text-align: center;
