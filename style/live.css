@@ -11,6 +11,10 @@ a:hover{
 a{
     color: #BB0000;
 }
+.black {
+    background-color: #000;
+    color: #FFF;
+}
 .banner{
 	background-color: #000;
 	margin: 0 auto;
