@@ -48,6 +48,13 @@ a{
 	margin-right: 0;
 	float: right;
 }
+.scarlet {
+    background-color: #BB0000;
+    border: 3px solid #BB0000;
+}
+.scalet-border {
+    border: 3px solid #BB0000;
+}
 @media (max-width: 850px) {
   .left-content {
 	float: none;
