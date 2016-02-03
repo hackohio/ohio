@@ -1,69 +1,60 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
 
-	<!-- Always force latest IE rendering engine or request Chrome Frame -->
-	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-	<meta name="description" content="OHI/O 2016: The Ohio State Hackathon">
-	<meta name="keywords" content="Hackathon, OHIO, 2016">
-	<meta name="author" content="ohio, buckeye hackers">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="description" content="OHI/O 2016: Fostering a Tech Culture at Ohio State">
+		<meta name="keywords" content="Hackathon, OHIO, 2016">
+		<meta name="author" content="ohio, buckeye hackers">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<link rel="icon" href="images/favicon.png">
+		<title>OHI/O 2016</title>
 
-	<link rel="icon" href="images/favicon.png">
-	<title>OHI/O 2016</title>
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="style/font-awesome-4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<link rel="stylesheet" type="text/css" href="style/animate.css">
 
-	<link rel="shortcut icon" href="img/favicon.ico">
-	<link rel="stylesheet" href="style\font-awesome-4.5.0\css\font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-
-</head>
-<body>
-	<div id="ytplayer"></div>
-	<script>
-		// Load the IFrame Player API code asynchronously.
-		var tag = document.createElement('script');
-		tag.src = "https://www.youtube.com/player_api";
-		var firstScriptTag = document.getElementsByTagName('script')[0];
-		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-		// Replace the 'ytplayer' element with an <iframe> and
-		// YouTube player after the API code downloads.
-		var player;
-		function onYouTubePlayerAPIReady() {
-			player = new YT.Player('ytplayer', {
-				playerVars: { 'controls': 0, 'loop': 1, 'enablejsapi': 1 },
-				height: '390',
-				width: '640',
-				videoId: 'etoGoF2s1b8',
-				events: { 'onReady': onPlayerReady }
-			});
-		}
-		function onPlayerReady(event) {
-			event.target.playVideo();
-			event.target.mute();
-			event.target.setPlaybackQuality("large");
-		}
-	</script>
-
-	<div class="content">
-		<div class="main">
-			<h1>WE'RE BUILDING <span class="logo"><span class="lt">OH</span><span class="bld">I/O</span></span> 2016</h1>
-			<a class="social-media-image" href="https://www.facebook.com/hackohio"><i class="fa fa-facebook fa-4x"></i></a><a class="social-media-image" href="https://twitter.com/hackohio"><i class="fa fa-twitter fa-4x"></i></a><a class="social-media-image" href="https://www.instagram.com/hackohio/"><i class="fa fa-instagram fa-4x"></i></a><a class="social-media-image" href="https://www.youtube.com/channel/UCJJzEGEjQrpVTY3zEQS0BpA"><i class="fa fa-youtube fa-4x"></i></a>
-			<h2>Thank you to everyone that was a part <a href="2015">OHI/O 2015</a>. We'll be back soon with details for next year.</h2>
-			<h2>
-				Have questions, comments, or interest in sponsoring? Reach out to us at
-				<script type="text/javascript">
-					name=('hackathon')
-					domain=('@osu.edu')
-					mailto=('mailto:')
-					document.write('<a href="' + mailto + name + domain + '">' + name + domain + '</a>.')
-				</script>
-			</h2>
+	</head>
+	<body>
+		<div class="content">
+			<div class="main">
+				<h1 class="animated flipInX"><span class="logo"><span class="lt">OH</span><span class="bld">I/O</span></span><span class="lt"> // Welcome </span></h1>
+				<h3>
+					Welcome to OHI/O. We're a group dedicated to fostering a tech culture at Ohio State University. Have questions, comments, or interest in sponsoring? Reach out to us at
+					<script type="text/javascript">
+						name=('hackathon')
+						domain=('@osu.edu')
+						mailto=('mailto:')
+						document.write('<a href="' + mailto + name + domain + '">' + name + domain + '</a>.')
+					</script>
+				</h3>
+				<br><br>
+				<h1 class="animated flipInX"><span class="logo"><span class="lt">OH</span><span class="bld">I/O</span></span><span class="lt"> // Upcoming Events</span></h1>
+				<h2><a href="http://make-oh.io/">&#9656; Makeathon 2016</a></h2>
+				March 5 - 6&nbsp;&nbsp;//&nbsp;&nbsp;Knowlton Hall
+				<br>
+				From the same folks that brought you Makeathon 2015 and OHI/O 2015 comes this year’s best hardware event. Make something new, amazing and fun with a group of friends at our 24-hour hardware-focused hackathon. <a href="https://ohio.typeform.com/to/B0JZfA">Register now 	&rarr;</a>
+				
+				<h2>&#9656;  HackOHI/O 2016</h2>
+				November 19 - 20&nbsp;&nbsp;//&nbsp;&nbsp;Location TBA
+				<br>
+				Our last hackathon, <a href="2015">OHI/O 2015</a>, drew in over 500 students last November for a fantastic event. Our next hackathon will be known as HackOHI/O 2016, and we're looking to make this year even better. Stay tuned for more details and a new website.
+				<br><br><br>
+				<h3>
+					Stay Connected:
+					<br><br>
+					<a class="social-media-image" href="https://www.facebook.com/hackohio"><i class="fa fa-facebook fa-2x"></i></a>
+					<a class="social-media-image" href="https://twitter.com/hackohio"><i class="fa fa-twitter fa-2x"></i></a>
+					<a class="social-media-image" href="https://www.instagram.com/hackohio/"><i class="fa fa-instagram fa-2x"></i></a>
+					<a class="social-media-image" href="https://www.youtube.com/channel/UCJJzEGEjQrpVTY3zEQS0BpA"><i class="fa fa-youtube fa-2x"></i></a>
+				</h3>
+			</div>
 		</div>
-	</div>
-</body>
+	</body>
 </html>
