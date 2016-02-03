@@ -69,7 +69,8 @@ ul {
 
 .main {
 	margin: auto;
-	margin: 5%;
+	margin-top: 5%;
+	padding: 10px;
     max-width: 768px;
 }
 
