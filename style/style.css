@@ -24,6 +24,10 @@ span.bld {
     font-weight: 400;
 }
 
+span.bg {
+    font-size: 17px;
+}
+
 h1 {
     font-weight: 600;
     letter-spacing: 1px;
@@ -53,6 +57,10 @@ h3 {
 	margin-top: 15px;
     margin-bottom: 15px;
     box-sizing: border-box;
+}
+
+p {
+	margin-left: 30px;
 }
 
 ul {
