@@ -68,12 +68,9 @@ ul {
 }
 
 .main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+	margin: auto;
+	margin: 5%;
     max-width: 768px;
-    width: 80%;
 }
 
 .content {
