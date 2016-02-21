@@ -1,3 +1,4 @@
 [submodule "2015"]
 	path = 2015
 	url = https://github.com/hackohio/ohio2015.git
+	branch = master
