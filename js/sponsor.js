@@ -9,10 +9,10 @@ function onYouTubePlayerAPIReady() {
             'wmode': 'opaque',
             'showinfo': 0,
             'loop': 1,
-            'mute': 1
+            'mute': 1,
             //'start': 15,
             //'end': 110,
-            //'playlist': 'akjFxR4sShc'
+            'playlist': 'akjFxR4sShc'
         },
         videoId: 'akjFxR4sShc',
         events: {
