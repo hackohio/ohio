@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="description" content="OHI/O 2016: The Ohio State Hackathon">
+	<meta name="keywords" content="Hackathon, OHIO, 2016">
+	<meta name="author" content="ohio, buckeye hackers">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="icon" href="images/favicon.png">
+	<title>OHI/O 2016</title>
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="style/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style/sponsor.css">
+
+</head>
+<body>
+	<div id="ytplayer"></div>
+	<script>
+		// Load the IFrame Player API code asynchronously.
+		var tag = document.createElement('script');
+		tag.src = "https://www.youtube.com/player_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+		// Replace the 'ytplayer' element with an <iframe> and
+		// YouTube player after the API code downloads.
+		var player;
+		function onYouTubePlayerAPIReady() {
+			player = new YT.Player('ytplayer', {
+				playerVars: { 'controls': 0, 'loop': 1, 'enablejsapi': 1 },
+				height: '390',
+				width: '640',
+				videoId: 'etoGoF2s1b8',
+				events: { 'onReady': onPlayerReady }
+			});
+		}
+		function onPlayerReady(event) {
+			event.target.playVideo();
+			event.target.mute();
+			event.target.setPlaybackQuality("large");
+		}
+	</script>
+
+	<div class="content">
+		<div class="main">
+			<h1>HackOHI/O 2016</h1>
+			<h1>November 19-20, Ohio Union</h1>
+			<form>
+			<table style="width: 100%;">
+				<tr>
+					<td style="width: 25%;">
+						<a class="button" href="http://go.osu.edu/hackwithus">Prospectus</a>
+					</td>
+					<td style="width: 25%;">
+						<a class="button" href="http://give.osu.edu/hackohio">Sponsor</a>
+					</td>
+					<td style="width: 50%;"> </td>
+				</tr>
+			</table>
+			<br><br><br><br><br><br><br><br>
+			<a class="social-media-image" href="https://www.facebook.com/hackohio"><i class="fa fa-facebook fa-2x"></i></a><a class="social-media-image" href="https://twitter.com/hackohio"><i class="fa fa-twitter fa-2x"></i></a><a class="social-media-image" href="https://www.instagram.com/hackohio/"><i class="fa fa-instagram fa-2x"></i></a><a class="social-media-image" href="https://www.youtube.com/channel/UCJJzEGEjQrpVTY3zEQS0BpA"><i class="fa fa-youtube fa-2x"></i></a>
+			<h2>
+				Have questions, comments, or would like to discuss sponsorship? Reach out to us at
+				<script type="text/javascript">
+					name=('hackathon')
+					domain=('@osu.edu')
+					mailto=('mailto:')
+					document.write('<a href="' + mailto + name + domain + '">' + name + domain + '</a>.')
+				</script>
+			</h2>
+		</div>
+	</div>
+</body>
+</html>
