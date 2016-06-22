@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/* Flip animations don't play nice with Safari; this disables those animations in Safari */
+
+@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+	.safari { animation-name: none; -webkit-animation-name: none; }
+}
