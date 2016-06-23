@@ -75,6 +75,11 @@ p {
 	text-align: right;
 }
 
+.full-width {
+	left: 0;
+	width: 100%;
+}
+
 .button {
 	background-color: #BB0000;
 	border: none;
