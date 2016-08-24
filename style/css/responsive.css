@@ -8,7 +8,7 @@
 
 .col {
 	display: block;
-	float:left;
+	float: left;
 	margin: 1% 0 1% 1.6%;
 }
 .col:first-child {
@@ -20,7 +20,7 @@
 }
 
 .grp:after { 
-	clear:both;
+	clear: both;
 }
 
 .half {
