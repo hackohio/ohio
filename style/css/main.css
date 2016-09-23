@@ -120,6 +120,10 @@ p {
 	font-size: 100px;
 }
 
+.smallText {
+	font-size: 75%;
+}
+
 .compress {
 	font-weight: normal;
 	margin: 0px;
@@ -135,6 +139,10 @@ p {
 
 .txt-white {
 	color: #FFFFFF;
+}
+
+.black {
+	color: #000000;
 }
 
 .bg-red {
@@ -168,6 +176,10 @@ p {
 
 .height-padding {
 	padding: 10px 0px;
+}
+
+.low-bottom-margin {
+	margin-bottom: 3px;
 }
 
 .nav-link {
