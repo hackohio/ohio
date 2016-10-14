@@ -32,6 +32,16 @@
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
 		<script type="text/javascript" src="javascript/simplyscroll.min.js"></script>
 		<script type="text/javascript" src="javascript/rotator.js"></script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-51284668-6', 'auto');
+			ga('send', 'pageview');
+		</script>
 	</head>
 
 	<body>
@@ -41,10 +51,10 @@
 			<!-- Height of canvas defined in trianglify.js -->
 			</canvas>
 
-			<div class="animated flipInX canvasContent safari">
-				<br><br>
+			<div class="canvasContent">
+				<br>
 				<img id="textLogo" class="grow" src="images/layout/text-logo.png" alt="HackOHI/O logo">
-				<br><br>
+				<br>
 				<h1>
 					Let's build something
 					<div class="grow rw-words">
@@ -78,6 +88,11 @@
 					<a class="social-media-image" href="https://www.youtube.com/channel/UCJJzEGEjQrpVTY3zEQS0BpA"><i class="fa fa-youtube fa-3x"></i></a>
 					<a class="social-media-image" href="https://medium.com/@hackohio"><i class="fa fa-medium fa-3x"></i></a>
 				</div>
+				<br><br>
+				<hr width="200px">
+				<br>
+				<a href="https://aws.amazon.com/education/awseducate/"><img class="grow" src="images/sponsors/powered-by-aws.png" alt="HackOHI/O 2016: Powered by Amazon Web Services." width="200px"></a>
+
 			</div>
 
 			<div class="bg-red-alt txt-white height-padding">
@@ -86,6 +101,7 @@
 				<a class="txt-white nav-link txt-white" href="#events">Events</a>
 				<a class="txt-white nav-link txt-white" href="#faq">FAQs</a>
 				<a class="txt-white nav-link txt-white" href="#sponsors">Sponsors</a>
+				<a class="txt-white nav-link txt-white" href="http://go.osu.edu/mentorHackOHIO">Mentor</a>
 			</div>
 			<div style="clear: both;"></div>
 
@@ -97,7 +113,7 @@
 				<h1>Welcome to Columbus</h1>
 				<hr>
 				<p>
-					On November 19<sup>th</sup>, join us at Ohio State University's largest hackathon for a weekend of building and creating real projects with awesome people. Over 700 undergraduate and graduate students will design, build, and demonstrate projects to a live audience of students, faculty, and representatives from tech companies. HackOHI/O is put on by <a class="txt-red" href="http://hack.osu.edu/">OHI/O</a>, a student-led organization at Ohio State that aims to foster a tech culture at our university.
+					On November 19<sup>th</sup>, join us at the Ohio State University's largest hackathon for a weekend of building and creating real projects with awesome people. Over 700 undergraduate and graduate students will design, build, and demonstrate projects to a live audience of students, faculty, and representatives from tech companies. HackOHI/O is put on by <a class="txt-red" href="http://hack.osu.edu/">OHI/O</a>, a student-led organization at Ohio State that aims to foster a tech culture at our university.
 					<br>
 				</p>
 				<div id="scroller-div" class="table center">
@@ -250,30 +266,40 @@
 							<br>
 							<span class="smallText">Workshop by Kevin Mack</span>
 						</p>
-						
-						<h2 class="low-bottom-margin">Paxata Tech Talk</h2>
+
+						<h2 class="low-bottom-margin">Fall Picnic + Team Formation Social</h2>
+						<p>
+							Friday, October 7
+							<br>
+							5:30 - 7:30 PM @ Dreese Labs Lobby&nbsp;&nbsp;<i title="Food provided!" class="black fa fa-cutlery"></i>
+							<br>
+							<span class="smallText">Come to ACM-W's annual fall picnic for a chance to meet new people, brainstorm ideas and recruit teammates for the upcoming hackathon.</span>
+						</p>
+					</div>
+					
+					<div class= "col half">
+						<h2 class="low-bottom-margin">Introduction to Swift for iOS (<a href="https://techhub.osu.edu/news/2016/10/06/coding-workshop-introduction-swift-ios">Link</a>)</h2>
 						<p>
 							Wednesday, October 26
+							<br>
+							6:00 - 8:00 PM @ <a href="https://techhub.osu.edu/">Tech Hub</a>
+							<br>
+							<span class="smallText">Learn iOS development with Swift! Please <a href="https://osu.az1.qualtrics.com/jfe/form/SV_3s1febZu43NEgw5">register here</a>. A Mac with the latest macOS release, along with Xcode and an Applie ID, are needed.</span>
+						</p>
+
+						<h2 class="low-bottom-margin">Paxata Tech Talk</h2>
+						<p>
+							Wednesday, November 2
 							<br>
 							7:00 - 8:00 PM @ Dreese Labs 264
 							<br>
 							<span class="smallText">Topic to be determined</span>
 						</p>
-					</div>
-					
-					<div class= "col half">
-						<h2 class="low-bottom-margin">Ruby on Rails</h2>
-						<p>
-							Monday, November 7
-							<br>
-							7:00 - 8:00 PM @ TBD&nbsp;&nbsp;<i title="Food provided!" class="black fa fa-cutlery"></i>
-							<br>
-							<span class="smallText">Workshop by <a href="https://hackers.org.ohio-state.edu/">Buckeye Hackers</a></span>
-						</p>
+
 						
 						<h2 class="low-bottom-margin">How to Hack a Tesla and Coding with the Artisan</h2>
 						<p>
-							Tuesday, November 8
+							Monday, November 7
 							<br>
 							5:30 - 7:30 PM PM @ <a href="https://www.google.com/maps/dir/''/pillar+technology+columbus/@39.974839,-83.0677131,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x88234f6a744fc7b9:0xd0c230a717d372f2!2m2!1d-82.9976732!2d39.9748601">Pillar Technology</a>&nbsp;&nbsp;<i title="Food provided!" class="black fa fa-cutlery"></i>
 							<br>
@@ -311,9 +337,8 @@
 					</div>
 
 					<div class= "col third">
-						<h2>But... I don’t know how to code!</h2>
+						<h2>But... I don't know how to code!</h2>
 						<p>
-							Not to worry! HackOHI/O provides opportunities for first-time programmers. From workshops, to resources to mentors and teammates, you’ll be sure to pick up skills over the weekend.
 							Past that, teams need more than just coders and great projects always start with diverse teams.
 							Everyone has some knowledge and perspective they can bring to the table.
 						</p>
@@ -333,7 +358,6 @@
 						<h2>What if I don't have a team?</h2>
 						<p>
 							No worries! OHI/O provides opportunities before and during the hackathon to find a team.
-							We’ll be posting more information on these events in our newsletters and on our social media accounts…be on the lookout!
 						</p>
 					</div>
 					
@@ -348,7 +372,6 @@
 						<h2>Do I have to have an idea?</h2>
 						<p>
 							Nope! Many students come up with an idea at the hackathon.
-							By talking to fellow students and coming to our pre-hype events, you’ll find opportunities to join an idea that piques your interest.
 							If you get stuck, we'll have a nice list of ideas to help you out.
 						</p>
 					</div>
@@ -362,6 +385,14 @@
 							We're still working out details of travel reimbursements and will update this page when we have more information.
 						</p>
 					</div>
+
+					<div class= "col third">
+						<h2>Can I mentor?</h2>
+						<p>
+							Yes! We welcome individuals with knowledge and expertise in various topic areas to help mentor students at HackOHI/O. If you're interested, please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXW55ZglWbF5HE7_lUzIaiHVXBqOFymyw2Del9xJPk-dDBZw/viewform?c=0&w=1">this form</a>.
+						</p>
+					</div>
+
 					
 					<div class= "col third">
 						<h2>Wow, this all sounds so great! Who hosts HackOHI/O?</h2>
@@ -385,9 +416,15 @@
 					<br><br>
 				</p>
 
-				<a href="https://wexnermedical.osu.edu/"><img class="sponsor-big" src="images/sponsors/sponsor-wexner-medical.png" alt="Wexner Medical Center"></a>
+				<div class="section grp">
+					<a href="https://aws.amazon.com/education/awseducate/"><img class="sponsor-huge" src="images/sponsors/sponsor-aws.png" alt="Amazon Web Services"></a>
+				</div>
 
-				<br><br>
+				<br><br><br>
+
+				<div class="section grp">
+					<a href="https://wexnermedical.osu.edu/"><img class="sponsor-big" src="images/sponsors/sponsor-wexner-medical.png" alt="Wexner Medical Center"></a>
+				</div>
 
 				<div class="section grp">
 					<div class="col half">
@@ -469,10 +506,14 @@
 					<div class="col third">
 						<a href="http://www.cardinalsolutions.com/"><img class="sponsor-sm" src="images/sponsors/sponsor-cardinal-solutions.png" alt="Cardinal Solutions"></a>
 						<br><br><br><br>
+						<a href="http://www.marathonpetroleum.com/"><img class="sponsor-sm" src="images/sponsors/sponsor-marathon.png" alt="Marathon" style="width: 160px;"></a>
+						<br><br><br>
 					</div>
 					<div class="col third">
 						<br>
 						<a href="https://www.microsoft.com/"><img class="sponsor-sm" src="images/sponsors/sponsor-microsoft.png" alt="Microsoft"></a>
+						<br><br><br>
+						<a href="http://www.meetup.com/Columbus-Web-Group/"><img class="sponsor-sm" src="images/sponsors/sponsor-columbus-web-group.png" alt="Columbus Web Group"></a>
 						<br><br><br>
 					</div>
 					<div class="col third">
