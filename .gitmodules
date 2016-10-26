@@ -2,3 +2,6 @@
 	path = 2015
 	url = https://github.com/hackohio/ohio2015.git
 	branch = master
+[submodule "2016"]
+	path = 2016
+	url = https://github.com/hackohio/hackOHIO2016
