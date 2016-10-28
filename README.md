@@ -2,7 +2,7 @@
 Welcome to the official website for OHI/O, an organization working to foster a tech culture at the Ohio State University.
 
 # File layout
-Coming soon.
+Coming soon
 
 # Submodules
 Each of the directory's "sub-sites" (such as the annual hackathon websites) are separate repositories.
