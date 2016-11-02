@@ -50,3 +50,9 @@
 		background-image: url('../../images/header-triangles-small.png');
 	}
 }
+
+@media screen and (max-width: 630px) {
+    .countdown-container {
+	display: none;
+    }
+}
