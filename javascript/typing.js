@@ -1,4 +1,5 @@
 var captionLength = 0;
+var wordNumber = 0;
 var caption = '';
 var words = [
 "amazing", 
@@ -16,8 +17,17 @@ $(document).ready(function() {
     setInterval ('cursorAnimation()', 600);
     captionEl = $('#caption');
     caption = words[0];
+    setInterval ( function(){
+        typeWord();
+        setTimeout('eraseText()', 1800);
+    }, 3000);
 });
 
+function typeWord(){
+    caption = words[wordNumber % words.length];
+    wordNumber++;
+    type();
+}
 function type() {
     captionEl.html(caption.substr(0, captionLength++));
     if(captionLength < caption.length+1) {
@@ -31,11 +41,7 @@ function type() {
 function eraseText() {
     caption = captionEl.html();
     captionLength = caption.length;
-    if (captionLength>0) {
-        erase();
-    } else {
-        setTimeout('testErasingEffect()', 1000);
-    }
+    erase();
 }
 
 function erase() {
