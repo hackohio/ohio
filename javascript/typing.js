@@ -51,7 +51,7 @@ function eraseText() {
 function erase() {
     captionEl.html(caption.substr(0, captionLength--));
     if(captionLength >= 0) {
-        setTimeout('erase()', 50);
+        setTimeout('erase()', 40);
     } else {
         captionLength = 0;
         caption = '';
