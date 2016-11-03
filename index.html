@@ -27,17 +27,23 @@
 		<link rel="icon" href="images/favicon.ico">
 		<link rel="stylesheet" href="style/font-awesome-4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
+		<!-- NOTE: Do *not* use the minified version of flipclock CSS, it breaks the animation -->
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css">
 		<link rel="stylesheet" type="text/css" href="style/css/main.css">
 		<link rel="stylesheet" type="text/css" href="style/css/rotator.css">
 		<link rel="stylesheet" type="text/css" href="style/css/animate.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="style/css/slideshow.css">
 		<link rel="stylesheet" type="text/css" href="style/css/safari.css">
 		<link rel="stylesheet" type="text/css" href="style/css/responsive.css">
+		<link rel="stylesheet" type="text/css" href="style/css/countdown.css">
 
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
 		<script type="text/javascript" src="javascript/simplyscroll.min.js"></script>
 		<script type="text/javascript" src="javascript/rotator.js"></script>
+		<script type="text/javascript" src="javascript/countdown.js"></script>
 
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -102,6 +108,11 @@
 				<br>
 				<a href="https://aws.amazon.com/education/awseducate/"><img class="grow" src="images/sponsors/powered-by-aws.png" alt="HackOHI/O 2016: Powered by Amazon Web Services." width="200px"></a>
 
+			</div>
+
+			<div class="countdown-container">
+				<h2>Hacking begins in:</h2>
+				<div class="countdown center"></div>
 			</div>
 
 			<div class="bg-red-alt txt-white height-padding">
