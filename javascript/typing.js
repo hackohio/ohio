@@ -1,5 +1,8 @@
+// Derived from code by Stathis
+// https://codepen.io/stathisg/pen/Bkvhg
+
 var captionLength = 0;
-var wordNumber = 0;
+var wordNumber = 1;
 var caption = '';
 var words = [
 "amazing", 
@@ -14,12 +17,13 @@ var words = [
 ]
 
 $(document).ready(function() {
-    setInterval ('cursorAnimation()', 600);
+    setInterval ('cursorAnimation()', 800);
     captionEl = $('#caption');
     caption = words[0];
+    setTimeout('eraseText()', 2400)
     setInterval ( function(){
         typeWord();
-        setTimeout('eraseText()', 1800);
+        setTimeout('eraseText()', 2400);
     }, 3000);
 });
 
@@ -31,7 +35,7 @@ function typeWord(){
 function type() {
     captionEl.html(caption.substr(0, captionLength++));
     if(captionLength < caption.length+1) {
-        setTimeout('type()', 50);
+        setTimeout('type()', 75);
     } else {
         captionLength = 0;
         caption = '';
