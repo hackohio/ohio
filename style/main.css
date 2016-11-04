@@ -89,6 +89,16 @@ ul {
     margin: auto;
 }
 
+.topNotice {
+	background: #BB0000;
+	height: 120px;
+	text-align: center;
+}
+
+.txt-white {
+	color: #FFFFFF;
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -101,4 +111,10 @@ ul {
 	z-index: -99;
 	width: 100%;
 	height: 100%
+}
+
+@media screen and (max-width: 750px) {
+	.topNotice {
+		height: 160px;
+	}
 }
