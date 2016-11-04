@@ -49,6 +49,9 @@
 		height: 35px;
 		background-image: url('../../images/header-triangles-small.png');
 	}
+	.topNotice {
+		height: 160px;
+	}
 }
 
 @media screen and (max-width: 630px) {
