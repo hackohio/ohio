@@ -3,7 +3,7 @@ var pattern = Trianglify({
 	x_colors: ["#B00126", "#FDF2F3", "#B00126"],
 	y_colors: 'match_x',
 	width: window.innerWidth,
-	height: 1250
+	height: 1370
 });
 var canvas = document.getElementById("headerCanvas");
 pattern.canvas(canvas);
