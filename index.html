@@ -32,6 +32,7 @@
 			<a class="menu-open" id="mb">Menu</a>
 			<ul>
 				<li><a ng-click="scrollIt('about')">About</a></li>
+				<li><a ng-click="scrollIt('events')">Pre-Events</a></li>
 				<li><a ng-click="scrollIt('faq')">FAQ</a></li>
 				<li><a ng-click="scrollIt('timeline')">Timeline</a></li>
 				<li><a ng-click="scrollIt('prizes')">Prizes</a></li>
@@ -80,7 +81,6 @@
 	<section id="events" 	ng-include 	src="'views/events.html'"></section>
 	<section id="faq" 		ng-include 	src="'views/faq.html'"></section>
 	<section id="timeline"  ng-include 	src="'views/timeline.html'"></section>
-    <section id="stats"     ng-include  src="'views/stats.html'" onload="initStats()"></section>
     <section id="prizes" ng-include src="'views/prizes.html'"></section>
 	<section id="sponsors"  ng-include  src="'views/sponsors.html'" ></section>
 
