@@ -81,6 +81,10 @@ p {
 	width: 100%;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 .button {
 	background-color: #BB0000;
 	border: none;
@@ -186,6 +190,11 @@ p {
 .low-bottom-margin {
 	margin-bottom: 3px;
 }
+
+.low-top-margin {
+	margin-top: 3px;
+}
+
 
 .nav-link {
 	margin: 0;
