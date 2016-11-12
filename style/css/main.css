@@ -42,6 +42,10 @@ h2 {
 	font-weight: 600;
 }
 
+h3 {
+	font-weight: 600;
+}
+
 hr {
 	background-image: linear-gradient(to right, #F4C6C4, #BF1313, #F4C6C4);
 	border: 0;
@@ -133,6 +137,10 @@ p {
 	font-size: 75%;
 }
 
+.faqText {
+	font-size: 110%;
+}
+
 .compress {
 	font-weight: normal;
 	margin: 0px;
@@ -194,7 +202,6 @@ p {
 .low-top-margin {
 	margin-top: 3px;
 }
-
 
 .nav-link {
 	margin: 0;
