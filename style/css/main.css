@@ -238,6 +238,23 @@ p {
 	height: 0;
 }
 
+.box-gray {
+	background-color: #D9D9D9;
+	padding: 3px;
+}
+
+.box-darkgray {
+	background-color: #333333;
+	color: #FFFFFF;
+	padding: 3px;
+}
+
+.box-white {
+	background-color: #FFFFFF;
+	padding: 3px;
+}
+
+
 /* --------------------------- */
 /* ID CSS                      */
 /* --------------------------- */
