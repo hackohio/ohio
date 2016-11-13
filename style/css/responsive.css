@@ -9,7 +9,8 @@
 .col {
 	display: block;
 	float: left;
-	margin: 1% 0 1% 1.6%;
+	margin-right: 0;
+	padding: 5px;
 }
 .col:first-child {
 	margin-left: 0;
@@ -24,11 +25,15 @@
 }
 
 .half {
-	width: 49.2%;
+	width: 50%;
 }
 
 .third {
-	width: 32.26%;
+	width: 33.33%;
+}
+
+.fourth{
+	width: 25%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -41,6 +46,10 @@
 	.third {
 		width: 100%;
 	}
+	
+	.fourth {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 750px) {
@@ -49,4 +58,13 @@
 		height: 35px;
 		background-image: url('../../images/header-triangles-small.png');
 	}
+	.topNotice {
+		height: 160px;
+	}
+}
+
+@media screen and (max-width: 630px) {
+    .countdown-container {
+	display: none;
+    }
 }
