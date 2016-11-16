@@ -196,6 +196,10 @@ p {
 	padding: 10px 0px;
 }
 
+.height-padding-lg {
+	padding: 20px 0px;
+}
+
 .low-bottom-margin {
 	margin-bottom: 3px;
 }
