@@ -29,6 +29,7 @@ $(document).ready(function() {
 
 function typeWord(){
     caption = words[wordNumber % words.length];
+    captionEl.html('');
     wordNumber++;
     type();
 }
