@@ -304,6 +304,15 @@ p {
 	padding: 0px 10px;
 }
 
+
+footer-red {
+   padding: 1em;
+   color: white;
+   background-color: #BB0000 ;
+   clear: left;
+   text-align: center;
+}
+
 #triangle-header { 
 	width: 100%; 
 	height: 112px;
