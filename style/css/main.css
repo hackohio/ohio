@@ -275,6 +275,7 @@ p {
 #cursor{
 	font-weight:100;
 }
+
 #textLogo {
 	max-width: 90%;
 	height: auto;
@@ -307,6 +308,13 @@ p {
 	width: 100%; 
 	height: 112px;
 	background-image: url('../../images/layout/header-triangles.png');
+	background-position: 0px 0px;
+}
+
+#triangle-footer { 
+	width: 100%; 
+	height: 112px;
+	background-image: url('../../images/layout/footer-triangles.png');
 	background-position: 0px 0px;
 }
 
