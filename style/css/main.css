@@ -252,6 +252,10 @@ p {
 	padding: 3px;
 }
 
+.bordered { 
+	border: 1px solid #AAAAAA;
+}
+
 .video {
 	position: relative;
 	padding-bottom: 56.25%;
