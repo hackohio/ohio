@@ -63,7 +63,7 @@ argparser.add_argument('table_id', type=str,
                      help=('The table ID of the profile you wish to access. '
                            'Format is ga:xxx where xxx is your profile ID.'))
 
-pages = ['/2016/challenges/aws/index.html','/2016/challenges/aws2/index.html','/2016/challenges/capitalone/index.html','/2016/challenges/esri/index.html','/2016/challenges/jobsohio/index.html','/2016/challenges/jpmc/index.html','/2016/challenges/wmc/index.html',]
+pages = ['/2016/challenges/aws/','/2016/challenges/aws2/','/2016/challenges/capitalone/','/2016/challenges/esri/','/2016/challenges/jobsohio/','/2016/challenges/jpmc/','/2016/challenges/wmc/',]
 
 def main(argv):
   # Authenticate and construct service.
@@ -77,8 +77,8 @@ def main(argv):
     try:
       results = get_api_query(service, flags.table_id, page).execute()
       print("Views for ", page , ":")
-      titletag = page[page.find("es")+3:page.find("/index.html")]
-      title = "images/traffic/pageviews_"+titletag+".png"
+      titletag = page[page.find("es")+3:page.rfind("/")]
+      title = "../images/traffic/pageviews_"+titletag+".png"
       import os
       print (os.getcwd())
       print_results(results,title,all_data)
@@ -100,7 +100,7 @@ def main(argv):
   mins = 30
   x = [i for i in range(mins)]
 
-  max_y = 1
+  max_y = 20
   for title in all_data:
    this_max = max(all_data[title])
    if this_max > max_y:
