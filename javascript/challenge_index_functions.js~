@@ -1,0 +1,15 @@
+function timestamp(){
+	var xhr = new XMLHttpRequest();
+	server_script =  "http://localhost:8000/timestamp.php";
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState == XMLHttpRequest.DONE) {
+			console.log("RESPONSE RECEIVED from: " + server_script)
+			console.log("RESPONSE: " +  xhr.responseText);
+		}
+	}
+	xhr.open("GET", server_script, true);
+	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	console.log('logging from httpunlink');
+	xhr.send();
+	console.log("GOOGLE API REQUEST SENT.");
+}
