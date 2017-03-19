@@ -2,7 +2,6 @@ body, html {
     height: 100%;
     font-family: 'proximanova', Proxima Nova, Helvetica, Sans-Serif;
 }
-
 h3{
     text-align: center;
     color: #444444;
@@ -12,10 +11,16 @@ body{
 }
 td{
     padding: 4px;
+    text-align: justify;
+}
+th{
+    background-color:#bb0000;
+    color: #ffffff;
 }
 hr{
     width: 80%;
 }
+/*Classes*/
 .txt_white{
     color : #ffffff;
 }
@@ -28,9 +33,6 @@ hr{
 .txt_pink{
     color : lightpink;
 }
-table.time{
-    margin: 0 auto;
-}
 .text_center{
     text-align: center;
 }
@@ -40,12 +42,29 @@ table.time{
 .fa{
     color: #ffffff;
 }
-th{
-    background-color:#bb0000;
-    color: #ffffff;
+.container {
+    width: 98%;
+    padding: 0 1%;
+    margin: 0 auto;
 }
-td{
-    text-align: justify;
+.row {
+    margin: .5em 0;
+}
+.column:first-child {
+    margin: 0;
+}
+.column {
+    float: left;
+    margin: 0 0 0 2%;
+}
+.one-fourth.column {
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    float: left;
+}
+table.time{
+    margin: 0 auto;
 }
 a.head{
     color: #ffffff;
@@ -58,6 +77,16 @@ div.about{
     margin: 0 auto;
     text-align: center;
 }
+div.faq{
+    max-width: 60%;
+    margin:auto;
+}
+div.schedule{
+    max-width: 60%;
+    margin:auto;
+}
+
+/*IDs*/
 #textLogo{
     display: block;
 	max-width: 90%;
@@ -67,7 +96,7 @@ div.about{
 }
 #header{
     background-color: #bb0000;
-    max-width: 60%;
+    max-width: 40%;
     margin:auto;
     text-align: center;
     padding: 10px;
@@ -75,35 +104,7 @@ div.about{
 
 #footer{
     text-align: center;
-    padding: 25px;
-    background-color: #666666;
+    padding: 15px;
+    background-color: #eeeeee;
     margin-top: 50px;
-}
-div.faq{
-    max-width: 60%;
-    margin:auto;
-}
-
-.container {
-    width: 98%;
-    padding: 0 1%;
-    margin: 0 auto;
-}
-
-.row {
-    margin: 1em 0;
-}
-
-.column {
-    float: left;
-    margin: 0 0 0 2%;
-}
-
-.column:first-child {
-    margin: 0;
-}
-
-.one-fourth.column {
-    width: 23.5%;
-    text-align:center;
 }
