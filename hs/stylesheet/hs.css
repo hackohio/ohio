@@ -1,0 +1,110 @@
+body, html {
+    height: 100%;
+    font-family: 'proximanova', Proxima Nova, Helvetica, Sans-Serif;
+}
+h3{
+    text-align: center;
+    color: #444444;
+}
+body{
+    background-color: #ffffff;
+}
+td{
+    padding: 4px;
+    text-align: justify;
+}
+th{
+    background-color:#bb0000;
+    color: #ffffff;
+}
+hr{
+    width: 80%;
+}
+/*Classes*/
+.txt_white{
+    color : #ffffff;
+}
+.txt_red{
+    color : #bb0000;
+}
+.txt_gray{
+    color : #222222;
+}
+.txt_pink{
+    color : lightpink;
+}
+.text_center{
+    text-align: center;
+}
+.elm_center{
+    margin: 0 auto;
+}
+.fa{
+    color: #ffffff;
+}
+.container {
+    width: 98%;
+    padding: 0 1%;
+    margin: 0 auto;
+}
+.row {
+    margin: .5em 0;
+}
+.column:first-child {
+    margin: 0;
+}
+.column {
+    float: left;
+    margin: 0 0 0 2%;
+}
+.one-fourth.column {
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    float: left;
+}
+table.time{
+    margin: 0 auto;
+}
+a.head{
+    color: #ffffff;
+}
+a.past{
+    color: #444444;
+}
+div.about{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+div.faq{
+    max-width: 60%;
+    margin:auto;
+}
+div.schedule{
+    max-width: 60%;
+    margin:auto;
+}
+
+/*IDs*/
+#textLogo{
+    display: block;
+	max-width: 90%;
+	height: auto;
+    margin: auto;
+    padding: 10px 0px 5px;
+}
+#header{
+    background-color: #bb0000;
+    max-width: 40%;
+    margin:auto;
+    text-align: center;
+    padding: 10px;
+}
+
+#footer{
+    text-align: center;
+    padding: 15px;
+    background-color: #eeeeee;
+    margin-top: 50px;
+}
