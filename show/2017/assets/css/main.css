@@ -3137,7 +3137,7 @@
 
 	a.sponsor-logo {
 		border-bottom: none;
-		max-width: 120px;
+		max-height: 90px;
 		display: inline-block;
 		margin: 0 20px;
 		transition: 0.3s opacity;
@@ -3148,5 +3148,5 @@
 	}
 
 	.sponsor-logo img {
-		max-width: 100%;
+		max-height: 90px;
 	}
