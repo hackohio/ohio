@@ -3135,7 +3135,7 @@
 		text-align: center;
 	}
 
-	a.sponsor-logo {
+	a.spnsr-logo {
 		border-bottom: none;
 		max-height: 90px;
 		display: inline-block;
@@ -3143,10 +3143,10 @@
 		transition: 0.3s opacity;
 	}
 
-	a.sponsor-logo:hover {
+	a.spnsr-logo:hover {
 		opacity: 0.5;
 	}
 
-	.sponsor-logo img {
+	.spnsr-logo img {
 		max-height: 90px;
 	}
