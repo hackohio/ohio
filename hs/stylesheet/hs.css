@@ -1,6 +1,6 @@
 body, html {
     height: 100%;
-    font-family: 'proximanova', Proxima Nova, Helvetica, Sans-Serif;
+    font-family: 'proximanova', "Proxima Nova", Helvetica, Sans-Serif;
     font-size: 16px;
 }
 h3{
@@ -8,7 +8,7 @@ h3{
     color: #444444;
 }
 body{
-    background-color: #ffffff;
+    background-color: white;
 }
 td{
     padding: 4px;
@@ -16,18 +16,19 @@ td{
 }
 th{
     background-color:#bb0000;
-    color: #ffffff;
+    color: white;
     text-align: center;
 }
 hr{
     width: 80%;
 }
 a{
-  text-decoration: underline;
+    text-decoration: underline;
 }
+
 /*Classes*/
 .txt_white{
-    color : #ffffff;
+    color : white;
 }
 .txt_red{
     color : #bb0000;
@@ -45,34 +46,13 @@ a{
     margin: 0 auto;
 }
 .fa{
-    color: #ffffff;
-}
-.container {
-    width: 98%;
-    padding: 0 1%;
-    margin: 0 auto;
-}
-.row {
-    margin: .5em 0;
-}
-.column:first-child {
-    margin: 0;
-}
-.column {
-    float: left;
-    margin: 0 0 0 2%;
-}
-.one-fourth.column {
-    width: 200px;
-    height: 250px;
-    text-align: center;
-    float: left;
+    color: white;
 }
 table.time{
     margin: 0 auto;
 }
 a.head{
-    color: #ffffff;
+    color: white;
 }
 a.past{
     color: #444444;
@@ -90,6 +70,9 @@ div.schedule{
     max-width: 60%;
     margin:auto;
 }
+h4.bold, h3.bold {
+    font-weight: bold;
+}
 
 /*IDs*/
 #textLogo{
@@ -97,7 +80,7 @@ div.schedule{
 	max-width: 90%;
 	height: auto;
     margin: auto;
-    padding: 10px 0px 5px;
+    padding: 10px 0 5px;
 }
 #header{
     background-color: #bb0000;
@@ -106,7 +89,6 @@ div.schedule{
     text-align: center;
     padding: 10px;
 }
-
 #footer{
     text-align: center;
     padding: 15px;
