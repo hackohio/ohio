@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
     font-family: 'proximanova', Proxima Nova, Helvetica, Sans-Serif;
+    font-size: 16px;
 }
 h3{
     text-align: center;
@@ -16,9 +17,13 @@ td{
 th{
     background-color:#bb0000;
     color: #ffffff;
+    text-align: center;
 }
 hr{
     width: 80%;
+}
+a{
+  text-decoration: underline;
 }
 /*Classes*/
 .txt_white{
