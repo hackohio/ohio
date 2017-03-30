@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="description" content="ShowOHI/O 2017: The Ohio State University">
+		<meta name="keywords" content="OHIO, ShowOHIO, 2017">
+		<meta name="author" content="OHI/O">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>ShowOHI/O 2017 - OHI/O</title>
+
+		<link rel="icon" href="../img/favicon.ico">
+		<link rel="shortcut icon" href="../../img/favicon.ico">
+
+		<link rel="stylesheet" href="../../style/font-awesome-4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../../style/showohio.css">
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-51284668-6', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</head>
+	<body>
+		<div class="tv">
+		  <div class="screen mute" id="tv"></div>
+		</div>
+
+		<div class="content">
+			<div class="main">
+				<h1><img src="img/bowtie.png" class="bowtie"> ShowOHI/O 2017</h1>
+				<h3>April 2017 - location will be announced shortly</h3>
+				<p>Have you built something you are proud of? Found an awesome insight in some twitter data you scraped? Made a VR horror game to blow any scary movie out of the water? This April, we will be hosting a showcase event to give you the opportunity to demo your work, receive constructive feedback from Columbus tech and analytics professionals and mingle with other creative minds like you.</p>
+
+				<p>If you want to bring your project to ShowOHI/O, fill out the interest form below so we can keep in touch with you about details of the event as it draws closer.</p>
+
+				<p>Show others your inventiveness. Show the Columbus tech industry why <strong>you</strong> deserve a seat at the table. Show<strong>OHI/O</strong>.</p>
+
+				<br>
+
+				<p><a class="button" style="width: 50%;" href="https://goo.gl/forms/0RYPaUEE4L1vABQ12">ShowOHI/O interest form</a></p>
+
+				<br><br><br><br><br><br><br><br>
+
+				<a class="social-media-image" href="https://www.facebook.com/hackohio"><i class="fa fa-facebook fa-2x"></i></a><a class="social-media-image" href="https://twitter.com/hackohio"><i class="fa fa-twitter fa-2x"></i></a><a class="social-media-image" href="https://www.instagram.com/hackohio/"><i class="fa fa-instagram fa-2x"></i></a><a class="social-media-image" href="https://www.youtube.com/channel/UCJJzEGEjQrpVTY3zEQS0BpA"><i class="fa fa-youtube fa-2x"></i></a><a class="social-media-image" href="https://medium.com/@hackohio"><i class="fa fa-medium fa-2x"></i></a>
+
+				<h2>
+					Have questions or comments? Get in touch at <a href="mailto:hackathon@osu.edu">hackathon@osu.edu</a>.
+				</h2>
+			</div>
+		</div>
+
+		<div class="cover"></div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+			var tag = document.createElement('script');
+					tag.src = 'https://www.youtube.com/player_api';
+
+			var firstScriptTag = document.getElementsByTagName('script')[0];
+					firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+			var tv, playerDefaults = {
+						autoplay: 0,
+						autohide: 1,
+						modestbranding: 0,
+						rel: 0,
+						showinfo: 0,
+						controls: 0,
+						disablekb: 1,
+						enablejsapi: 0,
+						iv_load_policy: 3
+					};
+
+			var vid = { 'videoId': 'CMHpWSEIsVs', 'startSeconds': 0, 'suggestedQuality': 'hd720' };
+
+			$('.hi em:last-of-type').html(vid.length);
+
+			function onYouTubePlayerAPIReady() {
+			  tv = new YT.Player('tv', {
+			  	events: {
+			  		'onReady': onPlayerReady,
+			  		'onStateChange': onPlayerStateChange
+			  	},
+			  	playerVars: playerDefaults
+			 	});
+			}
+
+			function onPlayerReady() {
+			  tv.loadVideoById(vid);
+			  tv.mute();
+			}
+
+			function onPlayerStateChange(e) {
+			  if (e.data === 1) {
+			    $('#tv').addClass('active');
+			    $('.hi em:nth-of-type(2)').html(vid + 1);
+			  } else if (e.data === 2) {
+			    $('#tv').removeClass('active');
+
+			    tv.loadVideoById(vid);
+			    tv.seekTo(vid.startSeconds);
+			  }
+			}
+
+			function vidRescale() {
+			  var w = $(window).width() + 200,
+			    h = $(window).height() + 200;
+
+			  if (w/h > 16/9) {
+			    tv.setSize(w, w / 16 * 9);
+			    $('.tv .screen').css({'left': '0px'});
+			  } else {
+			    tv.setSize(h / 9 * 16, h);
+			    $('.tv .screen').css({ 'left': -($('.tv .screen').outerWidth() - w) / 2 });
+			  }
+			}
+
+			$(window).on('load resize', vidRescale);
+		</script>
+	</body>
+</html>
