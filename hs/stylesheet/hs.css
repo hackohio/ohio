@@ -42,6 +42,18 @@ hr{
 .fa{
     color: #ffffff;
 }
+.button {
+    background-color: #BB0000;
+    display:block;
+    margin: 10px auto;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    max-width: 20%;
+}
 .container {
     width: 98%;
     padding: 0 1%;
@@ -101,7 +113,6 @@ div.schedule{
     text-align: center;
     padding: 10px;
 }
-
 #footer{
     text-align: center;
     padding: 15px;
