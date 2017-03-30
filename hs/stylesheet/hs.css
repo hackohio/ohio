@@ -46,7 +46,40 @@ a{
     margin: 0 auto;
 }
 .fa{
+    color: #ffffff;
+}
+.button {
+    background-color: #BB0000;
+    display:block;
+    margin: 10px auto;
+    border: none;
     color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    max-width: 20%;
+}
+.container {
+    width: 98%;
+    padding: 0 1%;
+    margin: 0 auto;
+}
+.row {
+    margin: .5em 0;
+}
+.column:first-child {
+    margin: 0;
+}
+.column {
+    float: left;
+    margin: 0 0 0 2%;
+}
+.one-fourth.column {
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    float: left;
 }
 table.time{
     margin: 0 auto;
