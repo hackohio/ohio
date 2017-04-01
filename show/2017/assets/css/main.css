@@ -3148,5 +3148,18 @@
 	}
 
 	.spnsr-logo img {
-		max-height: 90px;
+		max-height: 60px;
+	}
+
+	a.spnsr-logo.bigger img {
+		max-height: 120px !important;
+		clear: both;
+	}
+
+	.caption {
+		font-style: italic;
+		color: #777;
+		font-weight: bold;
+		font-size: 0.9rem;
+		text-align: center;
 	}
