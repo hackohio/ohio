@@ -81,6 +81,29 @@ a{
     text-align: center;
     float: left;
 }
+.workshop-desc {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.workshop-desc .workshop-desc-text {
+    visibility: hidden;
+    width: 140px;
+    background-color: #444444;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+.workshop-desc:hover .workshop-desc-text {
+    visibility: visible;
+}
 table.time{
     margin: 0 auto;
 }
