@@ -2,46 +2,47 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-
-		<!--Stuff to add:
-		    logo for tab
-		    fix centering-->
-		
-	    <link rel="stylesheet" type ="text/css" href="stylesheet/hs.css">
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>hsI/O</title>
-	</head>
-	<body>
-        <div>
-            <img id="textLogo" src = "image/highschool_IO.png" width="250">
-            <div id = "button"><a href = "https://docs.google.com/forms/d/e/1FAIpQLSfZPxwVKLpEtzfDLtx7W8-gX9wxgZwo3-zSJOrQqhQpszpIIg/viewform?usp=sf_link"
-                 class = "button" style = "width: 150px">Register!</a></div>
-            <h3><a class = "past" href = "https://pastfoundation.org/">PAST Foundation</a>, Columbus, Ohio <br>April 15, 2017</h3>
-            <div id = "header">
-                <a class = "head" href = "#about">About</a>
-                <a class = "head" href = "#faq">FAQ</a>
-                <a class = "head" href = "#schedule">Schedule</a>
-
-            </div>
-
+	<!-- Bootstrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- End bootstrap -->
+	<link rel="stylesheet" type ="text/css" href="stylesheet/hs.css">
+	<!-- Link custom stylesheets after bootstrap stylesheets -->
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	<title>hsI/O</title>
+</head>
+<body>
+	<div>
+		<img id="textLogo" src = "image/highschool_IO.png" width="250" />
+		<div id = "register-btn">
+			<a href = "https://docs.google.com/forms/d/e/1FAIpQLSfZPxwVKLpEtzfDLtx7W8-gX9wxgZwo3-zSJOrQqhQpszpIIg/viewform?usp=sf_link"
+			class = "button" style = "width: 150px">Register!</a>
 		</div>
-        <div class = "about">
-            <a id="about"></a>
-            <p>Welcome to the website of High School I/O! High School I/O is the first high school hackathon hosted by
-                OHI/O, a program created in 2013 with the goal of fostering a tech
-                culture at Ohio State and its surrounding communities.
-            </p>
-            <p>
-                We aim to provide high school students an opportunity to learn
-                about computer science in a fun, engaging, and inclusive environment.
-                Students will work in teams to build real technology projects. Students will
-                also gain the opportunity to develop new friendships, build connections
-                with professional mentors, and learn soft skills that will help them
-                succeed in the real world.
-            </p>
+		<h3><a class = "past" href = "https://pastfoundation.org/">PAST Foundation</a>, Columbus, Ohio <br>April 15, 2017</h3>
+		<div id = "header">
+			<a class = "head" href = "#about">About</a>
+			<a class = "head" href = "#faq">FAQ</a>
+			<a class = "head" href = "#schedule">Schedule</a>
+		</div>
+	</div>
 
-
-        </div>
+	<div class = "about">
+		<a id="about"></a>
+		<p>Welcome to the website of High School I/O! High School I/O is the first high school hackathon hosted by
+			OHI/O, a program created in 2013 with the goal of fostering a tech
+			culture at Ohio State and its surrounding communities.
+		</p>
+		<p>
+			We aim to provide high school students an opportunity to learn
+			about computer science in a fun, engaging, and inclusive environment.
+			Students will work in teams to build real technology projects. Students will
+			also gain the opportunity to develop new friendships, build connections
+			with professional mentors, and learn soft skills that will help them
+			succeed in the real world.
+		</p>
+	</div>
 
 	<div class = "faq">
 		<a id="faq"></a>
@@ -122,13 +123,66 @@
 				<tr><td>9:00 AM</td><td>Doors Open: Student Check In</td></tr>
 				<tr><td>9:30 AM</td><td>Opening Ceremony</td></tr>
 				<tr><td>10:00 AM</td><td>Hacking Officially Begins</td></tr>
-				<tr><td>10:00 AM</td><td>Web Development Workshop</td></tr>
-				<tr><td>10:30 AM</td><td>Hardware Workshop</td></tr>
-				<tr><td>11:00 AM</td><td>Game Design Workshop</td></tr>
-				<tr><td>11:30 AM</td><td>Fashion Meets Tech Workshop</td></tr>
-				<tr><td>12:00 PM</td><td>Lunch</td></tr>
+				<tr>
+					<td>10:00 AM - 10:45 AM</td>
+					<td>
+						<div class="workshop-desc">Web Development Workshop
+						<span class="workshop-desc-text">Learn the basics of designing a website and a good user interface!</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>10:00 AM - 10:45 AM</td>
+					<td>
+						<div class="workshop-desc">Hardware Workshop
+						<span class="workshop-desc-text">Learn about microcontrollers and working with hardware!</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>10:45 AM - 11:30 AM</td>
+					<td>
+						<div class="workshop-desc">Hardware iOT Workshop
+						<span class="workshop-desc-text">Learn about the Internet Of Things and wirelessly connecting to hardware!</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>10:45 AM - 11:30 AM</td>
+					<td>
+						<div class="workshop-desc">ReactJS (User Interfaces) Workshop
+						<span class="workshop-desc-text">Learn about the popular JavaScript framework ReactJS and how it is used to create powerful user interfaces!</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>11:30 AM - 12:15 PM</td>
+					<td>
+						<div class="workshop-desc">Mobile Dev Workshop
+						<span class="workshop-desc-text">Learn about creating a mobile app!</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>11:30 AM - 12:15 PM</td>
+					<td>
+						<div class="workshop-desc">Comp Sci in real life
+						<span class="workshop-desc-text">Learn about the real world!</span>
+						</div>
+					</td>
+				</tr>
+				<tr><td>12:15 PM</td><td>Lunch</td></tr>
+				<tr>
+					<td>1:30 PM - 2:15 PM</td>
+					<td>
+						<div class="workshop-desc">AI Talk
+						<span class="workshop-desc-text">Learn about Artificial Intelligence!</span>
+						</div>
+					</td>
+				</tr>
 				<tr><td>5:45 PM</td><td>Dinner</td></tr>
 				<tr><td>6:30 PM</td><td>Judging/Science Fair</td></tr>
+				<tr><td>7:15 PM</td><td>Showcase</td></tr>
 				<tr><td>7:30 PM</td><td>Closing Ceremony</td></tr>
 			</tbody>
 		</table>
