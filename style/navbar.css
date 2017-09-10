@@ -2,10 +2,10 @@
 #nav {
   text-align: center;
   position: fixed;
-  top: 80vh; /* Should be same as nav.js -> navOriginalPos */
+  top: 90vh; /* Should be same as nav.js -> navOriginalPos */
   width: 100%;
   z-index: 100;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,1);
   font-size: 200%;
 }
 
