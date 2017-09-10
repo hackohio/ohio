@@ -192,11 +192,52 @@ h2 {
 }
 
 .bigText {
-    font-size: 100px;
+    font-size: 85px;
 }
 
 .compress {
     font-weight: normal;
     margin: 0px;
-    font-size:40px;
+    font-size:30px;
+}
+
+.sponsor-huge {
+	width: 100%;
+	max-width: 650px;
+}
+
+.sponsor-big {
+	width: 100%;
+	max-width: 600px;
+}
+
+.sponsor-med {
+	width: 100%;
+	max-width: 400px;
+}
+
+.sponsor-sm {
+	width: 100%;
+	max-width: 300px;
+max-width: 200px;
+}
+
+.box-gray {
+	background-color: #D9D9D9;
+	padding: 3px;
+}
+
+.box-darkgray {
+	background-color: #333333;
+	color: #FFFFFF;
+	padding: 3px;
+}
+
+.box-white {
+	background-color: #FFFFFF;
+	padding: 3px;
+}
+
+.bordered { 
+	border: 1px solid #AAAAAA;
 }
