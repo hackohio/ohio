@@ -1,0 +1,36 @@
+/* Navbar */
+#nav {
+  text-align: center;
+  position: fixed;
+  top: 80vh; /* Should be same as nav.js -> navOriginalPos */
+  width: 100%;
+  z-index: 100;
+
+  font-size: 200%;
+}
+.secondary-page #nav {
+  position: absolute;
+  top: 0;
+}
+#nav ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+#nav li {
+    float: none;
+    display: inline-block;
+    margin: 0;
+    color: red;
+}
+#nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: red;
+}
+#nav li a:hover {
+    background-color: #111;
+}

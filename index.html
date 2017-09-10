@@ -17,6 +17,8 @@
 		<link rel="shortcut icon" href="img/favicon.ico">
 		<link rel="stylesheet" href="style/font-awesome-4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="style/main.css">
+		<link rel="stylesheet" type="text/css" href="style/navbar.css">
+		<link rel="stylesheet" type="text/css" href="style/parallax.css">
 
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -32,12 +34,28 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 	<body>
+
 		<div class="tv">
 			<!-- This div will be replaced by the YouTube iframe player -->
 		  <div class="screen mute" id="tv"></div>
 		</div>
-		<div class="content">
-			<div class="main">
+
+	  <div id="nav">
+      <!-- Add the href's of these links to "pageIds" in nav.js -->
+      <ul>
+        <li><a href="#home-back">Home</a></li>
+        <li>|</li>
+        <li><a href="#about-page">About</a></li>
+				<li>|</li>
+				<li><a href="#schedule-page">Schedule</a></li>
+      </ul>
+    </div>
+
+		<div id="home-back">
+	  </div>
+
+		<div id="homepage">
+			<div class="content"> <!-- Do we need this "content" div?? -->
 				<img src="img/HackOHIO logo.svg" width="300px" alt="HackOHI/O logo">
 				<br><br>
 				<h2>The Ohio State University's<br>annual hackathon.</h2>
@@ -66,9 +84,22 @@
 				<h3>
 					Want to get in touch? Reach out to us at <a href="mailto:hackathon@osu.edu">hackathon@osu.edu</a>.
 				</h3>
+				<br><br>
 			</div>
 		</div>
+
+		<div id="about-page" class="secondary-page">
+			<h1>About</h1>
+			<p>content...</p>
+		</div>
+
+		<div id="schedule-page" class="secondary-page">
+			<h1>Schedule</h1>
+			<p>content...</p>
+		</div>
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="script/player.js"></script>
+		<!--<script src="script/player.js"></script>-->
+		<script src="script/nav.js"></script>
 	</body>
 </html>

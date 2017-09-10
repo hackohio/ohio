@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	padding: 0;
 	background-color: rgb(0,0,0);
 	color: white;
 	font-family: 'proximanova', Proxima Nova, Helvetica, sans-serif;
@@ -50,7 +51,6 @@ span.bld {
 }
 
 .content {
-	position: absolute;
 	width: 100%;
 	padding-top: 10px;
 	text-align: center;
@@ -67,17 +67,6 @@ span.bld {
 	display: inline-block;
 	font-size: 18px;
 	width: 100px;
-}
-
-.main {
-	/*position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	max-width: 768px;*/
-	/* box-sizing: border-box; */
-	/*text-align: center;
-	width: 80%;*/
 }
 
 .logo.lt {
