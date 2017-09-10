@@ -6,7 +6,10 @@
   width: 100%;
   z-index: 100;
   background-color: rgba(255,255,255,1);
-  font-size: 200%;
+  font-size: 0px;
+  margin: 0;
+  padding:0;
+
 }
 
 /*Delete this
@@ -27,33 +30,53 @@
 }
 #nav ul {
     list-style-type: none;
-    margin: auto;
+    margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow:hidden;
 }
 #nav li {
     float: none;
     display: inline-block;
     margin: 0;
+    padding: 0;
     color: black;
+    height:100%;
+    margin:0;
+    vertical-align:bottom;
 }
 #nav li a {
     display: block;
     text-align: center;
-    padding: 14px 14px;
+    padding: 14px;
     text-decoration: none;
     color: black;
+    height:50%;
+    font-size: 22px;
+    vertical-align:bottom;
+
+
   -webkit-transition: all .2s ease-out;
      -moz-transition: all .2s ease-out;
       -ms-transition: all .2s ease-out;
        -o-transition: all .2s ease-out;
           transition: all .2s ease-out;
 }
-#nav li a:hover {
+#nav li a.hover {
     background-color: #888888;
     color: white;
 }
 
-li.nav a:hover:not(.active) {
+ul li a.active {
+    background-color: #bb0000;
+    color: white !important;
+  -webkit-transition: all .2s ease-out;
+     -moz-transition: all .2s ease-out;
+      -ms-transition: all .2s ease-out;
+       -o-transition: all .2s ease-out;
+          transition: all .2s ease-out;
+}
 
+ul li a:hover:not(.active) {
+    background-color: #888888;
+    color: white;
 }

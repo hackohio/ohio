@@ -19,6 +19,8 @@
 		<link rel="stylesheet" type="text/css" href="style/main.css">
 		<link rel="stylesheet" type="text/css" href="style/navbar.css">
 		<link rel="stylesheet" type="text/css" href="style/parallax.css">
+		<link rel="stylesheet" type="text/css" href="style/responsive.css">
+
 
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -43,20 +45,27 @@
 	  <div id="nav">
       <!-- Add the href's of these links to "pageIds" in nav.js -->
       <ul>
-        <li><a href="#home-back">Home</a></li>
-        <li><a href="#about-page">About</a></li>
-		<li><a href="#schedule-page">Schedule</a></li>
+        <li><a id="home-back-nav" href="#home-back">Home</a></li>
+        <li><a id="about-page-nav" href="#about-page">About</a></li>
+		<li><a id="hypeevents-page-nav" href="#hypeevents-page">Hype Events</a></li>
+		<li><a id="prizes-page-nav" href="#prizes-page">Prizes</a></li>
+		<li><a id="faq-page-nav" href="#faq-page">FAQ</a></li>
+		<li><a id="sponsorlist-page-nav" href="#sponsorlist-page">Sponsors</a></li>
+		<li><a id="schedule-page-nav" href="#schedule-page">Schedule</a></li>
+		<li><a id="stats-page-nav" href="#stats-page">Stats</a></li>
+		<li><a id="mentor-link-nav" href="#" target="new">Mentor</a></li>
+
+
       </ul>
     </div>
 
-		<div id="home-back">
-	  </div>
+		<div id="home-back"></div>
 
 		<div id="homepage">
 			<div class="content"> <!-- Do we need this "content" div?? -->
-				<img src="img/HackOHIO logo.svg" width="300px" alt="HackOHI/O logo">
+				<img class="grow" src="img/HackOHIO logo.svg" width="300px" alt="HackOHI/O logo">
 				<br><br>
-				<h2>The Ohio State University's<br>annual hackathon.</h2>
+				<h2 class="txt-white">The Ohio State University's<br>annual hackathon.</h2>
 				<br>
 				<h3>
 					Ohio Union, Columbus, Ohio <a href="https://www.google.com/maps/place/Ohio+Union,+Columbus,+OH+43210/@39.998361,-83.0099487,17z/data=!3m1!4b1!4m2!3m1!1s0x88388eb8e1ad7407:0x6eb50adaef6f6294"><i class="fa fa-map-marker fa-1x"></i></a>
@@ -94,7 +103,7 @@
 				<h1>Welcome to Columbus</h1>
 				<hr>
 				<p>
-					On November 19<sup>th</sup>, join us at HackOHI/O&mdash;the Ohio State University's largest hackathon&mdash;for a weekend of building and creating real projects with awesome people.
+					On October 21<sup>st</sup>, join us at HackOHI/O&mdash;the Ohio State University's largest hackathon&mdash;for a weekend of building and creating real projects with awesome people.
 					Over 700 undergraduate and graduate students will design, build, and demonstrate projects to a live audience of students, faculty, and representatives from tech companies.
 					HackOHI/O is put on by <a class="pretty-link" href="http://hack.osu.edu/">OHI/O</a>, a student-led organization at Ohio State that aims to foster a tech culture at our university.
 					<br>
@@ -117,12 +126,12 @@
 					</div>
 				</div>
 
-				<p>
+				<p class="clear">
 					Meet other passionate, fun and creative students from OSU and universities across the nation.
 					Our industry partners are also sending professional developers, designers, marketers, and hustlers to provide mentorship.
 				</p>
 				
-				<div class="video">
+				<div class="video" style="display:none;">
 					<iframe src="https://www.youtube.com/embed/KSEgYQRVuG8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 				</div>
 				
@@ -130,21 +139,343 @@
 			</div>
 		</div>
 
+		<div id="hypeevents-page" class="secondary-page">
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<div class="clear"></div>
+				<a name="events"></a>
+				<h1>Hype Events</h1>
+				<hr>
+				<p >
+					OHI/O, our partnering student organizations, and our sponsors are hosting a series of great events leading up to the hackathon.
+					These events include tech talks, workshops, and social gatherings that help students prepare for the hackathon, gather ideas, and build teams!
+				</p>
+				
+				<br><br>
+				
+				<div class="section grp">
+					<div class= "col half">
+						<p class="bold txt-red">9/21/2016</p>
+						<h2 class="low-bottom-margin low-top-margin">Microsoft Coding Competition</h2>
+						<p>
+							6:00 - 8:00 PM @ <a class="pretty-link" href="https://techhub.osu.edu/location-hours">Tech Hub</a>&nbsp;&nbsp;<i title="Food provided!" class="black fa fa-cutlery"></i>
+						</p>
+						
+						<br>
+						
+						<p class="bold txt-red">9/23/2016</p>
+						<h2 class="low-bottom-margin low-top-margin">How to Use Sketch 3 to Design a Winning Idea</h2>
+						<p>
+							7:00 - 8:00 PM @ Dreese Labs 264
+							<br>
+							<span class="smallText">Workshop by Sean Doran</span>
+						</p>
+					</div>
+					
+					<div class= "col half">		
+						<p class="bold txt-red">11/2/2016</p>
+						<h2 class="low-bottom-margin low-top-margin">Paxata Tech Talk: ES2015 and the next generation of JS languages</h2>
+						<p>
+							7:00 - 8:00 PM @ Dreese Labs 264
+							<br>
+							<span class="smallText">Now that the new spec for Javascript has been released it is time to catch up! During this presentation we will look at the changes to both the code and the ecosystem brought on by ES2015. We will explore how it will change frameworks like D3, Angular and React. Finally, we will explore how Paxata is working to upgrade from a legacy Angular 1 world to the promise of and Angular 2 one powered by Typescript.</span>
+						</p>
+						
+						<br>
+
+						<p class="bold txt-red">11/7/2016</p>
+						<h2 class="low-bottom-margin low-top-margin">How to Hack a Tesla and Coding with the Artisan</h2>
+						<p>
+							5:30 - 7:30 PM @ <a class="pretty-link" href="https://www.google.com/maps/dir/''/pillar+technology+columbus/@39.974839,-83.0677131,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x88234f6a744fc7b9:0xd0c230a717d372f2!2m2!1d-82.9976732!2d39.9748601">Pillar Technology</a>&nbsp;&nbsp;<i title="Food provided!" class="black fa fa-cutlery"></i>
+							<br>
+							<span class="smallText">Learn how ideas become reality at The Forge by Pillar! Hacking Tesla, autonomous tractors, and more. Please <a class="pretty-link" href="http://info.pillartechnology.com/osualexatesla">RSVP here</a>.</span>
+						</p>
+						
+						<br>
+						
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div id="prizes-page" class="secondary-page">
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="prizes"></a>
+				<br><br>
+				<h1>Prizes</h1>
+				<hr>
+				<p >
+					Coming Soon...
+				</p>
+			</div>
+			<div class="clear"></div>
+
+		</div>
+
+		<div id="faq-page" class="secondary-page">
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="faq"></a>
+				<br><br>
+				<h1>Frequently Asked Questions</h1>
+				<hr>
+				<div class="innerContent center">
+				<p>
+					Here are some common questions that people ask. If you have any additional questions please contact us at <a class="pretty-link" href="mailto:hackathon@osu.edu">hackathon@osu.edu</a>.
+				</p>
+				<div class="section grp">
+					<div class= "col fourth">
+						<h3>What is a hackathon?</h3>
+						<p class="faqText">
+							A hackathon is a fun 24 or 36 hour event that brings together multi-disciplinary students with varying experience from across the nation together to create, innovate, and build a project all within one weekend.
+							Students have access to professional mentors, workshops, and loaner hardware during the event.
+							They also have the opportunity to showcase and demo their work projects to judges and other exposition attendees at the end of the event.
+						</p>
+					</div>
+					
+					<div class= "col fourth">
+						<h3>What sort of projects do people make?</h3>
+						<p class="faqText">
+							All sorts of things! Previous projects have included mobile apps, websites, smart mirrors, light-up glasses, pancake printers...the possibilities are endless.
+						</p>
+					</div>
+					
+					<div class= "col fourth">
+						<h3>But... I don't know how to code!</h3>
+						<p class="faqText">
+							Not to worry! HackOHI/O provides opportunities for first-time programmers. From workshops, to resources to mentors and teammates, you'll be sure to pick up skills over the weekend.
+							Past that, teams need more than just coders and great projects always start with diverse teams.
+							Everyone has some knowledge and perspective they can bring to the table.
+						</p>
+					</div>
+					
+					<div class= "col fourth">
+						<h3>Is it free? What about food?</h3>
+						<p class="faqText">
+							HackOHI/O is free to participate in! We'll be providing you with great meals, snacks, and drinks throughout the entire event. We've got participants' food restrictions covered, too.
+						</p>
+					</div>
+				</div>
+				
+				<div class="section grp">
+					<div class= "col fourth">
+						<h3>Who can participate?</h3>
+						<p class="faqText">
+							Anyone who is a student at a university! We encourage all levels of expertise to join.
+							Whether this is your first hackathon, or you've been to hackathons around the nation, HackOHI/O provides an opportunity to collaborate and create something amazing.
+							All participants are expected to follow our <a class="pretty-link" href="https://s3.amazonaws.com/aws-website-hackohiofiles-3vyw6/HackOHIO+2016+Waiver.pdf">Code of Conduct</a>.
+							<br>
+							<br>
+							Anyone is welcome to attend our <a class="pretty-link" href="https://www.eventbrite.com/e/hackohio-2016-showcase-tickets-28820776719">Sunday showcase</a>, where our winners will present their projects.
+							Please register if you plan on attending!
+						</p>
+					</div>
+					
+					<div class= "col fourth">
+						<h3>What should I bring?</h3>
+						<p class="faqText">
+							Bring a laptop, a phone, some comfy clothes, appropriate chargers, and toiletries! Remember your toothbrush and paste.
+							Leave any pre-written code at home; your projects should be started and completed at the hackathon.
+						</p>
+					</div>
+					
+					<div class= "col fourth">
+						<h3>What if I don't have a team?</h3>
+						<p class="faqText">
+							No worries! OHI/O provides opportunities before and during the hackathon to find a team.
+							We currently have a <a class="pretty-link" href="https://www.facebook.com/groups/528788320664502/">team formation group</a> on Facebook, which you are welcome to join.
+							We'll be posting more information on team formation events in our newsletters and on our social media accounts - be on the lookout!
+						</p>
+					</div>
+					
+					<div class= "col fourth">
+						<h3>How large can teams be?</h3>
+						<p class="faqText">
+							All participants should be in teams of 2 to 4. We hope to encourage teamwork while keeping team sizes manageable for a 24 hour event.
+						</p>
+					</div>
+				</div>
+				
+				<div class="section grp">
+					<div class= "col fourth">
+						<h3>Do I have to have an idea?</h3>
+						<p class="faqText">
+							Nope! Many students come up with an idea at the hackathon.
+							By talking to fellow students and coming to our pre-hype events, you'll find opportunities to join an idea that piques your interest.
+							If you get stuck, we'll have a nice list of ideas to help you out.
+						</p>
+					</div>
+					
+					<div class= "col fourth">
+						<h3>Can I mentor?</h3>
+						<p class="faqText">
+							Yes! We welcome individuals with knowledge and expertise in various topic areas to help mentor students at HackOHI/O. If you're interested, please fill out <a class="pretty-link" href="https://docs.google.com/forms/d/e/1FAIpQLSeXW55ZglWbF5HE7_lUzIaiHVXBqOFymyw2Del9xJPk-dDBZw/viewform?c=0&w=1">this form</a>.
+						</p>
+					</div>
+					
+					<div class= "col fourth">
+						<h3>When will I be notified of acceptance?</h3>
+						<p class="faqText">
+							We're currently in the process of reviewing all applicants and sending acceptances out in waves through the beginning of November. Stay tuned - if you've registered, you will receive an email in due time!
+						</p>
+					</div>
+					
+					<div class= "col fourth">
+						<h3>How are projects judged?</h3>
+						<p class="faqText">
+							HackOHI/O is proud to have dozens of judges consisting of academia, industry professionals, and alumni.
+							On Sunday, participants will share their projects with two sets of two judges, who will score the project based on several criteria: technical difficulty, functionality, intuitiveness, usefulness/impact, creativity, teamwork, and overall wow factor.
+							Remember - the competition is only a small part of the event! The most important part is to have fun and build something amazing.
+						</p>
+					</div>
+				</div>
+				
+				<div class="section grp">
+					<div class= "col fourth">
+						<h3>Are travel reimbursements available?</h3>
+						<p class="faqText">
+							We plan on sending buses to schools in and around Ohio who have a high number of registrants.
+							We also have a limited number of Marathon gift certificates for students who carpool to HackOHI/O from out of the Columbus area.
+						</p>
+					</div>
+					
+					<div class= "col fourth">
+						<h3>What is the lockdown?</h3>
+						<p class="faqText">
+							For safety, no one is allowed to enter or leave the Ohio Union between the hours of 11:30 PM and 7 AM.
+							If you'd like to leave the event for the night, please keep the lockdown period in mind.
+						</p>
+					</div>
+					
+					<div class= "col fourth">
+						<h3>Can I bring my desktop computer and a monitor?</h3>
+						<p class="faqText">
+							Yep! Each participant's space isn't <i>too</i> big, but there should be enough space on the table top and ground for a desktop/monitor setup.
+							Please note that we do not have ethernet connections available - you should come with a wireless adapter, if you do not have one already.
+						</p>
+					</div>
+					
+					<div class= "col fourth">
+						<h3>Wow, this all sounds so great! Who hosts HackOHI/O?</h3>
+						<p class="faqText">
+							HackOHI/O is hosted by several Ohio State student organizations united under OHI/O.
+							You can check out our other events at <a class="pretty-link" href="http://hack.osu.edu/">http://hack.osu.edu</a>.
+						</p>
+					</div>
+				</div>
+				
+				<div class="clear">
+				</div>
+			</div>
+		</div>
+			
+
+		</div>
+
+		<div id="sponsorlist-page" class="secondary-page">
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="sponsors"></a>
+				<br><br>
+				<h1>Sponsors</h1>
+				<hr>
+				<p >
+					Coming Soon...
+				</p>
+			</div>
+			<div class="clear"></div>
+
+		</div>
+
 		<div id="schedule-page" class="secondary-page">
-			<h1>Schedule</h1>
-			<p>content...</p>
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="sponsors"></a>
+				<br><br>
+				<h1>Schedule</h1>
+				<hr>
+				<p >
+					Coming Soon...
+				</p>
+			</div>
+			<div class="clear"></div>
+
+		</div>
+
+		<div id="stats-page" class="secondary-page">
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="sponsors"></a>
+				<br><br>
+				<h1>Stats</h1>
+				<hr>
+				<div class="full-width bg-red">
+				<a name="stats"></a>
+
+				<div class="section grp">
+					<div class="col third">
+						<div class="grow bigText">
+							24
+						</div>
+						<div>
+							<h1 class="compress">Hours</h1>
+						</div>
+					</div>
+					<div class="col third">
+						<div class="grow bigText">
+							750+
+						</div>
+						<div>
+							<h1 class="compress ">Hackers</h1>
+						</div>
+					</div>
+					<div class="col third">
+						<div class="grow bigText ">
+							40+
+						</div>
+						<div>
+							<h1 class="compress ">Schools Represented</h1>
+						</div>
+					</div>
+				</div>
+				<div class="section grp">
+					<div class="col third">
+						<div class="grow bigText ">
+							100+
+						</div>
+						<div>
+							<h1 class="compress ">Judges & Mentors</h1>
+						</div>
+					</div>
+					<div class="col third">
+						<div class="grow bigText ">
+							$8k+
+						</div>
+						<div>
+							<h1 class="compress ">Worth of Prizes</h1>
+						</div>
+					</div>
+					<div class="col third">
+						<div class="grow bigText ">
+							17k+
+						</div>
+						<div>
+							<h1 class="compress ">Sq. Ft. of Space</h1>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			</div>
+			<div class="clear"></div>
+
 		</div>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<!--<script src="script/player.js"></script>-->
 		<script src="script/nav.js"></script>
-		<script type="text/javascript" src="script/simplyscroll.min.js"></script>
-<script type="text/javascript">
-(function($) {
-	$(function() { //on DOM ready 
-    		$("#scroller").simplyScroll();
-	});
- })(jQuery);
-</script>
 	</body>
 </html>

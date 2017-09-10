@@ -7,7 +7,10 @@ $(document).ready(function() {
   /*
   ------- SET THIS USING NAVBAR HREFs -------
   */
-  var pageIds = ["#about-page", "#schedule-page"];
+  var pageIds = ["#about-page", "#hypeevents-page","#prizes-page", 
+                  "#faq-page", "#sponsorlist-page", "#schedule-page",
+                  "#stats-page"
+                ];
   /*
   ------- SET THIS USING NAVBAR CSS -------
   */
@@ -89,9 +92,18 @@ $(document).ready(function() {
     if (href != "#home-back") {
       lastActivePage = activePage;
       activePage = $(href);
+      console.log("clicked")
 
       for (var i=0; i<pageIds.length; i++) {
-        if (href != pageIds[i]) $(pageIds[i]).hide(); else $(pageIds[i]).show();
+        if (href != pageIds[i]){
+          $(pageIds[i]).hide();
+          //$(pageIds[i]+"-nav").removeClass("active");
+        }
+        else{
+          $(pageIds[i]).show();
+          //$(pageIds[i]+"-nav").addClass("active");
+        }
+        console.log(pageIds[i]);
       }
 
       //Re-stick the navbar when we change pages
