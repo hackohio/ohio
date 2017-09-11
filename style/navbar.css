@@ -2,13 +2,14 @@
 #nav {
   text-align: center;
   position: fixed;
-  top: 90vh; /* Should be same as nav.js -> navOriginalPos */
+  bottom: 0vh; /* Should be same as nav.js -> navOriginalPos */
   width: 100%;
   z-index: 100;
-  background-color: rgba(255,255,255,1);
+  background-color: white;
   font-size: 0px;
   margin: 0;
   padding:0;
+  height:52px;
 
 }
 .secondary-page #nav {

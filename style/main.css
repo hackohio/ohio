@@ -192,11 +192,79 @@ h2 {
 }
 
 .bigText {
-    font-size: 100px;
+    font-size: 85px;
 }
 
 .compress {
     font-weight: normal;
     margin: 0px;
-    font-size:40px;
+    font-size:30px;
+}
+
+.sponsor-huge {
+	width: 100%;
+	max-width: 650px;
+}
+
+.sponsor-big {
+	width: 100%;
+	max-width: 600px;
+}
+
+.sponsor-med {
+	width: 100%;
+	max-width: 400px;
+}
+
+.sponsor-sm {
+	width: 100%;
+	max-width: 300px;
+max-width: 200px;
+}
+
+.box-gray {
+	background-color: #D9D9D9;
+	padding: 3px;
+}
+
+.box-darkgray {
+	background-color: #333333;
+	color: #FFFFFF;
+	padding: 3px;
+}
+
+.box-white {
+	background-color: #FFFFFF;
+	padding: 3px;
+}
+
+.bordered { 
+	border: 1px solid #AAAAAA;
+}
+
+a.social-media-image {
+    /*padding-right: 20px;*/
+    padding:0px;
+}
+.social-media {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding:0px;
+    z-index: 100;
+    background-color:rgba(255,255,255,0.9);
+    display:block;
+    text-align:center;
+    border-radius:12px;
+}
+
+.social-media-fa{
+	color:#bb0000;
+	padding:10px;
+}
+
+img{
+	vertical-align: middle;
+	height:100%;
 }

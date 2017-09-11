@@ -15,7 +15,7 @@ $(document).ready(function() {
   ------- SET THIS USING NAVBAR CSS -------
   */
   // Should be the same value as #nav { top }
-  var navHomepagePos = $(window).height()*0.9;
+  var navHomepagePos = $(window).height()-52;
   /*
   ---------------------------------------------
   */
