@@ -54,7 +54,6 @@ span.bld {
 	width: 100%;
 	padding-top: 10px;
 	text-align: center;
-	background: rgba(0, 0, 0, 0.5);
 }
 
 .button {
@@ -104,6 +103,17 @@ span.bld {
 	 opacity: 1;
 }
 
+.screencover {
+	position: fixed;
+	top: -100px;
+	right: -100px;
+	bottom: -100px;
+	left: -100px;
+	margin: auto;
+	background-color: rgba(0,0,0,0.5);
+	z-index:-1;
+}
+	
 
 
 hr {
