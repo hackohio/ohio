@@ -273,3 +273,9 @@ a.social-media-image {
 	color:#bb0000;
 	padding:10px;
 }
+
+@media screen and (min-width: 480px) {
+    #social-media {
+        visibility: hidden;
+    }
+}
