@@ -274,8 +274,8 @@ a.social-media-image {
 	padding:10px;
 }
 
-@media screen and (min-width: 480px) {
-    #social-media {
+@media (min-width: 480px) {
+    .social-media {
         visibility: hidden;
     }
 }
