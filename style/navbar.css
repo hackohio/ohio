@@ -11,23 +11,11 @@
   padding:0;
 
 }
-
-/*Delete this
-.leftsidebar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 13%;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    z-index:100;
-}*/
-
 .secondary-page #nav {
   position: absolute;
   top: 0;
 }
+
 #nav ul {
     list-style-type: none;
     margin: 0;

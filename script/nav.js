@@ -7,7 +7,7 @@ $(document).ready(function() {
   /*
   ------- SET THIS USING NAVBAR HREFs -------
   */
-  var pageIds = ["#about-page", "#hypeevents-page","#prizes-page", 
+  var pageIds = ["#about-page", "#hypeevents-page","#prizes-page",
                   "#faq-page", "#sponsorlist-page", "#schedule-page",
                   "#stats-page"
                 ];
@@ -62,6 +62,7 @@ $(document).ready(function() {
   depending on how far the user has scrolled
   */
   stickNavbar(); // Call once as page loads
+  var navStuckOnTop = false;
   function stickNavbar() {
     var navId = "#nav";
     var nextPagePos = activePage.offset().top - $(document).scrollTop();
@@ -72,6 +73,18 @@ $(document).ready(function() {
       if (!$(navId).parent().is(activePage)) {
         nav = $(navId).detach();
         activePage.prepend(nav);
+      }
+      // Make sure the navbar doesnt go higher than the top of the page
+      if (nextPagePos <= 0) {
+        if (!navStuckOnTop) {
+          $(navId).css({position: "fixed"});
+          navStuckOnTop = true;
+        }
+      } else {
+        if (navStuckOnTop) {
+          $(navId).css({position: ""});
+          navStuckOnTop = false;
+        }
       }
     } else {
       // Attach navbar back to body
