@@ -248,7 +248,7 @@ max-width: 200px;
 	padding: 3px;
 }
 
-.bordered { 
+.bordered {
 	border: 1px solid #AAAAAA;
 }
 
@@ -278,4 +278,8 @@ a.social-media-image {
     #social-media {
         visibility: hidden;
     }
+}
+img{
+	vertical-align: middle;
+	height:100%;
 }
