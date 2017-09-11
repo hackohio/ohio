@@ -105,10 +105,10 @@ span.bld {
 
 .screencover {
 	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	top: -100;
+	right: -100;
+	bottom: -100;
+	left: -100;
 	margin: auto;
 	background-color: rgba(0,0,0,0.5);
 	z-index:-1;
