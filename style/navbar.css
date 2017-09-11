@@ -9,6 +9,8 @@
   font-size: 0px;
   margin: 0;
   padding:0;
+  overflow:scroll;
+  height: 52px;
 
 }
 .secondary-page #nav {
@@ -20,7 +22,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow:hidden;
+    overflow:auto;
 }
 #nav li {
     float: none;
@@ -28,9 +30,7 @@
     margin: 0;
     padding: 0;
     color: black;
-    height:100%;
     margin:0;
-    vertical-align:bottom;
 }
 #nav li a {
     display: block;
@@ -38,9 +38,7 @@
     padding: 14px;
     text-decoration: none;
     color: black;
-    height:50%;
     font-size: 22px;
-    vertical-align:bottom;
 
 
   -webkit-transition: all .2s ease-out;
