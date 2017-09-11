@@ -241,3 +241,25 @@ max-width: 200px;
 .bordered { 
 	border: 1px solid #AAAAAA;
 }
+
+a.social-media-image {
+    /*padding-right: 20px;*/
+    padding:0px;
+}
+.social-media {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding:0px;
+    z-index: 100;
+    background-color:rgba(255,255,255,0.9);
+    display:block;
+    text-align:center;
+    border-radius:12px;
+}
+
+.social-media-fa{
+	color:#bb0000;
+	padding:10px;
+}
