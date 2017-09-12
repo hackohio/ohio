@@ -48,6 +48,8 @@ h2 {
     margin-top: 25px;
     margin-bottom: 15px;
     box-sizing: border-box;
+    color: rgb(187, 0, 0);
+
 }
 
 h3 {
@@ -113,8 +115,28 @@ ul {
 	height: 100%
 }
 
+.button {
+    background-color: #BB0000;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width: 50%;
+
+}
+
+
 @media screen and (max-width: 750px) {
 	.topNotice {
 		height: 160px;
 	}
+    .margin-on-mobile{
+        margin-left:35px;
+    }
+    .button{
+        width: 185px;
+    }
 }
