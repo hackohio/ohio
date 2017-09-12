@@ -141,18 +141,20 @@ $(document).ready(function() {
 
     /* Remove non-mobile elements */
     $("#nav").remove();
+    $("#tv").remove();
     $("#home-back").remove();
 
     /* Add space at top of page */
-    $("body").prepend("<br /><br /><br /><br />");
+    $("#homepage").prepend("<br /><br /><br /><br />");
 
 
     /* Hide every page but homepage */
-    /*
-    for (var i=0; i<pageIds.length; i++) {
-      $(pageIds[i]).remove();
-    }
-    */
+    var hideAllPages = function() {
+      for (var i=0; i<pageIds.length; i++) {
+        $(pageIds[i]).hide();
+      }
+    };
+    hideAllPages();
 
     /* Opens and closes navbar */
     $("#mobilenav-sandwich").click(function(){
@@ -166,6 +168,20 @@ $(document).ready(function() {
     /* Close navbar when link is clicked */
     $(".mobilenav-btn").click(function(){
       $("#mobilenav").removeClass("responsive");
+
+      /* Hide all pages */
+      //$("#tv").hide();
+      $("#homepage").hide();
+      hideAllPages();
+
+      /* Unhide clicked page */
+      var href = $(this).attr("href");
+      $(href).show();
+
+      /*
+      if (href == "homepage") {
+        $("#tv").show();
+      }*/
     });
   }
 });
