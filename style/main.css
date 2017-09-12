@@ -50,6 +50,12 @@ span.bld {
 	font-weight: 400;
 }
 
+@media screen and (max-width: 800px) {
+	#hack-logo {
+		width: 200px;
+	}
+}
+
 .content {
 	width: 100%;
 	padding-top: 10px;
@@ -113,7 +119,7 @@ span.bld {
 	background-color: rgba(0,0,0,0.5);
 	z-index:-1;
 }
-	
+
 
 
 hr {
@@ -145,12 +151,14 @@ a.pretty-link:visited{
    color: #a00000;
 }
 
-.grow {
-	transition: all .2s ease-in-out;
-}
+@media screen and (min-width: 800px) {
+	.grow {
+		transition: all .2s ease-in-out;
+	}
 
-.grow:hover {
-	transform: scale(1.1);
+	.grow:hover {
+		transform: scale(1.1);
+	}
 }
 
 .fa {
@@ -274,7 +282,7 @@ a.social-media-image {
 	padding:10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .social-media {
         visibility: hidden;
     }
