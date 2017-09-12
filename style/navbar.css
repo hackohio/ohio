@@ -2,16 +2,19 @@
 #nav {
   text-align: center;
   position: fixed;
-  bottom: 0vh; /* Should be same as nav.js -> navOriginalPos */
+  bottom: 0;
   width: 100%;
   z-index: 100;
   background-color: rgba(255,255,255,0.95);
-  font-size: 0px;
+  font-size: 0;
   margin: 0;
   padding:0;
-  overflow:scroll;
-  height: 52px;
-
+  height:52px;
+}
+#nav.mobile {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
 }
 .secondary-page #nav {
   position: absolute;
@@ -52,7 +55,7 @@
     color: white;
 }
 
-ul li a.active {
+#nav ul li a.active {
     background-color: #bb0000;
     color: white !important;
   -webkit-transition: all .2s ease-out;
@@ -62,7 +65,7 @@ ul li a.active {
           transition: all .2s ease-out;
 }
 
-ul li a:hover:not(.active) {
+#nav ul li a:hover:not(.active) {
     background-color: #888888;
     color: white;
 }
