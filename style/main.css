@@ -50,6 +50,12 @@ span.bld {
 	font-weight: 400;
 }
 
+@media screen and (max-width: 600px) {
+	#hack-logo {
+		width: 200px;
+	}
+}
+
 .content {
 	width: 100%;
 	padding-top: 10px;
@@ -145,12 +151,14 @@ a.pretty-link:visited{
    color: #a00000;
 }
 
-.grow {
-	transition: all .2s ease-in-out;
-}
+@media screen and (min-width: 600px) {
+	.grow {
+		transition: all .2s ease-in-out;
+	}
 
-.grow:hover {
-	transform: scale(1.1);
+	.grow:hover {
+		transform: scale(1.1);
+	}
 }
 
 .fa {
