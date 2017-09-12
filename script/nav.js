@@ -21,7 +21,20 @@ $(document).ready(function() {
   */
 
   // The secondary page that is currently selected
+  // Check for the active page last time user was here (url anchor)
+  // 'About' will be our failsafe default.
   var activePage = $(pageIds[0]);
+    
+  var pageUrl = window.location.href;
+  pageUrl = pageUrl.substring("hackOHIO2017/index.html");
+    
+  //check for page anchor
+  if (pageUrl.indexOf("#") > -1){
+      var pageAnchor = pageUrl.substring(pageUrl.indexOf("#"))
+      if (pageAnchor != "#home-back"){
+        activePage = $(pageAnchor)          
+      }
+  }
 
   if (!isMobile()) {
     /* ---------- */
@@ -29,12 +42,13 @@ $(document).ready(function() {
     /* ---------- */
 
     /* Remove mobile nav */
-    $("#mobilenav").remove();
+    //$("#mobilenav").remove();
 
     /* Hide every page but first one */
-    for (var i=1; i<pageIds.length; i++) {
+    for (var i=0; i<pageIds.length; i++) {
       $(pageIds[i]).hide();
     }
+    activePage.show();
 
     /*
     Allows for first page to be scrolled
@@ -113,6 +127,7 @@ $(document).ready(function() {
       if (href != "#home-back") {
         lastActivePage = activePage;
         activePage = $(href);
+        document.cookie = "activePage="+activePage;
         console.log("clicked")
 
         for (var i=0; i<pageIds.length; i++) {
@@ -139,6 +154,10 @@ $(document).ready(function() {
     /* MOBILE */
     /* ------ */
 
+    /* Add mobile navbar */
+    /* Do it this way so that the mobilenav does not flash on desktop. */  
+    $("#mobilenav").show();
+      
     /* Remove non-mobile elements */
     $("#nav").remove();
     $("#tv").remove();
