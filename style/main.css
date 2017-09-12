@@ -50,7 +50,7 @@ span.bld {
 	font-weight: 400;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	#hack-logo {
 		width: 200px;
 	}
@@ -151,7 +151,7 @@ a.pretty-link:visited{
    color: #a00000;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
 	.grow {
 		transition: all .2s ease-in-out;
 	}
@@ -282,7 +282,7 @@ a.social-media-image {
 	padding:10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .social-media {
         visibility: hidden;
     }
