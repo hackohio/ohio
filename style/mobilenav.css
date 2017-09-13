@@ -6,18 +6,20 @@
     background-color: #333;
     overflow: hidden;
     z-index: 100;
+    text-align:center;
 }
 
 /* Style the links inside the navigation bar */
 #mobilenav a {
-    float: left;
-    display: block;
+    float: none;
+    display: inline-block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     border-bottom: none;
     font-size: 17px;
+    line-height: 20px;
 }
 
 /* Change the color of links on hover */
@@ -34,9 +36,13 @@
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
   #mobilenav a:not(:first-child) {display: none;}
+  #mobilenav a:first-child {
+    float:left;
+  }
+
   #mobilenav a.icon {
     float: right;
-    display: block;
+    display: inline-block;
   }
 }
 
