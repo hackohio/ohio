@@ -283,10 +283,6 @@ a.social-media-image {
 	padding:10px;
 }
 
-.secondary-page {
-	display: none;
-}
-
 @media (max-width: 800px) {
     .social-media {
         visibility: hidden;

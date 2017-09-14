@@ -1,185 +1,209 @@
 /*
 Ethan Wolfe
-Requires jQuery
+Requires Jquery
 -----------
 */
-
-/*
-------- SET THIS USING NAVBAR HREFs -------
-*/
-// Get the IDs of the secondary pages
-var pageIds = [];
-$(".secondary-page").each(function() {
-  pageIds.push("#" + $(this).attr("id"));
-});
-
-/*
----------------------------------------------
-*/
-
-// The secondary page that is currently selected
-// Check for the active page last time user was here (url anchor)
-// 'About' will be our failsafe default.
-var activePage = $(pageIds[0]);
-
-//check for page anchor
-var pageUrl = window.location.href;
-if (pageUrl.indexOf("#") > -1){
-    var pageAnchor = pageUrl.substring(pageUrl.indexOf("#"))
-    if (pageAnchor !== "#home-back"){
-      activePage = $(pageAnchor)
-    }
-}
-
-if (!isMobile()) {
-  /* ---------- */
-  /* NON MOBILE */
-  /* ---------- */
-
-  /* Remove mobile nav */
-  //$("#mobilenav").remove();
-
-  /* Show the active page */
-  activePage.show();
-
+$(document).ready(function() {
   /*
-  Allows for first page to be scrolled
-  If the first page has NOT been fully scrolled, its position must
-      be relative
-  If the first page has been fully scrolled, its position must
-      be fixed so that the next page can scroll over
+  ------- SET THIS USING NAVBAR HREFs -------
   */
-  $("#home-back").css({height: $("#homepage").height()});
-  $("#home-back").hide();
-  var backHidden = true;
-
-  $(document).scroll(function(event) {
-    if (activePage.isOnScreen()) {
-      if (backHidden) {
-        console.log("on screen");
-        $("#homepage").css({position: "fixed"});
-        $("#home-back").show();
-        backHidden = false;
-      }
-    } else {
-      if (!backHidden) {
-        console.log("not on screen");
-        $("#homepage").css({position: "relative"});
-        $("#home-back").hide();
-        backHidden = true;
-      }
-    }
-  });
-
+  var pageIds = ["#about-page", "#hypeevents-page","#prizes-page",
+                  "#faq-page", "#sponsorlist-page", "#schedule-page",
+                  "#stats-page"
+                ];
   /*
-  Sticky navbar effect:
-  Detaches and prepends the nav between body and the secondary page
-  depending on how far the user has scrolled
+  ------- SET THIS USING NAVBAR CSS -------
   */
-  stickNavbar(); // Call once as page loads
+  // Should be the same value as #nav { top }
+  var navHomepagePos = $(window).height()-52;
+  /*
+  ---------------------------------------------
+  */
 
-  function stickNavbar() {
-    var navId = "#nav";
-    var nextPagePos = activePage.offset().top - $(document).scrollTop();
-    // Should be the same value as #nav { top }
-    var navHomepagePos = $(window).height() - $(navId).height();
-    var nav;
-    if (nextPagePos < navHomepagePos) {
-      // Attach navbar to new page
-      if (!$(navId).parent().is(activePage)) {
-        nav = $(navId).detach();
-        activePage.prepend(nav);
+  // The secondary page that is currently selected
+  // Check for the active page last time user was here (url anchor)
+  // 'About' will be our failsafe default.
+  var activePage = $(pageIds[0]);
+    
+  var pageUrl = window.location.href;
+  pageUrl = pageUrl.substring("hackOHIO2017/index.html");
+    
+  //check for page anchor
+  if (pageUrl.indexOf("#") > -1){
+      var pageAnchor = pageUrl.substring(pageUrl.indexOf("#"))
+      if (pageAnchor != "#home-back"){
+        activePage = $(pageAnchor)          
       }
-      // Make sure the navbar doesnt go higher than the top of the page
-      $(navId).css("position", nextPagePos <= 0 ? "fixed" : "");
-    } else {
-      // Attach navbar back to body
-      if (!$(navId).parent().is("body")) {
-        nav = $(navId).detach();
-        $("body").prepend(nav);
-      }
-    }
   }
 
-  $(document).scroll(function(event) {
-    stickNavbar();
-  });
+  if (!isMobile()) {
+    /* ---------- */
+    /* NON MOBILE */
+    /* ---------- */
 
-  /* Navbar click smooth scrolling */
-  $("#nav a").click(function(e) {
-    e.preventDefault(); // prevent immediate jump before animation
+    /* Remove mobile nav */
+    //$("#mobilenav").remove();
 
-    var href = $(this).attr("href");
-    if (href !== "#home-back") {
-      lastActivePage = activePage;
-      activePage = $(href);
-      document.cookie = "activePage="+activePage;
-      console.log("clicked")
-
-      lastActivePage.hide();
-      activePage.show();
-
-      //Re-stick the navbar when we change pages
-      activePage.prepend($("#nav").detach());
-    }
-
-    scrollToHref(href, 700);
-  });
-
-} else {
-  /* ------ */
-  /* MOBILE */
-  /* ------ */
-
-  /* Add mobile navbar */
-  /* Do it this way so that the mobilenav does not flash on desktop. */
-  $("#mobilenav").show();
-
-  /* Remove non-mobile elements */
-  $("#nav").remove();
-  $("#tv").remove();
-  $("#home-back").remove();
-
-  /* Add space at top of page */
-  $("#homepage").prepend("<br /><br /><br /><br />");
-
-
-  /* Hide every page but homepage */
-  var hideAllPages = function() {
+    /* Hide every page but first one */
     for (var i=0; i<pageIds.length; i++) {
       $(pageIds[i]).hide();
     }
-  };
-  hideAllPages();
-
-  /* Opens and closes navbar */
-  $("#mobilenav-sandwich").click(function(){
-    if ($("#mobilenav").hasClass("responsive")) {
-      $("#mobilenav").removeClass("responsive");
-    } else {
-      $("#mobilenav").addClass("responsive");
-    }
-  });
-
-  /* Close navbar when link is clicked */
-  $(".mobilenav-btn").click(function(){
-    $("#mobilenav").removeClass("responsive");
-
-    /* Hide all pages */
-    //$("#tv").hide();
-    $("#homepage").hide();
-    hideAllPages();
-
-    /* Unhide clicked page */
-    var href = $(this).attr("href");
-    $(href).show();
+    activePage.show();
 
     /*
-    if (href == "homepage") {
-      $("#tv").show();
-    }*/
-  });
-}
+    Allows for first page to be scrolled
+    If the first page has NOT been fully scrolled, its position must
+        be relative
+    If the first page has been fully scrolled, its position must
+        be fixed so that the next page can scroll over
+    */
+    $("#home-back").css({height: $("#homepage").height()});
+    $("#home-back").hide();
+    var backHidden = true;
+    $(document).scroll(function(event) {
+      if (activePage.isOnScreen()) {
+        if (backHidden) {
+          console.log("on screen");
+          $("#homepage").css({position: "fixed"});
+          $("#home-back").show();
+          backHidden = false;
+        }
+      } else {
+        if (!backHidden) {
+          console.log("not on screen");
+          $("#homepage").css({position: "relative"});
+          $("#home-back").hide();
+          backHidden = true;
+        }
+      }
+    });
+
+    /*
+    Sticky navbar effect:
+    Detaches and prepends the nav between body and the secondary page
+    depending on how far the user has scrolled
+    */
+    stickNavbar(); // Call once as page loads
+    var navStuckOnTop = false;
+    function stickNavbar() {
+      var navId = "#nav";
+      var nextPagePos = activePage.offset().top - $(document).scrollTop();
+
+      var nav;
+      if (nextPagePos < navHomepagePos) {
+        // Attach navbar to new page
+        if (!$(navId).parent().is(activePage)) {
+          nav = $(navId).detach();
+          activePage.prepend(nav);
+        }
+        // Make sure the navbar doesnt go higher than the top of the page
+        if (nextPagePos <= 0) {
+          if (!navStuckOnTop) {
+            $(navId).css({position: "fixed"});
+            navStuckOnTop = true;
+          }
+        } else {
+          if (navStuckOnTop) {
+            $(navId).css({position: ""});
+            navStuckOnTop = false;
+          }
+        }
+      } else {
+        // Attach navbar back to body
+        if (!$(navId).parent().is("body")) {
+          nav = $(navId).detach();
+          $("body").prepend(nav);
+        }
+      }
+    }
+    $(document).scroll(function(event) {
+      stickNavbar();
+    });
+
+    /* Navbar click smooth scrolling */
+    $("#nav a").click(function() {
+      var href = $(this).attr("href");
+
+      if (href != "#home-back") {
+        lastActivePage = activePage;
+        activePage = $(href);
+        document.cookie = "activePage="+activePage;
+        console.log("clicked")
+
+        for (var i=0; i<pageIds.length; i++) {
+          if (href != pageIds[i]){
+            $(pageIds[i]).hide();
+            //$(pageIds[i]+"-nav").removeClass("active");
+          }
+          else{
+            $(pageIds[i]).show();
+            //$(pageIds[i]+"-nav").addClass("active");
+          }
+          console.log(pageIds[i]);
+        }
+
+        //Re-stick the navbar when we change pages
+        stickNavbar();
+      }
+
+      scrollToHref(href, 700);
+    });
+
+  } else {
+    /* ------ */
+    /* MOBILE */
+    /* ------ */
+
+    /* Add mobile navbar */
+    /* Do it this way so that the mobilenav does not flash on desktop. */  
+    $("#mobilenav").show();
+      
+    /* Remove non-mobile elements */
+    $("#nav").remove();
+    $("#tv").remove();
+    $("#home-back").remove();
+
+    /* Add space at top of page */
+    $("#homepage").prepend("<br /><br /><br /><br />");
+
+
+    /* Hide every page but homepage */
+    var hideAllPages = function() {
+      for (var i=0; i<pageIds.length; i++) {
+        $(pageIds[i]).hide();
+      }
+    };
+    hideAllPages();
+
+    /* Opens and closes navbar */
+    $("#mobilenav-sandwich").click(function(){
+      if ($("#mobilenav").hasClass("responsive")) {
+        $("#mobilenav").removeClass("responsive");
+      } else {
+        $("#mobilenav").addClass("responsive");
+      }
+    });
+
+    /* Close navbar when link is clicked */
+    $(".mobilenav-btn").click(function(){
+      $("#mobilenav").removeClass("responsive");
+
+      /* Hide all pages */
+      //$("#tv").hide();
+      $("#homepage").hide();
+      hideAllPages();
+
+      /* Unhide clicked page */
+      var href = $(this).attr("href");
+      $(href).show();
+
+      /*
+      if (href == "homepage") {
+        $("#tv").show();
+      }*/
+    });
+  }
+});
 
 function scrollToHref(href, time=500) {
   $('html, body').animate({
@@ -187,7 +211,6 @@ function scrollToHref(href, time=500) {
   }, time);
 }
 
-// http://upshots.org/javascript/jquery-test-if-element-is-in-viewport-visible-on-screen
 $.fn.isOnScreen = function(){
   var win = $(window);
 
