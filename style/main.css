@@ -292,3 +292,19 @@ img{
 	vertical-align: middle;
 	height:100%;
 }
+
+#footerbox {
+	width:100%;
+	display: inline-block;
+	position: relative;
+	z-index: 10;
+	background-color: #373435;
+}
+
+a.footer {
+	border-bottom: none;
+}
+
+a.footer:hover {
+	border-bottom: solid 1px white;
+}
