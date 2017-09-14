@@ -20,6 +20,7 @@
   z-index: 10;
   color: black;
   background-color: #bb0000;
+  background-image:url('../images/chevron.png');
 }
 
 div.filler{
