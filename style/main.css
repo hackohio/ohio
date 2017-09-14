@@ -211,6 +211,7 @@ h2 {
 
 .bigText {
     font-size: 85px;
+    overflow:hidden;
 }
 
 .compress {
