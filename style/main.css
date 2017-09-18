@@ -232,7 +232,7 @@ h2 {
 
 .sponsor-med {
 	width: 100%;
-	max-width: 400px;
+	max-width: 280px;
 }
 
 .sponsor-sm {
@@ -292,3 +292,12 @@ img{
 	vertical-align: middle;
 	height:100%;
 }
+
+.single-sponsor{
+	display:block;
+	margin:auto;
+	width:70%;
+}
+
+
+
