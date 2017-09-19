@@ -11,6 +11,8 @@
   min-height: 100vh;
   width: 100%;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .secondary-page {
@@ -23,6 +25,8 @@
   color: black;
   background-color: #bb0000;
   background-image:url('../images/chevron.png');
+  display: flex;
+  flex-direction: column;
 }
 
 div.filler{
@@ -32,8 +36,9 @@ div.filler{
 .innerContent{
   width:75%;
   background-color: #fff;
-  padding: 3% 5%;
+  padding: 3% 5% 8%;
   border-radius: 0px;
+  flex: 1 0 auto;
 }
 
 .center{

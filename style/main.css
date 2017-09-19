@@ -60,6 +60,7 @@ span.bld {
 	width: 100%;
 	padding-top: 10px;
 	text-align: center;
+	flex: 1 0 auto;
 }
 
 .button {
@@ -205,8 +206,12 @@ h2 {
     font-weight: bold;
 }
 
-.txt-white{
+.txt-white {
 	color:white;
+}
+
+.txt-black{
+	color:black;
 }
 
 .bigText {
@@ -283,6 +288,11 @@ a.social-media-image {
 	padding:10px;
 }
 
+.social-media-fa-white {
+	color:white;
+	padding: 10px;
+}
+
 @media (max-width: 800px) {
     .social-media {
         visibility: hidden;
@@ -291,4 +301,41 @@ a.social-media-image {
 img{
 	vertical-align: middle;
 	height:100%;
+}
+
+#mainfooter {
+	position: relative;
+	width:100%;
+	margin-top: -8%;
+}
+
+.footer-img{
+	float:left;
+	background-color:transparent;
+	width:100%;
+}
+
+.mainfooter-content {
+	float:left;
+	width:100%;
+	background-color: #666666;
+	color: white;
+}
+
+
+.organizer-lg {
+	max-height: 100px;
+	height: auto;
+	max-width: 200px;
+    width: auto;
+}
+
+.organizer-sm {
+	max-height: 50px;
+	height:auto;
+}
+
+a.footer {
+	color:white;
+	border-bottom: none;
 }
