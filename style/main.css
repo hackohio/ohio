@@ -237,7 +237,7 @@ h2 {
 
 .sponsor-med {
 	width: 100%;
-	max-width: 400px;
+	max-width: 280px;
 }
 
 .sponsor-sm {
@@ -338,4 +338,10 @@ img{
 a.footer {
 	color:white;
 	border-bottom: none;
+}
+
+.single-sponsor{
+	display:block;
+	margin:auto;
+	width:70%;
 }

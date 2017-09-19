@@ -40,6 +40,14 @@
 	width: 25%;
 }
 
+.seventy{
+	width:70%;
+}
+
+.thirty{
+	width:30%;
+}
+
 @media only screen and (max-width: 1000px) {
 	.col {
 		margin: 1% 0 1% 0%;
@@ -53,6 +61,14 @@
 	
 	.fourth {
 		width: 100%;
+	}
+
+	.seventy{
+		width:100%;
+	}
+
+	.thirty{
+		width:100%;
 	}
 }
 
