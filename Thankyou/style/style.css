@@ -2,15 +2,17 @@
 body{
 background-image: url("../images/chevron.png");
 font-size: 18px;
-font-family: Georgia, Times, serif;
+font-family: 'proximanova', Proxima Nova, Helvetica, sans-serif;
 }
 
 #container{
 width: 75%;
 margin: 0 auto;
-padding: 3% 5%;
+margin-top:20px;
+padding: 3% 5% 8%;
+flex: 1 0 auto;
 color:333;
-background-color: rgba(255,255,255,.8);
+background-color: rgba(255,255,255);
 //background: linear-gradient(to top, grey, white);
 text-align: center;
 box-sizing: border-box;
@@ -46,23 +48,16 @@ background: #eee;
 color: #1a71b8;
 padding: 10px;
 }
-header img{
+
+.header img{
 height: 75px;
 width: 75px;
+margin-left: auto;
+float:left;
+margin-left: 40%;
+display: block;
 }
 
-footer{
-background-image: url("../images/Columbus Skyline.png");
-height:274px;
-width:auto;
-margin-top:20px;
-}
-
-footer p{
-color: white;
-position: absolute;
-width: 100%;
-}
 
 #check{
 border-radius:100px;
@@ -71,6 +66,8 @@ border-radius:100px;
 width:70px;
 height:70px;
 margin: 0 auto;
+margin-left:55%;
+position:relative;
 border-style:solid;
 border-color:green;
 border-width:5px;
@@ -81,6 +78,78 @@ position: absolute;
 margin-left: 26px;
 margin-top: 20px;
 font-size: 24px;
+}
+
+a {
+color: white;
+text-decoration: none;
+border-bottom: solid white 1px;
+}
+    
+p {
+font-size: 16pt;
+font-weight: 300;
+line-height: 22pt;
+}
+
+//Footer
+
+#mainfooter {
+	position: relative;
+	width:100%;
+	margin-top: -8%;
+	text-align: center;
+}
+
+.footer-img{
+	float:left;
+	background-color:transparent;
+	width:100%;
+}
+
+.mainfooter-content {
+	float:left;
+	width:100%;
+	background-color: #666666;
+	color: white;
+	text-align: center
+}
+
+
+.organizer-lg {
+	max-height: 100px;
+	height: auto;
+	max-width: 200px;
+    width: auto;
+}
+
+.organizer-sm {
+	max-height: 50px;
+	height:auto;
+	margin:5px;
+}
+
+a.footer {
+	color:white;
+	border-bottom: none;
+}
+
+.single-sponsor{
+	display:block;
+	margin:auto;
+	width:70%;
+}
+	
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+        font-size: 14px;
+         color: #BB0000;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
