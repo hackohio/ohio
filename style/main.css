@@ -345,3 +345,39 @@ a.footer {
 	margin:auto;
 	width:70%;
 }
+
+#mainfooter {
+	position: relative;
+	width:100%;
+	margin-top: -8%;
+}
+
+.footer-img{
+	float:left;
+	background-color:transparent;
+	width:100%;
+}
+
+.mainfooter-content {
+	float:left;
+	width:100%;
+	background-color: #666666;
+	color: white;
+}
+
+.organizer-lg {
+	max-height: 100px;
+	height: auto;
+	max-width: 200px;
+    width: auto;
+}
+
+.organizer-sm {
+	max-height: 50px;
+	height:auto;
+}
+
+a.footer {
+	color:white;
+	border-bottom: none;
+}
