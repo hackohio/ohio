@@ -1,0 +1,86 @@
+
+body{
+background-image: url("../images/chevron.png");
+font-size: 18px;
+font-family: Georgia, Times, serif;
+}
+
+#container{
+width: 75%;
+margin: 0 auto;
+padding: 3% 5%;
+color:333;
+background-color: rgba(255,255,255,.8);
+//background: linear-gradient(to top, grey, white);
+text-align: center;
+box-sizing: border-box;
+-webkit-border-bottom-right-radius:10%;
+-webkit-border-bottom-left-radius:10%;
+border-bottom-right-radius:10%;
+border-bottom-left-radius:10%;
+}
+
+.header{
+padding: 20px 0 20px;
+margin: 20px 0;
+}
+
+hr {
+background-image: linear-gradient(to right, #F4C6C4, #BF1313, #F4C6C4);
+border: 0;
+margin-top: -15px;
+height: 1px;
+}
+
+h1,h2,h3{
+font-family: Halvetica, Arial, sans-serif;
+}
+
+h1 #shadow{
+text-shadow: 2px 2px 1px white;
+}
+
+header{
+text-align:center;
+background: #eee;
+color: #1a71b8;
+padding: 10px;
+}
+header img{
+height: 75px;
+width: 75px;
+}
+
+footer{
+background-image: url("../images/Columbus Skyline.png");
+height:274px;
+width:auto;
+margin-top:20px;
+}
+
+footer p{
+color: white;
+position: absolute;
+width: 100%;
+}
+
+#check{
+border-radius:100px;
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+width:70px;
+height:70px;
+margin: 0 auto;
+border-style:solid;
+border-color:green;
+border-width:5px;
+}
+#check p{ 
+color: green;
+position: absolute;
+margin-left: 26px;
+margin-top: 20px;
+font-size: 24px;
+}
+
+
