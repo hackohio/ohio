@@ -71,6 +71,7 @@ position:relative;
 border-style:solid;
 border-color:green;
 border-width:5px;
+
 }
 #check p{ 
 color: green;
@@ -91,6 +92,8 @@ font-size: 16pt;
 font-weight: 300;
 line-height: 22pt;
 }
+
+
 
 //Footer
 
