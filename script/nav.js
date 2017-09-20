@@ -87,14 +87,18 @@ $(document).ready(function() {
     var navStuckOnTop = false;
     function stickNavbar() {
       var navId = "#nav";
+      var footerId = "#mainfooter";
       var nextPagePos = activePage.offset().top - $(document).scrollTop();
 
       var nav;
+      var footer;
       if (nextPagePos < navHomepagePos) {
         // Attach navbar to new page
         if (!$(navId).parent().is(activePage)) {
           nav = $(navId).detach();
+          footer = $(footerId).detach();
           activePage.prepend(nav);
+          activePage.append(footer);
         }
         // Make sure the navbar doesnt go higher than the top of the page
         if (nextPagePos <= 0) {
@@ -157,11 +161,14 @@ $(document).ready(function() {
     /* Add mobile navbar */
     /* Do it this way so that the mobilenav does not flash on desktop. */  
     $("#mobilenav").show();
-      
+    $("#mobilefooter").show();
+
     /* Remove non-mobile elements */
     $("#nav").remove();
     $("#tv").remove();
     $("#home-back").remove();
+    $("#mainfooter").remove();
+    $(".social-media").remove();
 
     /* Add space at top of page */
     $("#homepage").prepend("<br /><br /><br /><br />");
@@ -190,13 +197,16 @@ $(document).ready(function() {
 
       /* Hide all pages */
       //$("#tv").hide();
+
       $("#homepage").hide();
       hideAllPages();
 
       /* Unhide clicked page */
       var href = $(this).attr("href");
       $(href).show();
-
+      var mobilefooter = $("#mobilefooter").detach();
+      $(href).append(mobilefooter);
+      $(mobilefooter).show();
       /*
       if (href == "homepage") {
         $("#tv").show();
