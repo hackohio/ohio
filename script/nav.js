@@ -1,6 +1,6 @@
 /*
 Ethan Wolfe
-Requires jQuery
+Requires Jquery
 -----------
 */
 
@@ -40,67 +40,41 @@ if (!isMobile()) {
   activePage.show();
 
   /*
-  Allows for first page to be scrolled
-  If the first page has NOT been fully scrolled, its position must
-      be relative
-  If the first page has been fully scrolled, its position must
-      be fixed so that the next page can scroll over
+  ------- SET THIS USING NAVBAR HREFs -------
   */
-  $("#home-back").css({height: $("#homepage").height()});
-  $("#home-back").hide();
-  var backHidden = true;
-
-  $(document).scroll(function(event) {
-    if (activePage.isOnScreen()) {
-      if (backHidden) {
-        console.log("on screen");
-        $("#homepage").css({position: "fixed"});
-        $("#home-back").show();
-        backHidden = false;
-      }
-    } else {
-      if (!backHidden) {
-        console.log("not on screen");
-        $("#homepage").css({position: "relative"});
-        $("#home-back").hide();
-        backHidden = true;
-      }
-    }
-  });
-
+  var pageIds = ["#about-page", "#hypeevents-page","#prizes-page",
+                  "#faq-page", "#sponsorlist-page", "#schedule-page",
+                  "#stats-page"
+                ];
   /*
-  Sticky navbar effect:
-  Detaches and prepends the nav between body and the secondary page
-  depending on how far the user has scrolled
+  ------- SET THIS USING NAVBAR CSS -------
   */
-  stickNavbar(); // Call once as page loads
+  // Should be the same value as #nav { top }
+  var navHomepagePos = $(window).height()-52;
+  /*
+  ---------------------------------------------
+  */
 
-  function stickNavbar() {
-    var navId = "#nav";
-    var nextPagePos = activePage.offset().top - $(document).scrollTop();
-    // Should be the same value as #nav { top }
-    var navHomepagePos = $(window).height() - $(navId).height();
-    var nav;
-    if (nextPagePos < navHomepagePos) {
-      // Attach navbar to new page
-      if (!$(navId).parent().is(activePage)) {
-        nav = $(navId).detach();
-        activePage.prepend(nav);
+  // The secondary page that is currently selected
+  // Check for the active page last time user was here (url anchor)
+  // 'About' will be our failsafe default.
+  var activePage = $(pageIds[0]);
+
+  var pageUrl = window.location.href;
+  pageUrl = pageUrl.substring("hackOHIO2017/index.html");
+
+  //check for page anchor
+  if (pageUrl.indexOf("#") > -1){
+      var pageAnchor = pageUrl.substring(pageUrl.indexOf("#"))
+      if (pageAnchor != "#home-back"){
+        activePage = $(pageAnchor)
       }
-      // Make sure the navbar doesnt go higher than the top of the page
-      $(navId).css("position", nextPagePos <= 0 ? "fixed" : "");
-    } else {
-      // Attach navbar back to body
-      if (!$(navId).parent().is("body")) {
-        nav = $(navId).detach();
-        $("body").prepend(nav);
-      }
-    }
   }
 
-  $(document).scroll(function(event) {
-    stickNavbar();
-  });
+  if (!isMobile()) {
+    /* ---------- */
+    /* NON MOBILE */
+    /* ---------- */
 
   /* Navbar click smooth scrolling */
   $("#nav a").click(function(e) {
@@ -110,60 +84,61 @@ if (!isMobile()) {
     updatePage(href);
   });
 
-} else {
-  /* ------ */
-  /* MOBILE */
-  /* ------ */
+  } else {
+    /* ------ */
+    /* MOBILE */
+    /* ------ */
 
-  /* Add mobile navbar */
-  /* Do it this way so that the mobilenav does not flash on desktop. */
-  $("#mobilenav").show();
+    /* Add mobile navbar */
+    /* Do it this way so that the mobilenav does not flash on desktop. */
+    $("#mobilenav").show();
 
-  /* Remove non-mobile elements */
-  $("#nav").remove();
-  $("#tv").remove();
-  $("#home-back").remove();
+    /* Remove non-mobile elements */
+    $("#nav").remove();
+    $("#tv").remove();
+    $("#home-back").remove();
 
-  /* Add space at top of page */
-  $("#homepage").prepend("<br /><br /><br /><br />");
+    /* Add space at top of page */
+    $("#homepage").prepend("<br /><br /><br /><br />");
 
 
-  /* Hide every page but homepage */
-  var hideAllPages = function() {
-    for (var i=0; i<pageIds.length; i++) {
-      $(pageIds[i]).hide();
-    }
-  };
-  hideAllPages();
-
-  /* Opens and closes navbar */
-  $("#mobilenav-sandwich").click(function(){
-    if ($("#mobilenav").hasClass("responsive")) {
-      $("#mobilenav").removeClass("responsive");
-    } else {
-      $("#mobilenav").addClass("responsive");
-    }
-  });
-
-  /* Close navbar when link is clicked */
-  $(".mobilenav-btn").click(function(){
-    $("#mobilenav").removeClass("responsive");
-
-    /* Hide all pages */
-    //$("#tv").hide();
-    $("#homepage").hide();
+    /* Hide every page but homepage */
+    var hideAllPages = function() {
+      for (var i=0; i<pageIds.length; i++) {
+        $(pageIds[i]).hide();
+      }
+    };
     hideAllPages();
 
-    /* Unhide clicked page */
-    var href = $(this).attr("href");
-    $(href).show();
+    /* Opens and closes navbar */
+    $("#mobilenav-sandwich").click(function(){
+      if ($("#mobilenav").hasClass("responsive")) {
+        $("#mobilenav").removeClass("responsive");
+      } else {
+        $("#mobilenav").addClass("responsive");
+      }
+    });
 
-    /*
-    if (href == "homepage") {
-      $("#tv").show();
-    }*/
-  });
-}
+    /* Close navbar when link is clicked */
+    $(".mobilenav-btn").click(function(){
+      $("#mobilenav").removeClass("responsive");
+
+      /* Hide all pages */
+      //$("#tv").hide();
+      $("#homepage").hide();
+      hideAllPages();
+
+      /* Unhide clicked page */
+      var href = $(this).attr("href");
+      $(href).show();
+
+      /*
+      if (href == "homepage") {
+        $("#tv").show();
+      }*/
+    });
+  }
+});
 
 function updatePage(href) {
   if (href !== "#home-back") {
@@ -191,7 +166,6 @@ function scrollToHref(href, time=500) {
   });
 }
 
-// http://upshots.org/javascript/jquery-test-if-element-is-in-viewport-visible-on-screen
 $.fn.isOnScreen = function(){
   var win = $(window);
 

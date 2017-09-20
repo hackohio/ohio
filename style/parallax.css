@@ -17,6 +17,8 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
+  /*display:block;
+  overflow:auto;*/
   z-index: 10;
   color: black;
   background-color: #bb0000;
