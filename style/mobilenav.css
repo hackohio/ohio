@@ -33,20 +33,6 @@
     display: none;
 }
 
-#mobilefooter {
-  color:white;
-  position:relative;
-  margin-top: 27px;
-  width: 100%;
-  background-color: #333;
-  text-align:center;
-}
-
-.footer-socialmedia {
-  width:100%;
-  display: block;
-}
-
 /* When the screen is less than 800 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
   #mobilenav a:not(:first-child) {display: none;}
