@@ -23,12 +23,9 @@ $(".secondary-page").each(function() {
 var activePage = $(pageIds[0]);
 
 //check for page anchor
-var pageUrl = window.location.href;
-if (pageUrl.indexOf("#") > -1){
-    var pageAnchor = pageUrl.substring(pageUrl.indexOf("#"))
-    if (pageAnchor !== "#home-back"){
-      activePage = $(pageAnchor)
-    }
+var pageHash = window.location.hash;
+if (pageHash !== "" && pageHash !== "#home-back") {
+  activePage = $(pageHash);
 }
 
 if (!isMobile()) {
@@ -108,22 +105,9 @@ if (!isMobile()) {
   /* Navbar click smooth scrolling */
   $("#nav a").click(function(e) {
     e.preventDefault(); // prevent immediate jump before animation
-
     var href = $(this).attr("href");
-    if (href !== "#home-back") {
-      lastActivePage = activePage;
-      activePage = $(href);
-      document.cookie = "activePage="+activePage;
-      console.log("clicked")
 
-      lastActivePage.hide();
-      activePage.show();
-
-      //Re-stick the navbar when we change pages
-      activePage.prepend($("#nav").detach());
-    }
-
-    scrollToHref(href, 700);
+    updatePage(href);
   });
 
 } else {
@@ -181,10 +165,30 @@ if (!isMobile()) {
   });
 }
 
+function updatePage(href) {
+  if (href !== "#home-back") {
+    var lastActivePage = activePage;
+    activePage = $(href);
+    document.cookie = "activePage="+activePage;
+    console.log("clicked")
+
+    lastActivePage.hide();
+    activePage.show();
+
+    //Re-stick the navbar when we change pages
+    activePage.prepend($("#nav").detach());
+  }
+
+  scrollToHref(href);
+}
+
 function scrollToHref(href, time=500) {
   $('html, body').animate({
     scrollTop: $(href).offset().top
-  }, time);
+  }, time, function() {
+    // preserve url of nav link
+    window.location.hash = href;
+  });
 }
 
 // http://upshots.org/javascript/jquery-test-if-element-is-in-viewport-visible-on-screen
