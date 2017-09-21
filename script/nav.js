@@ -13,6 +13,7 @@ $(".secondary-page").each(function() {
   pageIds.push("#" + $(this).attr("id"));
 });
 
+
 /*
 ---------------------------------------------
 */
@@ -22,10 +23,15 @@ $(".secondary-page").each(function() {
 // 'About' will be our failsafe default.
 var activePage = $(pageIds[0]);
 
+
 //check for page anchor
 var pageHash = window.location.hash;
 if (pageHash !== "" && pageHash !== "#home-back") {
   activePage = $(pageHash);
+}
+
+for (var i=0; i<pageIds.length; i++) {
+    $(pageIds[i]).hide();
 }
 
 if (!isMobile()) {
@@ -77,15 +83,20 @@ if (!isMobile()) {
 
   function stickNavbar() {
     var navId = "#nav";
+    var footerId = "#mainfooter";
     var nextPagePos = activePage.offset().top - $(document).scrollTop();
     // Should be the same value as #nav { top }
     var navHomepagePos = $(window).height() - $(navId).height();
     var nav;
+    var footer;
+    
     if (nextPagePos < navHomepagePos) {
       // Attach navbar to new page
       if (!$(navId).parent().is(activePage)) {
         nav = $(navId).detach();
+        footer = $(footerId).detach();
         activePage.prepend(nav);
+        activePage.append(footer);
       }
       // Make sure the navbar doesnt go higher than the top of the page
       $(navId).css("position", nextPagePos <= 0 ? "fixed" : "");
@@ -117,11 +128,15 @@ if (!isMobile()) {
   /* Add mobile navbar */
   /* Do it this way so that the mobilenav does not flash on desktop. */
   $("#mobilenav").show();
+  $("#mobilefooter").show();
 
   /* Remove non-mobile elements */
   $("#nav").remove();
   $("#tv").remove();
   $("#home-back").remove();
+
+  $("#mainfooter").remove();
+  $(".social-media").remove();
 
   /* Add space at top of page */
   $("#homepage").prepend("<br /><br /><br /><br />");
@@ -156,6 +171,10 @@ if (!isMobile()) {
     /* Unhide clicked page */
     var href = $(this).attr("href");
     $(href).show();
+    
+    var mobilefooter = $("#mobilefooter").detach();
+    $(href).append(mobilefooter);
+    $(mobilefooter).show();
 
     /*
     if (href == "homepage") {
