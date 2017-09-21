@@ -103,7 +103,7 @@ if (!isMobile()) {
   });
 
   /* Navbar click smooth scrolling */
-  $("#nav a").click(function(e) {
+  $(".secondary-page-link").click(function(e) {
     e.preventDefault(); // prevent immediate jump before animation
     var href = $(this).attr("href");
     updatePage(href);
