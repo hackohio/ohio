@@ -17,6 +17,7 @@
 
 .secondary-page {
   position: relative;
+  display: none;
   width: 100%;
   min-height: 100vh;
   /*display:block;
