@@ -92,6 +92,7 @@ $(document).ready(function() {
 
       var nav;
       var footer;
+
       if (nextPagePos < navHomepagePos) {
         // Attach navbar to new page
         if (!$(navId).parent().is(activePage)) {
@@ -169,7 +170,7 @@ $(document).ready(function() {
     $("#home-back").remove();
     $("#mainfooter").remove();
     $(".social-media").remove();
-
+    
     /* Add space at top of page */
     $("#homepage").prepend("<br /><br /><br /><br />");
 
@@ -197,7 +198,6 @@ $(document).ready(function() {
 
       /* Hide all pages */
       //$("#tv").hide();
-
       $("#homepage").hide();
       hideAllPages();
 

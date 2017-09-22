@@ -210,10 +210,6 @@ h2 {
 	color:white;
 }
 
-.txt-black{
-	color:black;
-}
-
 .bigText {
     font-size: 85px;
     overflow:hidden;
@@ -303,10 +299,16 @@ img{
 	height:100%;
 }
 
+.single-sponsor{
+	display:block;
+	margin:auto;
+	width:70%;
+}
+
 #mainfooter {
 	position: relative;
 	width:100%;
-	margin-top: -8%;
+	margin-top: 0%;
 }
 
 .footer-img{
@@ -321,7 +323,6 @@ img{
 	background-color: #666666;
 	color: white;
 }
-
 
 .organizer-lg {
 	max-height: 100px;
@@ -338,10 +339,4 @@ img{
 a.footer {
 	color:white;
 	border-bottom: none;
-}
-
-.single-sponsor{
-	display:block;
-	margin:auto;
-	width:70%;
 }
