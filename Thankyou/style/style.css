@@ -12,14 +12,9 @@ margin-top:20px;
 padding: 3% 5% 8%;
 flex: 1 0 auto;
 color:333;
-background-color: rgba(255,255,255);
-//background: linear-gradient(to top, grey, white);
+background-color: rgba(255,255,255,1.0);
 text-align: center;
 box-sizing: border-box;
--webkit-border-bottom-right-radius:10%;
--webkit-border-bottom-left-radius:10%;
-border-bottom-right-radius:10%;
-border-bottom-left-radius:10%;
 }
 
 .header{
