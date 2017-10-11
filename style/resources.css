@@ -96,7 +96,7 @@ a.button{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    width: 250px; margin: 5px;
+    max-width: 250px; margin: 5px;
 }
 a.button:hover{
     background-color: #BD0000; /* Green */
