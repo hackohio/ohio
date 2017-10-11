@@ -24,6 +24,11 @@ nav a {
   color: white;
   text-decoration: none;
 }
+nav img {
+  margin-left: 2em;
+  margin-right: auto;
+  height: 80%;
+}
 
 /* Featured banner */
 #featured-banner {
