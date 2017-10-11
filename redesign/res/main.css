@@ -3,7 +3,12 @@ body {
   padding: 0;
   width: 100%;
 
+  /* What fonts ? */
   font-family: "Calibri", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
 
 /* Navigation */
@@ -96,6 +101,15 @@ nav img {
   height: 60%;
 }
 
+/* Community events */
+#community {
+  width: 80%;
+  margin: auto;
+
+  /* Placeholder */
+  height: 25em;
+}
+
 /* Footer */
 footer {
   background-color: rgb(34, 34, 34);
@@ -121,7 +135,7 @@ footer {
   margin: auto;
 }
 .stat-num {
-  font-size: 36px;
+  font-size: 4em;
 }
 
 /*
