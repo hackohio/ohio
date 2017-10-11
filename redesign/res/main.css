@@ -22,8 +22,38 @@ nav a {
   color: white;
 }
 
+/* Featured banner */
+#featured-banner {
+  width: 100%;
+  height: 15em;
+  background-color: red;
+  color: white;
+}
+
+/* About blurb */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+/*
+-----------
+  Classes
+-----------
+*/
 .center {
   position: relative;
   top: 25%;
   transform: translateY(-50%);
+}
+
+.red-box {
+  background-color: red;
+  color: white;
+  padding: 10px;
 }
