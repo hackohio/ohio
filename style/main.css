@@ -343,3 +343,12 @@ a.footer {
 .bigger{
 	font-size: 30px;
 }
+
+#schedule-page tr {
+	padding: 3px;
+	background-color: white;
+	color: black;
+}
+#schedule-page tr:nth-child(odd) {
+	background-color: #D9D9D9;
+}
