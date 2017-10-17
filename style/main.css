@@ -349,7 +349,7 @@ a.footer {
 	background-color: white;
 	color: black;
 }
-#schedule-page tr:nth-child(odd) {
+.schedule-table tr:nth-child(odd) {
 	background-color: #D9D9D9;
 }
 

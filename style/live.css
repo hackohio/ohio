@@ -111,6 +111,7 @@ a {
 	color: black;
 	width: 100%;
 	border: #808080 0px solid;
+	padding:10px;
     -webkit-box-sizing: border-box; /* WebKit */
     -moz-box-sizing: border-box;    /* Gecko */
     box-sizing: border-box;
