@@ -138,19 +138,20 @@ nav img {
   display: -webkit-flex;
   display: flex;
   justify-content: center;
-
-  margin: auto -20px;
+  padding: 0 15px;
 }
+
 #main-events > a {
   flex: 1;
   display: flex;
+  overflow: hidden;
 }
 .event-box {
   flex: 1;
   flex-grow: 1;
   display: -webkit-flex;
   display: flex;
-  margin: 0 20px;
+  margin: 0 15px;
 
   /* Must be relative for img to be absolutely positioned */
   position: relative;
@@ -159,6 +160,12 @@ nav img {
   color: white;
 
   height: 11em;
+}
+#main-events a:first-child .event-box {
+  margin-left: 0;
+}
+#main-events a:last-child .event-box {
+  margin-right: 0;
 }
 .event-box-text {
   /* Make sure text is at bottom */
@@ -180,8 +187,10 @@ nav img {
     flex-direction: column;
   }
 
-  #main-events > a {
+  #main-events > a .event-box {
     margin-bottom: 20px;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
   }
 }
 
