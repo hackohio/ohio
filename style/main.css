@@ -104,11 +104,40 @@ nav img {
 
 /* Community events */
 #community {
-  width: 80%;
+  width: 100%;
   margin: auto;
 
-  /* Placeholder */
-  height: 25em;
+  background-color: #f4f4f4;
+}
+#community-header {
+  width: 90%;
+  margin: auto;
+}
+#community-event {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 10px;
+
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: white;
+}
+.event-subtext {
+  font-size: 0.75em;
+}
+.red-bar {
+  height: 100%;
+  width: 10px;
+  left: 0;
+  background-color: red;
+  position: absolute;
 }
 
 /* Footer */
@@ -170,6 +199,14 @@ Flexbox
   Classes
 -----------
 */
+.red {
+  color: red;
+}
+.center {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
 .bottom-left {
   align-self: flex-end;
   margin-left: 5%;
@@ -178,7 +215,6 @@ Flexbox
   align-self: flex-end;
   margin-right: 5%;
 }
-
 .red-box {
   background-color: red;
   color: white;
