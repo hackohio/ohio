@@ -1,190 +1,339 @@
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+@charset "UTF-8";
 
-  /* What fonts ? */
-  font-family: "Calibri", sans-serif;
+/* --------------------------- */
+/* Element CSS                 */
+/* --------------------------- */
+
+* {
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
 }
+
+body, html {
+	height: 100%;
+	font-family: 'proximanova', Proxima Nova, Helvetica, Sans-Serif;
+	animation: bg 8s infinite;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 a {
-  text-decoration: none;
-  color: white;
+	font-weight: 400;
+	text-decoration: none;
 }
 
-/* Navigation */
-nav {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 3em;
-
-  background-color: black;
-  color: white;
-
-  font-size: 24px;
-}
-nav a {
-  margin: 20px 30px;
-
-  color: white;
-  text-decoration: none;
-}
-nav img {
-  margin-left: 2em;
-  margin-right: auto;
-  height: 80%;
+a:hover {
+	text-decoration: underline;
 }
 
-/* Featured banner */
-#featured-banner {
-  display: flex;
-  display: -webkit-flex;
-  justify-content: space-between;
-
-  width: 100%;
-  height: 20em;
-  color: white;
-
-  background-image: url('./hackathon.png');
-}
-#featured-banner img {
-  min-height: 100%;
-  min-width: 100%;
-
-  position: relative;
-  z-index: -1;
-  float: left;
+canvas {
+	display: block;
 }
 
-/* About blurb */
-#about {
-  text-align: center;
-
-  width: 60%;
-  margin: auto;
+h1 {
+	color: #333333;
+	font-size: 2.4em;
 }
 
-/* Main events */
-#main-events {
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-
-  margin: auto;
-  width: 80%;
-}
-.event-box {
-  display: -webkit-flex;
-  display: flex;
-
-  /* Must be relative for img to be absolutely positioned */
-  position: relative;
-
-  background-color: rgb(34, 34, 34);
-  color: white;
-
-  height: 14em;
-  width: 20em;
-}
-.event-box-text {
-  /* Make sure text is at bottom */
-  margin-left: 10%;
-  margin-bottom: 10%;
-  align-self: flex-end;
-
-  font-size: 28px;
-}
-.event-box img {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  height: 60%;
+h2 {
+	color: #333333;
+	font-size: 1.6em;
+	font-weight: 600;
 }
 
-/* Community events */
-#community {
-  width: 80%;
-  margin: auto;
-
-  /* Placeholder */
-  height: 25em;
+h3 {
+	font-weight: 600;
 }
 
-/* Footer */
-footer {
-  background-color: rgb(34, 34, 34);
-  color: white;
-
-  padding: 4em 0 2em;
-
-  text-align: center;
-}
-#email-input {
-  background-color: white;
-  width: 30%;
-  height: 4em;
-
-  margin: auto;
-}
-#stats {
-  display: flex;
-  display: -webkit-flex;
-  justify-content: space-between;
-
-  width: 80%;
-  margin: auto;
-}
-.stat-num {
-  font-size: 4em;
+hr {
+	background-image: linear-gradient(to right, #F4C6C4, #BF1313, #F4C6C4);
+	border: 0;
+	margin-top: -15px;
+	height: 1px;
 }
 
-/*
------------
-Flexbox
------------
-*/
-.flex-right {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-justify-content: flex-end;
-   justify-content: flex-end;
+iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
-.flex-center {
-  align-items: center;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: center;
-  -webkit-justify-content: center;
+
+p {
+	margin: 0;
+	font-size: 16pt;
+	font-weight: 300;
+	line-height: 22pt;
 }
-.flex-column {
-  -webkit-flex-direction: column;
-  flex-direction: column;
+
+/* --------------------------- */
+/* Class CSS                   */
+/* --------------------------- */
+
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.full-width {
+	left: 0;
+	width: 100%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.button {
+	background-color: #BB0000;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 25px;
+	width: 200px;
+}
+
+.canvasContent {
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	text-align: center;
+}
+
+.topNotice {
+	background: #BB0000;
+	height: 120px;
+}
+
+.innerContent {
+	width: 70%;
+}
+
+.border {
+	height: 5px;
+}
+
+.social-media-image {
+	padding: 10px;
+}
+
+.fa {
+	color: #BB0000;
+}
+
+.bigText {
+	font-size: 100px;
+}
+
+.smallText {
+	font-size: 75%;
+}
+
+.faqText {
+	font-size: 110%;
+}
+
+.compress {
+	font-weight: normal;
+	margin: 0px;
+}
+
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.txt-red {
+	color: #BB0000;
+}
+
+.txt-white {
+	color: #FFFFFF;
+}
+
+.black {
+	color: #000000;
+}
+
+.bg-red {
+	background-color: #BB0000;
+}
+
+.bg-red-alt {
+	background-color: #BF1313;
+}
+
+.bg-dark {
+	background-color: #373435;
+}
+
+.clear {
+	clear: both;
+	padding-top: 30px;
+}
+
+.grow {
+	transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+	transform: scale(1.1);
+}
+
+.table {
+	display: table;
+}
+
+.height-padding {
+	padding: 10px 0px;
+}
+
+.height-padding-lg {
+	padding: 20px 0px;
+}
+
+.low-bottom-margin {
+	margin-bottom: 3px;
+}
+
+.low-top-margin {
+	margin-top: 3px;
+}
+
+.nav-link {
+	margin: 0;
+	font-size: 16pt;
+	font-weight: 300;
+	line-height: 22pt;
+	padding: 0px 10px;
+}
+
+.sponsor-huge {
+	width: 100%;
+	max-width: 650px;
+}
+
+.sponsor-big {
+	width: 100%;
+	max-width: 600px;
+}
+
+.sponsor-med {
+	width: 100%;
+	max-width: 400px;
+}
+
+.sponsor-sm {
+	width: 100%;
+	max-width: 300px;
+}
+
+.box-gray {
+	background-color: #D9D9D9;
+	padding: 3px;
+}
+
+.box-darkgray {
+	background-color: #333333;
+	color: #FFFFFF;
+	padding: 3px;
+}
+
+.box-white {
+	background-color: #FFFFFF;
+	padding: 3px;
+}
+
+.bordered { 
+	border: 1px solid #AAAAAA;
+}
+
+.video {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* --------------------------- */
+/* ID CSS                      */
+/* --------------------------- */
+#cursor{
+	font-weight:100;
+}
+
+#textLogo {
+	max-width: 90%;
+	height: auto;
+}
+
+#mainLogo {
+	max-width: 90%;
+	height: auto;
+}
+
+#content {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#footer {
+	position: absolute;
+	left: 0px;
+	text-align: center;
+	width: 100%;
+	padding: 0px 10px;
 }
 
 
-/*
------------
-  Classes
------------
-*/
-.bottom-left {
-  align-self: flex-end;
-  margin-left: 5%;
-}
-.bottom-right {
-  align-self: flex-end;
-  margin-right: 5%;
+footer-red {
+   padding: 1em;
+   color: white;
+   background-color: #BB0000 ;
+   clear: left;
+   text-align: center;
 }
 
-.red-box {
-  background-color: red;
-  color: white;
-  padding: 10px;
+#triangle-header { 
+	width: 100%; 
+	height: 112px;
+	background-image: url('../../images/layout/header-triangles.png');
+	background-position: 0px 0px;
 }
-.white-box {
-  background-color: white;
-  color: black;
-  padding: 6px;
+
+#triangle-footer { 
+	width: 100%; 
+	height: 112px;
+	background-image: url('../../images/layout/footer-triangles.png');
+	background-position: 0px 0px;
+}
+
+#city-footer { 
+	width: 100%; 
+	height: 273px;
+	background-image: url('../../images/layout/Columbus Skyline.png');
+	background-position: 0px 0px;
 }

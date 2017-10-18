@@ -1,138 +1,191 @@
 body {
-    margin: 0;
-    background-color: rgb(255,255,255);
-    color: rgb(33, 33, 33);
-    font-family: 'proximanova', Proxima Nova, Helvetica, sans-serif;
-}
+  margin: 0;
+  padding: 0;
+  width: 100%;
 
+  background-color: rgb(255,255,255);
+  color: rgb(33, 33, 33);
+  font-family: 'proximanova', Proxima Nova, Helvetica, sans-serif;
+}
 a {
-    color: rgb(187, 0, 0);
-    text-decoration: none;
-    border-bottom: solid white 1px;
+  text-decoration: none;
+  color: white;
 }
 
-a.social-media-image {
-	padding-right: 20px;
-    border-bottom: solid white 0px;
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3em;
+
+  background-color: black;
+  color: white;
+
+  font-size: 24px;
+}
+nav a {
+  margin: 20px 30px;
+
+  color: white;
+  text-decoration: none;
+}
+nav img {
+  margin-left: 2em;
+  margin-right: auto;
+  height: 80%;
 }
 
-span.lt {
-    font-weight: 200;
+/* Featured banner */
+#featured-banner {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 20em;
+  color: white;
+
+  background-image: url('./hackathon.png');
+}
+#featured-banner img {
+  min-height: 100%;
+  min-width: 100%;
+
+  position: relative;
+  z-index: -1;
+  float: left;
 }
 
-span.bld {
-    font-weight: 400;
+/* About blurb */
+#about {
+  text-align: center;
+
+  width: 60%;
+  margin: auto;
 }
 
-span.bg {
-    font-size: 17px;
+/* Main events */
+#main-events {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+
+  margin: auto;
+  width: 80%;
+}
+.event-box {
+  display: -webkit-flex;
+  display: flex;
+
+  /* Must be relative for img to be absolutely positioned */
+  position: relative;
+
+  background-color: rgb(34, 34, 34);
+  color: white;
+
+  height: 14em;
+  width: 20em;
+}
+.event-box-text {
+  /* Make sure text is at bottom */
+  margin-left: 10%;
+  margin-bottom: 10%;
+  align-self: flex-end;
+
+  font-size: 28px;
+}
+.event-box img {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  height: 60%;
 }
 
-h1 {
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-size: 36pt;
-    text-transform: uppercase;
-    line-height: 37pt;
-    margin: 0;
-    margin-bottom: 26px;
-    box-sizing: border-box;
-    color: rgb(187, 0, 0);
+/* Community events */
+#community {
+  width: 80%;
+  margin: auto;
+
+  /* Placeholder */
+  height: 25em;
 }
 
-h2 {
-    font-weight: 400;
-    font-size: 25pt;
-    line-height: 25pt;
-    margin: 0;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
+/* Footer */
+footer {
+  background-color: rgb(34, 34, 34);
+  color: white;
+
+  padding: 4em 0 2em;
+
+  text-align: center;
+}
+#email-input {
+  background-color: white;
+  width: 30%;
+  height: 4em;
+
+  margin: auto;
+}
+#stats {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+
+  width: 80%;
+  margin: auto;
+}
+.stat-num {
+  font-size: 4em;
 }
 
-h3 {
-    font-weight: 400;
-    font-size: 15pt;
-    line-height: 16pt;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 35px;
-    box-sizing: border-box;
+/*
+-----------
+Flexbox
+-----------
+*/
+.flex-right {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-justify-content: flex-end;
+   justify-content: flex-end;
+}
+.flex-center {
+  align-items: center;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.flex-column {
+  -webkit-flex-direction: column;
+  flex-direction: column;
 }
 
-h4 {
-    font-weight: 400;
-    font-size: 12pt;
-    line-height: 16pt;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    box-sizing: border-box;
+
+/*
+-----------
+  Classes
+-----------
+*/
+.bottom-left {
+  align-self: flex-end;
+  margin-left: 5%;
+}
+.bottom-right {
+  align-self: flex-end;
+  margin-right: 5%;
 }
 
-p {
-	margin-left: 35px;
+.red-box {
+  background-color: red;
+  color: white;
+  padding: 10px;
 }
-
-ul {
-	list-style: none;
-}
-
-.main {
-	margin: auto;
-	margin-top: 5%;
-	padding: 10px;
-    max-width: 768px;
-}
-
-.content {
-    margin: auto;
-}
-
-.topNotice {
-	background: #BB0000;
-	height: 120px;
-	text-align: center;
-}
-
-.txt-white {
-	color: #FFFFFF;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-
-#ytplayer {
-	opacity:0.4;
-	position: fixed;
-	z-index: -99;
-	width: 100%;
-	height: 100%
-}
-
-.button {
-    background-color: #BB0000;
-    border: none;
-    color: white;
-    padding: 8px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    width: 50%;
-}
-
-@media screen and (max-width: 750px) {
-	.topNotice {
-		height: 160px;
-	}
-    .margin-on-mobile{
-        margin-left:35px;
-    }
-    .button{
-        width: 185px;
-    }
+.white-box {
+  background-color: white;
+  color: black;
+  padding: 6px;
 }
