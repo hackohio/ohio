@@ -32,63 +32,77 @@
 </head>
 <body>
   <!-- Navigation bar -->
-  <nav class="flex-right">
-    <img src="style/OHIO-subtitle.png"/>
-    <span>
-    <a href="#">HOME</a>
-    <a href="#">EVENTS</a>
-    <a href="#">ABOUT</a>
-    <a href="#" class="white-box">GET INVOLVED</a>
-    </span>
-  </nav>
+  <div class="nav">
+    <div class="container">
+      <nav class="flex-right">
+        <img src="style/OHIO-subtitle.png"/>
+        <span>
+        <a class="hide-mobile" href="http://hack.osu.edu/old">EVENTS</a>
+        <a href="http://hack.osu.edu/about">ABOUT</a>
+        <!-- <a href="http://hack.osu.edu/2017" class="hide-mobile white-box">GET INVOLVED</a> -->
+        </span>
+      </nav>
+    </div>
+  </div>
 
   <!-- Featured banner -->
   <div id="featured-banner">
-    <h1 class="bottom-left">
-      FEATURED EVENT<br/>
-      HackOHI/O<br />
-      October 21-22, 2017<br />
-      The Ohio Union @ OSU
-    </h1>
-    <h1 class="bottom-right red-box">
-      <a href="#">LEARN MORE</a>
-    </h1>
-    <!--<img src="hackathon.png"/>-->
-  </div>
-
-  <br /><br />
-
-  <!-- About blurb -->
-  <div id="about">
-    <h1>
-      OHI/O is a program dedicated to fostering tech culture at
-      The Ohio State University.
-    </h1>
-    <h3>
-      The student-driven program has created Ohio State's first
-      hackathon, as well as spin-off events including the hardware-focused
-      Makeathon, ultimately providing students the opportunity
-      to learn and build with real technologies outside of the classroom.
-    </h3>
-    <br />
-    <a class="red-box" href="#">ABOUT OHI/O</a>
+    <div class="container">
+      <div class="bottom-left">
+        <h3>FEATURED EVENT</h3>
+        <h1>HackOHI/O</h1>
+        <h4>October 21-22, 2017</h4>
+        <h4>The Ohio Union @ OSU</h4>
+      </div>
+      <div class="bottom-right">
+        <a href="http://hack.osu.edu/2017" class="red-box">LEARN MORE</a>
+      </div>
+    </div>
   </div>
 
   <br /><br /><br /><br />
 
+  <!-- About blurb -->
+  <div class="container">
+    <div id="about">
+      <h1>
+        OHI/O is a program dedicated to fostering tech culture at
+        The Ohio State University.
+      </h1>
+      <br />
+      <a class="red-box" href="http://hack.osu.edu/about">ABOUT OHI/O</a>
+    </div>
+  </div>
+
+  <br /><br /><br /><br /><br />
+
   <!-- Main events -->
-  <div id="main-events">
-    <div class="event-box">
-      <img src="style/HackOHIO_logo.png" />
-      <span class="event-box-text">HackOHI/O</span>
-    </div>
-    <div class="event-box">
-      <img src="style/MakeOHIO_logo.png" />
-      <span class="event-box-text">MakeOHI/O</span>
-    </div>
-    <div class="event-box">
-      <img src="style/ShowOHIO_logo.png" />
-      <span class="event-box-text">ShowOHI/O</span>
+  <div class="container">
+    <div id="main-events">
+      <a href="http://hack.osu.edu/2017">
+        <div class="event-box">
+          <img src="style/HackOHIO_logo.png" />
+          <span class="event-box-text">HackOHI/O</span>
+        </div>
+      </a>
+      <a href="http://make-oh.io/">
+        <div class="event-box">
+          <img src="style/MakeOHIO_logo.png" />
+          <span class="event-box-text">MakeOHI/O</span>
+        </div>
+      </a>
+      <a href="http://hack.osu.edu/show/2017/">
+        <div class="event-box">
+          <img src="style/ShowOHIO_logo.png" />
+          <span class="event-box-text">ShowOHI/O</span>
+        </div>
+      </a>
+      <a href="http://hack.osu.edu/hs/2017/">
+        <div class="event-box">
+          <img src="style/highschoolio.png" />
+          <span class="event-box-text">HighSchool I/O</span>
+        </div>
+      </a>
     </div>
   </div>
 
@@ -96,30 +110,59 @@
 
   <!-- Upcoming events -->
   <div id="community">
-    <br /><br />
-    <div id="community-header">
-      <h1>Upcoming community events</h1>
+    <div class="container">
+      <br /><br />
+      <div id="community-header">
+        <h1>Upcoming community events</h1>
+      </div>
+
+      <div class="community-event">
+        <div class="red-bar"></div>
+        <h3 class="name">
+          Picnic and HackOHI/O Team Formation<br />
+          <span class="event-subtext">ACM-W</span>
+        </h3>
+        <h4 class="date">Oct 19, 2017 @ 4pm</h4>
+        <h4 class="location">Dreese Lobby</h4>
+        <h4 class="learn-more"><a href="https://acmwosu.github.io/events" class="red">Learn more &gt;&gt;</a></h4>
+      </div>
+      <br />
+
+      <div class="community-event">
+        <div class="red-bar"></div>
+        <h3 class="name">
+          TechTalk on React Native<br />
+          <span class="event-subtext">OHI/O + Root Insurance Co.</span>
+        </h3>
+        <h4 class="date">Oct 19, 2017 @ 6pm</h4>
+        <h4 class="location">18th Ave Library 070/090</h4>
+        <h4 class="learn-more"><a href="https://www.joinroot.com/" class="red">Learn more &gt;&gt;</a></h4>
+      </div>
+      <br />
+
+      <div class="community-event">
+        <div class="red-bar"></div>
+        <h3 class="name">
+          HackOHI/O Hackathon<br />
+          <span class="event-subtext">OHI/O</span>
+        </h3>
+        <h4 class="date">Oct 21 - 22, 2017</h4>
+        <h4 class="location">Ohio Union</h4>
+        <h4 class="learn-more"><a href="http://hack.osu.edu/2017" class="red">Learn more &gt;&gt;</a></h4>
+      </div>
+      <br /><br />
+
+
+    <!--   <div class="center" style="display: none">
+        <a href="#" class="red">View all events &gt;&gt;</a>
+      </div> -->
+      <br />
     </div>
-    <div id="community-event">
-      <div class="red-bar"></div>
-      <h2>
-        Dan Manges Speaker Event<br />
-        <span class="event-subtext">Business Builders Club</span>
-      </h2>
-      <h2>Oct 17, 2017 @ 7pm</h2>
-      <h2>Ohio Union Senate Chamber</h2>
-      <h2><a href="#" class="red">Learn more &gt;&gt;</a></h2>
-    </div>
-    <br /><br />
-    <div class="center">
-      <a href="#" class="red">View all events &gt;&gt;</a>
-    </div>
-    <br />
   </div>
 
   <!-- Footer -->
   <footer>
-    <div id="stats">
+    <div id="stats" style="display: none">
       <div>
         <div class="stat-num">780</div>
         students at the last hackathon
@@ -137,13 +180,6 @@
         partnered events this past year
       </div>
     </div>
-    <br /><br />
-    <h3>
-      Join our email list to stay up to date
-    </h3>
-    <div id="email-input">
-    </div>
-    <br /><br /><br />
     <table id="socialmedia-table">
       <tr>
         <td style="text-align: center;">

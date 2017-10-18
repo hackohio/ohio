@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,14 +16,21 @@ a {
   color: white;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* Navigation */
+.nav {
+  background: #000;
+}
 nav {
   display: flex;
   align-items: center;
   width: 100%;
   height: 3em;
 
-  background-color: black;
   color: white;
 
   font-size: 24px;
@@ -28,6 +39,7 @@ nav a {
   margin: 20px 30px;
 
   color: white;
+  font-size: 0.8em;
   text-decoration: none;
 }
 nav img {
@@ -36,18 +48,45 @@ nav img {
   height: 80%;
 }
 
+@media (max-width: 750px) {
+  nav img {
+    margin-left: 20px;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+}
+
 /* Featured banner */
 #featured-banner {
-  display: flex;
-  display: -webkit-flex;
-  justify-content: space-between;
-
   width: 100%;
-  height: 20em;
   color: white;
 
-  background-image: url('./hackathon.png');
+  background: url('./hackathon.png') no-repeat bottom center;
+  background-size: cover;
 }
+
+#featured-banner .container {
+  display: flex;
+  display: -webkit-flex;
+  height: 20em;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+#featured-banner h1,
+#featured-banner h2,
+#featured-banner h3,
+#featured-banner h4 {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+#featured-banner h1 {
+  font-size: 3em;
+}
+
 #featured-banner img {
   min-height: 100%;
   min-width: 100%;
@@ -55,6 +94,27 @@ nav img {
   position: relative;
   z-index: -1;
   float: left;
+}
+
+@media (max-width: 750px) {
+  #featured-banner .container {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  #featured-banner .container .bottom-left {
+    margin-bottom: 30px;
+  }
+
+  #featured-banner .container .bottom-right {
+    margin-bottom: 20px;
+    margin-left: 5%;
+  }
+
+  #featured-banner .container .bottom-left,
+  #featured-banner .container .bottom-right {
+    align-self: flex-start;
+  }
 }
 
 /* About blurb */
@@ -65,18 +125,32 @@ nav img {
   margin: auto;
 }
 
+@media (max-width: 750px) {
+  #about {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 /* Main events */
 #main-events {
   display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
-  margin: auto;
-  width: 80%;
+  margin: auto -20px;
+}
+#main-events > a {
+  flex: 1;
+  display: flex;
 }
 .event-box {
+  flex: 1;
+  flex-grow: 1;
   display: -webkit-flex;
   display: flex;
+  margin: 0 20px;
 
   /* Must be relative for img to be absolutely positioned */
   position: relative;
@@ -84,41 +158,48 @@ nav img {
   background-color: rgb(34, 34, 34);
   color: white;
 
-  height: 14em;
-  width: 20em;
+  height: 11em;
 }
 .event-box-text {
   /* Make sure text is at bottom */
-  margin-left: 10%;
-  margin-bottom: 10%;
+  margin-left: 5%;
+  margin-bottom: 4%;
   align-self: flex-end;
 
   font-size: 28px;
 }
 .event-box img {
   position: absolute;
-  top: 5%;
+  top: 8%;
   left: 5%;
-  height: 60%;
+  height: 50%;
+}
+
+@media (max-width: 750px) {
+  #main-events {
+    flex-direction: column;
+  }
+
+  #main-events > a {
+    margin-bottom: 20px;
+  }
 }
 
 /* Community events */
 #community {
   width: 100%;
   margin: auto;
-
+  padding: 20px;
   background-color: #f4f4f4;
 }
 #community-header {
-  width: 90%;
   margin: auto;
 }
-#community-event {
+.community-event {
   position: relative;
-  width: 80%;
   margin: auto;
-  padding-left: 15px;
-  padding-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   display: flex;
   display: -webkit-flex;
@@ -129,6 +210,15 @@ nav img {
 
   background-color: white;
 }
+.community-event .name {
+  flex: 3;
+}
+.community-event .date {
+  flex: 2;
+}
+.community-event .location {
+  flex: 2;
+}
 .event-subtext {
   font-size: 0.75em;
 }
@@ -138,6 +228,18 @@ nav img {
   left: 0;
   background-color: red;
   position: absolute;
+}
+
+@media (max-width: 750px) {
+  .community-event {
+    flex-direction: column;
+  }
+
+  .community-event h4,
+  .community-event h3 {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 
 /* Footer */
@@ -218,14 +320,18 @@ Flexbox
 .bottom-right {
   align-self: flex-end;
   margin-right: 5%;
+  margin-bottom: 8px;
 }
 .red-box {
   background-color: red;
   color: white;
-  padding: 10px;
+  padding: 10px 20px;
+  font-size: 1.2em;
 }
 .white-box {
   background-color: white;
   color: black;
-  padding: 6px;
+  font-size: 0.7em;
+  padding: 8px 15px;
 }
+
