@@ -2,7 +2,7 @@
 body{
     background-image: url("../images/chevron.png");
     font-size: 18px;
-    font-family: 'proximanova', 'proximanova', Proxima Nova, Helvetica, sans-serif;
+    font-family: 'proximanova', 'proxima-nova', Proxima Nova, Helvetica, sans-serif;
 }
 
 #container{
