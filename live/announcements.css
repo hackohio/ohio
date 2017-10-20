@@ -1,8 +1,0 @@
-#announcements {
-  background-color: lightgray;
-}
-
-#sheetrock_load tr:nth-child(odd) {
-  color: black;
-  font-weight: bold;
-}
