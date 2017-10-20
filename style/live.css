@@ -3,7 +3,7 @@ body {
   	flex-direction: column;
   	background-image: url('../images/chevron.png');
   	min-height: 100vh;
-  	font-family: 'proxima-nova', 'proximanova', Proxima Nova, Helvetica, sans-serif;
+  	font-family: 'proximanova', 'proxima-nova', Proxima Nova, Helvetica, sans-serif;
 
 }
 
