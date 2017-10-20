@@ -3,7 +3,7 @@ body {
 	padding: 0;
 	background-color: rgb(0,0,0);
 	color: white;
-	font-family: 'proximanova', Proxima Nova, Helvetica, sans-serif;
+  	font-family: 'proximanova', 'proxima-nova', Proxima Nova, Helvetica, sans-serif;
 }
 
 h1 {
@@ -342,4 +342,18 @@ a.footer {
 
 .bigger{
 	font-size: 30px;
+}
+
+#schedule-page tr {
+	padding: 3px;
+	background-color: white;
+	color: black;
+}
+.schedule-table tr:nth-child(odd) {
+	background-color: #D9D9D9;
+}
+
+.schedule-table td{
+	padding-top:5px;
+	padding-bottom:5px;
 }

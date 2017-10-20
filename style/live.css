@@ -1,0 +1,170 @@
+body {
+	display: flex;
+  	flex-direction: column;
+  	background-image: url('../images/chevron.png');
+  	min-height: 100vh;
+  	font-family: 'proximanova', 'proxima-nova', Proxima Nova, Helvetica, sans-serif;
+
+}
+
+a {
+    color: #BB0000;
+}
+
+#liveheader {
+	position: fixed;
+	background-color: #000000;
+	color: white;
+	width: 100%;
+	height: 154px;
+}
+
+#livelogo {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+#livelogo img {
+	float: left;
+}
+
+#livelogo h3 {
+	max-height: 92px;
+	margin: 0 auto;
+	padding: 0px;
+	font-size: 200%;
+}
+
+#nav {
+	clear: both;
+	background-color: #ffffff;
+	text-align: center;
+	width: 100%;
+	height:52px;
+  	line-height: 52px;
+  	margin: 0;
+  	overflow: hidden;
+	border-bottom:1px;
+	border-bottom-color:gray;
+	border-bottom-style:solid;
+	border-top:1px;
+	border-top-color:gray;
+	border-top-style:solid;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+    overflow: hidden;
+}
+
+#nav li {
+	display: inline-block;
+	margin: 0;
+}
+
+#nav a {
+	display: block;
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: none;
+}
+
+#nav li a.hover {
+	background-color: #888888;
+    color: white;
+}
+
+#nav ul li a:hover:not(.active) {
+    background-color: #888888;
+    color: white;
+}
+
+#mobilenav {
+	margin-top: 102px;
+}
+
+.pagecontent {
+	flex: 1;
+	padding-top: 156px;
+	margin-bottom: 20px;
+}
+
+.banner{
+	background-color: #000;
+	text-align: center;
+	width: 90%;
+	border: #000 3px solid;
+	margin-top: 20px;
+}
+
+.content-box{
+	background-color: #FFFFFF;
+	color: black;
+	width: 100%;
+	border: #808080 0px solid;
+	padding:10px;
+    -webkit-box-sizing: border-box; /* WebKit */
+    -moz-box-sizing: border-box;    /* Gecko */
+    box-sizing: border-box;
+}
+
+.center {
+	text-align: center;
+}
+
+.col {
+	float:left;
+	display: block;
+	margin-right: 0;
+	text-align:center;
+	vertical-align: middle;
+	height:100%;
+}
+
+.col:first-child {
+	margin-left: 0;
+}
+
+.grp:before, .grp:after {
+	display: table;
+}
+
+.grp:after {
+	clear: both;
+}
+
+.half {
+	width: 50%;
+}
+
+.fourth{
+	width: 25%;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.half {
+		width: 100%;
+	}
+
+	.fourth {
+		width: 100%;
+	}
+
+	.banner {
+		margin: 20px auto 0px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+
+	#livelogo h3 {
+		font-size: 1.2em;
+	}
+}

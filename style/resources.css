@@ -1,8 +1,8 @@
 
 body{
-background-image: url("../images/chevron.png");
-font-size: 18px;
-font-family: 'proximanova', Proxima Nova, Helvetica, sans-serif;
+    background-image: url("../images/chevron.png");
+    font-size: 18px;
+    font-family: 'proximanova', 'proxima-nova', Proxima Nova, Helvetica, sans-serif;
 }
 
 #container{
@@ -40,9 +40,9 @@ text-shadow: 2px 2px 1px white;
 .title{
 background-color: #BB0000;
 font-size: 150%;
-margin: 0 auto; 
+margin: 0 auto;
 margin-bottom:15px;
-padding: 5px; 
+padding: 5px;
 width: 100%;
 color: white;
 clear: auto;
@@ -80,7 +80,7 @@ color: #D32707;
 text-decoration: none;
 border-bottom: solid white 1px;
 }
-    
+
 p {
 font-size: 16pt;
 font-weight: 300;
@@ -88,7 +88,7 @@ line-height: 22pt;
 }
 
 a.button{
-    background-color: #d32707; /* Green */
+    background-color: #BB0000; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -96,7 +96,7 @@ a.button{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    width: 250px; margin: 5px;
+    max-width: 250px; margin: 5px;
 }
 a.button:hover{
     background-color: #BD0000; /* Green */
@@ -109,7 +109,7 @@ a.button:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     display: inline-block;
     font-size: 16px;
-    width: 250px; margin: 5px;
+    max-width: 250px; margin: 5px;
 }
 
 //Footer
@@ -159,7 +159,7 @@ a.footer {
 	margin:auto;
 	width:70%;
 }
-	
+
 
 .fa {
     display: inline-block;
@@ -176,8 +176,7 @@ a.footer {
 .nav{
 	display:inline;
 	width: 75%;
-	height: auto;	
+	height: auto;
     border: none;
     margin: -10px auto auto 10px;
 }
-
