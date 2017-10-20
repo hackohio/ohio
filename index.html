@@ -24,6 +24,7 @@
 		<link rel="stylesheet" type="text/css" href="style/parallax.css">
 		<link rel="stylesheet" type="text/css" href="style/responsive.css">
 		<link rel="stylesheet" type="text/css" href="style/mobilenav.css">
+		<link rel="stylesheet" type="text/css" href="style/countdown.css">
 		<link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
@@ -104,8 +105,24 @@
 					<br>
 					October 21 - 22, 2017
 					<br><br>
-					<!--<div id="getting-started"></div>-->
-
+					<div id=countdown>
+						<div>
+					  	<span class="days bold"></span>
+					  	<div class="smalltext">Days</div>
+						</div>
+						<div>
+					  	<span class="hours bold"></span>
+					  	<div class="smalltext">Hours</div>
+						</div>
+						<div>
+					  	<span class="minutes bold"></span>
+					  	<div class="smalltext">Minutes</div>
+						</div>
+						<div>
+					  	<span class="seconds bold"></span>
+					  	<div class="smalltext">Seconds</div>
+						</div>
+					</div>
 				</h3>
 				<br>
 				<!--
@@ -1026,7 +1043,7 @@
 							2:30 PM
 						</td>
 						<td class="box-gray">
-							Showcase Begins
+							<a class="pretty-link" href="http://go.osu.edu/hackohio2017-showcase">Showcase Begins</a>
 						</td>
 						<td class="box-gray">
 							Performance Hall
@@ -1173,15 +1190,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="script/player.js"></script>
 		<script src="script/nav.js"></script>
-		<script src="script/jquery.countdown.min.js"></script>
-
-		<script type="text/javascript">
-		  $("#getting-started")
-		  .countdown("10/10/2017", function(event) {
-		    $(this).text(
-		      event.strftime('%D days %H:%M:%S')
-		    );
-		  });
-		</script>
+		<script src="script/clock.js"></script>
 	</body>
 </html>
