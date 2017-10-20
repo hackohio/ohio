@@ -2,7 +2,7 @@
 body{
     background-image: url("../images/chevron.png");
     font-size: 18px;
-    font-family: 'proxima-nova', 'proximanova', Proxima Nova, Helvetica, sans-serif;
+    font-family: 'proximanova', 'proxima-nova', Proxima Nova, Helvetica, sans-serif;
 }
 
 #container{
@@ -40,9 +40,9 @@ text-shadow: 2px 2px 1px white;
 .title{
 background-color: #BB0000;
 font-size: 150%;
-margin: 0 auto; 
+margin: 0 auto;
 margin-bottom:15px;
-padding: 5px; 
+padding: 5px;
 width: 100%;
 color: white;
 clear: auto;
@@ -80,7 +80,7 @@ color: #D32707;
 text-decoration: none;
 border-bottom: solid white 1px;
 }
-    
+
 p {
 font-size: 16pt;
 font-weight: 300;
@@ -159,7 +159,7 @@ a.footer {
 	margin:auto;
 	width:70%;
 }
-	
+
 
 .fa {
     display: inline-block;
@@ -176,8 +176,7 @@ a.footer {
 .nav{
 	display:inline;
 	width: 75%;
-	height: auto;	
+	height: auto;
     border: none;
     margin: -10px auto auto 10px;
 }
-
