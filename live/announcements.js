@@ -41,7 +41,7 @@ function loadAnnouncements() {
         var timeStamp = cols[i].innerHTML;
         var time = timeStamp.slice(10);
         var adjustedTime = mtimeToNormal(time);
-        if (timeStamp.includes("10/20/2017")) {
+        if (timeStamp.includes("10/21/2017")) {
           timeStamp = "Saturday "+adjustedTime;
         } else {
           timeStamp = "Sunday "+adjustedTime;
