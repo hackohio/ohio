@@ -11,6 +11,10 @@ a {
     color: #BB0000;
 }
 
+a.social-media-image{
+	color:white
+}
+
 #liveheader {
 	position: fixed;
 	background-color: #000000;
@@ -160,6 +164,10 @@ a {
 	.banner {
 		margin: 20px auto 0px;
 	}
+
+	#container {
+		width:90%;
+	}
 }
 
 @media only screen and (max-width: 800px) {
@@ -169,9 +177,14 @@ a {
 	}
 }
 
+
 @media (max-width: 996px) {
   div.banner.top-banner {
     margin-right: 4.6% !important;
     margin-left: 4.6% !important;
   }
+
+.toppadding{
+	height:156px;
+
 }
