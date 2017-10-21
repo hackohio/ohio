@@ -23,7 +23,11 @@
 		<!-- Normalize -->
 		<link rel="stylesheet" type="text/css" href="../style/normalize.css">
 		<!-- Style -->
+
+		<link rel="stylesheet" type="text/css" href="../style/live.css">
+
 		<link rel="stylesheet" type="text/css" href="../style/resources.css">
+		<link rel="stylesheet" type="text/css" href="../style/mobilenav.css">
 
 		<link rel="stylesheet" type="text/css" href="../style/responsive.css">
 		<link rel="stylesheet" href="../style/font-awesome-4.5.0/css/font-awesome.min.css">
@@ -31,14 +35,40 @@
 	</head>
 
 	<body>
+		<div id="liveheader">
+			<div id="livelogo" class="center">
+				<img id="live-hack-logo" class="grow" src="../img/HackOHIO logo.svg" width="75px" alt="HackOHI/O logo" style="padding:10px; max-width:75px"/>
+				<h3><b>HackOHI/O 2017 Live:</b><br>
+					Your source of info during the event.</h3>
+				<div id="mobilenav" style="display:none;">
+					<a href="index.html" class="mobilenav-btn">Home</a>
+					<a href="challenges.html" class="mobilenav-btn">Challenges</a>
+					<a href="prizes.html" class="mobilenav-btn">Prizes</a>
+					<a href="resources.html" class="mobilenav-btn">Hacker Resources</a>
+					<a href="hardware.html" class="mobilenav-btn">Hardware Loans</a>
+					<a href="https://hackohio-helpq.herokuapp.com/" class="mobilenav-btn">Mentor Help</a>
+					<a id="mobilenav-sandwich" class="icon">&#9776;</a>
+
+				</div>
+			</div>
+			<div id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="challenges.html">Challenges</a></li>
+					<li><a href="prizes.html">Prizes</a></li>
+					<li><a href="resources.html">Hacker Resources</a></li>
+					<li><a href="hardware.html">Hardware Loans</a></li>
+					<li><a href="https://hackohio-helpq.herokuapp.com/">Mentor Help</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="toppadding"></div>
 			<div id="container">
-			<h1>HackOHI/O 2017 - Resources</h1>
+			<h1 id="pagetitle-h1">Resources</h1>
 			<hr>
 			<div class="nav">
 				<div class="section grp">
 					<div class="col">
-						<a href="index.html" class="button">Back Home</a>
-
 						<a class="button" href="#general">General Resources</a>
 						<a href="#text-editors" class="button">Text Editors</a>
 						<a href="#version-control" class="button">Version Control</a>
@@ -121,21 +151,15 @@
 			<br><br>
 			There are a ton of text editors out there; over time, you gain exposure to more and more and acquire your favorites.
 			Here's a list of some of the most popular you can try out:
-      <br><br>
-        <div class= "col fourth">
-          <a class="pretty-link" href="http://www.sublimetext.com/">Sublime Text</a><br>
-        </div>
-        <div class= "col fourth">
-          <a class="pretty-link" href="https://atom.io/">Atom Editor</a><br>
-        </div>
-        <div class= "col fourth">
-          <a class="pretty-link" href="https://notepad-plus-plus.org/">Notepad++</a><br>
-        </div>
-        <div class= "col fourth">
-          <a class="pretty-link" href="http://brackets.io//">Brackets</a><br>
-        </div>
+      <br>
+      <ul>
+	    <li><a class="pretty-link" href="http://www.sublimetext.com/">Sublime Text</a></li>
+	    <li><a class="pretty-link" href="https://atom.io/">Atom Editor</a></li>
+	    <li><a class="pretty-link" href="https://notepad-plus-plus.org/">Notepad++</a></li>
+	    <li><a class="pretty-link" href="http://brackets.io//">Brackets</a></li>
+	   </ul>
     </div>
-    <br>
+
 
 			<a name="version-control"></a>
 			<h1 class="title">Version Control</h1>
@@ -243,24 +267,38 @@
 					<a class="footer" href="https://cse.osu.edu/">Department of Computer Science &amp; Engineering</a> &#8226;
 					<a class="footer" href="https://library.osu.edu/">University Libraries</a>
 					<br><br>
-					Made with <i class="fa fa-heart"></i> in Columbus
+					Made with <i class="fa-red fa-heart"></i> in Columbus
 				</p>
 				<br>
 			</div>
 		</div>
 		</div>
+				<div id="mobilefooter" style="display:none;">
+					<div class="footer-socialmedia">
+						<a class="social-media-image" href="https://www.facebook.com/hackohio"><i class="social-media-fa-white fa fa-facebook fa-2x"></i></a>
+						<a class="social-media-image" href="https://twitter.com/hackohio"><i class="social-media-fa-white fa fa-twitter fa-2x"></i></a>
+						<a class="social-media-image" href="https://www.instagram.com/hackohio/"><i class="social-media-fa-white fa fa-instagram fa-2x"></i></a>
+						<a class="social-media-image" href="https://www.youtube.com/channel/UCJJzEGEjQrpVTY3zEQS0BpA"><i class="social-media-fa-white fa fa-youtube fa-2x"></i></a>
+						<a class="social-media-image" href="https://medium.com/@hackohio"><i class="social-media-fa-white fa fa-medium fa-2x"></i></a>
+					</div>
+					<p class="mobile-footer">Made with <i class="fa-red fa-heart"></i> in Columbus
+					</p>
+			</div>
 		<!-- Footer ends -->
 	</body>
 	<!-- Google Analytic code -->
+
+		<!-- Google Analytic code -->
 
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
-
 			ga('create', 'UA-51284668-6', 'auto');
 			ga('send', 'pageview');
 		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="../script/nav.js"></script>
 <!--Code ends -->
 </html>

@@ -1,7 +1,6 @@
 
 body{
     background-image: url("../images/chevron.png");
-    font-size: 18px;
     font-family: 'proximanova', 'proxima-nova', Proxima Nova, Helvetica, sans-serif;
 }
 
@@ -15,6 +14,7 @@ color:#333;
 background-color: rgba(255,255,255,1.0);
 text-align: center;
 box-sizing: border-box;
+font-size: 18px;
 }
 
 .header{
@@ -161,6 +161,16 @@ a.footer {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
         font-size: 14px;
+         color: white;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-red {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+        font-size: 14px;
          color: #BB0000;
     font-size: inherit;
     text-rendering: auto;
@@ -174,7 +184,7 @@ a.footer {
 	width: 75%;
 	height: auto;
     border: none;
-    margin: -10px auto auto 10px;
+    margin: 0px 0 0 1px;
 }
 
 a.pretty-link {
@@ -197,4 +207,63 @@ a.pretty-link:hover:not(.active) {
 
 a.pretty-link:visited{
    color: #a00000;
+}
+
+.social-media-fa-white {
+    color: white;
+    padding: 10px;
+}
+
+
+a.social-media-image {
+    /* padding-right: 20px; */
+    padding: 0px;
+}
+
+a.social-media-image {
+    border-bottom: solid white 0px;
+}
+
+p.mobile-footer{
+    display: block;
+    margin: 0;
+    font-size: 16pt;
+    font-weight: 300;
+    line-height: 22pt;
+}
+
+
+#pagetitle-h1 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 27pt;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 37pt;
+  margin-bottom: 26px;
+  box-sizing: border-box;
+}
+/*
+h2 {
+  margin: 12px 0;
+  font-weight: 200;
+  font-size: 30pt;
+  box-sizing: border-box;
+}
+*/
+h3 {
+  margin: 12px 0;
+  font-weight: 200;
+  font-size: 20pt;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul li {
+  padding-bottom:10px;
 }
