@@ -55,6 +55,8 @@ a.social-media-image{
 	border-top:1px;
 	border-top-color:gray;
 	border-top-style:solid;
+	font-size: 0px;
+
 }
 
 #nav ul {
@@ -77,6 +79,11 @@ a.social-media-image{
     padding-left: 16px;
     padding-right: 16px;
     border-bottom: none;
+        -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
 }
 
 #nav li a.hover {
@@ -188,3 +195,5 @@ a.social-media-image{
 	height:156px;
 
 }
+
+
