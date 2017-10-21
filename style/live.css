@@ -11,6 +11,10 @@ a {
     color: #BB0000;
 }
 
+a.social-media-image{
+	color:white
+}
+
 #liveheader {
 	position: fixed;
 	background-color: #000000;
@@ -159,6 +163,10 @@ a {
 
 	.banner {
 		margin: 20px auto 0px;
+	}
+
+	#container {
+		width:90%;
 	}
 }
 

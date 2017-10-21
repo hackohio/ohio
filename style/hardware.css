@@ -160,6 +160,16 @@ a.footer {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
         font-size: 14px;
+         color: white;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-red {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+        font-size: 14px;
          color: #BB0000;
     font-size: inherit;
     text-rendering: auto;
@@ -205,7 +215,7 @@ td {
 h1 {
   font-weight: 600;
   letter-spacing: 1px;
-  font-size: 36pt;
+  font-size: 28pt;
   margin: 0;
   text-transform: uppercase;
   line-height: 37pt;
