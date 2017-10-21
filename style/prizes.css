@@ -1,7 +1,6 @@
 
 body{
     background-image: url("../images/chevron.png");
-    font-size: 18px;
     font-family: 'proximanova', 'proxima-nova', Proxima Nova, Helvetica, sans-serif;
 }
 
@@ -197,4 +196,33 @@ a.pretty-link:hover:not(.active) {
 
 a.pretty-link:visited{
    color: #a00000;
+}
+
+td {
+  font-size: 18px;
+}
+
+h1 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 36pt;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 37pt;
+  margin-bottom: 26px;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 12px 0;
+  font-weight: 200;
+  font-size: 30pt;
+  box-sizing: border-box;
+}
+
+h3 {
+  margin: 12px 0;
+  font-weight: 200;
+  font-size: 20pt;
+  box-sizing: border-box;
 }
