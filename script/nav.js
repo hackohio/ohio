@@ -56,16 +56,21 @@ if (!isMobile()) {
   $("#home-back").hide();
   var backHidden = true;
 
-  $(window).scroll(function () {
-      //if you hard code, then use console
-      //.log to determine when you want the
-      //nav bar to stick.
-      console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 280) {
-      $('#nav_bar').addClass('navbar-fixed');
-    }
-    if ($(window).scrollTop() < 281) {
-      $('#nav_bar').removeClass('navbar-fixed');
+  $(document).scroll(function(event) {
+    if (activePage.isOnScreen()) {
+      if (backHidden) {
+        console.log("on screen");
+        $("#homepage").css({position: "fixed"});
+        $("#home-back").show();
+        backHidden = false;
+      }
+    } else {
+      if (!backHidden) {
+        console.log("not on screen");
+        $("#homepage").css({position: "relative"});
+        $("#home-back").hide();
+        backHidden = true;
+      }
     }
   });
 
@@ -84,7 +89,7 @@ if (!isMobile()) {
     var navHomepagePos = $(window).height() - $(navId).height();
     var nav;
     var footer;
-
+    
     if (nextPagePos < navHomepagePos) {
       // Attach navbar to new page
       if (!$(navId).parent().is(activePage)) {
@@ -166,7 +171,7 @@ if (!isMobile()) {
     /* Unhide clicked page */
     var href = $(this).attr("href");
     $(href).show();
-
+    
     var mobilefooter = $("#mobilefooter").detach();
     $(href).append(mobilefooter);
     $(mobilefooter).show();
