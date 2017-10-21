@@ -177,6 +177,14 @@ a.social-media-image{
 	}
 }
 
+
+@media (max-width: 996px) {
+  div.banner.top-banner {
+    margin-right: 4.6% !important;
+    margin-left: 4.6% !important;
+  }
+
 .toppadding{
 	height:156px;
+
 }
