@@ -1,5 +1,5 @@
 // Refresh timer
-setInterval(refreshTimer, 30*1000);
+setInterval(refreshTimer, 60 * 5 * 1000);
 loadAnnouncements();
 function refreshTimer() {
   loadAnnouncements();
@@ -15,7 +15,7 @@ function loadAnnouncements() {
   target.sheetrock({
     url: sheetURL,
     query: "select B, A order by B desc",
-    fetchSize: 5,
+    fetchSize: 4,
     callback: sheetrockCallback,
     reset: true
   });
@@ -41,7 +41,7 @@ function loadAnnouncements() {
         var timeStamp = cols[i].innerHTML;
         var time = timeStamp.slice(10);
         var adjustedTime = mtimeToNormal(time);
-        if (timeStamp.includes("10/16/2017")) {
+        if (timeStamp.includes("10/20/2017")) {
           timeStamp = "Saturday "+adjustedTime;
         } else {
           timeStamp = "Sunday "+adjustedTime;

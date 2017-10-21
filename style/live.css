@@ -168,3 +168,10 @@ a {
 		font-size: 1.2em;
 	}
 }
+
+@media (max-width: 996px) {
+  div.banner.top-banner {
+    margin-right: 4.6% !important;
+    margin-left: 4.6% !important;
+  }
+}
