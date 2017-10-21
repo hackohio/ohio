@@ -180,3 +180,25 @@ a.footer {
     border: none;
     margin: -10px auto auto 10px;
 }
+
+a.pretty-link {
+   color: #a00000;
+   text-decoration:none;
+   outline:0;
+  border-bottom: solid 1px transparent;
+  -webkit-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+     -moz-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+      -ms-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+       -o-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+          transition: color .2s ease-out, border-bottom-color .2s ease-out;
+}
+
+a.pretty-link:hover:not(.active) {
+   text-decoration: none;
+   color: #000;
+   border-bottom: solid 1px #a00000;
+}
+
+a.pretty-link:visited{
+   color: #a00000;
+}
