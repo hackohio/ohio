@@ -42,12 +42,22 @@ function sheetrockCallback() {
 function parseEvent(data) {
   var title = $(data[0]).text();
   var organization = $(data[1]).text();
+
   var date = $(data[2]).text();
-  var startTime = $(data[3]).text();
-  var endTime = $(data[4]).text();
+  var dateExtRaw = $(data[3]).text();
+  if (dateExtRaw) {
+    // Overly complicated regexp to extract multiple dates in a string into an array of dates
+    // var datesExt = dateExtRaw.match(/([^,]*,[^,]*),?/g).map(x => x.trim().replace(/(^,)|(,$)/g, ""));
+    date = dateExtRaw;
+  }
+
+  var startTime = $(data[4]).text();
+  if (startTime) startTime = "@ "+startTime;
+  var endTime = $(data[5]).text();
   if (endTime) endTime = "- "+endTime;
-  var location = $(data[5]).text();
-  var learnMore = $(data[6]).text();
+
+  var location = $(data[6]).text();
+  var learnMore = $(data[7]).text();
   return `
   <br />
   <div class="community-event">
@@ -56,7 +66,7 @@ function parseEvent(data) {
       ${title}<br />
       <span class="event-subtext">${organization}</span>
     </h3>
-    <h4 class="date">${date} @ ${startTime} ${endTime}</h4>
+    <h4 class="date">${date} ${startTime} ${endTime}</h4>
     <h4 class="location">${location}</h4>
     <h4 class="learn-more"><a href="${learnMore}" class="red">Learn more &gt;&gt;</a></h4>
   </div>
