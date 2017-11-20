@@ -221,7 +221,7 @@ nav img {
 }
 
 .container .community-event:nth-child(2n+1) {
-  background-color: #ededed;
+  /*background-color: #ededed;*/
 }
 
 .community-event .name {
@@ -348,4 +348,3 @@ Flexbox
   font-size: 0.7em;
   padding: 8px 15px;
 }
-
