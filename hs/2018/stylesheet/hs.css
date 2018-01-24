@@ -1,0 +1,164 @@
+body, html {
+    height: 100%;
+    font-family: 'proximanova', "Proxima Nova", Helvetica, Sans-Serif;
+    font-size: 16px;
+}
+h3{
+    text-align: center;
+    color: #444444;
+}
+body{
+    background-color: white;
+}
+td{
+    padding: 4px;
+    text-align: justify;
+}
+th{
+    background-color:#bb0000;
+    color: white;
+    text-align: center;
+}
+hr{
+    width: 80%;
+}
+a{
+    text-decoration: underline;
+}
+
+/*Classes*/
+.center {
+    text-align: center;
+}
+.txt_white{
+    color : white;
+}
+.txt_red{
+    color : #bb0000;
+}
+.txt_gray{
+    color : #222222;
+}
+.txt_pink{
+    color : lightpink;
+}
+.text_center{
+    text-align: center;
+}
+.elm_center{
+    margin: 0 auto;
+}
+.fa{
+    color: #ffffff;
+}
+.button {
+    background-color: #BB0000;
+    display:block;
+    margin: 10px auto;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    max-width: 20%;
+}
+.container {
+    width: 98%;
+    padding: 0 1%;
+    margin: 0 auto;
+}
+.row {
+    margin: .5em 0;
+}
+.column:first-child {
+    margin: 0;
+}
+.column {
+    float: left;
+    margin: 0 0 0 2%;
+}
+.one-fourth.column {
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    float: left;
+}
+.workshop-desc {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.workshop-desc .workshop-desc-text {
+    visibility: hidden;
+    width: 140px;
+    background-color: #444444;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+.workshop-desc:hover .workshop-desc-text {
+    visibility: visible;
+}
+table.time{
+    margin: 0 auto;
+}
+a.head{
+    color: white;
+}
+a.past{
+    color: #444444;
+}
+div.about{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+div.faq{
+    max-width: 60%;
+    margin:auto;
+}
+div.schedule{
+    max-width: 60%;
+    margin:auto;
+}
+h4.bold, h3.bold {
+    font-weight: bold;
+}
+.flickr img {
+    height: 50px;
+    transition: 0.1s transform ease, 0.1s opacity ease;
+}
+.flickr:hover img {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+/*IDs*/
+#textLogo{
+    display: block;
+	max-width: 90%;
+	height: auto;
+    margin: auto;
+    padding: 10px 0 5px;
+}
+#header{
+    background-color: #bb0000;
+    max-width: 40%;
+    margin:auto;
+    text-align: center;
+    padding: 10px;
+}
+#footer{
+    text-align: center;
+    padding: 15px;
+    background-color: #eeeeee;
+    margin-top: 50px;
+}
