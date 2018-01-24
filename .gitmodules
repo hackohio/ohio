@@ -8,3 +8,6 @@
 [submodule "2017"]
 	path = 2017
 	url = https://github.com/hackohio/hackOHIO2017
+[submodule "hs/hs2018"]
+	path = hs/hs2018
+	url = https://github.com/hackohio/hs2018.git
