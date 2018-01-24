@@ -28,5 +28,5 @@ To update a submodule:
 On the server:
 After you pull to the server the first time,
 you may need to cd to the directory of the submodule and run these commands:
-`git submodule init
-git submodule update`
+`git submodule init`
+`git submodule update`
