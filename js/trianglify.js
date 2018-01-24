@@ -29,3 +29,21 @@ var canvas3 = document.getElementById("bar3");
 pattern.canvas(canvas);
 pattern2.canvas(canvas2);
 pattern3.canvas(canvas3);
+
+
+// Detect desktop browser resize; re-draw canvas when detected
+jQuery(function($){
+	var windowWidth = $(window).width();
+	$(window).resize(function() {
+		if(windowWidth != $(window).width()){
+			location.reload();
+			return;
+		}
+	});
+});
+
+(function($) {
+	$(function() {
+			$("#scroller").simplyScroll();
+	});
+ })(jQuery);

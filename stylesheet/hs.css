@@ -68,10 +68,7 @@ canvas{
     padding: 0 1%;
     margin: 0 auto;
 }
-.row {
-   
-    display: flex;
-}
+
 .col{
     flex: 1;
 }
@@ -177,4 +174,15 @@ h4.bold, h3.bold {
 
 #override .navbar a {
     text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .row {
+    display: flex;
+}
+}
+@media (max-width: 767px) {
+    .white-box{
+        margin: 20px 0;
+    }
 }
