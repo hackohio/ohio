@@ -1,7 +1,10 @@
 // Spreadsheet URL
 const sheetURL = 'https://docs.google.com/spreadsheets/d/1fbtCptVlhUuUrm-JdBelXlSyyLAlgQDUDIV8NMVpxNU/edit#gid=0';
 
-const numOfEventsToShow = 3;
+const TEST_SHEET_NOT_FOR_PROD = 'https://docs.google.com/spreadsheets/d/1A5OQaY7NbMHLQXvyrL-a7DeFq1ylp7EPYSL0rMKx8t8/edit#gid=0';
+
+
+const numOfEventsToShow = 7;
 
 // Load into table
 var target = $("#sheetrock-load");
@@ -17,13 +20,19 @@ function sheetrockCallback() {
   var table = $("#sheetrock-load");
   var rows = table.find("tr");
 
-  // Iterate through event data - skipping 0 because its the header
+  // Iterate through event data (sheet rows) - skipping 0 because it is the header
   var lastEvent = $("#community-header");
-  var lim = numOfEventsToShow+1 < rows.length ? numOfEventsToShow+1 : rows.length;
-  for (var i=1; i<lim; i++) {
+
+  var eventsToShow = numOfEventsToShow;
+  for (var i=1; i<rows.length && eventsToShow>0; i++) {
     var event = parseEvent(jQuery.makeArray(rows[i].children));
-    lastEvent.after(event)
-    lastEvent = $("#community .community-event").last();
+
+    // Make sure the event is not null
+    if (event) {
+      eventsToShow -= 1;
+      lastEvent.after(event)
+      lastEvent = $("#community .community-event").last();
+    }
   }
 
   // Un-comment once we create view all page
@@ -58,6 +67,22 @@ function parseEvent(data) {
 
   var location = $(data[6]).text();
   var learnMore = $(data[7]).text();
+
+
+  /*
+  Input validation
+  */
+  // Check if there is a title
+  if (!title) {
+    return null;
+  }
+
+  // Add http if not present using regexp: /^(http|https):\/\// )
+  if (!(/^(http|https):\/\//.test(learnMore))) {
+    learnMore = "http://"+learnMore;
+  }
+
+
   return `
   <br />
   <div class="community-event">
