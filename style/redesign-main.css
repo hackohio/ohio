@@ -15,6 +15,9 @@ a {
   text-decoration: none;
   color: white;
 }
+a:hover {
+  text-decoration: underline;
+}
 
 .container {
   max-width: 1200px;
@@ -160,6 +163,9 @@ nav img {
   color: white;
 
   height: 11em;
+}
+.event-box:hover {
+  background-color: #080808;
 }
 #main-events a:first-child .event-box {
   margin-left: 0;
@@ -341,6 +347,10 @@ Flexbox
   color: white;
   padding: 10px 20px;
   font-size: 1.2em;
+}
+.red-box:hover {
+  background-color: #df0310;
+  text-decoration: none;
 }
 .white-box {
   background-color: white;
