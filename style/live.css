@@ -23,6 +23,13 @@ a.social-media-image{
 	height: 154px;
 }
 
+.anchor{
+   display:block;
+   height:220px; /* this is the height of your header */
+   margin-top:-220px; /* this is again negative value of the height of your header */
+   visibility:hidden;
+}
+
 #livelogo {
 	display: flex;
 	align-items: center;
@@ -195,5 +202,3 @@ a.social-media-image{
 	height:156px;
 
 }
-
-

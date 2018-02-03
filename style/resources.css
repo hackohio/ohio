@@ -91,6 +91,7 @@ a.button{
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    border-radius: 4px;
     font-size: 16px;
     max-width: 250px; margin: 5px;
 }
@@ -265,5 +266,5 @@ ul {
 }
 
 ul li {
-  padding-bottom:10px;
+  padding-bottom:0px;
 }
