@@ -155,14 +155,8 @@ h4.bold, h3.bold {
     background-color: #222;
     color: #fff;
 }
-#bar1{
-    margin: 20px 0;
-}
-#bar2{
-    margin: 20px 0;
-}
 
-#bar3{
+[id^=bar]{
     margin: 20px 0;
 }
 
