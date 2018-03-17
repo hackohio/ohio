@@ -101,7 +101,11 @@ flex:1;
     border: 3px solid #fff;
     border-radius: 4px;
 }
-
+.sponsor{
+    width: 60%;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
 table.time{
     margin: 0 auto;
 }
