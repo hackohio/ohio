@@ -19,9 +19,36 @@ a:hover {
   text-decoration: underline;
 }
 
+a.pretty-link {
+   color: #a00000;
+   text-decoration:none;
+   outline:0;
+  border-bottom: solid 1px transparent;
+  -webkit-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+     -moz-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+      -ms-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+       -o-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+          transition: color .2s ease-out, border-bottom-color .2s ease-out;
+}
+
+a.pretty-link:hover:not(.active) {
+   text-decoration: none;
+   color: #fff;
+   border-bottom: solid 1px #fff;
+}
+
+a.pretty-link:visited{
+   color: #a00000;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.alpha-bg {
+  padding:5px;
+  background-color: rgba(255,255,255,0.3);
 }
 
 /* Navigation */
@@ -342,6 +369,11 @@ Flexbox
   margin-right: 5%;
   margin-bottom: 8px;
 }
+
+.blankspace {
+  height:30px;
+}
+
 .red-box {
   background-color: red;
   color: white;
