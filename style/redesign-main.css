@@ -380,7 +380,13 @@ Flexbox
   padding: 10px 20px;
   font-size: 1.2em;
 }
-.red-box:hover {
+.red-box-large {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.5em;
+}
+.red-box:hover .red-box-large:hover {
   background-color: #df0310;
   text-decoration: none;
 }
