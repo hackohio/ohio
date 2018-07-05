@@ -17,6 +17,17 @@ h1 {
 }
 
 h2 {
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 24pt;
+	margin: 0;
+	text-transform: uppercase;
+	line-height: 37pt;
+	margin-bottom: 26px;
+	box-sizing: border-box;
+}
+
+p {
 	margin: 12px 0;
 	font-weight: 200;
 	font-size: 14pt;
@@ -70,6 +81,43 @@ span.bld {
 	width: 80%;
 	z-index: 99;
 }
+
+/* Slide show */
+
+#slides {
+	position: relative;
+	height: 96px;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+.slide {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.showing {
+	opacity: 1;
+	z-index: 2;
+}
+
+.slide img {
+	max-height: 100%;
+	width: auto;
+}
+
+/* Background stuff */
 
 @media screen and (max-width: 720px), screen and (max-height: 700px) {
 	.main {
