@@ -105,6 +105,7 @@ span.bld {
 	opacity: 0;
 	transition: opacity .5s;
 }
+
 .tv .screen.active {
 	 opacity: 1;
 }
@@ -119,8 +120,6 @@ span.bld {
 	background-color: rgba(0,0,0,0.5);
 	z-index:-1;
 }
-
-
 
 hr {
     background-image: linear-gradient(to right, #F4C6C4, #BF1313, #F4C6C4);
@@ -177,7 +176,7 @@ p {
     line-height: 22pt;
 }
 
-.p-content{
+.p-content {
 	margin-bottom: 15px
 }
 
@@ -188,9 +187,11 @@ p {
 .low-top-margin {
     margin-top: 3px;
 }
+
 .low-bottom-margin {
     margin-bottom: 3px;
 }
+
 h2 {
     color: #333333;
     font-size: 1.6em;
@@ -211,7 +212,7 @@ h2 {
 
 .bigText {
     font-size: 85px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .compress {
@@ -243,7 +244,7 @@ h2 {
 .sponsor-sm {
 	width: 100%;
 	max-width: 300px;
-max-width: 200px;
+	max-width: 200px;
 }
 
 .box-gray {
@@ -270,6 +271,7 @@ a.social-media-image {
     /*padding-right: 20px;*/
     padding:0px;
 }
+
 .social-media {
     position: fixed;
     right: 1%;
@@ -298,11 +300,12 @@ a.social-media-image {
         visibility: hidden;
     }
 }
-img{
+
+img {
 	vertical-align: middle;
 }
 
-.single-sponsor{
+.single-sponsor {
 	display:block;
 	margin:auto;
 	width:70%;
@@ -344,7 +347,7 @@ a.footer {
 	border-bottom: none;
 }
 
-.bigger{
+.bigger {
 	font-size: 30px;
 }
 
@@ -353,11 +356,12 @@ a.footer {
 	background-color: white;
 	color: black;
 }
+
 .schedule-table tr:nth-child(odd) {
 	background-color: #D9D9D9;
 }
 
-.schedule-table td{
+.schedule-table td {
 	padding-top:5px;
 	padding-bottom:5px;
 }
@@ -365,4 +369,13 @@ a.footer {
 .media-list {
 	text-align:left;
 	font-size:24px;
+}
+
+.hypeevent-entry h2 {
+	font-size: 2em;
+	margin-bottom: 0;
+}
+
+.hypeevent-entry h4 {
+	margin: 10px 0 30px 0;
 }
