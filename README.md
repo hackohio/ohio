@@ -7,7 +7,7 @@ Those repositories are linked to from this repository as submodules.
 
 To add an existing repository as a submodule of ohio:
 
-* Enter the root folder of the ohio repo.
+* Enter the root folder of the ohio repo
 * `git submodule add <repository URL> <name of location>`
 * Example: When the hackohio2016 repo was added, it was added through the following command:
 `git submodule add https://github.com/hackohio/hackOHIO2016 2016`
