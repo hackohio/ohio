@@ -246,6 +246,10 @@ h2 {
 	max-width: 300px;
 	max-width: 200px;
 }
+.sponsor-s-sm {
+	width: 100%;
+	max-width: 150px;
+}
 
 .box-gray {
 	background-color: #D9D9D9;
