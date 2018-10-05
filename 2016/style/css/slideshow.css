@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* Code derived from simplyScroll v2
+http://logicbox.net/jquery/simplyscroll/ */
+
+.simply-scroll-container { 
+	position: relative;
+}
+
+.simply-scroll-clip { 
+	position: relative;
+	overflow: hidden;
+}
+
+.simply-scroll-list { 
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	
+.simply-scroll-list li {
+	padding: 0;
+	margin: 3px;
+	list-style: none;
+}
+	
+.simply-scroll-list li img {
+	border: none;
+	display: block;
+}
+
+.simply-scroll { 
+	width: 1000px;
+	height: 200px;
+	margin-bottom: 1em;
+}
+
+.simply-scroll .simply-scroll-clip {
+	width: 1000px;
+	height: 200px;
+}
+	
+.simply-scroll .simply-scroll-list li {
+	float: left;
+	width: 350px;
+	height: 233px;
+}
