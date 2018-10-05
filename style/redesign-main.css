@@ -273,7 +273,7 @@ nav img {
   height: 100%;
   width: 10px;
   left: 0;
-  background-color: red;
+  background-color: #bb0000;
   position: absolute;
 }
 
@@ -353,7 +353,7 @@ Flexbox
 -----------
 */
 .red {
-  color: red;
+  color: #bb0000;
 }
 .center {
   width: 100%;
@@ -375,13 +375,13 @@ Flexbox
 }
 
 .red-box {
-  background-color: red;
+  background-color: #bb0000;
   color: white;
   padding: 10px 20px;
   font-size: 1.2em;
 }
 .red-box-large {
-  background-color: red;
+  background-color: #bb0000;
   color: white;
   padding: 10px 20px;
   font-size: 1.5em;
