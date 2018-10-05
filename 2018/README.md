@@ -1,2 +1,2 @@
-# hackOHIO2017
-The HackOHI/O 2017 hackathon website!
+# hackOHIO2018
+The HackOHI/O 2018 hackathon website!
