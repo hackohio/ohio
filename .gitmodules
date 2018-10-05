@@ -1,0 +1,6 @@
+[submodule "hs/hs2018"]
+	path = hs/hs2018
+	url = https://github.com/hackohio/hs2018.git
+[submodule "hs/2018"]
+	path = hs/2018
+	url = https://github.com/hackohio/hs2018.git
