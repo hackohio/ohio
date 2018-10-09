@@ -221,13 +221,18 @@ h2 {
     font-size:30px;
 }
 /* DEALS EXPLICITLY WITH SPONSORS */
+.sponsor-tb {
+	width: 100%;
+	max-width: 1400px;
+}
+
 .sponsor-massive {
 	width: 100%;
-	max-width: 700px;
+	max-width: 800px;
 }
 .zoom-massive {
 	transition: transform .5s;
-	max-width: 715px;
+	max-width: 815px;
 }
 .zoom-massive:hover {
 	transform: scale(1.1)
@@ -235,11 +240,11 @@ h2 {
 
 .sponsor-huge {
 	width: 100%;
-	max-width: 650px;
+	max-width: 675px;
 }
 .zoom-huge {
 	transition: transform .5s;
-	max-width: 665px;
+	max-width: 690px;
 }
 .zoom-huge:hover {
 	transform: scale(1.1)
@@ -247,11 +252,11 @@ h2 {
 
 .sponsor-big {
 	width: 100%;
-	max-width: 600px;
+	max-width: 435px;
 }
 .zoom-big {
 	transition: transform .5s;
-	max-width: 615px;
+	max-width: 450px;
 }
 .zoom-big:hover {
 	transform: scale(1.1)
