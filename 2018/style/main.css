@@ -220,35 +220,90 @@ h2 {
     margin: 0px;
     font-size:30px;
 }
-
+/* DEALS EXPLICITLY WITH SPONSORS */
 .sponsor-massive {
 	width: 100%;
 	max-width: 700px;
+}
+.zoom-massive {
+	transition: transform .5s;
+	max-width: 715px;
+}
+.zoom-massive:hover {
+	transform: scale(1.1)
 }
 
 .sponsor-huge {
 	width: 100%;
 	max-width: 650px;
 }
+.zoom-huge {
+	transition: transform .5s;
+	max-width: 665px;
+}
+.zoom-huge:hover {
+	transform: scale(1.1)
+}
 
 .sponsor-big {
 	width: 100%;
 	max-width: 600px;
+}
+.zoom-big {
+	transition: transform .5s;
+	max-width: 615px;
+}
+.zoom-big:hover {
+	transform: scale(1.1)
+}
+
+.sponsor-osu {
+	width: 100%;
+	max-width: 425px;
+}
+.zoom-osu {
+	transition: transform .5s;
+	max-width: 440px;
+}
+.zoom-osu:hover {
+	transform: scale(1.1)
 }
 
 .sponsor-med {
 	width: 100%;
 	max-width: 280px;
 }
+.zoom-med {
+	transition: transform .5s;
+	max-width: 295px;
+}
+.zoom-med:hover {
+	transform: scale(1.1)
+}
 
 .sponsor-sm {
 	width: 100%;
-	max-width: 300px;
+	/*max-width: 300px;*/
 	max-width: 200px;
 }
+.zoom-sm {
+	transition: transform .5s;
+	max-width: 215px;
+}
+.zoom-sm:hover {
+	transform: scale(1.1)
+}
+
 .sponsor-s-sm {
 	width: 100%;
 	max-width: 150px;
+}
+.zoom-s-sm {
+	transition: transform .5s;
+	max-width: 165px;
+}
+.zoom-s-sm:hover {
+	transform: scale(1.1)
 }
 
 .box-gray {
