@@ -236,6 +236,11 @@ h2 {
 	max-width: 600px;
 }
 
+.sponsor-osu {
+	width: 100%;
+	max-width: 425px;
+}
+
 .sponsor-med {
 	width: 100%;
 	max-width: 280px;
