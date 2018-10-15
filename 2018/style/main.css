@@ -289,11 +289,11 @@ h2 {
 .sponsor-sm {
 	width: 100%;
 	/*max-width: 300px;*/
-	max-width: 200px;
+	max-width: 175px;
 }
 .zoom-sm {
 	transition: transform .5s;
-	max-width: 215px;
+	max-width: 190px;
 }
 .zoom-sm:hover {
 	transform: scale(1.1)
