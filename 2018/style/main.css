@@ -381,14 +381,10 @@ img {
 	margin-top: 0%;
 }
 
-.footer-img {
+.footer-img{
 	float:left;
 	background-color:transparent;
 	width:100%;
-}
-
-.org-logo {
-	padding-right: 10px;
 }
 
 .mainfooter-content {
