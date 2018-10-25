@@ -14,7 +14,7 @@ function loadAnnouncements() {
   target.empty();
   target.sheetrock({
     url: sheetURL,
-    query: "select B, A order by B desc",
+    query: "select B, A where A is not null and B is not null order by B desc",
     fetchSize: 4,
     callback: sheetrockCallback,
     reset: true
@@ -22,6 +22,8 @@ function loadAnnouncements() {
 
   /* This function is called after sheetrock pulls in data */
   function sheetrockCallback(err, options, resp) {
+    console.log('callback');
+
     // Hide header
     target.find("tr")[0].remove();
 
