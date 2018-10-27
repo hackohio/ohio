@@ -23,7 +23,7 @@ window.define("countdown",[],function(){return d});return d}(module);
 // HackOHI/O
 var timerId =
   countdown(
-    new Date('10/22/2017 10:30:00'),
+    new Date('10/28/2018 10:00:00'),
     function(ts) {
       document.getElementById('time-countdown').innerHTML = ts.toHTML("span");
     },
