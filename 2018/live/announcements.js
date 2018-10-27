@@ -11,6 +11,7 @@ function loadAnnouncements() {
 
   // Load into table
   var target = $("#sheetrock_load");
+
   target.empty();
   target.sheetrock({
     url: sheetURL,
@@ -22,8 +23,6 @@ function loadAnnouncements() {
 
   /* This function is called after sheetrock pulls in data */
   function sheetrockCallback(err, options, resp) {
-    console.log('callback');
-
     // Hide header
     target.find("tr")[0].remove();
 
