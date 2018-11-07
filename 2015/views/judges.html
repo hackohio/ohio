@@ -1,0 +1,20 @@
+<div class="section-header">
+	<h1 class="section-title">Judges</h1>
+</div>
+<div class="">
+	<div class="content">
+		<p>Meet the judges of OHI/O</p>
+		<div class="judges-list df">
+			<!-- ng-repeat -->
+			<div class="judge fs" ng-repeat="j in judges">
+				<div class="body">
+					<div class="judge-img" ng-style="{'background-image': 'url(' + j.img + ')'}"> </div>
+					<div class="judge-tag">
+						<h4>{{j.name}}</h4>
+						<h5>{{j.desc}}</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
