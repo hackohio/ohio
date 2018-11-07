@@ -1,57 +1,95 @@
-// Refresh timer
-setInterval(refreshTimer, 60 * 5 * 1000);
-loadWinners();
-function refreshTimer() {
-    loadWinners();
+const sheetURL = 'https://docs.google.com/spreadsheets/d/1RS6A3wts3DRUQFr4vkRnUHjIu_6T1JvOC8KbQteDjMo/edit#gid=0';
+
+$("#load-winners").sheetrock({
+    url: sheetURL,
+    query: "select A, B ",
+    callback: sheetrockCallback
+});
+
+function sheetrockCallback(error, options, response) {
+    // Sheet rock will automatically load the whole table so clear it before formatting our own data
+    $("#load-winners").empty();
+
+    for (let i = 1; i < response.rows.length; i++) {
+        const event = parseEvent(response.rows[i].cellsArray);
+        if (event) {
+            $("#load-winners").append(event);
+        }
+    }
 }
 
-function loadWinners() {
-    console.log('loading winners');
+function parseEvent(data) {
+    const team = data[0];
+    const company = data[1].split(":")[0];
+    const challenge = data[1].split(":")[1];
 
-    // Spreadsheet URL
-    var sheetURL = 'https://docs.google.com/spreadsheets/d/11CxKvXnz-brevev7krbcUjEa0TZFVGUxZmqWPqgDkNg/edit#gid=0';
-    // var sheetURL = 'https://docs.google.com/spreadsheets/d/1rYsXV5RHJml1RUyHrZDf3bQZOK4UHIBC1BA9wJupQ9Q/edit#gid=0';
+    if (!team) {
+        return null;
+    } else if (team === 'TEAM') {
+        return `
+        <tr>
+            <td style="padding: 5px; width: 30%">
+                <b>
+                    <a style="font-size: 140%">Team</a>
+                </b>
+                <br>
+                <br>
+            </td>
+            <td style="padding: 5px;">
+                <b>
+                    <a style="font-size: 140%">Category</a>
+                </b>
+                <br>
+                <br>
+            </td>
+        </tr>
+        `;
+    } else if (team === 'FINALIST') {
+        return `
+        </table>
+        <br><br>
+        <table>
+        <tr>
+            <td style="padding: 5px; width: 30%">
+                <b>
+                    <a style="font-size: 140%">Finalist</a>
+                </b>
+                <br>
+                <br>
+            </td>
+        </tr>
+        `;
+    } else if (!challenge) {
+        const category = data[1];
 
-    // Load into table
-    var target = $("#load_winners");
-
-    target.empty();
-    target.sheetrock({
-        url: sheetURL,
-        query: "select A, B where A is not null and B is not null",
-        fetchSize: 4,
-        callback: sheetrockCallback,
-        reset: true
-    });
-
-    /* This function is called after sheetrock pulls in data */
-    function sheetrockCallback(err, options, resp) {
-        console.log(resp);
-        // target.find("tr")[0].remove();
-
-        console.log('working');
-
-        // Split columns into rows
-        console.log(target.find("tr"));
-        target.find("tr").toArray().forEach(splitColumns);
-    }
-
-    function splitColumns(tableRow) {
-        console.log('data');
-        var cols = $(tableRow).children();
-        var parent = $(tableRow).parent();
-        tableRow.remove();
-
-        for (var i = 0; i < cols.length; i++) {
-            parent.append("<tr></tr>");
-            if (i % 2 == 0) {
-                // Header
-                var timeStamp = cols[i].innerHTML;
-                parent.children("tr").last().html("<strong>" + timeStamp + "</strong>");
-            } else {
-                // Announcement
-                parent.children("tr").last().html(cols[i].innerHTML);
-            }
-        }
+        return `
+        <tr style="line-height: 35px;">
+            <td style="padding: 5px; width: 30%">
+                <b style="font-size: 140%">
+                    ${team}
+                </b>
+            </td>
+            <td style="padding: 5px;">
+                <b>
+                    ${category}
+                </b>
+            </td>
+        </tr>
+        `;
+    } else {
+        return `
+        <tr style="line-height: 35px;">
+            <td style="padding: 5px; width: 30%">
+                <b style="font-size: 140%">
+                    ${team}
+                </b>
+            </td>
+            <td style="padding: 5px;">
+                <b>
+                    <a>${company}</a>: ${challenge}
+                </b>
+            </td>
+        </tr>
+      `;
     }
 }
