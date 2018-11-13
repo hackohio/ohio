@@ -100,6 +100,12 @@ flex:1;
 .hspic{
     border: 3px solid #fff;
     border-radius: 4px;
+    height: 250px;
+    width: 250px;
+    object-fit:scale-down;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 .sponsor{
     width: 60%;
@@ -134,6 +140,7 @@ div.schedule{
 }
 h4.bold, h3.bold {
     font-weight: bold;
+    outline: 3px black;
 }
 
 
@@ -145,7 +152,7 @@ h4.bold, h3.bold {
 #textLogo{
 	max-width: 90%;
 	height: auto;
-    padding: 10px 0 5px;
+  padding: 10px 0 5px;
 }
 #headText{
     font-size: 20px;
@@ -163,6 +170,7 @@ h4.bold, h3.bold {
 
 [id^=bar]{
     margin: 20px 0;
+    color: #bb0000;
 }
 
 
