@@ -1,0 +1,10 @@
+{
+  "name": "gridDisplayOSU",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "ws": "^6.1.2",
+    "mongodb": "latest",
+    "express": "latest"
+  }
+}
