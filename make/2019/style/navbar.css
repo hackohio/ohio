@@ -9,6 +9,7 @@
   font-size: 0;
   height:52px;
   line-height: 52px;
+  display: table; /* Navbar doesn't expand when it overflows */
 }
 
 #mobilenav {
@@ -45,7 +46,6 @@
     margin: 0;
     padding: 0;
     color: black;
-    margin:0;
 }
 
 #nav li a {
