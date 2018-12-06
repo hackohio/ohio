@@ -45,6 +45,13 @@ if (!isMobile()) {
   /* Show the active page */
   activePage.show();
 
+  /* change spacer height based on nav bar height + change home-back to homepage height*/
+  $(".nav-spacer").css({height: $("#nav").height()});
+  window.addEventListener('resize', function() {
+    $(".nav-spacer").css({height: $("#nav").height()});
+    $("#home-back").css({height: $("#homepage").height()});
+  });
+
   /*
   Allows for first page to be scrolled
   If the first page has NOT been fully scrolled, its position must
@@ -52,8 +59,8 @@ if (!isMobile()) {
   If the first page has been fully scrolled, its position must
       be fixed so that the next page can scroll over
   */
-  $("#home-back").css({height: $("#homepage").height()});
   $("#home-back").hide();
+  $("#home-back").css({height: $("#homepage").height()});
   var backHidden = true;
 
   $(document).scroll(function(event) {

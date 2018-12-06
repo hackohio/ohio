@@ -42,6 +42,7 @@
 		<script type="text/javascript" src="script/hypeevents.js"></script>
 		<script src="https://use.typekit.net/fov5wnm.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<script>history.scrollRestoration = "manual"</script>
 	</head>
 	<body>
 		<div class="tv" style="background-image: url(images/make-background.jpg)"></div>
@@ -63,15 +64,16 @@
 		<div id="nav">
 			<!-- Add the href's of these links to "pageIds" in nav.js -->
 			<ul>
-				<li><a id="home-back-nav" href="#home-back" class="secondary-page-link">Home</a></li>
-				<li><a id="about-page-nav" href="#about-page" class="secondary-page-link">About</a></li>
-				<li><a id="hypeevents-page-nav" href="#hypeevents-page" class="secondary-page-link">Hype Events</a></li>
-				<li><a id="prizes-page-nav" href="#prizes-page" class="secondary-page-link">Prizes</a></li>
+				<li><a id="reg-nav" href="https://make.osu.edu/register" target="_blank">REGISTER</a></li>
+				<li><a id="home-back-nav" href="#home-back" class="secondary-page-link">HOME</a></li>
+				<li><a id="about-page-nav" href="#about-page" class="secondary-page-link">ABOUT</a></li>
+				<li><a id="hypeevents-page-nav" href="#hypeevents-page" class="secondary-page-link">HYPE EVENTS</a></li>
+				<li><a id="schedule-page-nav" href="#schedule-page" class="secondary-page-link">SCHEDULE</a></li>
+				<li><a id="judging-page-nav" href="#judging-page" class="secondary-page-link">JUDGING</a></li>
+				<li><a id="prizes-page-nav" href="#prizes-page" class="secondary-page-link">AWARDS</a></li>
+				<li><a id="sponsorlist-page-nav" href="#sponsorlist-page" class="secondary-page-link">SPONSORS</a></li>
+				<li><a id="hardware-page-nav" href="https://docs.google.com/spreadsheets/d/1be8mGe-7cA16eylDQijJI7tm_3s7pUdKZSdfJetOt3Q/edit#gid=1349304856" target="_blank">HARDWARE</a></li>
 				<li><a id="faq-page-nav" href="#faq-page" class="secondary-page-link">FAQ</a></li>
-				<li><a id="sponsorlist-page-nav" href="#sponsorlist-page" class="secondary-page-link">Sponsors</a></li>
-				<li><a id="schedule-page-nav" href="#schedule-page" class="secondary-page-link">Schedule</a></li>
-				<li><a id="judging-page-nav" href="#judging-page" class="secondary-page-link">Judging</a></li>
-				<li><a id="hardware-page-nav" href="https://docs.google.com/spreadsheets/d/1be8mGe-7cA16eylDQijJI7tm_3s7pUdKZSdfJetOt3Q/edit#gid=1349304856">Hardware</a></li>
 				<!-- <li><a id="stats-page-nav" href="#stats-page" class="secondary-page-link">Stats</a></li> -->
 				<!-- <li><a id="live-site" href="live/index.html" style="color:#BB0000"><b>LIVE SITE</b></a></li> -->
 			</ul>
@@ -80,14 +82,15 @@
 		<!-- Nav for mobile -->
 		<div id="mobilenav" style="display:none;">
 			<a href="#homepage" class="mobilenav-btn">Home</a>
+			<a href="https://make.osu.edu/register/login" class="mobilenav-btn">Register</a>
 			<a href="#about-page" class="mobilenav-btn">About</a>
 			<a href="#hypeevents-page" class="mobilenav-btn">Hype Events</a>
-			<a href="#prizes-page" class="mobilenav-btn">Prizes</a>
-			<a href="#faq-page" class="mobilenav-btn">FAQ</a>
-			<a href="#sponsorlist-page" class="mobilenav-btn">Sponsors</a>
 			<a href="#schedule-page" class="mobilenav-btn">Schedule</a>
 			<a href="#judging-page" class="mobilenav-btn">Judging</a>
+			<a href="#prizes-page" class="mobilenav-btn">Awards</a>
+			<a href="#sponsorlist-page" class="mobilenav-btn">Sponsors</a>
 			<a href="https://docs.google.com/spreadsheets/d/1be8mGe-7cA16eylDQijJI7tm_3s7pUdKZSdfJetOt3Q/edit#gid=1349304856" class="mobilenav-btn">Hardware</a>
+			<a href="#faq-page" class="mobilenav-btn">FAQ</a>
 			<!-- <a href="#stats-page" class="mobilenav-btn">Stats</a> -->
 			<!-- <a href="live/index.html" class="mobilenav-btn">Live Site</a> -->
 			<a id="mobilenav-sandwich" class="icon">&#9776;</a>
@@ -105,31 +108,32 @@
 				<!-- <a class="button" target="_blank" href="http://hack.osu.edu/make/2019/live">Event Day Live Site</a>
 				<br><br> -->
 				<h3 class="txt-red">
-					Knowlton Hall, Columbus, Ohio <a target="_blank" href="https://www.google.com/maps/place/Knowlton+Hall,+Columbus,+OH+43210/@40.0035858,-83.0180133,18z/data=!3m1!4b1!4m5!3m4!1s0x88388e9651a8ead1:0xc9133d5253f3d948!8m2!3d40.0035858!4d-83.016919"><i class="fa fa-map-marker fa-1x"></i></a>
+					<a target="_blank" href="https://www.google.com/maps/place/Knowlton+Hall,+Columbus,+OH+43210/@40.0035858,-83.0180133,18z/data=!3m1!4b1!4m5!3m4!1s0x88388e9651a8ead1:0xc9133d5253f3d948!8m2!3d40.0035858!4d-83.016919"><i class="fa fa-map-marker fa-1x"></i></a>
+					Knowlton Hall, Columbus, Ohio
 					<br>
 					February 2 - 3, 2019
 					<br><br>
 					<div id=countdown>
-					<div>
-						<span class="days bold"></span>
-						<div class="smalltext">Days</div>
+						<div>
+							<span class="days bold"></span>
+							<div class="smalltext">days</div>
+						</div>
+						<div>
+							<span class="hours bold"></span>
+							<div class="smalltext">hours</div>
+						</div>
+						<div>
+							<span class="minutes bold"></span>
+							<div class="smalltext">minutes</div>
+						</div>
+						<div>
+							<span class="seconds bold"></span>
+							<div class="smalltext">seconds</div>
+						</div>
 					</div>
-					<div>
-						<span class="hours bold"></span>
-						<div class="smalltext">Hours</div>
-					</div>
-					<div>
-						<span class="minutes bold"></span>
-						<div class="smalltext">Minutes</div>
-					</div>
-					<div>
-						<span class="seconds bold"></span>
-						<div class="smalltext">Seconds</div>
-					</div>
-				</div>
 				</h3>
-				<br>
 			</div>
+			<div class="nav-spacer"></div>
 			<div id="mobilefooter" style="display:none;">
 				<div class="footer-socialmedia">
 					<a class="social-media-image" href="https://www.facebook.com/hackohio"><i class="social-media-fa-white fa fa-facebook fa-2x"></i></a>
@@ -144,6 +148,7 @@
 		</div>
 
 		<div id="about-page" class="secondary-page">
+			<div class="nav-spacer"></div>
 			<div class="filler"></div>
 			<div class="innerContent center">
 				<a name="about"></a>
@@ -182,9 +187,11 @@
 				<br class="clear"><br><br>
 				<div class="clear"></div>
 			</div>
+			<div class="filler"></div>
 		</div>
 
 		<div id="hypeevents-page" class="secondary-page">
+			<div class="nav-spacer"></div>
 			<div class="filler"></div>
 			<div class="innerContent center">
 				<a name="events"></a>
@@ -228,22 +235,26 @@
 				</div>
 			</div>
 			<div class="clear"></div>
+			<div class="filler"></div>
 		</div>
 
 		<div id="prizes-page" class="secondary-page">
+			<div class="nav-spacer"></div>
 			<div class="filler"></div>
 			<div class="innerContent center">
 				<a name="prizes"></a>
 				<br><br>
-				<h1>Prizes</h1>
+				<h1>Awards</h1>
 				<hr>
 				<br>
 			 	<h2>Coming Soon!</h2>
 				<div class="clear"></div>
 			</div>
+			<div class="filler"></div>
 		</div>
 
 		<div id="faq-page" class="secondary-page">
+			<div class="nav-spacer"></div>
 			<div class="filler"></div>
 			<div class="innerContent center">
 				<a name="faq"></a>
@@ -259,9 +270,8 @@
 				<div class="section grp">
 					<h3><b>I want to apply for MakeOHI/O. What's the timeline?</b></h3>
 						<p class="faqText">
-							Registration for MakeOHI/O will be open soon!
-							<!--Registration for MakeOHI/O is open now. Register not at <a class="pretty-link" href="https://applyhackohio.herokuapp.com">the registration portal</a>.
-							If you have any questions, feel free to reach out to <a class="pretty-link" href="mailto:registerhackohio@gmail.com">registerhackohio@gmail.com</a>.-->
+							Registration for MakeOHI/O is open now and closes January 18, 2019. Register at <a class="pretty-link" href="https://make.osu.edu/register/login">the registration portal</a>.
+							If you have any questions, feel free to reach out to <a class="pretty-link" href="mailto:makeohio@osu.edu">makeohio@osu.edu</a>.
 						</p>
 				</div>
 
@@ -341,8 +351,7 @@
 					<div class= "col third">
 						<h3><b>When will I be notified of acceptance?</b></h3>
 						<p class="faqText">
-							Registration for MakeOHI/O will be open soon!
-							<!--We're currently in the process of reviewing all applicants and sending acceptances out in waves through mid-October. Stay tuned - you can check your application status anytime in <a class="pretty-link" href="https://applyhackohio.herokuapp.com">the registration portal</a>.-->
+							We're currently in the process of reviewing all applicants and sending acceptances out in waves beginning January 8, 2019. Stay tuned - you can check your application status anytime in <a class="pretty-link" href="https://make.osu.edu/register/">the registration portal</a>.
 						</p>
 					</div>
 
@@ -383,9 +392,11 @@
 				</div>
 			</div>
 			<div class="clear"></div>
+			<div class="filler"></div>
         </div>
 
 		<div id="sponsorlist-page" class="secondary-page">
+			<div class="nav-spacer"></div>
 			<div class="filler"></div>
 			<div class="innerContent center">
 				<a name="sponsors"></a>
@@ -513,9 +524,11 @@
 				</div>
 				<br/><br/>
 			</div>
+			<div class="filler"></div>
 		</div>
 
 		<div id="schedule-page" class="secondary-page">
+			<div class="nav-spacer"></div>
 			<div class="filler"></div>
 			<div class="innerContent center">
 				<a name="schedule"></a>
@@ -646,9 +659,11 @@
 				</table>
 			</div>
 			<div class="clear"></div>
+			<div class="filler"></div>
         </div>
 
 		<div id="judging-page" class="secondary-page">
+			<div class="nav-spacer"></div>
 			<div class="filler"></div>
 			<div class="innerContent center">
 				<a name="schedule"></a>
@@ -659,6 +674,7 @@
 				<h2>Coming Soon!</h2>
 				<div class="clear"></div>
 			</div>
+			<div class="filler"></div>
 		</div>
 
 		<!--
