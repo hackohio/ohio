@@ -24,7 +24,7 @@
 	display: table;
 }
 
-.grp:after { 
+.grp:after {
 	clear: both;
 }
 
@@ -58,7 +58,7 @@
 	.third {
 		width: 100%;
 	}
-	
+
 	.fourth {
 		width: 100%;
 	}
@@ -74,17 +74,23 @@
 
 @media screen and (max-width: 750px) {
 	#triangle-header {
-		width: 100%; 
+		width: 100%;
 		height: 35px;
 		background-image: url('../../images/header-triangles-small.png');
 	}
 	.topNotice {
 		height: 160px;
 	}
+	h1 {
+		font-size: 32pt;
+	}
 }
 
 @media screen and (max-width: 630px) {
     .countdown-container {
-	display: none;
+			display: none;
     }
+		h1 {
+			font-size: 27pt;
+		}
 }
