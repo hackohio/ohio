@@ -7,9 +7,9 @@
   z-index: 100;
   background-color: rgba(255,255,255);
   font-size: 0;
-  height:52px;
+  height: 52px;
   line-height: 52px;
-  display: table; /* Navbar doesn't expand when it overflows */
+  display: block;
 }
 
 #mobilenav {
@@ -33,22 +33,11 @@
   top: 0;
 }
 
-#nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow:auto;
-}
-
-#nav li {
-    float: none;
+.nav-div {
     display: inline-block;
-    margin: 0;
-    padding: 0;
-    color: black;
 }
 
-#nav li a {
+.nav-div a {
     display: block;
     text-align: center;
     padding: 0 15px;
@@ -65,12 +54,12 @@
           transition: all .2s ease-out;
 }
 
-#nav li a.hover {
+.nav-div a.hover {
     background-color: #888888;
     color: white;
 }
 
-#nav ul li a.active {
+.nav-div a.active {
     background-color: #bb0000;
     color: white !important;
   -webkit-transition: all .2s ease-out;
@@ -80,7 +69,7 @@
           transition: all .2s ease-out;
 }
 
-#nav ul li a:hover:not(.active) {
+.nav-div a:hover:not(.active) {
     background-color: #888888;
     color: white;
 }
