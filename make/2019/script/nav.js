@@ -48,6 +48,7 @@ if (!isMobile()) {
   /* change spacer height based on nav bar height + change home-back to homepage height*/
   $(".nav-spacer").css({height: $("#nav").height()});
   window.addEventListener('resize', function() {
+    $("#nav").css({height: $("#nav-wrapper").height()-4.8});
     $(".nav-spacer").css({height: $("#nav").height()});
     $("#home-back").css({height: $("#homepage").height()});
   });
