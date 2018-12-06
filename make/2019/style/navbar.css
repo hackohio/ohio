@@ -9,13 +9,7 @@
   font-size: 0;
   height:52px;
   line-height: 52px;
-  overflow:hidden;
-  border-bottom:1px;
-  border-bottom-color:#dddddd;
-  border-bottom-style:solid;
-  border-top:1px;
-  border-top-color:#dddddd;
-  border-top-style:solid;
+  display: table;
 }
 
 #mobilenav {
@@ -58,10 +52,11 @@
 #nav li a {
     display: block;
     text-align: center;
-    padding: 0 1vw;
+    padding: 0 15px;
     text-decoration: none;
     color: #666666;
     font-size: 15px;
+    border-bottom: none;
 
 
   -webkit-transition: all .2s ease-out;

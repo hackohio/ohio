@@ -17,7 +17,7 @@
 }
 
 #make-logo {
-    min-width: 300px;
+    min-width: 275px;
     width: 37vh;
 }
 
@@ -37,7 +37,7 @@
 }
 
 div.filler{
-  min-height: 120px;
+  min-height: 75px;
 }
 
 .innerContent{
