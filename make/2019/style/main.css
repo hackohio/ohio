@@ -418,3 +418,19 @@ a.footer {
 .hypeevent-entry h4 {
 	margin: 10px 0 30px 0;
 }
+
+.faqText{
+    text-align: left;
+    font-size: 1em;
+    padding: 0px 10px;
+}
+
+.col h3{
+    text-align: left;
+    font-size: 1.2em;
+    padding: 0px 10px;
+}
+
+.col {
+    margin-bottom: 50px;
+}
