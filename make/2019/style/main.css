@@ -203,7 +203,6 @@ h2 {
 
 .sponsor-massive {
 	width: 100%;
-	max-width: 800px;
 }
 .zoom-massive {
 	transition: transform .5s;
@@ -215,7 +214,6 @@ h2 {
 
 .sponsor-huge {
 	width: 100%;
-	max-width: 675px;
 }
 .zoom-huge {
 	transition: transform .5s;
@@ -227,7 +225,6 @@ h2 {
 
 .sponsor-big {
 	width: 100%;
-	max-width: 435px;
 }
 .zoom-big {
 	transition: transform .5s;
@@ -239,7 +236,6 @@ h2 {
 
 .sponsor-osu {
 	width: 100%;
-	max-width: 425px;
 }
 .zoom-osu {
 	transition: transform .5s;
@@ -251,7 +247,6 @@ h2 {
 
 .sponsor-med {
 	width: 100%;
-	max-width: 280px;
 }
 .zoom-med {
 	transition: transform .5s;
@@ -263,8 +258,6 @@ h2 {
 
 .sponsor-sm {
 	width: 100%;
-	/*max-width: 300px;*/
-	max-width: 175px;
 }
 .zoom-sm {
 	transition: transform .5s;
@@ -276,7 +269,6 @@ h2 {
 
 .sponsor-s-sm {
 	width: 100%;
-	max-width: 150px;
 }
 .zoom-s-sm {
 	transition: transform .5s;
