@@ -149,10 +149,9 @@ h4.bold, h3.bold {
 #headLogo{
     text-align:right;
 }
-#textLogo{
-	max-width: 90%;
-	height: auto;
-  padding: 10px 0 5px;
+#roboLogo{
+	max-width: 80px;
+  padding: 10px 0 10px;
 }
 #headText{
     font-size: 20px;
