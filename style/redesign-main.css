@@ -93,14 +93,14 @@ nav img {
   width: 100%;
   color: white;
 
-  background: url('../img/hackohio_cover.png') no-repeat center center;
+  background: url('../img/make-banner.JPG') no-repeat center center;
   background-size: cover;
 }
 
 #featured-banner .container {
   display: flex;
   display: -webkit-flex;
-  height: 22em;
+  height: 25em;
   justify-content: space-between;
   padding-bottom: 30px;
 }
