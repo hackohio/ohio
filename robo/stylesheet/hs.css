@@ -177,7 +177,9 @@ h4.bold, h3.bold {
   text-align: left;
   color:white;
 }
-
+#announcement{
+  font-weight: bold;
+}
 
 .videoWrapper {
     position: relative;
