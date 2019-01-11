@@ -178,7 +178,7 @@ h4.bold, h3.bold {
   color:white;
 }
 #announcement{
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .videoWrapper {
@@ -380,7 +380,7 @@ h4.bold, h3.bold {
 #footer{
     text-align: center;
     padding: 15px;
-    background-color: #666;
+    background-color: #666 !important;
     color: #fff;
 }
 
