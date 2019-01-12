@@ -1,0 +1,43 @@
+.leadership-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.leadership-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 25px 100px 0px 100px;
+}
+
+.leadership-box {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  margin: 10px;
+  height: 20em;
+}
+
+.leadership-box img {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  height: 75%;
+  border: 1px solid black;
+}
+
+.leadership-name {
+  font-size: 28px;
+  position: absolute;
+  margin: auto;
+  bottom: 10%;
+}
+
+.leadership-title {
+  font-size: 16px;
+  position: absolute;
+  margin: auto;
+  bottom: 5%;
+}
