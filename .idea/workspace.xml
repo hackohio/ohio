@@ -1,92 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd1c124f-7765-4316-91f6-2e48872f4266" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/chevron.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/layout/Columbus Skyline.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/layout/footer-triangles-gray.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/layout/footer-triangles-small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/layout/footer-triangles.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/layout/header-triangles-small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/layout/header-triangles.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/organizers/Wikipedia_Connection_logo_v2_with_text.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/organizers/acmwLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/organizers/bdaaLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/organizers/buckhacksLogo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/organizers/electronics-club-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/organizers/electronics_club_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/organizers/ohio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/organizers/open-source-club.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/sponsors/OSU-departments-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/sponsors/microsoft-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/images/sponsors/stickermule-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/img/make_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/script/clock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/script/hypeevents.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/script/jquery.countdown.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/script/nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/script/simplyscroll.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/challenges.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/countdown.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.5.0/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.5.0/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.5.0/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.5.0/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.5.0/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.5.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.5.0/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.5.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/less/animated.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/less/larger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/less/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/less/path.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/hardware.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/live.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/mobilenav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/navbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/parallax.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/prizes.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/resources.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs/hs2019/style/responsive.css" afterDir="false" />
-    </list>
+    <list default="true" id="fd1c124f-7765-4316-91f6-2e48872f4266" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +159,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548021534212" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548024877023" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -276,12 +191,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548020356489</updated>
-      <workItem from="1548020367115" duration="1130000" />
+      <workItem from="1548020367115" duration="2347000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1130000" />
+    <option name="totallyTimeSpent" value="2347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1346" height="688" extended-state="0" />
