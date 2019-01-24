@@ -94,8 +94,6 @@ span.bld {
 	z-index: -2;
 	background: no-repeat;
 	background-size: cover;
-	opacity: 0.1;
-  	filter: alpha(opacity=20); /* For IE8 and earlier */
 }
 
 hr {
