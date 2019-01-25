@@ -15,12 +15,16 @@ a.social-media-image{
 	color:white
 }
 
+a.icon{
+	border-bottom: none;
+}
+
 #liveheader {
 	position: fixed;
 	background-color: #000000;
 	color: white;
 	width: 100%;
-	height: 150px;
+	height: 147px;
 }
 
 .anchor{
@@ -198,6 +202,7 @@ a.social-media-image{
     margin-left: 4.6% !important;
   }
 }
+
 .toppadding{
 	height:156px;
 
