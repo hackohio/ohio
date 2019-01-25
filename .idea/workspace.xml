@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd1c124f-7765-4316-91f6-2e48872f4266" name="Default Changelist" comment="" />
+    <list default="true" id="fd1c124f-7765-4316-91f6-2e48872f4266" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs/2019/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hs/2019/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +15,13 @@
     <session id="-1725108868">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.23" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.53" value="1" />
+          <entry key="project.open.time.58" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -33,23 +41,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="131" />
+          <entry key="html" value="231" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="131" />
+          <entry key="HTML" value="231" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hs/hs2019/index.html">
+        <entry file="file://$PROJECT_DIR$/hs/2019/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            <state relative-caret-position="223">
+              <caret line="104" column="321" selection-start-line="104" selection-start-column="321" selection-end-line="104" selection-end-column="321" />
             </state>
           </provider>
         </entry>
@@ -69,6 +77,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/hs/hs2019/index.html" />
+        <option value="$PROJECT_DIR$/hs/2019/index.html" />
       </list>
     </option>
   </component>
@@ -84,7 +93,7 @@
       <path value="$PROJECT_DIR$/pixels/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -95,7 +104,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,54 +120,28 @@
               <item name="ohio" type="b2602c69:ProjectViewProjectNode" />
               <item name="ohio" type="462c0819:PsiDirectoryNode" />
               <item name="hs" type="462c0819:PsiDirectoryNode" />
-              <item name="hs2019" type="462c0819:PsiDirectoryNode" />
+              <item name="2019" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ohio" type="b2602c69:ProjectViewProjectNode" />
               <item name="ohio" type="462c0819:PsiDirectoryNode" />
               <item name="hs" type="462c0819:PsiDirectoryNode" />
-              <item name="hs2019" type="462c0819:PsiDirectoryNode" />
+              <item name="2019" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ohio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ohio" type="462c0819:PsiDirectoryNode" />
-              <item name="hs" type="462c0819:PsiDirectoryNode" />
-              <item name="hs2019" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="sponsors" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ohio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ohio" type="462c0819:PsiDirectoryNode" />
-              <item name="hs" type="462c0819:PsiDirectoryNode" />
-              <item name="hs2019" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ohio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ohio" type="462c0819:PsiDirectoryNode" />
-              <item name="hs" type="462c0819:PsiDirectoryNode" />
-              <item name="hs2019" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ohio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ohio" type="462c0819:PsiDirectoryNode" />
-              <item name="make" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548024877023" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548027302939" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -191,28 +173,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548020356489</updated>
-      <workItem from="1548020367115" duration="2347000" />
+      <workItem from="1548020367115" duration="2957000" />
+      <workItem from="1548276701453" duration="617000" />
+      <workItem from="1548298161436" duration="725000" />
+      <workItem from="1548346028456" duration="588000" />
+      <workItem from="1548431930971" duration="1161000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2347000" />
+    <option name="totallyTimeSpent" value="6048000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="20" width="1346" height="688" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496112" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2579425" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32851985" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -220,16 +202,20 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="SciView" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,24 +228,24 @@
     <entry file="file://$PROJECT_DIR$/make/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/hs/hs2019/img/favicon.ico">
+    <entry file="file://$PROJECT_DIR$/hs/2019/img/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/hs/hs2019/style/responsive.css">
+    <entry file="file://$PROJECT_DIR$/hs/2019/style/responsive.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/hs/hs2019/style/hardware.css">
+    <entry file="file://$PROJECT_DIR$/hs/2019/style/hardware.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/hs/hs2019/images/chevron.png">
+    <entry file="file://$PROJECT_DIR$/hs/2019/images/chevron.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/hs/hs2019/style/normalize.css">
+    <entry file="file://$PROJECT_DIR$/hs/2019/style/normalize.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7212" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hs/hs2019/style/main.css">
+    <entry file="file://$PROJECT_DIR$/hs/2019/style/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6872" />
       </provider>
@@ -267,10 +253,10 @@
     <entry file="file://$PROJECT_DIR$/hs/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/hs/hs2019/index.html">
+    <entry file="file://$PROJECT_DIR$/hs/2019/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="223">
+          <caret line="104" column="321" selection-start-line="104" selection-start-column="321" selection-end-line="104" selection-end-column="321" />
         </state>
       </provider>
     </entry>
