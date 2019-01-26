@@ -1,2 +1,2 @@
-# makeOHIO2019
-The MakeOHI/O 2019 makeathon website!
+# hs2019
+The Highschool I/O 2019 website!
