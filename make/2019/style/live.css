@@ -59,10 +59,6 @@ a.icon{
 	height:52px;
   	line-height: 52px;
   	margin: 0;
-  	overflow: hidden;
-	border-bottom:1px;
-	border-bottom-color:gray;
-	border-bottom-style:solid;
 	border-top:1px;
 	border-top-color:gray;
 	border-top-style:solid;
