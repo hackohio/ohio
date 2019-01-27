@@ -223,7 +223,7 @@ a.icon{
     display: inline-block;
     width: 200px;
     background-color: #333333;
-    padding: 5px 0px;
+    padding-bottom: 5px;
 }
 
 #nav .mini-nav li{
