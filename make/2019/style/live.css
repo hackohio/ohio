@@ -19,12 +19,20 @@ a.icon{
 	border-bottom: none;
 }
 
-#liveheader {
+.liveheader {
 	position: fixed;
 	background-color: #000000;
 	color: white;
+}
+
+#mobileheader{
 	width: 100%;
 	height: 147px;
+}
+
+#header{
+    height: 100%;
+    width: 200px;
 }
 
 .anchor{
@@ -35,7 +43,7 @@ a.icon{
 }
 
 #livelogo {
-	display: flex;
+    display: flex;
 	align-items: center;
 	text-align: center;
 }
@@ -48,21 +56,16 @@ a.icon{
 	max-height: 92px;
 	margin: 0 auto;
 	padding: 0px;
-	padding-right: 92px;
 	font-size: 200%;
 }
 
 #nav {
 	clear: both;
-	background-color: #ffffff;
 	text-align: center;
 	width: 100%;
 	height:52px;
   	line-height: 52px;
   	margin: 0;
-	border-top:1px;
-	border-top-color:gray;
-	border-top-style:solid;
 	font-size: 0px;
 
 }
@@ -75,13 +78,12 @@ a.icon{
 }
 
 #nav li {
-	display: inline-block;
 	margin: 0;
 }
 
 #nav a {
 	display: block;
-    color: #666666;
+    color: #ffffff;
     text-align: center;
     font-size: 16px;
     padding-left: 16px;
@@ -109,8 +111,8 @@ a.icon{
 }
 
 .pagecontent {
+    padding-left: 200px;
 	flex: 1;
-	padding-top: 156px;
 	margin-bottom: 20px;
 }
 
@@ -166,6 +168,10 @@ a.icon{
 	width: 25%;
 }
 
+.three-fourths{
+	width: 75%;
+}
+
 @media only screen and (max-width: 1000px) {
 
 	.half {
@@ -203,4 +209,8 @@ a.icon{
 .toppadding{
 	height:156px;
 
+}
+
+#logo {
+    height: 100px;
 }
