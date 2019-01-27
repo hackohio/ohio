@@ -1,7 +1,7 @@
 body {
 	display: flex;
   	flex-direction: column;
-  	background-image: url('../images/chevron.png');
+  	background-image: url('../images/triangles.png');
   	min-height: 100vh;
   	font-family: 'proximanova', 'proxima-nova', Proxima Nova, Helvetica, sans-serif;
 
