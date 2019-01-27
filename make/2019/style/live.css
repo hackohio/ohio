@@ -168,6 +168,15 @@ a.icon{
 	width: 25%;
 }
 
+.sixty{
+	width: 60%;
+}
+
+.forty{
+	width: 40%;
+}
+
+
 .three-fourths{
 	width: 75%;
 }
@@ -181,6 +190,14 @@ a.icon{
 	.fourth {
 		width: 100%;
 	}
+
+    .sixty{
+        width: 100%;
+    }
+
+    .forty{
+        width: 100%;
+    }
 
 	.three-fourths {
 		width: 100%;
