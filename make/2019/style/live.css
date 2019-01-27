@@ -182,8 +182,12 @@ a.icon{
 		width: 100%;
 	}
 
+	.three-fourths {
+		width: 100%;
+	}
+
 	.banner {
-		margin: 20px auto 0px;
+		margin: 20px 2.2% 0px;
 	}
 
 	#container {
@@ -213,4 +217,21 @@ a.icon{
 
 #logo {
     height: 100px;
+}
+
+#nav .mini-nav{
+    display: inline-block;
+    width: 200px;
+    background-color: #333333;
+    padding: 5px 0px;
+}
+
+#nav .mini-nav li{
+    width: 100%;
+    line-height: 10px;
+}
+
+#nav .mini-nav li a{
+    font-size: 10px;
+    padding: 7px;
 }
