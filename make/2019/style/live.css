@@ -67,7 +67,6 @@ a.icon{
 	line-height: 52px;
 	margin: 0;
 	font-size: 0px;
-
 }
 
 #nav ul {
@@ -140,7 +139,7 @@ a.icon{
 }
 
 .col {
-	float:left;
+	float: left;
 	display: block;
 	margin-right: 0;
 	text-align:center;
@@ -253,5 +252,9 @@ a.icon{
 }
 
 #mainfooter {
-	z-index: -1
+	z-index: -1;
+}
+
+.col {
+    margin-bottom: 0px;
 }
