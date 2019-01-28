@@ -43,7 +43,7 @@ a.icon{
 }
 
 #livelogo {
-    display: flex;
+	display: flex;
 	align-items: center;
 	text-align: center;
 }
@@ -64,8 +64,8 @@ a.icon{
 	text-align: center;
 	width: 100%;
 	height:52px;
-  	line-height: 52px;
-  	margin: 0;
+	line-height: 52px;
+	margin: 0;
 	font-size: 0px;
 
 }
@@ -74,7 +74,7 @@ a.icon{
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-    overflow: hidden;
+	overflow: hidden;
 }
 
 #nav li {
@@ -85,11 +85,11 @@ a.icon{
 	display: block;
     color: #ffffff;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     padding-left: 16px;
     padding-right: 16px;
     border-bottom: none;
-        -webkit-transition: all .2s ease-out;
+		-webkit-transition: all .2s ease-out;
     -moz-transition: all .2s ease-out;
     -ms-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
@@ -111,7 +111,7 @@ a.icon{
 }
 
 .pagecontent {
-    padding-left: 200px;
+	padding-left: 200px;
 	flex: 1;
 	margin-bottom: 20px;
 }
@@ -130,9 +130,9 @@ a.icon{
 	width: 100%;
 	border: #808080 0px solid;
 	padding:10px;
-    -webkit-box-sizing: border-box; /* WebKit */
-    -moz-box-sizing: border-box;    /* Gecko */
-    box-sizing: border-box;
+	-webkit-box-sizing: border-box; /* WebKit */
+	-moz-box-sizing: border-box;    /* Gecko */
+	box-sizing: border-box;
 }
 
 .center {
@@ -191,13 +191,13 @@ a.icon{
 		width: 100%;
 	}
 
-    .sixty{
-        width: 100%;
-    }
+	.sixty{
+		width: 100%;
+	}
 
-    .forty{
-        width: 100%;
-    }
+	.forty{
+		width: 100%;
+	}
 
 	.three-fourths {
 		width: 100%;
@@ -229,18 +229,17 @@ a.icon{
 
 .toppadding{
 	height:156px;
-
 }
 
 #logo {
-    height: 100px;
+    height: 150px;
 }
 
 #nav .mini-nav{
     display: inline-block;
     width: 200px;
     background-color: #333333;
-    padding-bottom: 5px;
+    padding-bottom: 5px; /* Looks weird without it but hover on last link doesn't cover */
 }
 
 #nav .mini-nav li{
@@ -249,6 +248,6 @@ a.icon{
 }
 
 #nav .mini-nav li a{
-    font-size: 10px;
+    font-size: 14px;
     padding: 7px;
 }
