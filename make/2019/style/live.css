@@ -251,3 +251,7 @@ a.icon{
     font-size: 14px;
     padding: 7px;
 }
+
+#mainfooter {
+	z-index: -1
+}
