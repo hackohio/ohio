@@ -13,46 +13,7 @@ $(".secondary-page").each(function() {
   pageIds.push("#" + $(this).attr("id"));
 });
 
-
-/*
----------------------------------------------
-*/
-
-// The secondary page that is currently selected
-// Check for the active page last time user was here (url anchor)
-// 'About' will be our failsafe default.
-var activePage = $(pageIds[0]);
-
-
-//check for page anchor
-var pageHash = window.location.hash;
-if (pageHash !== "" && pageHash !== "#home-back") {
-  activePage = $(pageHash);
-}
-
-for (var i=0; i<pageIds.length; i++) {
-    $(pageIds[i]).hide();
-}
-
-if (!isMobile()) {
-  /* ---------- */
-  /* NON MOBILE */
-  /* ---------- */
-
-  /* Remove mobile nav */
-  //$("#mobilenav").remove();
-
-  /* Show the active page */
-  activePage.show();
-
-  /* Navbar click smooth scrolling */
-  $(".secondary-page-link").click(function(e) {
-    e.preventDefault(); // prevent immediate jump before animation
-    var href = $(this).attr("href");
-    updatePage(href);
-  });
-
-} else {
+if (isMobile()) {
   /* ------ */
   /* MOBILE */
   /* ------ */
@@ -113,61 +74,6 @@ if (!isMobile()) {
     }*/
   });
 }
-
-function updatePage(href) {
-  if (href !== "#home-back") {
-    lastActivePage = activePage;
-    activePage = $(href);
-    document.cookie = "activePage="+activePage;
-
-    lastActivePage.hide();
-    activePage.show();
-
-    //Re-stick the navbar when we change pages
-    stickNavbar();
-  }
-
-  scrollToHref(href);
-}
-
-var manualSetHash = false;
-
-function scrollToHref(href, time=500) {
-  $('html, body').animate({
-    scrollTop: $(href).offset().top
-  }, time, function() {
-    // preserve url of nav link
-    manualSetHash = true;
-    window.location.hash = href;
-  });
-}
-
-window.onhashchange = function() {
-    if (manualSetHash) {
-        manualSetHash = false;
-        return;
-    }
-
-    updatePage(location.hash)
-}
-
-// http://upshots.org/javascript/jquery-test-if-element-is-in-viewport-visible-on-screen
-$.fn.isOnScreen = function(){
-  var win = $(window);
-
-  var viewport = {
-    top : win.scrollTop(),
-    left : win.scrollLeft()
-  };
-  viewport.right = viewport.left + win.width();
-  viewport.bottom = viewport.top + win.height();
-
-  var bounds = this.offset();
-  bounds.right = bounds.left + this.outerWidth();
-  bounds.bottom = bounds.top + this.outerHeight();
-
-  return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
-};
 
 /*
 Detect mobile

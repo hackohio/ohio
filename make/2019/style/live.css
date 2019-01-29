@@ -1,14 +1,14 @@
 body {
 	display: flex;
-  	flex-direction: column;
-  	background-image: url('../images/triangles.png');
-  	min-height: 100vh;
-  	font-family: 'proximanova', 'proxima-nova', Proxima Nova, Helvetica, sans-serif;
+	flex-direction: column;
+	background-image: url('../images/triangles.png');
+	min-height: 100vh;
+	font-family: 'proximanova', 'proxima-nova', Proxima Nova, Helvetica, sans-serif;
 
 }
 
 a {
-    color: #BB0000;
+	color: #BB0000;
 }
 
 a.social-media-image{
@@ -36,10 +36,10 @@ a.icon{
 }
 
 .anchor{
-   display:block;
-   height:220px; /* this is the height of your header */
-   margin-top:-220px; /* this is again negative value of the height of your header */
-   visibility:hidden;
+	display:block;
+	height:220px; /* this is the height of your header */
+	margin-top:-220px; /* this is again negative value of the height of your header */
+	visibility:hidden;
 }
 
 #livelogo {
@@ -81,28 +81,27 @@ a.icon{
 }
 
 #nav a {
-	display: block;
-    color: #ffffff;
-    text-align: center;
-    font-size: 18px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-bottom: none;
-		-webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -ms-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out;
+	display: block;color: #ffffff;
+	text-align: center;
+	font-size: 18px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-bottom: none;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
 }
 
 #nav li a.hover {
 	background-color: #888888;
-    color: white;
+	color: white;
 }
 
 #nav ul li a:hover:not(.active) {
-    background-color: #888888;
-    color: white;
+	background-color: #888888;
+	color: white;
 }
 
 #mobilenav {
@@ -231,24 +230,24 @@ a.icon{
 }
 
 #logo {
-    height: 150px;
+	height: 150px;
 }
 
 #nav .mini-nav{
-    display: inline-block;
-    width: 200px;
-    background-color: #333333;
-    padding-bottom: 5px; /* Looks weird without it but hover on last link doesn't cover */
+	display: inline-block;
+	width: 200px;
+	background-color: #333333;
+	padding-bottom: 5px; /* Looks weird without it but hover on last link doesn't cover */
 }
 
 #nav .mini-nav li{
-    width: 100%;
-    line-height: 10px;
+	width: 100%;
+	line-height: 10px;
 }
 
 #nav .mini-nav li a{
-    font-size: 14px;
-    padding: 7px;
+	font-size: 14px;
+	padding: 7px;
 }
 
 #mainfooter {
@@ -256,5 +255,5 @@ a.icon{
 }
 
 .col {
-    margin-bottom: 0px;
+	margin-bottom: 0px;
 }
