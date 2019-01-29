@@ -23,7 +23,7 @@ a.icon{
 	position: fixed;
 	background-color: #000000;
 	color: white;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 #mobileheader{
@@ -84,7 +84,7 @@ a.icon{
 #nav a {
 	display: block;color: #ffffff;
 	text-align: center;
-	font-size: 18px;
+	font-size: 16px;
 	padding-left: 16px;
 	padding-right: 16px;
 	border-bottom: none;
