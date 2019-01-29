@@ -234,7 +234,7 @@ a.icon{
 }
 
 #nav .mini-nav{
-	display: inline-block;
+	display: block;
 	width: 200px;
 	background-color: #333333;
 	padding-bottom: 5px; /* Looks weird without it but hover on last link doesn't cover */
