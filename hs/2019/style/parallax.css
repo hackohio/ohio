@@ -16,11 +16,6 @@
   justify-content: center;
 }
 
-#make-logo {
-    min-width: 275px;
-    width: 37vh;
-}
-
 .secondary-page {
   position: relative;
   display: none;
