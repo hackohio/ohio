@@ -7,12 +7,6 @@ Requires jQuery
 /*
 ------- SET THIS USING NAVBAR HREFs -------
 */
-// Get the IDs of the secondary pages
-var pageIds = [];
-$(".secondary-page").each(function() {
-  pageIds.push("#" + $(this).attr("id"));
-});
-
 if (isMobile()) {
   /* ------ */
   /* MOBILE */
@@ -31,16 +25,6 @@ if (isMobile()) {
 
   /* Add space at top of page */
   document.getElementsByClassName("pagecontent")[0].style.padding = "156px 0px 0px";
-
-
-
-  /* Hide every page but homepage */
-  var hideAllPages = function() {
-    for (var i=0; i<pageIds.length; i++) {
-      $(pageIds[i]).hide();
-    }
-  };
-  hideAllPages();
 
   /* Opens and closes navbar */
   $("#mobilenav-sandwich").click(function(){
