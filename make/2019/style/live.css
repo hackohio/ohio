@@ -110,7 +110,9 @@ a.icon{
 }
 
 .pagecontent {
-	padding-left: 200px;
+	padding-left: 228px;
+	padding-right: 28px;
+	padding-top: 25px;
 	flex: 1;
 	margin-bottom: 20px;
 }
@@ -118,9 +120,10 @@ a.icon{
 .banner{
 	background-color: #000;
 	text-align: center;
-	width: 90%;
+	width: 95%;
 	border: #000 3px solid;
 	margin-top: 20px;
+	box-sizing: border-box;
 }
 
 .content-box{
@@ -175,7 +178,6 @@ a.icon{
 	width: 40%;
 }
 
-
 .three-fourths{
 	width: 75%;
 }
@@ -203,7 +205,7 @@ a.icon{
 	}
 
 	.banner {
-		margin: 20px 2.2% 0px;
+		margin: 20px auto;
 	}
 
 	#container {
@@ -218,12 +220,14 @@ a.icon{
 	}
 }
 
-
-@media (max-width: 996px) {
+@media (min-width: 1000px) {
   div.banner.top-banner {
-    margin-right: 4.6% !important;
-    margin-left: 4.6% !important;
+    width: 100%;
   }
+
+	.right {
+		float: right;
+	}
 }
 
 .toppadding{
