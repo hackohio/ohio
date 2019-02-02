@@ -23,7 +23,7 @@ window.define("countdown",[],function(){return d});return d}(module);
 // MakeOHI/O
 var timerId =
   countdown(
-    new Date('02/03/2019 12:00:00'),
+    new Date('02/03/2019 12:15:00'),
     function(ts) {
       document.getElementById('time-countdown').innerHTML = ts.toHTML("span");
     },
