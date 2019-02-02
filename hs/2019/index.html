@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<meta property="og:title" content="Highschool I/O 2019 | Build Something Amazing on March 23" />
+		<meta property="og:image" content="https://farm6.staticflickr.com/5811/31186148912_1c3c753a7a_k_d.jpg" />
+
+		<!-- Always forces latest IE rendering engine or request Chrome Frame -->
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="description" content="Highschool I/O 2019: A high school hackathon">
+		<meta name="keywords" content="hackathon, OHIO, HighschoolOHIO, 2019">
+		<meta name="author" content="OHI/O">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Highschool I/O 2019</title>
+
+		<link rel="icon" href="img/favicon.png">
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="stylesheet" href="style/font-awesome-4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style/main.css">
+		<link rel="stylesheet" type="text/css" href="style/navbar.css">
+		<link rel="stylesheet" type="text/css" href="style/parallax.css">
+		<link rel="stylesheet" type="text/css" href="style/responsive.css">
+		<link rel="stylesheet" type="text/css" href="style/mobilenav.css">
+		<link rel="stylesheet" type="text/css" href="style/countdown.css">
+		<link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+		<!-- <script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-51284668-6', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/sheetrock.min.js"></script>
+		<script src="https://use.typekit.net/fov5wnm.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<script>history.scrollRestoration = "manual"</script> -->
+	</head>
+	<body>
+	<div class="tv" style="background-image: url(images/CovPicOpacity.png)"></div>
+
+    <!-- Social media side bar -->
+		<div class ="social-media">
+			<a class="social-media-image" href="https://www.facebook.com/hackohio"><i class="social-media-fa fa fa-facebook fa-2x"></i></a>
+			<br><br>
+			<a class="social-media-image" href="https://twitter.com/hackohio"><i class="social-media-fa fa fa-twitter fa-2x"></i></a>
+			<br><br>
+			<a class="social-media-image" href="https://www.instagram.com/hackohio/"><i class="social-media-fa fa fa-instagram fa-2x"></i></a>
+			<br><br>
+			<a class="social-media-image" href="https://www.youtube.com/channel/UCJJzEGEjQrpVTY3zEQS0BpA"><i class="social-media-fa fa fa-youtube fa-2x"></i></a>
+			<br><br>
+			<a class="social-media-image" href="https://medium.com/@hackohio"><i class="social-media-fa fa fa-medium fa-2x"></i></a><br>
+		</div>
+
+		<!-- Nav for desktop -->
+		<div id="nav">
+			<div id="nav-wrapper">
+			<!-- Add the href's of these links to "pageIds" in nav.js -->
+			<div class="nav-div"><a id="reg-nav" href="http://go.osu.edu/highschoolio2019" target="_blank">REGISTER</a></div>
+			<div class="nav-div"><a id="home-back-nav" href="#home-back" class="secondary-page-link">HOME</a></div>
+			<div class="nav-div"><a id="about-page-nav" href="#about-page" class="secondary-page-link">ABOUT</a></div>
+			<div class="nav-div"><a id="schedule-page-nav" href="#schedule-page" class="secondary-page-link">SCHEDULE</a></div>
+			<div class="nav-div"><a id="prizes-page-nav" href="#prizes-page" class="secondary-page-link">AWARDS</a></div>
+			<div class="nav-div"><a id="sponsorlist-page-nav" href="#sponsorlist-page" class="secondary-page-link">SPONSORS</a></div>
+			<div class="nav-div"><a id="faq-page-nav" href="#faq-page" class="secondary-page-link">FAQ</a></div>
+			<!-- <li><a id="stats-page-nav" href="#stats-page" class="secondary-page-link">Stats</a></li> -->
+			<!-- <li><a id="live-site" href="live/index.html" style="color:#BB0000"><b>LIVE SITE</b></a></li> -->
+			</div>
+		</div>
+
+		<!-- Nav for mobile -->
+		<div id="mobilenav" style="display:none;">
+			<a href="#homepage" class="mobilenav-btn">Home</a>
+			<a href="http://go.osu.edu/highschoolio2019" class="mobilenav-btn">Register</a>
+			<a href="#about-page" class="mobilenav-btn">About</a>
+			<a href="#schedule-page" class="mobilenav-btn">Schedule</a>
+			<a href="#prizes-page" class="mobilenav-btn">Awards</a>
+			<a href="#sponsorlist-page" class="mobilenav-btn">Sponsors</a>
+			<a href="https://docs.google.com/spreadsheets/d/1be8mGe-7cA16eylDQijJI7tm_3s7pUdKZSdfJetOt3Q/edit#gid=1349304856" class="mobilenav-btn">Hardware</a>
+			<a href="#faq-page" class="mobilenav-btn">FAQ</a>
+			<!-- <a href="#stats-page" class="mobilenav-btn">Stats</a> -->
+			<!-- <a href="live/index.html" class="mobilenav-btn">Live Site</a> -->
+			<a id="mobilenav-sandwich" class="icon">&#9776;</a>
+		</div>
+
+		<div id="home-back"></div>
+
+		<div id="homepage">
+			<div class="content"> <!-- Do we need this "content" div?? -->
+				<br><br>
+				<img id="hsio-logo" class="grow" src="img/hsio.png" width="300px" alt="Highschool I/O logo" />
+				<br><br>
+				<h2 class="txt-red">Central Ohio's<br>annual high school hackathon.</h2>
+				<br>
+				<!-- FIXLATER: will there be a live site?
+							If so, keep this commented and change the link.
+							Otherwise remove these comments and the following line.
+				<a class="button" target="_blank" href="http://hack.osu.edu/make/2019/live">Event Day Live Site</a>
+				<br><br> -->
+				<h3 class="txt-red">
+					<a target="_blank" href="https://www.google.com/maps/place/CoverMyMeds/@39.954605,-83.0067634,19z/data=!4m13!1m7!3m6!1s0x88388f478f8aff63:0x213fa3c111d060ae!2s2+Miranova+Pl,+Columbus,+OH+43215!3b1!8m2!3d39.954605!4d-83.0062162!3m4!1s0x406ffb2c94bb30af:0x334cb69a64e6e106!8m2!3d39.9546023!4d-83.0063338"><i class="fa fa-map-marker fa-1x"></i></a>
+					2 Miranova PI, Columbus, Ohio
+					<br>
+					March 23rd, 2019
+					<br><br>
+					<!-- <div id=countdown>
+						<div>
+							<span class="days bold"></span>
+							<div class="smalltext">days</div>
+						</div>
+						<div>
+							<span class="hours bold"></span>
+							<div class="smalltext">hours</div>
+						</div>
+						<div>
+							<span class="minutes bold"></span>
+							<div class="smalltext">minutes</div>
+						</div>
+						<div>
+							<span class="seconds bold"></span>
+							<div class="smalltext">seconds</div>
+						</div>
+					</div> -->
+				</h3>
+			</div>
+			<div class="nav-spacer"></div>
+			<div id="mobilefooter" style="display:none;">
+				<div class="footer-socialmedia">
+					<a class="social-media-image" href="https://www.facebook.com/hackohio"><i class="social-media-fa-white fa fa-facebook fa-2x"></i></a>
+					<a class="social-media-image" href="https://twitter.com/hackohio"><i class="social-media-fa-white fa fa-twitter fa-2x"></i></a>
+					<a class="social-media-image" href="https://www.instagram.com/hackohio/"><i class="social-media-fa-white fa fa-instagram fa-2x"></i></a>
+					<a class="social-media-image" href="https://www.youtube.com/channel/UCJJzEGEjQrpVTY3zEQS0BpA"><i class="social-media-fa-white fa fa-youtube fa-2x"></i></a>
+					<a class="social-media-image" href="https://medium.com/@hackohio"><i class="social-media-fa-white fa fa-medium fa-2x"></i></a>
+				</div>
+				<p>Made with <i class="fa fa-heart"></i> in Columbus
+				</p>
+			</div>
+		</div>
+
+		<div id="about-page" class="secondary-page">
+			<div class="nav-spacer"></div>
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="about"></a>
+				<br><br>
+				<h1>Welcome to Columbus</h1>
+				<hr>
+				<p>
+					On March 23<sup>rd</sup>, join us at Highschool I/O&mdash;a one day hackathon for high schoolers hosted by <a class="pretty-link" href="http://hack.osu.edu/">OHI/O</a>, Ohio State's hackathon program. We aim to provide high school students an opportunity to learn about computer science in a fun, engaging, and inclusive environment.
+				</p>
+				<br>
+				<p>
+					Meet and work with other passionate, fun and creative students to build real technology projects. There will also be the opportunity to develop new friendships, build connections with professional mentors, and learn soft skills for success in the real world. If you're interested in participating, all attendees must adhere to our <!--<a class="pretty-link" href="pdf/2018_code_of_conduct.pdf" target="_blank">-->Code of Conduct<!--</a>-->.
+				</p>
+				<br>
+				<div class="section grp">
+					<div class="col third">
+						<i class="grow fa fa-users fa-5x"></i>
+						<br>
+						<h2>Meet great people.</h2>
+					</div>
+					<div class="col third">
+						<i class="grow fa fa-pencil-square-o fa-5x"></i>
+						<br>
+						<h2>Learn something new.</h2>
+					</div>
+					<div class="col third">
+						<i class="grow fa fa-rocket fa-5x"></i>
+						<br>
+						<h2>Build something amazing.</h2>
+					</div>
+				</div>
+				<br class="clear"><br><br>
+				<div class="clear"></div>
+			</div>
+			<div class="filler"></div>
+		</div>
+
+		<div id="prizes-page" class="secondary-page">
+			<div class="nav-spacer"></div>
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="prizes"></a>
+				<br><br>
+				<h1>Awards</h1>
+				<hr>
+				<br>
+			 	<h2>Coming Soon!</h2>
+				<div class="clear"></div>
+			</div>
+			<div class="filler"></div>
+		</div>
+
+		<div id="faq-page" class="secondary-page">
+			<div class="nav-spacer"></div>
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="faq"></a>
+				<br><br>
+				<h1>F.A.Q.</h1>
+				<hr>
+				<br>
+				<p>
+					Here are some common questions that people ask. If you have any additional questions,
+					please contact the program coordinator at <a class="pretty-link" href="mailto:lengade.3o@osu.edu">lengade.3@osu.edu</a>.
+				</p>
+
+				<div class="section grp">
+					<div class= "col third">
+						<h3><b>Does High School I/O cost money?</b></h3>
+						<p class="faqText">
+							High School I/O is free to participate in thanks to our supporters.
+						</p>
+					</div>
+					<div class= "col third">
+						<h3><b>What is a hackathon?</b></h3>
+						<p class="faqText">
+						A hackathon is an informal learning event that brings together students with varying experience to create, innovate, and build a project all within one day.
+						</p>
+					</div>
+
+					<div class= "col third">
+						<h3><b>What should I bring?</b></h3>
+						<p class="faqText">
+							You are highly encouraged to bring a laptop from home if you can. Be sure to bring any applicable chargers, dress comfortably, and bring anything you might need during the day.</a>!
+						</p>
+<!-- 						<p class="faqText">
+							We're currently in the process of reviewing all applicants and will begin sending out acceptances January 8, 2019. Stay tuned - you can check your application status anytime in the registration portal.
+						</p>-->
+					</div>
+
+				</div>
+
+				<div class="section grp">
+					<div class= "col third">
+						<h3><b>What will I eat?</b></h3>
+						<p class="faqText">
+							We will be providing breakfast, lunch, and dinner for all participants. We will have snacks available throughout the day. We've got participant's food restrictions covered too.
+						</p>
+					</div>
+
+					<div class= "col third">
+						<h3><b>Can my parents come with me? Can I stay with my student?</b></h3>
+						<p class="faqText">
+							Parents are more than welcome to visit at any time during this event. We encourage parents to attend the showcase at 7:30 PM to check out all of the amazing work that the students have created.
+						</p>
+					</div>
+					<div class= "col third">
+						<h3><b>How do teams work? Do I need to have a team?</b></h3>
+						<p class="faqText">
+							Hackathons are team driven! You will get to work in small teams of 2-4 students. You can either team up with classmates before the event or find your teammates during team formation activities the morning of.
+						</p>
+					</div>
+				</div>
+
+ 				<div class="section grp">
+					<div class= "col third">
+						<h3><b>Do I have to have an idea before attending/registering?</b></h3>
+						<p class="faqText">
+							Nope! Many students come up with an idea while at the hackathon.
+							By talking to fellow students and mentors, you'll find opportunities to join an idea that piques your interest.
+							If you get stuck, we'll have a nice list of ideas to help you out.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="filler"></div>
+        </div>
+
+		<div id="sponsorlist-page" class="secondary-page">
+			<div class="nav-spacer"></div>
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="sponsors"></a>
+				<br><br>
+				<h1>Sponsors</h1>
+				<hr>
+				<p>
+					Without our sponsors and supporters, Highschool I/O wouldn't be possible. By joining us, you'll be in touch with some of the best developers, designers, and builders in the state. Our team will ensure that you have an incredible experience.
+					<br><br>
+				</p>
+
+				<!-- Program -->
+				<!-- Microsoft -->
+				<div class="">
+					<a href="https://www.microsoft.com/">
+						<img class="sponsor-massive zoom-massive" src="images/sponsors/microsoft-logo.png" alt="Microsoft">
+					</a>
+				</div>
+				<br/><br/>
+
+				<!-- Platinum -->
+				<div class="">
+					<a href="https://www.covermymeds.com/main/">
+						<img class="sponsor-massive zoom-massive" src="images/sponsors/covermymeds-logo.png" alt="CoverMyMeds">
+					</a>
+				</div>
+				<br/><br/>
+				<!-- Gold -->
+
+				<!-- Silver -->
+                <div class="">
+					<a href="https://www.kroger.com/">
+						<img class="sponsor-s-sm zoom-s-sm" src="images/sponsors/kroger-logo.png" alt="Kroger">
+					</a>
+				</div>
+				<br/><br/><br></br>
+				<!-- Bronze -->
+
+				<h1>Supporters</h1>
+				<hr>
+				<table class="sponsor-tb">
+					<tr>
+
+						<td>
+							<!-- StickerMule -->
+							<div class="">
+								<a href="https://www.stickermule.com/supports/hackathons" target="_blank">
+									<img class="sponsor-s-sm zoom-s-sm" src="images/sponsors/stickermule-logo.png" alt="StickerMule">
+								</a>
+							</div>
+						</td>
+					</tr>
+
+				</table>
+				<!-- OSU Sponsors -->
+				<!--<div class="">
+					<img class="sponsor-osu zoom-osu" src="images/sponsors/OSU-departments-logo.png" alt="University Libraries, College of Engineering, the Office of the Chief Information Officer, and the Translational Data Analytics Institute.">
+				</div>-->
+				<br/><br/>
+			</div>
+			<div class="filler"></div>
+		</div>
+
+		<div id="schedule-page" class="secondary-page">
+			<div class="nav-spacer"></div>
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="schedule"></a>
+				<br><br>
+				<h1>Schedule</h1>
+				<hr>
+				<br>
+					<h2>Coming Soon!</h2>
+				<div class="clear"></div>
+			</div>
+			<div class="filler"></div>
+	
+			<!-- Commented this out because it might be useful later-->
+
+			<!-- <div class="nav-spacer"></div>
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="schedule"></a>
+				<br><br>
+				<h1>Schedule</h1>
+				<hr>
+				<br>
+				<h2>Saturday, February 2nd</h2>
+				<table class="schedule-table" style="width: 70%; margin: 0 auto;">
+					<tr>
+						<td style="width: 20%;" class="box-darkgray">
+							Time
+						</td>
+						<td style="width: 40%;" class="box-darkgray">
+							Event
+						</td>
+					</tr>
+					<tr>
+						<td class="box-gray">
+							9:30 AM
+						</td>
+						<td class="box-gray">
+							Check-in opens
+						</td>
+					</tr>
+					<tr>
+						<td>
+							11:00 AM
+						</td>
+						<td>
+							Opening Keynote
+						</td>
+					</tr>
+					<tr>
+						<td class="box-gray">
+							12:00 PM
+						</td>
+						<td class="box-gray">
+							Making Begins
+						</td>
+					</tr>
+					<tr>
+						<td>
+							2:00 PM
+						</td>
+						<td>
+							Lunch
+						</td>
+					</tr>
+					<tr>
+						<td class="box-gray">
+							6:00 PM
+						</td>
+						<td class="box-gray">
+							Dinner
+					</tr>
+					<tr>
+						<td>
+							9:00 PM
+						</td>
+						<td>
+							Snacks
+						</td>
+					</tr>
+				</table>
+				<div class="clear"></div>
+
+				<br><br>
+
+				<h2>Sunday, February 3rd</h2>
+				<table class="schedule-table"  style="width: 70%; margin: 0 auto;">
+					<tr>
+						<td style="width: 20%;" class="box-darkgray">
+							Time
+						</td>
+						<td style="width: 40%;" class="box-darkgray">
+							Event
+						</td>
+					</tr>
+					<tr>
+						<td class="box-gray">
+							2:00 AM
+						</td>
+						<td class="box-gray">
+							Snacks
+						</td>
+					</tr>
+					<tr>
+						<td>
+							7:00 AM
+						</td>
+						<td>
+							Breakfast
+						</td>
+					</tr>
+					<tr>
+						<td class="box-gray">
+							11:30 AM
+						</td>
+						<td class="box-gray">
+							Lunch
+						</td>
+					</tr>
+					<tr>
+						<td>
+							12:00 PM
+						</td>
+						<td>
+							Making Ends
+						</td>
+					</tr>
+					<tr>
+						<td class="box-gray">
+							12:30 PM
+						</td>
+						<td class="box-gray">
+							Judging Begins
+						</td>
+					</tr>
+					<tr>
+						<td>
+							2:00 PM
+						</td>
+						<td>
+							Showcase Begins
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="clear"></div>
+			<div class="filler"></div> -->
+		</div>
+
+		<!--
+		<div id="stats-page" class="secondary-page">
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="stats"></a>
+				<br><br>
+
+				<h1>Media + Stats from 2017</h1>
+				<hr>
+				<ul class="media-list">
+					<li>The Lantern: [<a class="pretty-link" href="https://www.thelantern.com/2017/10/students-prepare-for-annual-24-hour-hackathon/">Article</a>]</li>
+					<li>Columbus Underground: [<a class="pretty-link" href="http://www.columbusunderground.com/ideas-come-to-life-at-osus-hackohio-ls1">Article</a>]</li>
+					<li>Columbus Dispatch: [<a class="pretty-link" href="http://www.dispatch.com/news/20171022/ohio-state-hackathon-tests-computer-students-resourcefulness">Article</a>]</li>
+					<li>IT@OSU: [<a class="pretty-link" href="https://it.osu.edu/news/2017/09/28/ohio-states-hackathon-challenges-students-create-apps-and-software-24-hours">Article</a>]</li>
+					<li>The Lantern TV: [<a class="pretty-link" href="https://www.youtube.com/watch?v=OE0ABHw4Qyw&feature=youtu.be">Video</a>]</li>
+					<li>Ohio Community of Women in Computing: [<a class="pretty-link" href="https://ocwic.hosting.acm.org/o-community-wic/event/hackohio-2017-%E2%80%A2-ohio-states-hackathon/">Event Feature</a>]</li>
+					<li>The Lantern: [<a class="pretty-link" href="https://www.thelantern.com/2017/10/can-you-hack-it-what-it-takes-to-win-ohio-states-24-hour-hackathon/">Article</a>]</li>
+					<li>ECE Student Winners: [<a class="pretty-link" href="http://ece.osu.edu/news/2017/11/hackohio-2017-ece-student-winners">Article</a>]</li>
+					<li>College of Engineering Feature: [<a class="pretty-link" href="https://www.youtube.com/watch?v=73PFDLRFSbw">Video</a>]</li>
+				</ul>
+				<br><br>
+
+				<hr>
+				<div class="section grp">
+					<div class="col third">
+						<div class="grow bigText">
+							24
+						</div>
+						<div>
+							<h1 class="compress">Hours</h1>
+						</div>
+					</div>
+					<div class="col third">
+						<div class="grow bigText">
+							667
+						</div>
+						<div>
+							<h1 class="compress ">Hackers</h1>
+						</div>
+					</div>
+					<div class="col third">
+						<div class="grow bigText ">
+							55+
+						</div>
+						<div>
+							<h1 class="compress ">Majors</h1>
+						</div>
+					</div>
+				</div>
+				<br class="clear">
+				<div class="section grp">
+					<div class="col third">
+						<div class="grow bigText ">
+							20+
+						</div>
+						<div>
+							<h1 class="compress ">Universities Represented</h1>
+						</div>
+					</div>
+					<div class="col third">
+						<div class="grow bigText ">
+							100+
+						</div>
+						<div>
+							<h1 class="compress ">Judges & Mentors</h1>
+						</div>
+					</div>
+					<div class="col third">
+						<div class="grow bigText ">
+							200+
+						</div>
+						<div>
+							<h1 class="compress ">Gallons of Coffee</h1>
+						</div>
+					</div>
+				</div>
+				<br class="clear">
+
+				<div class="section grp">
+					<div class="col third">
+						<div class="grow bigText ">
+							$9k+
+						</div>
+						<div>
+							<h1 class="compress ">Worth of Prizes</h1>
+						</div>
+					</div>
+					<div class="col third">
+						<div class="grow bigText ">
+							19k+
+						</div>
+						<div>
+							<h1 class="compress ">Square Feet<br>of Space</h1>
+						</div>
+					</div>
+					<div class="col third">
+						<div class="grow bigText ">
+							30k+
+						</div>
+						<div>
+							<h1 class="compress ">Miles Traveled</h1>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+            </div>
+            <div class="clear"></div>
+		</div>
+		-->
+
+		<div id="mainfooter" class="center">
+			<div><img class="footer-img" src="images/layout/footer-triangles-gray.png"></div>
+			<div class="mainfooter-content center">
+				<h2 class="txt-white">Brought to you by&#8230;</h2>
+				<p>
+					<a class="footer" href="http://hack.osu.edu/"><img class="organizer-lg" src="images/organizers/ohio.png" alt="OHI/O"></a>
+					<br><br>
+					<a class="footer" href="http://hack.osu.edu/"><img class="organizer-lg" src="images/organizers/acmwLogo.png" alt="ACM-W"></a>
+					<!--
+					<a class="footer" href="http://www.bdaaatohiostate.org/"><img class="organizer-sm" src="images/organizers/bdaaLogo.png" alt="BDAA"></a>
+					<a class="footer" href="https://buckeyehackers.github.io/"><img class="organizer-sm" style="max-width:60px" src="images/organizers/buckhacksLogo.svg" alt="Buckeye Hackers"></a>
+					<a class="footer" href="https://mobileapposu.github.io/" style="font-family:'Montserrat', sans-serif; font-weight: 600;">Mobile App Club.</a>
+					<a class="footer" href="https://opensource.osu.edu/"><img class="organizer-sm" src="images/organizers/open-source-club.svg" alt="Open Source Club"></a>
+					<a class="footer" href="http://electronicsclub.osu.edu/"><img class="organizer-sm" style="max-width:175px" src="images/organizers/electronics-club-logo.svg" alt="Electronics Club"></a>
+					<a class="footer" href="https://acmwosu.github.io/"><img class="organizer-sm" src="images/organizers/acmwLogo.png" alt="ACM-W"></a>
+					<a class="footer" href="http://cwdg.io/" style="font-weight: 700;">&lt;CWDG/&gt;</a>
+					<a class="footer" href="https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Connection"><img class="organizer-sm" src="images/organizers/Wikipedia_Connection_logo_v2_with_text.svg" alt="Wikipedia Connection"></a>
+					<br><br>
+					<a class="footer" href="https://ecs.osu.edu/">Engineering Career Services</a> &#8226;
+					<a class="footer" href="https://engineering.osu.edu/">College of Engineering</a> &#8226;
+					<a class="footer" href="https://cse.osu.edu/">Department of Computer Science &amp; Engineering</a> &#8226;
+					<a class="footer" href="https://library.osu.edu/">University Libraries</a>
+					<a class="footer" href="https://acmwosu.github.io/"><img class="organizer-sm" src="images/organizers/acmwLogo.png" alt="ACM-W"></a>
+					<br><br>
+					-->
+					<br/><br/>
+					Made with <i class="fa fa-heart"></i> in Columbus
+				</p>
+				<br>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="script/nav.js"></script>
+		<script src="script/clock.js"></script>
+	</body>
+</html>

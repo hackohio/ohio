@@ -1,0 +1,79 @@
+/* Navbar */
+#nav {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(255,255,255);
+  font-size: 0;
+  height: 52px;
+  line-height: 52px;
+  display: block;
+}
+
+#mobilenav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #333;
+    overflow: hidden;
+    z-index: 100;
+    text-align:center;
+}
+
+#nav.mobile {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
+
+.secondary-page #nav {
+  position: absolute;
+  top: 0;
+}
+
+.nav-div {
+    display: inline-block;
+}
+
+.nav-div a {
+    display: block;
+    text-align: center;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #666666;
+    font-size: 15px;
+    border-bottom: none;
+
+
+  -webkit-transition: all .2s ease-out;
+     -moz-transition: all .2s ease-out;
+      -ms-transition: all .2s ease-out;
+       -o-transition: all .2s ease-out;
+          transition: all .2s ease-out;
+}
+
+.nav-div a.hover {
+    background-color: #888888;
+    color: white;
+}
+
+.nav-div a.active {
+    background-color: #bb0000;
+    color: white !important;
+  -webkit-transition: all .2s ease-out;
+     -moz-transition: all .2s ease-out;
+      -ms-transition: all .2s ease-out;
+       -o-transition: all .2s ease-out;
+          transition: all .2s ease-out;
+}
+
+.nav-div a:hover:not(.active) {
+    background-color: #888888;
+    color: white;
+}
+
+#reg-nav {
+    font-weight: bold;
+}
