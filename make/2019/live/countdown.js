@@ -20,10 +20,10 @@ function(){p=" millisecond; second; minute; hour; day; week; month; year; decade
 window.define("countdown",[],function(){return d});return d}(module);
 
 
-// HackOHI/O
+// MakeOHI/O
 var timerId =
   countdown(
-    new Date('10/28/2018 10:00:00'),
+    new Date('02/03/2019 12:00:00'),
     function(ts) {
       document.getElementById('time-countdown').innerHTML = ts.toHTML("span");
     },
