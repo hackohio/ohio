@@ -1,27 +1,22 @@
 .leadership-grid {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.leadership-row {
-  display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 25px 100px 0px 100px;
+  flex: wrap;
+  flex-wrap: wrap;
+  margin: 0 50px 25px 50px;
 }
 
 .leadership-box {
+  height: 20em;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  position: relative;
-  margin: 10px;
-  height: 20em;
+  margin: 25px 25px 0px 25px;
+  flex-wrap: wrap;
 }
 
 .leadership-box img {
-  position: absolute;
   margin: auto;
   left: 0;
   height: 75%;
@@ -30,14 +25,12 @@
 
 .leadership-name {
   font-size: 28px;
-  position: absolute;
   margin: auto;
   bottom: 10%;
 }
 
 .leadership-title {
   font-size: 16px;
-  position: absolute;
   margin: auto;
   bottom: 5%;
 }
