@@ -1,0 +1,187 @@
+body, html {
+    height: 100%;
+    font-family: 'proximanova', "Proxima Nova", Helvetica, Sans-Serif;
+    font-size: 16px;
+}
+
+body{
+    background-color: #444;
+}
+td{
+    padding: 4px;
+    text-align: justify;
+}
+th{
+    background-color:#666;
+    color: white;
+    text-align: center;
+}
+hr{
+    width: 80%;
+}
+a{
+    text-decoration: underline;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+canvas{
+    /*margin: 20px 0;*/
+}
+/*Classes*/
+.txt_white{
+    color : white;
+}
+.txt_red{
+    color : #bb0000;
+}
+.txt_gray{
+    color : #222222;
+}
+.txt_pink{
+    color : lightpink;
+}
+.text_center{
+    text-align: center;
+}
+.elm_center{
+    margin: 0 auto;
+}
+.fa{
+    color: #ffffff;
+}
+.button {
+    background-color: #BB0000;
+    display:block;
+    margin: 10px auto;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    max-width: 20%;
+}
+.container {
+    width: 98%;
+    padding: 0 1%;
+    margin: 0 auto;
+}
+
+.col{
+    flex: 1;
+}
+div[class^='col']{
+flex:1;
+}
+.column:first-child {
+    margin: 0;
+}
+.column {
+    float: left;
+    margin: 0 0 0 2%;
+}
+.one-fourth.column {
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    float: left;
+}
+
+.white-box{
+    border: 3px solid #fff;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,.7);
+    padding: 4px;
+    /*opacity: 0.3;*/
+
+}
+.hspic{
+    border: 3px solid #fff;
+    border-radius: 4px;
+}
+.sponsor{
+    width: 60%;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+
+table.time{
+    margin: 0 auto;
+}
+a.head{
+    color: white;
+}
+a.past{
+    color: #444444;
+}
+a:link, a:visited, a:hover, a:active{
+    color: #bb0000;
+}
+div.about{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+div.faq{
+    max-width: 80%;
+    margin:auto;
+}
+div.schedule{
+    max-width: 80%;
+    margin:auto;
+}
+h4.bold, h3.bold {
+    font-weight: bold;
+}
+
+
+
+/*IDs*/
+#headLogo{
+    text-align:right;
+}
+#textLogo{
+	max-width: 90%;
+	height: auto;
+    padding: 10px 0 5px;
+}
+#headText{
+    font-size: 20px;
+    margin-top:20px;
+}
+#header{
+    background: #fff;
+}
+#footer{
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: #fff;
+}
+
+[id^=bar]{
+    margin: 20px 0;
+}
+
+
+/*Bootstrap Overrides*/
+#override .navbar {
+    border-radius: 0;
+}
+
+#override .navbar a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .row {
+    display: flex;
+}
+}
+@media (max-width: 767px) {
+    .white-box{
+        margin: 20px 0;
+    }
+}
