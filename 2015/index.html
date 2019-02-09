@@ -1,215 +1,104 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <!-- Always force latest IE rendering engine or request Chrome Frame -->
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-  <meta name="description" content="OHI/O: Fostering a Tech Culture at Ohio State">
-  <meta name="keywords" content="Hackathon, OHIO, tech">
-  <meta name="author" content="ohio, buckeye hackers">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
 
-  <title>OHI/O @ The Ohio State University</title>
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="description" content="OHI/O 2015: The Ohio State Hackathon">
+	<meta name="keywords" content="Hackathon, OHIO, 2015">
+	<meta name="author" content="ohio, buckeye hackers">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:url"         content="http://hack.osu.edu">
+	<meta property="og:type"        content="website">
+	<meta property="og:title"       content="OHI/O 2015">
+	<meta property="og:description" content="OHI/O 2015: The Ohio State Hackathon">
+	<meta property="og:site_name"   content="OHI/O 2015">
+	<meta property="og:image"       content="img/logo.png">
+	<link rel="icon" href="images/favicon.png">
+	<title>OHI/O 2015</title>
 
-  <link rel="shortcut icon" href="img/favicon.ico">
-  <link rel="stylesheet" href="style/font-awesome-4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
-  <link rel="stylesheet" href="style/font-awesome-4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style/redesign-main.css" type="text/css">
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
+	<link rel="stylesheet" type="text/css" href="style/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="style/s.css">
+	<link rel="stylesheet" type="text/css" href="style/timeline-osu.css">
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-51284668-6', 'auto');
-    ga('send', 'pageview');
-  </script>
-
-  <script src="https://use.typekit.net/fov5wnm.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
-<body>
-  <!-- Navigation bar -->
-  <div class="nav">
-    <div class="container">
-      <nav class="flex-right">
-        <img src="style/OHIO-subtitle.png"/>
-        <span>
-          <a href="http://hack.osu.edu/old">EVENTS</a>
-          <a href="http://hack.osu.edu/leadership">LEADERSHIP</a>
-          <a href="http://hack.osu.edu/about">ABOUT</a>
-        </span>
-      </nav>
-    </div>
-  </div>
+<body ng-app='hack' ng-controller='Controller'>
+	<nav id="nav" class="">
+		<div class="content">
+			<a class="menu-open" id="mb">Menu</a>
+			<ul>
+				<li><a ng-click="scrollIt('about')">About</a></li>
+				<li><a ng-click="scrollIt('events')">Pre-Events</a></li>
+				<li><a ng-click="scrollIt('faq')">FAQ</a></li>
+				<li><a ng-click="scrollIt('timeline')">Timeline</a></li>
+				<li><a ng-click="scrollIt('prizes')">Prizes</a></li>
+				<li><a ng-click="scrollIt('sponsors')">Sponsors</a></li>
+				<li><a href="winners">Winners</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section>
+		<div class="intro">
+			<div class="intro-content">
+				<img class="logo" src="img/logo.png" alt="OHI/O 2015 logo.">
+				<div>
+					<h1 class="master-title">Let's build something
+					<span class="rotate-box">
+						<span class="rotator">amazing</span>
+						<span class="rotator">efficient</span>
+						<span class="rotator">wonderful</span>
+						<span class="rotator">beautiful</span>
+						<span class="rotator">stellar</span>
+						<span class="rotator">fancy</span>
+						<span class="rotator">advanced</span>
+						<span class="rotator">powerful</span>
+						<span class="rotator">stupendous</span>
+						<span class="rotator">phenomenal</span>
+						<span class="rotator">extraordinary</span>
+					</span>
+					</h1>
+					<h2>November 14<sup>th</sup>-15<sup>th</sup></h2>
+					<!-- <a class="button b scarlet" href="https://www.facebook.com/groups/ohio2015teamformation/">Find Team</a> -->
+					<a class="button b scarlet" href="https://www.eventbrite.com/e/ohio-2015-ohio-state-hackathon-showcase-tickets-19160103385">Showcase</a>
+                    <a class="button b scarlet" href="live">LIVE</a>
+					<!-- <a class="button b scarlet" href="http://go.osu.edu/hackideas2015">Submit Idea</a> -->
+					<!-- <a class="button b scarlet" href="https://docs.google.com/forms/d/1DTDnWm8Zq0WgCwjJPs1MKvwi6G6_-a8GZgh6Zp29fdw/viewform?usp=send_form">Mentor</a> -->
+					<div class="social">
+						<a href="https://facebook.com/hackohio"><i class="fa fa-facebook"></i></a>
+						<a href="http://twitter.com/hackohio"><i class="fa fa-twitter"></i></a>
+						<a href="http://instagram.com/hackohio"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <!-- Featured banner -->
-  <div id="featured-banner">
-    <div class="container">
-      <div class="bottom-left">
-        <h3>FEATURED EVENT</h3>
-        <h1><a href="http://hack.osu.edu/make/2019">MakeOHI/O<a></h1>
-        <h4>February 2nd-3rd, 2019</h4>
-        <h4>Knowlton Hall</h4>
-        <div class="blankspace"></div>
-        <a href="http://hack.osu.edu/make/2019" class="red-box">See more</a>
-        <div class="clear"></div>
-      </div>
-      <div class="bottom-right" style="text-align:right">
-      </div>
-    </div>
-  </div>
+	<section id="about" 	ng-include 	src="'views/about.html'"></section>
+	<section id="events" 	ng-include 	src="'views/events.html'"></section>
+	<section id="faq" 		ng-include 	src="'views/faq.html'"></section>
+	<section id="timeline"  ng-include 	src="'views/timeline.html'"></section>
+    <section id="prizes" ng-include src="'views/prizes.html'"></section>
+	<section id="sponsors"  ng-include  src="'views/sponsors.html'" ></section>
 
-  <br /><br /><br />
-
-  <!-- About blurb -->
-  <div class="container">
-    <div id="about">
-      <h1>
-        OHI/O is a program dedicated to fostering tech culture at
-        The Ohio State University.
-      </h1>
-      <br />
-      <a class="red-box-large" href="http://hack.osu.edu/about">ABOUT OHI/O</a>
-
-      <br/><br/><br/>
-      <h1>Powered by<br/>
-        <a href="https://www.microsoft.com/" target="_blank">
-          <img class="center" src="2018/images/sponsors/Microsoft-Logo.png" alt="Microsoft" style="width:150px;">
-        </a>
-    	</h1>
-    </div>
-  </div>
-
-  <br /><br />
-
-  <!-- Main events -->
-  <div class="container">
-    <div class="main-events">
-      <a href="http://hack.osu.edu/2018">
-        <div class="event-box">
-          <img src="style/HackOHIO_logo.png" />
-          <span class="event-box-text">HackOHI/O</span>
-        </div>
-      </a>
-      <a href="http://hack.osu.edu/make/2019">
-        <div class="event-box">
-          <img src="style/MakeOHIO_logo.png" />
-          <span class="event-box-text">MakeOHI/O</span>
-        </div>
-      </a>
-      <a href="http://hack.osu.edu/show/2018/">
-        <div class="event-box">
-          <img src="style/ShowOHIO_logo.png" />
-          <span class="event-box-text">ShowOHI/O</span>
-        </div>
-      </a>
-      <a href="http://hack.osu.edu/hs/2019">
-        <div class="event-box">
-          <img src="style/highschoolio.png" />
-          <span class="event-box-text">High School I/O</span>
-        </div>
-      </a>
-      <br/>
-    </div>
-  </div>
-
-  <br/>
-
-  <div class="container">
-    <div class="main-events">
-    	<a href="https://bdaaosu.org/dataio.php">
-        <div class="event-box">
-          <img src="style/White-dataiologo.png" />
-          <span class="event-box-text">Data I/O</span>
-        </div>
-      </a>
-      <a href="https://u.osu.edu/careerprep/contact/">
-        <div class="event-box">
-          <img src="style/White-LOGI.png" />
-          <span class="event-box-text">Logi I/O</span>
-        </div>
-      </a>
-      <a href="http://hack.osu.edu/robo">
-        <div class="event-box">
-          <img src="style/white_robo.png" />
-          <span class="event-box-text">Robo I/O</span>
-        </div>
-      </a>
-      <a>
-        <div class="event-box">
-          <span class="event-box-text">Hack AI</span>
-        </div>
-      </a>
-      <br/>
-    </div>
-  </div>
-
-
-  <br /><br /><br /><br />
-
-  <!-- Upcoming events -->
-  <div id="community">
-    <div class="container">
-      <br /><br />
-      <div id="community-header">
-        <h1>Community events</h1>
-      </div>
-      <br /><br />
-      <table id="sheetrock-load" style="display:none;">
-      </table>
-      <br />
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <div id="stats" style="display: none">
-      <div>
-        <div class="stat-num">780</div>
-        students at the last hackathon
-      </div>
-      <div>
-        <div class="stat-num">10</div>
-        supporting student orgs
-      </div>
-      <div>
-        <div class="stat-num">22</div>
-        corporate and industry partners
-      </div>
-      <div>
-        <div class="stat-num">40+</div>
-        partnered events this past year
-      </div>
-    </div>
-    <table id="socialmedia-table">
-      <tr>
-        <td style="text-align: center;">
-          <a class="social-media-image" href="https://www.facebook.com/hackohio"><i class="fa fa-facebook fa-2x"></i></a>
-        </td>
-        <td style="text-align: center;">
-          <a class="social-media-image" href="https://twitter.com/hackohio"><i class="fa fa-twitter fa-2x"></i></a>
-        </td>
-        <td style="text-align: center;">
-          <a class="social-media-image" href="https://www.instagram.com/hackohio/"><i class="fa fa-instagram fa-2x"></i></a>
-        </td>
-        <td style="text-align: center;">
-          <a class="social-media-image" href="https://www.youtube.com/channel/UCJJzEGEjQrpVTY3zEQS0BpA"><i class="fa fa-youtube fa-2x"></i></a>
-        </td>
-        <td style="text-align: center;">
-          <a class="social-media-image" href="https://medium.com/@hackohio"><i class="fa fa-medium fa-2x"></i></a>
-        </td>
-      </tr>
-    </table>
-    <br />
-    <span>&copy; 2017 OHI/O <a href="privacy/index.html">Privacy Policy</a></span>
-  </footer>
-
-  <!-- load javascript files -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/sheetrock.min.js"></script>
-  <script type="text/javascript" src="js/events.js"></script>
+	<footer>
+		<div class="content center white">
+			<h3 class="white">Ready to build something awesome?</h3>
+			<p class="white">Made with love by...<br><small><a style="color:white;" href="http://www.buckhacks.org/">Buckeye Hackers</a> &#8226; <a style="color:white;" href="https://opensource.osu.edu/">Open Source Club</a> &#8226; <a style="color:white;" href="http://electronicsosu.com/">Electronics Club</a> &#8226; <a style="color:white;" href="http://acmw.org.ohio-state.edu/">ACM-W</a> &#8226; <a style="color:white;" href="https://mobileapposu.github.io/">Mobile App Developers Club</a> &#8226; <a style="color:white;" href="http://cwdg.io/">CWDG</a> &#8226; <a style="color:white;" href="https://ecs.osu.edu/">Engineering Career Services</a> &#8226; <a style="color:white;" href="https://engineering.osu.edu/">College of Engineering</a> &#8226; <a style="color:white;" href="https://cse.osu.edu/">Department of Computer Science &amp; Engineering</a> &#8226; <a style="color:white;" href="https://library.osu.edu/">University Libraries</a></small></p>
+		</div>
+	</footer>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+	<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+	<script src="bower_components/countUp.js/countUp.js"></script>
+	<script src="bower_components/angular-timeline/dist/angular-timeline.js"></script>
+	<script src="js/sheetrock.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="js/rotator.js"></script>
 </body>
 </html>
+        
