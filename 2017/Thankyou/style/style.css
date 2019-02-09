@@ -1,0 +1,162 @@
+
+body{
+background-image: url("../images/chevron.png");
+font-size: 18px;
+font-family: 'proximanova', Proxima Nova, Helvetica, sans-serif;
+}
+
+#container{
+width: 75%;
+margin: 0 auto;
+margin-top:20px;
+padding: 3% 5% 8%;
+flex: 1 0 auto;
+color:#333;
+background-color: rgba(255,255,255,1.0);
+text-align: center;
+box-sizing: border-box;
+}
+
+.header{
+padding: 20px 0 20px;
+margin: 20px 0;
+}
+
+hr {
+background-image: linear-gradient(to right, #F4C6C4, #BF1313, #F4C6C4);
+border: 0;
+margin-top: -15px;
+height: 1px;
+}
+
+h1,h2,h3{
+font-family: Halvetica, Arial, sans-serif;
+}
+
+h1 #shadow{
+text-shadow: 2px 2px 1px white;
+}
+
+header{
+text-align:center;
+background: #eee;
+color: #1a71b8;
+padding: 10px;
+min-width:100px;
+overflow:hidden;
+}
+
+.wrapper img{
+height: 100px;
+width: 100px;
+display: block;
+margin:auto;
+}
+
+.wrapper{
+margin-bottom:20px;
+text-align: center;
+}
+
+.check{
+font-size:2.5em;
+color:green;
+}
+
+
+
+a {
+color: white;
+text-decoration: none;
+border-bottom: solid white 1px;
+}
+    
+p {
+font-size: 16pt;
+font-weight: 300;
+line-height: 22pt;
+}
+
+
+
+//Footer
+
+#mainfooter {
+	position: relative;
+	width:100%;
+	margin-top: -8%;
+	text-align: center;
+}
+
+.footer-img{
+	float:left;
+	background-color:transparent;
+	width:100%;
+}
+
+.mainfooter-content {
+	float:left;
+	width:100%;
+	background-color: #666666;
+	color: white;
+	text-align: center
+}
+
+
+.organizer-lg {
+	max-height: 100px;
+	height: auto;
+	max-width: 200px;
+    width: auto;
+}
+
+.organizer-sm {
+	max-height: 50px;
+	height:auto;
+	margin:5px;
+}
+
+a.footer {
+	color:white;
+	border-bottom: none;
+}
+
+.single-sponsor{
+	display:block;
+	margin:auto;
+	width:70%;
+}
+	
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+        font-size: 14px;
+         color: #BB0000;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a.pretty-link {
+   color: #a00000;
+   text-decoration:none;
+   outline:0;
+  border-bottom: solid 1px transparent;
+  -webkit-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+     -moz-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+      -ms-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+       -o-transition: color .2s ease-out, border-bottom-color .2s ease-out;
+          transition: color .2s ease-out, border-bottom-color .2s ease-out;
+}
+
+a.pretty-link:hover:not(.active) {
+   text-decoration: none;
+   color: #000;
+   border-bottom: solid 1px #a00000;
+}
+
+a.pretty-link:visited{
+   color: #a00000;
+}

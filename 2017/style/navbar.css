@@ -1,0 +1,89 @@
+/* Navbar */
+#nav {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(255,255,255,0.95);
+  font-size: 0;
+  height:52px;
+  line-height: 52px;
+  overflow:hidden;
+  border-bottom:1px;
+  border-bottom-color:gray;
+  border-bottom-style:solid;
+  border-top:1px;
+  border-top-color:gray;
+  border-top-style:solid;
+}
+#mobilenav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #333;
+    overflow: hidden;
+    z-index: 100;
+    text-align:center;
+}
+
+
+
+#nav.mobile {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
+.secondary-page #nav {
+  position: absolute;
+  top: 0;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:auto;
+}
+#nav li {
+    float: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin:0;
+}
+#nav li a {
+    display: block;
+    text-align: center;
+    padding: 0 14px;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+
+
+  -webkit-transition: all .2s ease-out;
+     -moz-transition: all .2s ease-out;
+      -ms-transition: all .2s ease-out;
+       -o-transition: all .2s ease-out;
+          transition: all .2s ease-out;
+}
+#nav li a.hover {
+    background-color: #888888;
+    color: white;
+}
+
+#nav ul li a.active {
+    background-color: #bb0000;
+    color: white !important;
+  -webkit-transition: all .2s ease-out;
+     -moz-transition: all .2s ease-out;
+      -ms-transition: all .2s ease-out;
+       -o-transition: all .2s ease-out;
+          transition: all .2s ease-out;
+}
+
+#nav ul li a:hover:not(.active) {
+    background-color: #888888;
+    color: white;
+}
