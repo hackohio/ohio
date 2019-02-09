@@ -1,0 +1,19 @@
+<div class="section-header white">
+	<h1 class="section-title">Sponsorship & Mentors</h1>
+</div>
+<div class="content">
+	<div>
+		<p>Without our sponsors, OHI/O would be nonexistent. By joining OHI/O, you'll be in touch with some of the best developers in the state. Our team will ensure that you have an incredible experience.</p>
+		<p>Interested in <a href="mailto:sponsorship@buckhacks.org">Sponsorship</a> or <a href="https://docs.google.com/forms/d/1DTDnWm8Zq0WgCwjJPs1MKvwi6G6_-a8GZgh6Zp29fdw/viewform?usp=send_form">Mentoring</a>?</p>
+	</div>
+	<div class="sponsors">
+		<a
+		ng-repeat="sponsor in sponsors"
+		href="{{sponsor.website}}"
+		class="sponsor"
+		ng-class="{'sp-s' : sponsor.size == '3', 'sp-m' : sponsor.size == '2', 'sp-l' : sponsor.size == '1'}"
+		>
+			<img style="width: 100%;" src="{{sponsor.img}}" alt="{{sponsors.name}}">
+		</a>
+	</div>
+</div>

@@ -1,0 +1,12 @@
+<div class="section-header">
+	<h1 class="section-title red">Hype Events</h1>
+</div>
+<div class="content">
+		<p style="margin-bottom: 25px">OHI/O is hosted by students and staff at The Ohio State University. In anticipation for OHI/O 2015, student organizers will collaborate with fellow tech student orgs to host tech talks, workshops, and social events throughout the semesters.</p>
+	<!-- ng-repeat -->
+	<div class="e" ng-repeat="event in events">
+		<h3 class="event"><span class="event-date">{{event.date}}</span> | {{event.name}}</h3>
+		<h4>Hosted by <a href="{{event.hostUrl}}">{{event.host}}</a></h4>
+		<p>{{event.desc}}</p>
+	</div>
+</div>
