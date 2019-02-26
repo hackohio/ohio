@@ -364,6 +364,10 @@ Flexbox
   align-self: flex-end;
   margin-left: 5%;
 }
+.text-with-back {
+  padding: 20px;
+  background-color: rgba(34, 34, 34, 0.8);
+}
 .bottom-right {
   align-self: flex-end;
   margin-right: 5%;
