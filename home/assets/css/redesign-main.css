@@ -177,6 +177,19 @@ a.pretty-link:visited{
   left: 5%;
   height: 50%;
 }
+.event-box .event-coming-soon {
+  position: absolute;
+  top: 20%;
+  background-color: black;
+  min-height: 25%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+}
+.event-box .event-coming-soon:before {
+  content: "Event coming soon!";
+}
 
 @media (max-width: 750px) {
   .main-events {
