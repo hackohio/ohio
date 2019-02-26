@@ -1,0 +1,45 @@
+/* Navigation */
+.nav {
+  background: #000;
+}
+nav {
+  width: 100%;
+  color: white;
+  font-size: 24px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+nav a {
+  color: white;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+nav img {
+  margin-left: 2em;
+  margin-right: auto;
+  height: 2.5em;
+}
+nav span {
+  margin-right: 10px;
+}
+@media (max-width: 750px) {
+  nav {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  nav img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav span {
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+}
