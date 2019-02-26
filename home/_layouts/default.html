@@ -30,7 +30,14 @@
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
+  <!-- Navigation bar -->
+  {% include navbar.html %}
+
+  <!-- The main content of the page -->
 	{{ content }}
+
+  <!-- Footer -->
+  {% include footer.html %}
 
   <!-- load javascript files -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
