@@ -1,0 +1,36 @@
+.leadership-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: wrap;
+  flex-wrap: wrap;
+  margin: 0 50px 25px 50px;
+}
+
+.leadership-box {
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 25px 25px 0px 25px;
+  flex-wrap: wrap;
+}
+
+.leadership-box img {
+  margin: auto;
+  left: 0;
+  height: 75%;
+  border: 1px solid black;
+}
+
+.leadership-name {
+  font-size: 28px;
+  margin: auto;
+  bottom: 10%;
+}
+
+.leadership-title {
+  font-size: 16px;
+  margin: auto;
+  bottom: 5%;
+}
