@@ -10,17 +10,13 @@ html, body, section {
 }
 
 .show-container {
+  animation: addBackground 1.0s ease-out 2.25s 1;
+  animation-fill-mode: forwards;
   display: flex;
   flex: 1;
   flex-wrap: wrap;
   color: white;
   min-height: 100vh;
-  background: url("img/bg.jpg");
-  z-index: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 100%;
 }
 
 .show-secondary-container > div {
@@ -281,5 +277,18 @@ html, body, section {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes addBackground {
+  0% {}
+  100% {
+    background: url("img/bg.jpg");
+    z-index: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
   }
 }
