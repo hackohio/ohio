@@ -1,4 +1,5 @@
 # OHI/O
+[![Build Status](https://travis-ci.org/Ethan-Wolfe/ohio.svg?branch=redesign)](https://travis-ci.org/Ethan-Wolfe/ohio)
 Welcome to the official website for OHI/O, an organization working to foster a tech culture at the Ohio State University.
 
 # How to contribute to the homepage
