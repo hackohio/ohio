@@ -6,3 +6,6 @@ before_install:
 - echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - ssh-add ./deploy_key
 - ssh -i ./deploy_key mattf@hack.osu.edu pwd
+branches:
+  only:
+  - redesign
