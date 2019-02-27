@@ -2,11 +2,6 @@ html, body, section {
   height: 100%;
 }
 
-.show-main {
-  display: flex;
-  flex-direction: column;
-}
-
 .show-container > div {
   display: flex;
   flex-direction: column;
@@ -19,6 +14,7 @@ html, body, section {
   animation: addBackground 0s ease-out 0s 1;
   animation-fill-mode: forwards;
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
   color: white;
   min-height: 100vh;
@@ -29,24 +25,29 @@ html, body, section {
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
+  min-width: 385px;
 }
 
 .show-secondary-container {
-  position: relative;
   width: 100%;
   min-height: 100vh;
   z-index: 10;
   color: white;
   background-color: #000000;
-  display: flex;
   background: url("img/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
 }
 
 @media only screen and (max-width: 768px) {
   .show-container {
+    background-image: url("");
+  }
+  .show-secondary-container {
     background-image: url("");
   }
   .show-header {
@@ -64,6 +65,9 @@ html, body, section {
   .show-right-footer {
     margin: auto;
   }
+  .show-logo-secondary {
+    display: none;
+  }
   .show-demo-link {
     margin-top: 50px;
   }
@@ -73,7 +77,7 @@ html, body, section {
   display: flex;
   background-color: #000000;
   padding-left: 2rem;
-  padding-right: 1rem;
+  padding-right: 2rem;
   opacity: 0.87;
   flex: 1;
 }
@@ -129,6 +133,7 @@ html, body, section {
   flex: 1;
   position: relative;
   padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .show-right-header {
@@ -172,6 +177,10 @@ html, body, section {
   flex-direction: row;
   justify-content: center;
   text-align: center;
+}
+
+.show-text-black {
+  color: black;
 }
 
 .show-title-text > h1 {
@@ -224,7 +233,7 @@ html, body, section {
 }
 
 .show-right-footer-secondary {
-  padding-bottom: calc(1.75rem - 3px);
+  padding-bottom: calc(1.75rem - 7px);
 }
 
 .show-demo-link {
@@ -239,6 +248,7 @@ html, body, section {
   height: 60px;
   letter-spacing: 2px;
   line-height: 60px;
+  margin-left: -2rem;
   min-width: 220px;
   opacity: 0;
   outline: 0;
