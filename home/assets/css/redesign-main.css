@@ -66,6 +66,12 @@ a.pretty-link:visited{
   height: 25em;
   justify-content: space-between;
   padding-bottom: 30px;
+  margin-left: 0;
+}
+
+#featured-banner .container .bottom-left {
+  padding-left: 200px;
+  padding-right: 15px;
 }
 
 #featured-banner h1,
@@ -338,11 +344,11 @@ Flexbox
 }
 .bottom-left {
   align-self: flex-end;
-  margin-left: 5%;
 }
 .text-with-back {
-  padding: 20px;
-  background-color: rgba(34, 34, 34, 0.8);
+  padding: 10px 0px 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  /*34 34 34*/
 }
 .bottom-right {
   align-self: flex-end;
