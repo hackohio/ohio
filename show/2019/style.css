@@ -2,6 +2,11 @@ html, body, section {
   height: 100%;
 }
 
+.show-main {
+  display: flex;
+  flex-direction: column;
+}
+
 .show-container > div {
   display: flex;
   flex-direction: column;
@@ -10,11 +15,34 @@ html, body, section {
 }
 
 .show-container {
-  animation: addBackground 1.0s ease-out 2.25s 1;
+  /*animation: addBackground 1.0s ease-out 2.25s 1;*/
+  animation: addBackground 0s ease-out 0s 1;
   animation-fill-mode: forwards;
   display: flex;
   flex-wrap: wrap;
   color: white;
+  min-height: 100vh;
+}
+
+.show-secondary-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.show-secondary-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 10;
+  color: white;
+  background-color: #000000;
+  display: flex;
+  background: url("img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -55,7 +83,8 @@ html, body, section {
 }
 
 .show-header-text {
-  animation: fadeIn 2.5s ease-out 3s 1;
+  /*animation: fadeIn 2.5s ease-out 3s 1;*/
+  animation: fadeIn 0s ease-out 0s 1;
   animation-fill-mode: forwards;
   opacity: 0;
   position: absolute;
@@ -83,7 +112,8 @@ html, body, section {
 }
 
 .show-left-main-content {
-  animation: fadeIn 0.75s ease-out 0.75s 1;
+  /*animation: fadeIn 0.75s ease-out 0.75s 1;*/
+  animation: fadeIn 0s ease-out 0s 1;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -106,7 +136,8 @@ html, body, section {
 }
 
 .show-bowtie {
-  animation: fadeIn 0.75s ease-out 1.5s 1;
+  /*animation: fadeIn 0.75s ease-out 1.5s 1;*/
+  animation: fadeIn 0s ease-out 0s 1;
   animation-fill-mode: forwards;
   opacity: 0;
   position: absolute;
@@ -123,7 +154,8 @@ html, body, section {
 }
 
 .show-logo > img {
-  animation: fadeIn 0.75s ease-out 2.25s 1;
+  /*animation: fadeIn 0.75s ease-out 2.25s 1;*/
+  animation: fadeIn 0s ease-out 0s 1;
   animation-fill-mode: forwards;
   justify-content: center;
   opacity: 0;
@@ -163,21 +195,41 @@ html, body, section {
   margin: 5px 0 5px 0;
 }
 
+.show-title-arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  max-height: 2rem;
+  padding-top: 10px;
+  height: 100%;
+}
+
 .show-champagne-glasses {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   opacity: 0;
-  animation: fadeIn 2.5s ease-out 3s 1;
+  /*animation: fadeIn 2.5s ease-out 3s 1;*/
+  animation: fadeIn 0s ease-out 0s 1;
   animation-fill-mode: forwards;
+}
+
+.show-logo-secondary {
+  float: right;
 }
 
 .show-right-footer {
   padding-bottom: 3rem;
 }
 
+.show-right-footer-secondary {
+  padding-bottom: calc(1.75rem - 3px);
+}
+
 .show-demo-link {
-  animation: fadeIn 2.5s ease-out 3s 1;
+  /*animation: fadeIn 2.5s ease-out 3s 1;*/
+  animation: fadeIn 0s ease-out 0s 1;
   animation-fill-mode: forwards;
   background-color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
