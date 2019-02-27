@@ -28,6 +28,7 @@ nav img {
 nav span {
   margin-right: 10px;
 }
+
 @media (max-width: 750px) {
   nav {
     flex-direction: column;
@@ -41,5 +42,11 @@ nav span {
   nav span {
     margin-right: 6px;
     margin-left: 6px;
+  }
+}
+
+@media (max-width: 460px) {
+  nav {
+    font-size: 18px;
   }
 }

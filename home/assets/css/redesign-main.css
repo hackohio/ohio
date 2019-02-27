@@ -103,6 +103,10 @@ a.pretty-link:visited{
 
   #featured-banner .container .bottom-left {
     margin-bottom: 30px;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    text-align: center;
   }
 
   #featured-banner .container .bottom-right {
