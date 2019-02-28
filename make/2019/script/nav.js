@@ -61,8 +61,8 @@ if (!isMobile()) {
   If the first page has been fully scrolled, its position must
       be fixed so that the next page can scroll over
   */
-  $("#home-back").hide();
   $("#home-back").css({height: $("#homepage").height()});
+  $("#home-back").hide();
   var backHidden = true;
 
   $(document).scroll(function(event) {

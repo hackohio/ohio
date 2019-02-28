@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+		<meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="HackOHI/O 2016's eventday resource site.">
+		<meta name="keywords" content="Hackathon, OHIO, 2016, live, event, day">
+		<meta name="author" content="OHI/O">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta property="og:url" content="http://hack.osu.edu/2016/live/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="HackOHI/O 2016 - Live" />
+		<meta property="og:description" content="HackOHI/O 2016's eventday resource site." />
+		<meta property="og:image" content="http://hack.osu.edu/2016/images/cover.jpg" />
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@hackohio">
+		<meta name="twitter:creator" content="@hackohio">
+		<meta name="twitter:title" content="HackOHI/O 2016 - Live">
+		<meta name="twitter:description" content="HackOHI/O 2016's eventday resource site.">
+		<meta name="twitter:image" content="http://hack.osu.edu/2016/images/cover.jpg">
+
+		<title>HackOHI/O 2016 - Live</title>
+
+		<link rel="shortcut icon" href="../images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
+		<link rel="stylesheet" type="text/css" href="../style/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../style/css/main.css">
+		<link rel="stylesheet" type="text/css" href="../style/css/2015css.css">
+		<link rel="stylesheet" type="text/css" href="../style/css/live.css">
+		<link rel="stylesheet" type="text/css" href="../style/css/particlesstyle.css">
+	</head>
+
+	<body onload="timestamp()">
+		<div id="particles-js" style="position: absolute; height: 170px;">
+			<h1 class="section-title white" style="position: absolute; text-align: center; width: 100%;">
+				HackOHI/O: Live
+				<br>
+				<span style="font-size: 60%; font-weight: 300;">Your source of info for the duration of the event.</span>
+				<br>
+			</h1>
+		</div>
+		
+		<br><br>
+		
+		<div class="container" style="padding-top: 210px;">
+			<a href="../index.html" class="button" style="width: 300px;">Main Event Page</a>
+			<br><br>
+			<a href="https://s3.amazonaws.com/aws-website-hackohiofiles-3vyw6/HackOHIO+2016+Schedule.pdf" class="button">Schedule</a>
+			<a href="../challenges" class="button">Challenges</a>
+			<a href="https://s3.amazonaws.com/aws-website-hackohiofiles-3vyw6/HackOHIO+2016+Ideas.pdf" class="button">Hack Ideas</a>
+			<a href="../hardware" class="button">Hardware Loans</a>
+			<a href="../resources" class="button">Hacker Resources</a>
+			<a href="http://rmd.at/hackohio" class="button">Mentor Help</a>
+			<br><br><br>
+			
+			<div class="left-content">
+				<div class="banner">
+				<h2 class="section-title white">Location Info</h2>
+				<div class="content-box center">
+					<br>
+					The event will take place in the Ohio Union (1739 North High Street).
+					Please be aware of our lockdown: no one will be permitted to enter or exit the building from 11:30 PM to 7:00 AM on Sunday, November 20th. 
+					During the lockdown, attendees should remain in the Grand Ballroom and Great Hall except to use the bathroom (and in case of emergency).
+					<br><br>
+					The Grand Ballroom and Great Hall are the designated hacking areas.
+					The Showcase (Sunday, 2:30 PM) will be held in the Performance hall.
+					In addition, there are several other spaces around the Union where you can find tech talks, relaxation retreats, and gaming - refer to the schedule below!
+					<br><br>
+					<a href="https://ohiounion.osu.edu/visit_the_union/building_map"><h3 class="txt-red"><u>View map of entire Ohio Union</u></h3></a>
+					<a href="../images/GrandBallroom.png"><h3 class="txt-red"><u>View map of Grand Ballroom hacking space</u></h3></a>
+					<a href="../images/GreatHallMtRoom.png"><h3 class="txt-red"><u>View map of Great Hall hacking space</u></h3></a>
+				</div>
+				</div>
+
+				<br><br>
+
+				<div class="banner">
+				<h2 class="section-title white">Schedule</h2>
+				<div class="content-box center">
+					<h2>Saturday, November 19th</h2>
+					<table style="width: 70%; margin: 0 auto;">
+						<tr>
+							<td style="width: 20%;" class="box-darkgray">
+								Time
+							</td>
+							<td style="width: 40%;" class="box-darkgray">
+								Event
+							</td>
+							<td style="width: 40%;" class="box-darkgray">
+								Location
+							</td>
+						</tr>
+						<tr>
+							<td class="box-white">
+								8:00 AM
+							</td>
+							<td class="box-white">
+								Doors open for student and sponsor check-in<br>Team-building event
+							</td>
+							<td class="box-white">
+								2nd floor, outside Ballroom<br>Dance Room 2 (Basement)
+							</td>
+						</tr>
+						<tr>
+							<td class="box-gray">
+								10:00 AM
+							</td>
+							<td class="box-gray">
+								Opening keynote
+							</td>
+							<td class="box-gray">
+								Ballroom
+							</td>
+						</tr>
+						<tr>
+							<td class="box-white">
+								11:00 AM
+							</td>
+							<td class="box-white">
+								Hacking begins!
+							</td>
+							<td class="box-white">
+								Ballroom / Great Hall
+							</td>
+						</tr>
+						<tr>
+							<td class="box-gray">
+								11:30 AM
+							</td>
+							<td class="box-gray">
+								GitHub Tech Talk
+							</td>
+							<td class="box-gray">
+								Maudine Cow Room (Basement)
+							</td>
+						</tr>
+						<tr>
+							<td class="box-white">
+								12:00 PM
+							</td>
+							<td class="box-white">
+								Lunch
+							</td>
+							<td class="box-white">
+								Ballroom / Great Hall
+							</td>
+						</tr>
+						<tr>
+							<td class="box-gray">
+								2:15 PM
+							</td>
+							<td class="box-gray">
+								Esri Talk
+							</td>
+							<td class="box-gray">
+								Maudine Cow Room (Basement)
+							</td>
+						</tr>
+						<tr>
+							<td class="box-white">
+								4:00 PM
+							</td>
+							<td class="box-white">
+								Yoga with Ohio State's Counseling and Consultation Service
+							</td>
+							<td class="box-white">
+								Dance Room 1 (Basement)
+							</td>
+						</tr>
+						<tr>
+							<td class="box-gray">
+								6:00 PM
+							</td>
+							<td class="box-gray">
+								Dinner
+							</td>
+							<td class="box-gray">
+								Ballroom / Great Hall
+							</td>
+						</tr>
+						<tr>
+							<td class="box-white">
+								7:00 PM
+							</td>
+							<td class="box-white">
+								JPMorgan Chase & Co. Tech Talk and Panel
+							</td>
+							<td class="box-white">
+								Maudine Cow Room (Basement)
+							</td>
+						</tr>
+						<tr>
+							<td class="box-gray" style="border-bottom: #333333 1px solid;">
+								11:30 PM
+							</td>
+							<td class="box-gray" style="border-bottom: #333333 1px solid;">
+								<span style="color: #BB0000;">Lockdown</span>
+							</td>
+							<td class="box-gray" style="border-bottom: #333333 1px solid;">
+								
+							</td>
+						</tr>
+					</table>
+
+					<h3>Saturday Long-Term Activities</h3>
+					<table style="width: 70%; margin: 0 auto;">
+						<tr>
+							<td style="width: 20%;" class="box-darkgray">
+								Time
+							</td>
+							<td style="width: 40%;" class="box-darkgray">
+								Event
+							</td>
+							<td style="width: 40%;" class="box-darkgray">
+								Location
+							</td>
+						</tr>
+						<tr>
+							<td class="box-white">
+								11:00 AM - 5:00 PM
+							</td>
+							<td class="box-white">
+								Relaxation Lounge: Arts, Games, and Yoga
+							</td>
+							<td class="box-white">
+								Dance Room 1 (Basement)
+							</td>
+						</tr>
+						<tr>
+							<td class="box-gray">
+								11:00 AM - 11:00 PM
+							</td>
+							<td class="box-gray">
+								JPMorgan Chase & Co. Networking Event
+							</td>
+							<td class="box-gray">
+								Dance Room 2 (Basement)
+							</td>
+						</tr>
+						<tr>
+							<td class="box-white" style="border-bottom: #333333 1px solid;">
+								11:00 AM - 8:00 PM
+							</td>
+							<td class="box-white" style="border-bottom: #333333 1px solid;">
+								Microsoft Xbox Lounge
+							</td>
+							<td class="box-white" style="border-bottom: #333333 1px solid;">
+								Arts and Crafts Room
+							</td>
+						</tr>
+					</table>
+
+					<h2>Sunday, November 20th</h2>
+					<table style="width: 70%; margin: 0 auto;">
+						<tr>
+							<td style="width: 20%;" class="box-darkgray">
+								Time
+							</td>
+							<td class="box-darkgray">
+								Event
+							</td>
+							<td class="box-darkgray">
+								Location
+							</td>
+						</tr>
+						<tr>
+							<td class="box-white">
+								7:00 AM
+							</td>
+							<td class="box-white">
+								<span style="color: #BB0000;">Lockdown ends</span>
+							</td>
+							<td class="box-white">
+								
+							</td>
+						</tr>
+						<tr>
+							<td class="box-gray">
+								9:00 AM
+							</td>
+							<td class="box-gray">
+								Teams register for judging
+							</td>
+							<td class="box-gray">
+								West Ballroom / Great Hall
+							</td>
+						</tr>
+						<tr>
+							<td class="box-white">
+								9:30 AM
+							</td>
+							<td class="box-white">
+								Brunch
+							</td>
+							<td class="box-white">
+								West Ballroom / Great Hall
+							</td>
+						</tr>
+						<tr>
+							<td class="box-gray">
+								11:00 AM
+							</td>
+							<td class="box-gray">
+								Hacking ends
+							</td>
+							<td class="box-gray">
+								Ballroom / Great Hall
+							</td>
+						</tr>
+						<tr>
+							<td class="box-white">
+								11:30 AM
+							</td>
+							<td class="box-white">
+								Judging begins
+							</td>
+							<td class="box-white">
+								Ballroom
+							</td>
+						</tr>
+						<tr>
+							<td class="box-gray">
+								1:30 PM
+							</td>
+							<td class="box-gray">
+								Judging ends
+							</td>
+							<td class="box-gray">
+								Ballroom
+							</td>
+						</tr>
+						<tr>
+							<td class="box-white">
+								2:30 PM
+							</td>
+							<td class="box-white">
+								Showcase begins
+							</td>
+							<td class="box-white">
+								Performance Hall
+							</td>
+						</tr>
+						<tr>
+							<td class="box-gray" style="border-bottom: #333333 1px solid;">
+								4:30 PM
+							</td>
+							<td class="box-gray" style="border-bottom: #333333 1px solid;">
+								Showcase ends
+							</td>
+							<td class="box-gray" style="border-bottom: #333333 1px solid;">
+								Performance Hall
+							</td>
+						</tr>
+					</table>
+					<br><br>
+				</div>
+				</div>
+
+				<br><br>
+
+				<div class="banner">
+					<h2 class="section-title white">Challenges</h2>
+					<div class="center content-box">
+						HackOHI/O's sponsors have provided some great, inventive challenges that your team can work towards completing.
+						<br>
+						The best projects for each challenge will win prizes!
+					</div>
+					<div class="content-box center" style="padding: 20px;">
+						<table style="width: 100%;">
+							<tr>
+								<td style="padding: 5px;">
+									<h3>
+										<a href="../challenges/aws/index.html">AWS Challenge 1</a>
+										<br><img class="bordered" src="../images/traffic/pageviews_aws.png" width="90" height="90" alt="embedded folder icon">
+									</h3>
+								</td>
+								<td style="padding: 5px;">
+									<b>Skill Sets:</b><br>Alexa skill sets for individuals with special needs.
+									<br><span style="font-size: 85%;">Prize: Amazon Echoes</span>
+									<br><a href="../challenges/aws/index.html">Learn more</a>
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 5px;">
+									<h3>
+										<a href="../challenges/aws2/index.html">AWS Challenge 2</a>
+										<br><img class="bordered" src="../images/traffic/pageviews_aws2.png" width="90" height="90" alt="embedded folder icon">
+									</h3>
+								</td>
+								<td style="padding: 5px;">
+									<b>Transportation:</b><br>Analyze traffic patterns and build smart-city transportation solutions.
+									<br><span style="font-size: 85%;">Prize: Amazon Echoes</span>
+									<br><a href="../challenges/aws2/index.html">Learn more</a>
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 5px;">
+									<h3>
+										<a href="../challenges/capitalone/index.html">Capital One</a>
+										<br><img class="bordered" src="../images/traffic/pageviews_capitalone.png" width="90" height="90" alt="embedded folder icon">
+									</h3>
+								</td>
+								<td style="padding: 5px;">
+									<b>Banking:</b><br>Best use of Capital One's hackathon API.
+									<br><span style="font-size: 85%;">Prize: $250 Amazon gift cards</span>
+									<br><a href="../challenges/capitalone/index.html">Learn more</a>
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 5px;">
+									<h3>
+										<a href="../challenges/esri/index.html">Esri</a>
+										<br><img class="bordered" src="../images/traffic/pageviews_esri.png" width="90" height="90" alt="embedded folder icon">
+									</h3>
+								</td>
+								<td style="padding: 5px;">
+									<b>Mapping:</b><br>Best use of the ArcGIS platform.
+									<br><span style="font-size: 85%;">Prize: $1000 split between team members</span>
+									<br><a href="../challenges/esri/index.html">Learn more</a>
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 5px;">
+									<h3>
+										<a href="../challenges/jobsohio/index.html">JobsOhio</a>
+										<br><img class="bordered" src="../images/traffic/pageviews_jobsohio.png" width="90" height="90" alt="embedded folder icon">
+									</h3>
+								</td>
+								<td style="padding: 5px;">
+									<b>Ohio Means Jobs:</b><br>Connection people to in-demand Ohioan jobs.
+									<br><span style="font-size: 85%;">Prize: Internship</span>
+									<br><a href="../challenges/jobsohio/index.html">Learn more</a>
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 5px;">
+									<h3>
+										<a href="../challenges/jpmc/index.html">JPMorgan Chase & Co.</a>
+										<br><img class="bordered" src="../images/traffic/pageviews_jpmc.png" width="90" height="90" alt="embedded folder icon">
+									</h3>
+								</td>
+								<td style="padding: 5px;">
+									<b>Social Good Challenge:</b><br>Accessibility of information.
+									<br><span style="font-size: 85%;">Prize: Bose SoundLink Around-Ear Wireless Headphones</span>
+									<br><a href="../challenges/jpmc/index.html">Learn more</a>
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 5px;">
+									<h3>
+										<a href="../challenges/paxata/index.html">Paxata</a>
+										<br><img class="bordered" src="../images/traffic/pageviews_paxata.png" width="90" height="90" alt="embedded folder icon">
+									</h3>
+								</td>
+								<td style="padding: 5px;">
+									<b>Data Quality Reports:</b><br>Given data, generate data quality reports.
+									<br><span style="font-size: 85%;">Prize: Bookbag filled with goodies</span>
+									<br><a href="../challenges/paxata/index.html">Learn more</a>
+								</td>
+							</tr>
+							<tr>
+								<td style="padding: 5px;">
+									<h3>
+										<a href="../challenges/wmc/index.html">Wexner Medical Center</a>
+										<br><img class="bordered" src="../images/traffic/pageviews_wmc.png" width="90" height="90" alt="embedded folder icon">
+									</h3>
+								</td>
+								<td style="padding: 5px;">
+									<b>Technology for Better Health:</b><br>Use technology to encourage young adults to track their health.
+									<br><span style="font-size: 85%;">Prize: Myo Gesture Control Armbands</span>
+									<br><a href="../challenges/wmc/index.html">Learn more</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<div class="right-content">
+				<div class="banner">
+					<h2 class="section-title white">Contact & Safety</h2>
+					<div class="content-box">
+						<ul>
+							<li><b>Event Location:</b> Ohio Union (1739 N High St, Columbus, OH)</li>
+							<li><b>Emergency:</b> 9-1-1</li>
+							<li><b>OSU Public Safety (non-emergency):</b> (614) 292-2121</li>
+							<li>Please keep in mind <a href="http://hack.osu.edu/friendly-space-policy/">OHI/O's friendly space policy</a> and <a href="https://s3.amazonaws.com/aws-website-hackohiofiles-3vyw6/HackOHIO+2016+Waiver.pdf">HackOHI/O's Code of Conduct</a>!</li>
+							<li>Organizers are wearing red shirts and black lanyards. Reach out for help!</li>
+						</ul>
+					</div>
+				</div>
+				
+				<br><br>
+				
+				<div class="banner">
+					<h2 class="section-title white">Mentor Help</h2>
+					<div class="content-box">
+						For live help...<br>
+						On Android or iOS, download the app at <a href="http://rmd.at/hackohio">rmd.at/hackohio</a><br>
+						SMS Text "@hackohio" to 81010 or (318) 787-0430<br>
+						E-mail sign up at <a href="http://rmd.at/hackohio">rmd.at/hackohio</a>
+					</div>
+				</div>
+				
+				<br><br>
+				
+				<div class="banner">
+					<h2 class="section-title white">Free Stuff</h2>
+					<div class="content-box">
+						Thanks to our sponsors, we have a variety of free stuff for hackers to take advantage of!
+						<br>
+						<ul>
+							<li><b>Hardware Loans:</b> Check our <a href="../hardware">list</a> and head to the Help Desk in the Grand Ballroom.</li>
+							<li><b>Amazon Web Services Credit:</b> <a href="https://www.awseducate.com/Application?apptype=student&promoCode=hack-ohio-2016">Click Here</a></li>
+							<li><b>Esri ArcGIS Credit:</b> <a href="https://developers.arcgis.com">Click here</a> and use code OHIOHACKS</li>
+							<li><b>Namecheap Domains:</b> Stop by the Namecheap table starting at 2 PM!</li>
+						</ul>
+					</div>
+				</div>
+				
+				<br><Br>
+				
+				<div class="banner">
+					<h2 class="section-title white">Social</h2>
+					<div class="content-box">
+						<div class="social center">
+							<a href="https://facebook.com/hackohio"><i class="fa fa-facebook"></i></a>
+							<a href="http://twitter.com/hackohio"><i class="fa fa-twitter"></i></a>
+							<a href="http://instagram.com/hackohio"><i class="fa fa-instagram"></i></a>
+							<a href="https://www.youtube.com/channel/UCJJzEGEjQrpVTY3zEQS0BpA"><i class="fa fa-youtube"></i></a>
+							<a href="https://medium.com/@hackohio"><i class="fa fa-medium"></i></a>
+						</div>
+						<br>
+						<table>
+							<tr>
+								<td><i class="fa fa-snapchat"></i></td>
+								<td><span style="font-size: 120%;">Check out our Snapchat filters! Add us (hackohio) and send your snaps for a chance to be featured on our story.</span></td>
+							</tr>
+							<tr>
+								<td><i class="fa fa-hashtag"></i></td>
+								<td><span style="font-size: 120%;">Tag your posts with #hackohio</span></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				
+				<br><br>
+				
+				<div class="banner">
+					<h2 class="section-title white">Tweets</h2>
+					<div class="content-box center">
+						<a class="twitter-timeline" href="https://twitter.com/hackohio" data-widget-id="664507322203553792">Tweets by @hackohio</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
+				</div>
+				
+				<br><br>
+
+				<div class="banner">
+					<h2 class="section-title white">Prizes</h2>
+					<div class="content-box center">
+						The top ten teams (as determined by the judges) will be awarded a HackOHI/O trophy.
+						In addition, the judges will be choosing eight teams to win the "Best Of" categories, which are listed below.
+						<br>A thank you to Hyland and Pillar for providing HackOHI/O with prizes!
+						<br><br>
+						<span style="font-size: 100%;">Best Hardware Hack</span><br><span style="font-size: 150%; font-weight: 500;">Raspberry Pi 3 Ultimate Starter Kit</span>
+						<br><br><span style="font-size: 100%;">Best Software Hack</span><br><span style="font-size: 150%; font-weight: 500;">BB8 Sphero with Arm Band</span>
+						<br><br><span style="font-size: 100%;">Most Impactful Application</span><br><span style="font-size: 150%; font-weight: 500;">Go Pro Hero Session</span>
+						<br><br><span style="font-size: 100%;">Best Designed Hack</span><br><span style="font-size: 150%; font-weight: 500;">Amazon Echo</span>
+						<br><br><span style="font-size: 100%;">Most Original Hack</span><br><span style="font-size: 150%; font-weight: 500;">Phototonic</span>
+						<br><br><span style="font-size: 100%;">Most Ambitious Hack</span><br><span style="font-size: 150%; font-weight: 500;">Apple Watch</span>
+						<br><br><span style="font-size: 100%;">Best Teamwork</span><br><span style="font-size: 150%; font-weight: 500;">Lego Mindstorm</span>
+						<br><br><span style="font-size: 100%;">Best New Hack</span><br><span style="font-size: 150%; font-weight: 500;">Hubsan Quadcopters</span>
+						<br><br><br>
+						We also have plenty of great door prizes to give away:
+						<br><br>
+						<span style="font-size: 150%; font-weight: 500;">Tile &#8226; Thing Explainer - Randall Munroe &#8226; OWI Robotic Arm Edge</span>
+						<br><br>
+						We'll give away door prizes at our Showcase on Sunday; attend to enter a raffle for a chance to win!
+					</div>
+				</div>
+				
+				<br><br>
+				
+				<div class="banner">
+					<h2 class="section-title white">Sponsors</h2>
+					<div class="content-box center">
+						HackOHI/O was made possible by the generous support of our fantastic sponsors:
+						<br><br>
+						<img src="../images/sponsors/all.png" width="400" alt="All HackOHI/O 2016 sponsors.">
+						<br><br>
+						Visit our <a href="../index.html#sponsors">homepage</a> to view all of our sponsors with links.
+					</div>
+				</div>
+
+				<br><br>
+			</div>
+		</div>
+
+		<div style="clear: both;"></div>
+		<footer>
+			<div class="content center white">
+			<div class="bg-dark txt-white"></div>
+				<h2 class="txt-white">Brought to you by&#8230;</h2>
+				<p>
+					<a style="color: #FFFFFF;" href="http://hack.osu.edu/">OH<b>I/O</b></a>
+					<br>
+					<small><a style="color: #FFFFFF;" href="http://www.bdaaatohiostate.org/">BDAA</a> &#8226; <a style="color: #FFFFFF;" href="http://www.buckhacks.org/">Buckeye Hackers</a> &#8226; <a style="color: #FFFFFF;" href="https://opensource.osu.edu/">Open Source Club</a> &#8226; <a style="color: #FFFFFF;" href="http://electronicsclub.osu.edu/">Electronics Club</a> &#8226; <a style="color: #FFFFFF;" href="http://acmw.org.ohio-state.edu/">ACM-W</a> &#8226; <a style="color: #FFFFFF;" href="https://mobileapposu.github.io/">Mobile App Developers Club</a> &#8226; <a style="color: #FFFFFF;" href="http://cwdg.io/">CWDG</a> &#8226; <a style="color: #FFFFFF;" href="https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Connection">Wikipedia Connection</a>
+					<br>
+					<a style="color: #FFFFFF;" href="https://ecs.osu.edu/">Engineering Career Services</a> &#8226; <a style="color: #FFFFFF;" href="https://engineering.osu.edu/">College of Engineering</a> &#8226; <a style="color: #FFFFFF;" href="https://cse.osu.edu/">Department of Computer Science &amp; Engineering</a> &#8226; <a style="color: #FFFFFF;" href="https://library.osu.edu/">University Libraries</a></small>
+				</p>
+			</div>
+		</footer>
+		<script src="../javascript/particles.min.js"></script>
+		<script src="../javascript/particlesapp.js"></script>
+		<script src="../javascript/challenge_index_functions.js"></script>
+		
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-51284668-6', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script src="https://use.typekit.net/fov5wnm.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	</body>
+</html>

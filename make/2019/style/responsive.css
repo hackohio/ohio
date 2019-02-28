@@ -40,6 +40,14 @@
 	width: 25%;
 }
 
+.sixty{
+    width: 100%;
+}
+
+.forty{
+    width: 100%;
+}
+
 .seventy{
 	width:70%;
 }
@@ -60,6 +68,18 @@
 	}
 
 	.fourth {
+		width: 100%;
+	}
+
+    .sixty{
+        width: 100%;
+    }
+
+    .forty{
+        width: 100%;
+    }
+
+	.three-fourths {
 		width: 100%;
 	}
 

@@ -1,0 +1,15 @@
+#clockdiv {
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+}
+
+#countdown > div {
+    padding: 10px;
+    display: inline-block;
+}
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 16px;
+}

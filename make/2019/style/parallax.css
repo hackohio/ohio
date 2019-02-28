@@ -16,7 +16,7 @@
   justify-content: center;
 }
 
-#make-logo {
+.make-logo {
     min-width: 275px;
     width: 37vh;
 }

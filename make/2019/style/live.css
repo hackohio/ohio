@@ -1,33 +1,46 @@
 body {
 	display: flex;
-  	flex-direction: column;
-  	background-image: url('../images/chevron.png');
-  	min-height: 100vh;
-  	font-family: 'proximanova', 'proxima-nova', Proxima Nova, Helvetica, sans-serif;
+	flex-direction: column;
+	background-image: url('../images/triangles.png');
+	min-height: 100vh;
+	font-family: 'proximanova', 'proxima-nova', Proxima Nova, Helvetica, sans-serif;
 
 }
 
 a {
-    color: #BB0000;
+	color: #BB0000;
 }
 
 a.social-media-image{
 	color:white
 }
 
-#liveheader {
+a.icon{
+	border-bottom: none;
+}
+
+.liveheader {
 	position: fixed;
 	background-color: #000000;
 	color: white;
+	overflow-y: auto;
+}
+
+#mobileheader{
 	width: 100%;
-	height: 150px;
+	height: 147px;
+}
+
+#header{
+    height: 100%;
+    width: 200px;
 }
 
 .anchor{
-   display:block;
-   height:220px; /* this is the height of your header */
-   margin-top:-220px; /* this is again negative value of the height of your header */
-   visibility:hidden;
+	display:block;
+	height:220px; /* this is the height of your header */
+	margin-top:-220px; /* this is again negative value of the height of your header */
+	visibility:hidden;
 }
 
 #livelogo {
@@ -49,58 +62,47 @@ a.social-media-image{
 
 #nav {
 	clear: both;
-	background-color: #ffffff;
 	text-align: center;
 	width: 100%;
 	height:52px;
-  	line-height: 52px;
-  	margin: 0;
-  	overflow: hidden;
-	border-bottom:1px;
-	border-bottom-color:gray;
-	border-bottom-style:solid;
-	border-top:1px;
-	border-top-color:gray;
-	border-top-style:solid;
+	line-height: 52px;
+	margin: 0;
 	font-size: 0px;
-
 }
 
 #nav ul {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-    overflow: hidden;
+	overflow: hidden;
 }
 
 #nav li {
-	display: inline-block;
 	margin: 0;
 }
 
 #nav a {
-	display: block;
-    color: black;
-    text-align: center;
-    font-size: 22px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-bottom: none;
-        -webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -ms-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out;
+	display: block;color: #ffffff;
+	text-align: center;
+	font-size: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-bottom: none;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
 }
 
 #nav li a.hover {
 	background-color: #888888;
-    color: white;
+	color: white;
 }
 
 #nav ul li a:hover:not(.active) {
-    background-color: #888888;
-    color: white;
+	background-color: #888888;
+	color: white;
 }
 
 #mobilenav {
@@ -108,17 +110,20 @@ a.social-media-image{
 }
 
 .pagecontent {
+	padding-left: 228px;
+	padding-right: 28px;
+	padding-top: 25px;
 	flex: 1;
-	padding-top: 156px;
 	margin-bottom: 20px;
 }
 
 .banner{
 	background-color: #000;
 	text-align: center;
-	width: 90%;
+	width: 95%;
 	border: #000 3px solid;
 	margin-top: 20px;
+	box-sizing: border-box;
 }
 
 .content-box{
@@ -127,9 +132,9 @@ a.social-media-image{
 	width: 100%;
 	border: #808080 0px solid;
 	padding:10px;
-    -webkit-box-sizing: border-box; /* WebKit */
-    -moz-box-sizing: border-box;    /* Gecko */
-    box-sizing: border-box;
+	-webkit-box-sizing: border-box; /* WebKit */
+	-moz-box-sizing: border-box;    /* Gecko */
+	box-sizing: border-box;
 }
 
 .center {
@@ -137,7 +142,7 @@ a.social-media-image{
 }
 
 .col {
-	float:left;
+	float: left;
 	display: block;
 	margin-right: 0;
 	text-align:center;
@@ -165,6 +170,18 @@ a.social-media-image{
 	width: 25%;
 }
 
+.sixty{
+	width: 60%;
+}
+
+.forty{
+	width: 40%;
+}
+
+.three-fourths{
+	width: 75%;
+}
+
 @media only screen and (max-width: 1000px) {
 
 	.half {
@@ -175,8 +192,20 @@ a.social-media-image{
 		width: 100%;
 	}
 
+	.sixty{
+		width: 100%;
+	}
+
+	.forty{
+		width: 100%;
+	}
+
+	.three-fourths {
+		width: 100%;
+	}
+
 	.banner {
-		margin: 20px auto 0px;
+		margin: 20px auto;
 	}
 
 	#container {
@@ -191,14 +220,55 @@ a.social-media-image{
 	}
 }
 
-
-@media (max-width: 996px) {
+@media (min-width: 1000px) {
   div.banner.top-banner {
-    margin-right: 4.6% !important;
-    margin-left: 4.6% !important;
+    width: 100%;
   }
+
+	.right {
+		float: right;
+	}
 }
+
 .toppadding{
 	height:156px;
+}
 
+#logo {
+	height: 150px;
+}
+
+#nav .mini-nav{
+	display: block;
+	width: 200px;
+	background-color: #333333;
+	padding-bottom: 5px; /* Looks weird without it but hover on last link doesn't cover */
+}
+
+#nav .mini-nav li{
+	width: 100%;
+	line-height: 10px;
+}
+
+#nav .mini-nav li a{
+	font-size: 14px;
+	padding: 7px;
+}
+
+#mainfooter {
+	z-index: -1;
+}
+
+.col {
+	margin-bottom: 0px;
+}
+
+.details {
+    font-size: 12px;
+}
+
+.live-list {
+	text-align:left;
+    font-size: 20px;
+    padding: 0px 30px;
 }
