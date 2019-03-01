@@ -1,4 +1,4 @@
-export default [
+[
   {
     "eventName": "High School I/O 2019",
     "site": "https://hack.osu.edu/hs/2019",
