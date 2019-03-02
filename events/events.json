@@ -1,5 +1,18 @@
 [
   {
+    "eventName": "HackOHI/O 2019",
+    "startDate": "Nov 2, 2019",
+    "endDate": "Nov 3, 2019",
+    "location": "The Ohio Union Grand Ballroom"
+  },
+  {
+    "eventName": "HackOHI/O 2020",
+    "startDate": "Nov 14, 2020",
+    "endDate": "Nov 15, 2020",
+    "location": "The Ohio Union Grand Ballroom",
+    "description": "Like to plan your calendar a year and a half out? We've got your back. Join us at HackOHI/O 2020!"
+  },
+  {
     "eventName": "High School I/O 2019",
     "site": "https://hack.osu.edu/hs/2019",
     "startDate": "Mar 23, 2019",
