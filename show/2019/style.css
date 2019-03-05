@@ -33,10 +33,6 @@ html, body, section {
   z-index: 10;
   color: white;
   background-color: #000000;
-  background: url("img/bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   display: flex;
   flex-wrap: wrap;
   flex: 1;
@@ -229,6 +225,14 @@ html, body, section {
   opacity: 0;
   animation: fadeIn 2.5s ease-out 3s 1;
   animation-fill-mode: forwards;
+}
+
+.show-map-svg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -40px; /* Remove blank strip at top of svg. */
+  max-height: 70vh;
 }
 
 .show-logo-secondary {
