@@ -38,36 +38,6 @@ html, body, section {
   flex: 1;
 }
 
-@media only screen and (max-width: 768px) {
-  .show-container {
-    background-image: url("");
-  }
-  .show-secondary-container {
-    background-image: url("");
-  }
-  .show-header {
-    display: none;
-  }
-  .show-bowtie {
-    display: none;
-  }
-  .show-left-footer {
-    margin: auto;
-  }
-  .show-champagne-glasses {
-    margin-top: 50px;
-  }
-  .show-right-footer {
-    margin: auto;
-  }
-  .show-logo-secondary {
-    display: none;
-  }
-  .show-demo-link {
-    margin-top: 50px;
-  }
-}
-
 .show-left-half {
   display: flex;
   background-color: #000000;
@@ -218,6 +188,27 @@ html, body, section {
   height: 100%;
 }
 
+.show-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 10px 10px 10px;
+}
+
+.show-content > table {
+  text-align: center;
+}
+
+.show-content h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.show-content h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .show-champagne-glasses {
   display: flex;
   flex-direction: column;
@@ -277,6 +268,73 @@ html, body, section {
 .show-demo-link:hover {
   text-decoration: none;
   /*background-color: rgba(0, 0, 0, 0.6); temp*/
+}
+
+.show-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 30%;
+  top: 30%;
+  width: 40%;
+  overflow: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.show-modal-content a {
+  color: black;
+  text-decoration: underline;
+}
+
+.show-modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 42px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.show-modal-close:hover,
+.show-modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .show-container {
+    background-image: url("");
+  }
+  .show-secondary-container {
+    background-image: url("");
+  }
+  .show-header {
+    display: none;
+  }
+  .show-bowtie {
+    display: none;
+  }
+  .show-left-footer {
+    margin: auto;
+  }
+  .show-champagne-glasses {
+    margin-top: 50px;
+  }
+  .show-right-footer {
+    margin: auto;
+  }
+  .show-logo-secondary {
+    display: none;
+  }
+  .show-demo-link {
+    margin-top: 50px;
+  }
+  .show-modal {
+    width: 90%;
+    left: 5%;
+  }
 }
 
 @keyframes fadeIn {
