@@ -227,6 +227,10 @@ html, body, section {
   animation-fill-mode: forwards;
 }
 
+.show-champagne-glasses img {
+  width: 100px;
+}
+
 .show-map-svg {
   display: flex;
   flex-direction: column;
