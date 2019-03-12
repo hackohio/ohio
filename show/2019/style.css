@@ -231,8 +231,8 @@ html, body, section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: -40px; /* Remove blank strip at top of svg. */
-  max-height: 70vh;
+  margin-top: 10px;
+  max-height: 60vh;
 }
 
 .show-logo-secondary {
