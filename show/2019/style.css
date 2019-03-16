@@ -245,7 +245,7 @@ html, body, section {
   animation: fadeIn 2.5s ease-out 3s 1;
   animation-fill-mode: forwards;
   background-color: rgba(0, 0, 0, 0.3);
-  /*cursor: pointer; temp */
+  cursor: pointer;
   display: inline-block;
   font-size: 0.8em;
   font-weight: bold;
@@ -266,7 +266,7 @@ html, body, section {
 
 .show-demo-link:hover {
   text-decoration: none;
-  /*background-color: rgba(0, 0, 0, 0.6); temp*/
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .show-modal {
