@@ -55,16 +55,15 @@ html, body, section {
   animation: fadeIn 2.5s ease-out 3s 1;
   animation-fill-mode: forwards;
   opacity: 0;
-  position: absolute;
-  color: white;
+  padding-top: 20px;
+  color: black;
   text-align: center;
-  top: 20px;
   width: 100%;
   z-index: 999;
 }
 
 .show-header-text > h2 {
-  font-size: 1.3em;
+  font-size: 1.6em;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -73,7 +72,7 @@ html, body, section {
 }
 
 .show-header-text > h3 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 600;
   line-height: 1.6;
   margin-top: -5px;
