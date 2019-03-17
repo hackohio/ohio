@@ -1,0 +1,116 @@
+[
+  {
+    "shortTeamName": "Transity",
+    "fullTeamName": "Transity Consulting Group",
+    "teamSubtitle": "Smart City Data",
+    "teamDescription": "Transity compiles open and proprietary data at scale using enterprise grade software platforms such as Teradata and Qlik as modern web technology to provides insight to daily commuters and city planners. By outputting a “commutability” score, Transity helps with planning bus routes, finding optimal commute times, scheduling road repairs, and other tasks essential to making a city run smoothly."
+  },
+  {
+    "shortTeamName": "Tego",
+    "fullTeamName": "Tego",
+    "teamSubtitle": "Consumer, Security",
+    "teamDescription": "Tego is a personal safety application to protect people when walking home based on the idea that everyone should be able to leave class, work, or any other location without worrying about assault. Check out <a href=\"https://tego.tech\">https://tego.tech</a>!"
+  },
+  {
+    "shortTeamName": "NXTSTOR",
+    "fullTeamName": "NXTSTOR",
+    "teamSubtitle": "Storage",
+    "teamDescription": "NXTSTOR is a peer to peer storage marketplace that connects those with extra space to those that need to place store items. More details at <a href=\"https://nxtstor.com\">www.nxtstor.com</a>."
+  },
+  {
+    "shortTeamName": "hardHeaded",
+    "fullTeamName": "hardHeaded",
+    "teamSubtitle": "Sports",
+    "teamDescription": "This project aims to reduce the ambiguity surrounding concussions, especially for children. This simple sensor package, worn by an athlete, is paired to a phone via bluetooth and tells a user when a concussion-level hit has been incurred on the head of the person wearing the device.All you need is the device and an Android or iOS phone to have a full user experience."
+  },
+  {
+    "shortTeamName": "E",
+    "fullTeamName": "E",
+    "teamSubtitle": "Environment",
+    "teamDescription": "This project is an affordable, autonomous solar powered and modular robot that monitors water’s pH, temperature, and ammonia levels. It will analyze the water, find the area of the water where there is a high pollution level and absorb the contaminants."
+  },
+  {
+    "shortTeamName": "OSU Mountain Drone",
+    "fullTeamName": "OSU Mountain Drone: RANGER",
+    "teamSubtitle": "Research, Environmental Monitoring, Hazard Management",
+    "teamDescription": "A versatile and cost-effective drone platform that is capable of providing more detailed information than ever before about the life-cycle of glacier-related hazards using specialized laser and camera systems. It is also capable of seeing through night and clouds to map complex 3D environments."
+  },
+  {
+    "shortTeamName": "6ixth Sense",
+    "fullTeamName": "6ixth Sense",
+    "teamSubtitle": "Healthcare",
+    "teamDescription": "This product increases the perceptual awareness of the visually impaired. This wearable technology recognizes objects at certain distances and notifies the user of the proximity of the technology."
+  },
+  {
+    "shortTeamName": "Salty Software",
+    "fullTeamName": "Salty Software: Social Media Nicotine Patch",
+    "teamSubtitle": "Mental Health / Addiction",
+    "teamDescription": "A website acting as a “nicotine patch” for social media; it provides similar doses of dopamine while reducing the time spent on “useless” pursuits such as “likes” or “comments”."
+  },
+  {
+    "shortTeamName": "VR Interview Simulation",
+    "fullTeamName": "VR Interview Simulation",
+    "teamSubtitle": "Career Prep",
+    "teamDescription": "A virtual reality interview simulation with common interview questions in a representative environment. The user selects a category of questions which are then asked through a bot. The user’s response to each question is then timed and recorded through the microphone. The system allows users to evaluate their responses and see how their skills develop over time."
+  },
+  {
+    "shortTeamName": "The Hiatus System",
+    "fullTeamName": "The Hiatus System",
+    "teamSubtitle": "Healthcare",
+    "teamDescription": "A biofeedback-based virtual reality stress reduction application utilizing mindfulness-based stress reduction techniques for chronic and long-term patients. More details at: <a href=\"https://hiatussystem.com\">www.hiatussystem.com</a>."
+  },
+  {
+    "shortTeamName": "Handikapp",
+    "fullTeamName": "Handikapp",
+    "teamSubtitle": "Accessibility",
+    "teamDescription": "A platform to allow societal members with limited dexterity access to advanced coding capabilities in a blockly-like/voice integrated format. Today, limited dexterity impacts upwards of 40 million Americans. Why not allow those who need accessibility the most to be the ones to create it?"
+  },
+  {
+    "shortTeamName": "Synetex: Laser Vision",
+    "fullTeamName": "Synetex: Laser Vision",
+    "teamSubtitle": "Healthcare",
+    "teamDescription": "Synetex uses an Intel RealSense D415 depth imaging camera to capture a depth map of the surrounding environment and then translates it into a corresponding sound array. The wide range of frequencies in the sound array allows visually impaired individuals to understand their surroundings."
+  },
+  {
+    "shortTeamName": "AuxNet",
+    "fullTeamName": "AuxNet",
+    "teamSubtitle": "Disaster Recovery",
+    "teamDescription": "AuxNet is a mobile application intended to help with disaster recovery and relief. In cases of severe disasters, internet and cell service may be disrupted, making communication impossible for those affected. This application uses mesh networking to allow users to send messages to each other without an internet connection."
+  },
+  {
+    "shortTeamName": "RxMedAccess",
+    "fullTeamName": "RxMedAccess: Formulary Insight Tool",
+    "teamSubtitle": "Healthcare",
+    "teamDescription": "RxMedAccess features a a Formulary Insight Tool where providers can gain easy access to their patients preferred drug lists at the point of prescribing. Now healthcare providers can know which drugs are covered (or not) by their patients healthcare plan via our proprietary insights detailing clinically appropriate therapeutic alternatives. Check us out at: <a href=\"https://rxmedaccess.com\">www.rxmedaccess.com</a>."
+  },
+  {
+    "shortTeamName": "Adjonct",
+    "fullTeamName": "Adjonct",
+    "teamSubtitle": "HR Management",
+    "teamDescription": "Most college instructors work part time and as a result they have more than one job. Adjonct is a recruiting website that connects instructors with businesses and institutions that are hiring for full time, part time, teaching, and freelance opportunities."
+  },
+  {
+    "shortTeamName": "U: Primo",
+    "fullTeamName": "U: Primo",
+    "teamSubtitle": "Healthcare",
+    "teamDescription": "U is a company revolving around Noninvasive Deep Brain Stimulation (DBS). DBS has been used for several disorders however the surgical costs and complications are very high. We came up with a novel way to localize electric fields in one or many parts of the brain without surgery."
+  },
+  {
+    "shortTeamName": "Tap Laundry",
+    "fullTeamName": "Tap Laundry",
+    "teamSubtitle": "Service, Laundry",
+    "teamDescription": "From client-facing applications for sales promotions to powerful employee tools, Tap Laundry makes it easier for laundromat owners to operate their business. This includes a suite of software products to increase the efficiency of laundromats."
+  },
+  {
+    "shortTeamName": "DAtAnchor",
+    "fullTeamName": "DAtAnchor",
+    "teamSubtitle": "Data Security",
+    "teamDescription": "DAtAnchor provides seamless and super easy-to use strong encryption, automated data governance and dynamic access control and revocation for all files consumed from end-user devices or a cloud. It enables organizations to protect and revoke their sensitive data even when it is taken outside of their scope, giving them full control of their data. More details at: <a href=\"https://datanchor.net\">https://www.datanchor.net</a>"
+  },
+  {
+    "shortTeamName": "upside",
+    "fullTeamName": "upside",
+    "teamSubtitle": "Entrepreneurship",
+    "teamDescription": "Named a top 27 business podcast by Fortune Magazine, upside examines startup investing outside of Silicon Valley. Every Wednesday, the hosts interview an early stage founder as if the hosts were angel investors considering the company as an investment opportunity. On Mondays, the hosts share Coffee Chats interviewing venture capitalists, community builders, and later-stage founders. Check out <a href=\"https://upside.fm\">https://upside.fm</a>"
+  }
+]

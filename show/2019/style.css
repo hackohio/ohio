@@ -33,43 +33,9 @@ html, body, section {
   z-index: 10;
   color: white;
   background-color: #000000;
-  background: url("img/bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   display: flex;
   flex-wrap: wrap;
   flex: 1;
-}
-
-@media only screen and (max-width: 768px) {
-  .show-container {
-    background-image: url("");
-  }
-  .show-secondary-container {
-    background-image: url("");
-  }
-  .show-header {
-    display: none;
-  }
-  .show-bowtie {
-    display: none;
-  }
-  .show-left-footer {
-    margin: auto;
-  }
-  .show-champagne-glasses {
-    margin-top: 50px;
-  }
-  .show-right-footer {
-    margin: auto;
-  }
-  .show-logo-secondary {
-    display: none;
-  }
-  .show-demo-link {
-    margin-top: 50px;
-  }
 }
 
 .show-left-half {
@@ -89,16 +55,15 @@ html, body, section {
   animation: fadeIn 2.5s ease-out 3s 1;
   animation-fill-mode: forwards;
   opacity: 0;
-  position: absolute;
-  color: white;
+  padding-top: 20px;
+  color: black;
   text-align: center;
-  top: 20px;
   width: 100%;
   z-index: 999;
 }
 
 .show-header-text > h2 {
-  font-size: 1.3em;
+  font-size: 1.6em;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -107,7 +72,7 @@ html, body, section {
 }
 
 .show-header-text > h3 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 600;
   line-height: 1.6;
   margin-top: -5px;
@@ -222,6 +187,27 @@ html, body, section {
   height: 100%;
 }
 
+.show-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 10px 10px 10px;
+}
+
+.show-content > table {
+  text-align: center;
+}
+
+.show-content h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.show-content h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .show-champagne-glasses {
   display: flex;
   flex-direction: column;
@@ -229,6 +215,18 @@ html, body, section {
   opacity: 0;
   animation: fadeIn 2.5s ease-out 3s 1;
   animation-fill-mode: forwards;
+}
+
+.show-champagne-glasses img {
+  width: 100px;
+}
+
+.show-map-svg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  max-height: 60vh;
 }
 
 .show-logo-secondary {
@@ -269,6 +267,73 @@ html, body, section {
 .show-demo-link:hover {
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.show-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 30%;
+  top: 30%;
+  width: 40%;
+  overflow: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.show-modal-content a {
+  color: black;
+  text-decoration: underline;
+}
+
+.show-modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 42px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.show-modal-close:hover,
+.show-modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .show-container {
+    background-image: url("");
+  }
+  .show-secondary-container {
+    background-image: url("");
+  }
+  .show-header {
+    display: none;
+  }
+  .show-bowtie {
+    display: none;
+  }
+  .show-left-footer {
+    margin: auto;
+  }
+  .show-champagne-glasses {
+    margin-top: 50px;
+  }
+  .show-right-footer {
+    margin: auto;
+  }
+  .show-logo-secondary {
+    display: none;
+  }
+  .show-demo-link {
+    margin-top: 50px;
+  }
+  .show-modal {
+    width: 90%;
+    left: 5%;
+  }
 }
 
 @keyframes fadeIn {

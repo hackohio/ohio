@@ -1,0 +1,123 @@
+[
+  {
+    "eventName": "HackOHI/O 2019",
+    "startDate": "Nov 2, 2019",
+    "endDate": "Nov 3, 2019",
+    "location": "The Ohio Union Grand Ballroom"
+  },
+  {
+    "eventName": "HackOHI/O 2020",
+    "startDate": "Nov 14, 2020",
+    "endDate": "Nov 15, 2020",
+    "location": "The Ohio Union Grand Ballroom",
+    "description": "Like to plan your calendar a year and a half out? We've got your back. Join us at HackOHI/O 2020!"
+  },
+  {
+    "eventName": "High School I/O 2019",
+    "site": "https://hack.osu.edu/hs/2019",
+    "startDate": "Mar 23, 2019",
+    "location": "2 Miranova Place",
+    "description": "On March 23rd, join us at High School I/O—a one day hackathon for high schoolers hosted by OHI/O, Ohio State's hackathon program. We aim to provide high school students an opportunity to learn about computer science in a fun, engaging, and inclusive environment."
+  },
+  {
+    "eventName": "HackAI",
+    "site": "https://www.osuaiclub.com/hackai.html",
+    "startDate": "Mar 30, 2019",
+    "location": "Dreese Laboratory"
+  },
+  {
+    "eventName": "Code I/O",
+    "startDate": "Mar 30, 2019",
+    "location": "Dreese Laboratory",
+    "description": "Formerly known as Buck-i-Code, CodeOHI/O this year will invite 40 middle school girls to campus for a day of learning about computer science, having fun with programming, and experiencing a new field!"
+  },
+  {
+    "eventName": "ShowOHI/O 2019",
+    "site": "https://hack.osu.edu/show/2019",
+    "startDate": "Apr 5, 2019",
+    "location": "The STEAM Factory",
+    "description": "Ohio State students have been working hard to build a lot of cool things: anything from websites, robots, games, cool data visualizations, and more. These talented students will be showcasing their creations at ShowOHI/O and this is your opportunity as a member of the community to come see what they are working on."
+  },
+  {
+    "eventName": "MakeOHI/O 2019",
+    "site": "https://hack.osu.edu/make/2019",
+    "startDate": "Feb 2, 2019",
+    "endDate": "Feb 3, 2019",
+    "location": "Knowlton Hall",
+    "description": "MakeOHI/O is Ohio State University's largest makeathon — a weekend of building and creating hardware projects with awesome people."
+  },
+  {
+    "eventName": "RoboI/O",
+    "site": "https://hack.osu.edu/robo",
+    "startDate": "Jan 19, 2019",
+    "endDate": "Jan 20, 2019",
+    "location": "Ohio State University",
+    "description": "Robo i/o is a two day workshop for junior high schoolers aiming to provide students an opportunity to learn about computer science in a fun, engaging, and inclusive environment. Students will work in teams to build projects with TI-Nspire calculators and innvator hubs."
+  },
+  {
+    "eventName": "HackOHI/O 2018",
+    "site": "https://hack.osu.edu/2018",
+    "startDate": "Oct 27, 2018",
+    "endDate": "Oct 28, 2018",
+    "location": "The Ohio Union Grand Ballroom",
+    "description": "HackOHI/O is Ohio's largest hackathon and our flagship event. Check out our sixth year of building and creating awesome things."
+  },
+  {
+    "eventName": "ShowOHI/O 2018",
+    "site": "https://hack.osu.edu/show/2018",
+    "startDate": "Apr 13, 2018",
+    "location": "The STEAM Factory",
+    "description": "Ohio State students have been working hard to build a lot of cool things: anything from websites, robots, games, cool data visualizations, and more. These talented students will be showcasing their creations at ShowOHI/O, a science-fair-style demo of tech projects."
+  },
+  {
+    "eventName": "High School I/O 2018",
+    "site": "https://hack.osu.edu/hs/2018",
+    "startDate": "Mar 24, 2018",
+    "location": "PAST Foundation",
+    "description": "High School i/o is a one day hackathon for high schoolers where we aim to provide an opportunity to learn about computer science in a fun, engaging, and inclusive environment."
+  },
+  {
+    "eventName": "MakeOHI/O 2018",
+    "startDate": "Mar 3, 2018",
+    "endDate": "Mar 4, 2018",
+    "location": "Knowlton Hall",
+    "description": "From the same folks that brought you 2017's HackOHI/O came 2018's biggest and best hardware event at The Ohio State University. A makeathon is a 24-hour hardware-oriented hackathon where students come together to create something amazing!"
+  },
+  {
+    "eventName": "HackOHI/O 2017",
+    "site": "https://hack.osu.edu/2017",
+    "startDate": "Oct 21, 2017",
+    "endDate": "Oct 22, 2017",
+    "location": "Ohio Union",
+    "description": "HackOHI/O is the Ohio State University's largest hackathon, and our flagship event. Check out our fifth year of building and creating real projects with awesome people."
+  },
+  {
+    "eventName": "MakeOHI/O 2017",
+    "startDate": "Mar 5, 2017",
+    "endDate": "Mar 6, 2017",
+    "location": "Knowlton Hall",
+    "description": "Check out this year's biggest and best hardware event at The Ohio State University. Build something amazing!"
+  },
+  {
+    "eventName": "High School I/O 2017",
+    "site": "https://hack.osu.edu/hs/2017",
+    "startDate": "Apr 15, 2017",
+    "location": "PAST Foundation",
+    "description": "High School I/O invites high school students to learn about computer science in a fun, engaging and inclusive environment by participating in a one day hackathon."
+  },
+  {
+    "eventName": "ShowOHI/O 2017",
+    "site": "https://hack.osu.edu/show/2017",
+    "startDate": "Apr 8, 2017",
+    "location": "Dock 580",
+    "description": "The dedication that students put into their tech projects both in and out of the classroom is what drives the amazing tech culture at Ohio State. ShowOHI/O is a showcase event to give students the opportunity to demo their work and network with Columbus tech and analytics professionals. <a href=\"https://www.flickr.com/photos/hackohio/sets/72157679899291742\">Photos from the event!</a>"
+  },
+  {
+    "eventName": "HackOHI/O 2016",
+    "site": "https://hack.osu.edu/2016",
+    "startDate": "Nov 19, 2016",
+    "endDate": "Nov 20, 2016",
+    "location": "Ohio Union",
+    "description": "Join us at at Ohio State's largest annual hackathon, powered by AWS. Over 700 undergraduate and graduate students will design, build, and demonstrate projects to a live audience of students, faculty, and representatives from tech companies."
+  }
+]
