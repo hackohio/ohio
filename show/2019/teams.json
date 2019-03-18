@@ -112,5 +112,11 @@
     "fullTeamName": "upside",
     "teamSubtitle": "Entrepreneurship",
     "teamDescription": "Named a top 27 business podcast by Fortune Magazine, upside examines startup investing outside of Silicon Valley. Every Wednesday, the hosts interview an early stage founder as if the hosts were angel investors considering the company as an investment opportunity. On Mondays, the hosts share Coffee Chats interviewing venture capitalists, community builders, and later-stage founders. Check out <a href=\"https://upside.fm\">https://upside.fm</a>"
+  },
+  {
+    "shortTeamName": "IV-TEC",
+    "fullTeamName": "IV-TEC",
+    "teamSubtitle": "Healthcare",
+    "teamDescription": "This is an inexpensive healthcare safety product developed to decrease risk of bloodstream infections and organizational liability in high-risk patients."
   }
 ]
