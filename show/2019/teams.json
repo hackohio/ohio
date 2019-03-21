@@ -66,12 +66,6 @@
     "teamDescription": "A platform to allow societal members with limited dexterity access to advanced coding capabilities in a blockly-like/voice integrated format. Today, limited dexterity impacts upwards of 40 million Americans. Why not allow those who need accessibility the most to be the ones to create it?"
   },
   {
-    "shortTeamName": "Synetex: Laser Vision",
-    "fullTeamName": "Synetex: Laser Vision",
-    "teamSubtitle": "Healthcare",
-    "teamDescription": "Synetex uses an Intel RealSense D415 depth imaging camera to capture a depth map of the surrounding environment and then translates it into a corresponding sound array. The wide range of frequencies in the sound array allows visually impaired individuals to understand their surroundings."
-  },
-  {
     "shortTeamName": "AuxNet",
     "fullTeamName": "AuxNet",
     "teamSubtitle": "Disaster Recovery",
