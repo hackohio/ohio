@@ -112,5 +112,11 @@
     "fullTeamName": "IV-TEC",
     "teamSubtitle": "Healthcare",
     "teamDescription": "This is an inexpensive healthcare safety product developed to decrease risk of bloodstream infections and organizational liability in high-risk patients."
+  },
+  {
+    "shortTeamName": "Wadget",
+    "fullTeamName": "Wadget",
+    "teamSubtitle": "Healthcare",
+    "teamDescription": "Wadget designed a series of mini-games that test eye-movements which allows the user to run a quick screen on the patient to see if they show any atypical eye-movement patterns that would indicate a heightened risk for autism."
   }
 ]
