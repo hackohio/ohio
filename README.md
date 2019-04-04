@@ -17,7 +17,7 @@ The folder structure is as follows:
 \_includes: Contains HTML fragments (ex. navbar, footer) that are repeatedly used across pages.  
 \_layouts: Contains the HTML skeletons that the main content (ex. index.html, events.html) will be nested within.  
 \_assets: Contains all project assets such as CSS, JS and images.  
-\_site: Contains the compiled version of the homepage.
+\_site: Contains the compiled version of the homepage. (Not committed - will only show up locally after you build)
 
 **To test your code locally**:  
 1. Navigate to the /home directory  
