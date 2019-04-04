@@ -1,4 +1,4 @@
-var hackingStarts = "2019-02-02T12:00:00-05:00";
+var hackingStarts = "2019-03-23T09:00:00-05:00";
 
 function getTimeRemaining(endtime){
   var t = Date.parse(endtime) - Date.parse(new Date());

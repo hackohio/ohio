@@ -77,13 +77,7 @@ function parseEvent(data) {
     return null;
   }
 
-  // Add http if not present using regexp: /^(http|https):\/\// )
-  if (!(/^(http|https):\/\//.test(learnMore))) {
-    learnMore = "http://"+learnMore;
-  }
-
-
-  return `
+  eventBlock = `
   <br />
   <div class="community-event">
     <div class="red-bar"></div>
@@ -93,7 +87,17 @@ function parseEvent(data) {
     </h3>
     <h4 class="date">${date} ${startTime} ${endTime}</h4>
     <h4 class="location">${location}</h4>
-    <h4 class="learn-more"><a href="${learnMore}" class="red">Learn more &gt;&gt;</a></h4>
-  </div>
   `;
+
+  if (learnMore) {
+    // Add http if not present using regexp: /^(http|https):\/\// )
+    if (!(/^(http|https):\/\//.test(learnMore))) {
+      learnMore = "http://"+learnMore;
+    }
+
+    eventBlock += `<h4 class="learn-more"><a href="${learnMore}" class="red">Learn more &gt;&gt;</a></h4>`;
+  }
+
+  eventBlock += "</div>";
+  return eventBlock;
 }
