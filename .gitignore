@@ -8,6 +8,6 @@
 deploy_key
 
 # Jekyll
-# _site add this back later
+_site
 .sass-cache
 .jekyll-metadata
