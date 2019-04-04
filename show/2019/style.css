@@ -177,6 +177,10 @@ html, body, section {
   margin: 5px 0 5px 0;
 }
 
+.show-title-text > h3 > a {
+  text-decoration: underline;
+}
+
 .show-title-arrow {
   display: flex;
   flex-direction: row;
