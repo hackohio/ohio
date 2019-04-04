@@ -19,7 +19,7 @@ The folder structure is as follows:
 \_assets: Contains all project assets such as CSS, JS and images.  
 \_site: Contains the compiled version of the homepage.
 
-To test your code locally:  
+**To test your code locally**:  
 1. Navigate to the /home directory  
 2. Run `bundle exec jekyll serve`  
 3. This will build your code (which is saved under \_site) and start a local server  
