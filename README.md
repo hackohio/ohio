@@ -1,5 +1,5 @@
 # OHI/O
-[![Build Status](https://travis-ci.org/Ethan-Wolfe/ohio.svg?branch=master)](https://travis-ci.org/Ethan-Wolfe/ohio)  
+[![Build Status](https://travis-ci.org/hackohio/ohio.svg?branch=master)](https://travis-ci.org/hackohio/ohio)  
 Welcome to the official website for OHI/O, an organization working to foster a tech culture at the Ohio State University.
 
 # How to contribute to the homepage
@@ -26,5 +26,5 @@ The folder structure is as follows:
 4. Open your browser and go to http://localhost:4000  
 
 Deployment thanks to travis:  
-https://travis-ci.org/Ethan-Wolfe/ohio  
+https://travis-ci.org/hackohio/ohio 
 https://oncletom.io/2016/travis-ssh-deploy/
