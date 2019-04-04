@@ -350,9 +350,8 @@ Flexbox
   align-self: flex-end;
 }
 .text-with-back {
-  padding: 10px 0px 30px;
+  padding: 10px 0px 15px;
   background-color: rgba(0, 0, 0, 0.8);
-  /*34 34 34*/
 }
 .bottom-right {
   align-self: flex-end;
