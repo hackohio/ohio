@@ -47,7 +47,7 @@ p > span {
   z-index: 10;
   color: black;
   background-color: #bb0000;
-  background-image: url('../2018/images/chevron.png');
+  background-image: url('/assets/images/chevron.png');
   display: flex;
   flex-direction: column;
 }

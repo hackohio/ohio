@@ -4,3 +4,10 @@
 
 # IDE files
 .idea/
+
+deploy_key
+
+# Jekyll
+_site
+.sass-cache
+.jekyll-metadata
