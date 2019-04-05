@@ -12,6 +12,9 @@ https://jekyllrb.com/docs/installation/
 A step-by-step tutorial can be found here:  
 https://jekyllrb.com/docs/step-by-step/01-setup/
 
+Markdown guide:  
+https://www.markdownguide.org/basic-syntax
+
 **Folder structure**:   
 root: Contains the main HTML pages and configuration files.  
 \_includes: Contains HTML fragments (ex. navbar, footer) that are repeatedly used across pages.  
