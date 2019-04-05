@@ -34,7 +34,7 @@ $osu-red: #bb0000;
 }
 
 .toggle-button {
-    width: 22%;
+    width: 23%;
     height: 70px;
     border-width: 16px 10px 8px;
     border-style: solid;
@@ -57,4 +57,10 @@ $osu-red: #bb0000;
         background-color: $osu-red;
         color: white;
     }
+}
+
+@media only screen and (max-width: 767px) {
+  .toggle-button {
+    width: 75%;
+  }
 }
