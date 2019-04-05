@@ -1,5 +1,5 @@
 # Sponsorship Guide  
-[Sponsorship info](../assets/pdf/2018-19-OHIO-Sponsorship-Info.pdf)
+[Sponsorship info](../assets/pdf/2019-20-OHIO-Sponsorship-Info.pdf)
 
 # Slides  
 &#8227; [2018 Program Report](../assets/pdf/2018-OHIO-annual-report.pdf)  
