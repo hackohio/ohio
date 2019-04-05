@@ -50,5 +50,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="/assets/js/sheetrock.min.js"></script>
   <script type="text/javascript" src="/assets/js/events.js"></script> 
+  <!-- Page specific js -->
+  <!-- TODO: make this a list not just one single one -->
+  {% if page.script %}
+    <script type="text/javascript" src="/assets/js/{{ page.script }}"></script> 
+  {% endif %}
 </body>
 </html>

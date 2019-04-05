@@ -1,0 +1,60 @@
+---
+---
+/* SCSS files in Jekyll must start with --- */
+
+$osu-red: #bb0000;
+
+.title-center {
+    text-align: center;
+}
+
+.about-content {
+    margin: 0 auto;
+    width: 60%;
+
+    p {
+        margin: auto;
+        width: 90%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    a {
+        color: $osu-red;
+        font-size: 1.2em;
+    }
+
+    .red-header {
+        color: $osu-red;
+        font-size: 4em;
+        font-weight: 100;
+    }
+}
+
+.toggle-button {
+    width: 22%;
+    height: 70px;
+    border-width: 16px 10px 8px;
+    border-style: solid;
+    border-color: black;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+
+    .toggle-option {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .selected {
+        background-color: $osu-red;
+        color: white;
+    }
+}
