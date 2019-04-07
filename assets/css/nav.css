@@ -9,21 +9,24 @@ nav {
 
   padding-top: 10px;
   padding-bottom: 10px;
-
+  flex: 1;
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: flex-end;
 }
 nav a {
   color: white;
   font-size: 0.8em;
   text-decoration: none;
+  flex: 2;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 nav img {
   margin-left: 2em;
   margin-right: auto;
-  height: 2.5em;
+  height: 3em;
+  flex: 2;
 }
 nav span {
   margin-right: 10px;
