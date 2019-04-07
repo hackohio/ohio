@@ -46,8 +46,6 @@ p > span {
   min-height: 100vh;
   z-index: 10;
   color: black;
-  background-color: #bb0000;
-  background-image: url('/assets/images/chevron.png');
   display: flex;
   flex-direction: column;
 }
