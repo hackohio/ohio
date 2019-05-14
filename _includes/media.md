@@ -1,13 +1,16 @@
+# Program Overview
+[Program Information](../assets/pdf/2019-OHIO-Program-Overview.pdf)
+
 # Sponsorship Guide  
-[Sponsorship info](../assets/pdf/2019-20-OHIO-Sponsorship-Info.pdf)
+[Sponsorship Information](../assets/pdf/2019-20-OHIO-Sponsorship-Info.pdf)
 
 # Slides  
 &#8227; [2018 Program Report](../assets/pdf/2018-OHIO-annual-report.pdf)  
 &#8227; [HackOHI/O 2018 Report](../assets/pdf/Hack-2018-Report.pdf)  
 &#8227; [Hackathon Workshop Slides](https://speakerdeck.com/arnabdotorg/building-something-amazing-4-years-of-ohio-states-hackathon-program)  
 &#8227; [2016 Photo Archive](https://www.flickr.com/photos/hackohio/albums/)  
-&#8227; [2015 Showcase slides](https://speakerdeck.com/arnabdotorg/o-2015-keynote)  
-&#8227; [2014 Showcase slides](https://speakerdeck.com/arnabdotorg/ohio-2014)  
+&#8227; [2015 Showcase Slides](https://speakerdeck.com/arnabdotorg/o-2015-keynote)  
+&#8227; [2014 Showcase Slides](https://speakerdeck.com/arnabdotorg/ohio-2014)  
 &#8227; [2013 Report](http://arnab.org/files/HackathonReport.pdf)  
 
 # Videos
