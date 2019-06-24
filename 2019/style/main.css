@@ -1,0 +1,58 @@
+body {
+    font-family: 'proximanova', "Proxima Nova", Helvetica, Sans-Serif;
+    height: 100%;
+    width: 100%;
+}
+
+#back {
+    position: absolute;
+    margin: 2vh 2vw;
+    pointer-events: none;
+}
+
+#info {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+#hack-logo{
+    width: 48%;
+}
+
+.bold-msg {
+    font-weight: 750;
+}
+
+.gray {
+    color: #666666
+}
+
+.line {
+  display: inline-block;
+}
+
+h2 {
+    font-size: 2.4em;
+    font-weight: 575;
+    margin: 1.5vh;
+}
+
+h3 {
+    font-size: 1.6em;
+    font-weight: 200;
+    margin: 1vh;
+}
+
+a {
+    text-decoration: none;
+    color: #bb0000;
+    pointer-events: all;
+}
+
+.br {
+    height: 1.5vh;
+}
