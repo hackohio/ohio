@@ -15,7 +15,7 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete --quiet $TRAVIS_BUILD_DIR/_site/ mattf@hack.osu.edu:/usr/share/nginx/ohio/
+  script: rsync -r --delete --quiet $TRAVIS_BUILD_DIR/_site/ svc_travis-ci@hack.osu.edu:/usr/share/nginx/ohio/
   on:
     branch: master
 addons:
