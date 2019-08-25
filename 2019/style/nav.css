@@ -16,11 +16,13 @@
     z-index: 10;
 }
 
-#nav-container > a, a:visited, a:hover, a:active {
-    color: white;
-    font-size: 1.15em;
-    text-decoration: none;
-    margin: 0px 15px;
+#nav-container {
+    a,a:visited,a:hover,a:active {
+        color: white;
+        font-size: 1.15em;
+        text-decoration: none;
+        margin: 0px 15px;
+    }
 }
 
 #mobile-nav {
@@ -58,16 +60,10 @@
 }
 
 .nav-mobile-transform {
-    padding: 0 !important;
-    background-color: #bfcee3 !important;
-    bottom: auto !important;
     top: 45px;
-    position: fixed !important;
 }
 
 .nav-a-mobile-transform {
-    background-color: #bfcee3 !important;
-    padding: 12px 0 !important;
     display: block;
     text-align: left;
 }

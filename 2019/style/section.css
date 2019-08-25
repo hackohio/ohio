@@ -75,8 +75,10 @@
     align-items: center;
 }
 
-#sponsor-logos a, img {
-    margin: 10px 5px;
+#sponsor-logos {
+    a,img {
+        margin: 10px 5px;
+    }
 }
 
 #program img{
@@ -165,8 +167,10 @@
     margin: 0;
 }
 
-.event a,a:hover,a:visited {
-    color: #bb0000;
+.event {
+    a,a:hover,a:visited {
+        color: #bb0000;
+    }
 }
 
 /** FAQ */
@@ -193,6 +197,10 @@
     font-size: 1.2em;
     font-weight: 250;
     text-align: left;
+}
+
+#about a {
+    margin: 0;
 }
 
 #about img {

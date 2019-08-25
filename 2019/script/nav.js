@@ -21,8 +21,15 @@ $(document).ready(function() {
         });
     } else {
         $('#mobile-nav').css("display", "flex");
+        $('#home').css("top", "55%");
         $('#nav').addClass("nav-mobile-transform");
+        $('#nav').css("background-color", "#bfcee3");
+        $('#nav').css("position", "fixed");
+        $('#nav').css("bottom", "auto");
+        $('#nav').css("padding", "0");
         $('#nav').find('a').addClass("nav-a-mobile-transform");
+        $('#nav').find('a').css("background-color", "#bfcee3");
+        $('#nav').find('a').css("padding", "12px 0");
         $(".section-page").css("padding-top", "45px");
         $("#nav").hide();
     }
