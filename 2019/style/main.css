@@ -1,62 +1,94 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: 'proximanova', "Proxima Nova", Helvetica, Sans-Serif;
-    height: 100%;
+    margin: 0;
+    padding: 0;
     width: 100%;
 }
 
-#back {
-    position: absolute;
-    margin: 2vh 2vw;
-    pointer-events: none;
-}
-
-#info {
+#home {
+    position: fixed;
     text-align: center;
-    position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    pointer-events: none;
+}
+#home h1 {
+    padding: 0 5px;
 }
 
-#hack-logo{
-    width: 48%;
+#hack-logo {
+    height: 37vh;
 }
 
-.bold-msg {
-    font-weight: 750;
+#content {
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    position: relative;
 }
 
-.gray {
-    color: #666666
+.spacer {
+    height: 2vh;
 }
 
-.line {
-  display: inline-block;
+h1 {
+    font-size: 2.4em;
+    font-weight: 600;
+    margin: 3vh 0 2vh 0;
 }
 
 h2 {
-    font-size: 2.4em;
-    font-weight: 575;
-    margin: 1.5vh;
-}
-
-h3 {
     font-size: 1.6em;
     font-weight: 200;
     margin: 1vh;
 }
 
-a {
-    text-decoration: none;
-    color: #bb0000;
-    pointer-events: all;
+@media (max-width: 850px) {
+    html {
+        font-size: 16px;
+    }
+	#hack-logo {
+		height: 37vh;
+	}
 }
 
-a:hover {
-    text-decoration: underline;
+@media (max-width: 780px) {
+    html {
+        font-size: 16px;
+    }
+	#hack-logo {
+		height: 37vh;
+	}
 }
 
-.br {
-    height: 1.5vh;
+@media (max-width: 724px) {
+    html {
+        font-size: 16px;
+    }
+	#hack-logo {
+		height: 35vh;
+	}
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+	#hack-logo {
+		height: 30vh;
+	}
+}
+
+@media (max-width: 620px) {
+    html {
+        font-size: 14px;
+    }
+	#hack-logo {
+		height: 25vh;
+	}
 }
