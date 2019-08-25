@@ -27,6 +27,10 @@ body {
     padding: 7px 12px;
 }
 
+#apply:hover {
+    background-color: #880000;
+}
+
 h1 #home {
     padding: 0 5px;
 }
@@ -75,7 +79,7 @@ h2 {
 		height: 37vh;
 	}
     #apply {
-        font-size: 1em;
+        font-size: 1.6em;
     }
 }
 
@@ -87,7 +91,7 @@ h2 {
 		height: 35vh;
 	}
     #apply {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 }
 
@@ -99,7 +103,7 @@ h2 {
 		height: 30vh;
 	}
     #apply {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 }
 
@@ -111,7 +115,7 @@ h2 {
 		height: 25vh;
 	}
     #apply {
-        font-size: .8em;
+        font-size: 1em;
     }
 }
 
@@ -120,9 +124,21 @@ h2 {
         font-size: 14px;
     }
 	#hack-logo {
+		height: 24vh;
+	}
+    #apply {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 275px) {
+    html {
+        font-size: 14px;
+    }
+	#hack-logo {
 		height: 10vh;
 	}
     #apply {
-        font-size: .5em;
+        font-size: .6em;
     }
 }
