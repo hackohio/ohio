@@ -80,27 +80,27 @@
 }
 
 #program img{
-    max-height: 200px;
-    max-width: 100%;
-}
-
-#platinum img{
     max-height: 150px;
     max-width: 100%;
 }
 
-#gold img{
-    max-height: 100px;
+#platinum img{
+    max-height: 110px;
     max-width: 100%;
 }
 
-#silver img{
+#gold img{
     max-height: 80px;
     max-width: 100%;
 }
 
-#bronze img{
+#silver img{
     max-height: 70px;
+    max-width: 100%;
+}
+
+#bronze img{
+    max-height: 60px;
     max-width: 100%;
 }
 
