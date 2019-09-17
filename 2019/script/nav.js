@@ -21,7 +21,7 @@ $(document).ready(function() {
         });
     } else {
         $('#mobile-nav').css("display", "flex");
-        $('#home').css("top", "55%");
+        $('#home').css("margin-top", "50px");
         $('#nav').addClass("nav-mobile-transform");
         $('#nav').css("background-color", "#bfcee3");
         $('#nav').css("position", "fixed");
