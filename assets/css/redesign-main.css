@@ -120,12 +120,33 @@ a.pretty-link:visited{
   }
 }
 
+/* Info container, video and about blurb */
+#info-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 /* About blurb */
 #about {
   text-align: center;
+  flex-grow: 1;
+  flex-basis: 50%;
+  max-width: 80%;
+}
 
-  width: 60%;
-  margin: auto;
+/* Promotional video */
+#promotional-video {
+  margin: auto 20px;
+  flex-grow: 1;
+  flex-basis: 46%;
+}
+
+/* Promotional video wrapper, to preserve aspect ratio */
+#promotional-video-wrapper {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
 }
 
 @media (max-width: 750px) {
