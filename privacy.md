@@ -1,7 +1,11 @@
 ---
 layout: textpost
 post_title: Privacy Policy
+title: "OHI/O: Privacy Policy"
 permalink: privacy/
+keywords:
+  - privacy
+  - policy
 ---
 
 Last Update: 2015-03-07  
