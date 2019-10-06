@@ -1,7 +1,12 @@
 ---
 layout: textpost
 post_title: Friendly Space Policy
+title: "OHI/O: Friendly Space Policy"
 permalink: friendly-space-policy/
+keywords:
+  - friendly
+  - space
+  - policy
 ---
 
 OHI/O is dedicated to providing a harassment-free venue and experience for everyone. We do not tolerate any form of harassment of event participants.
