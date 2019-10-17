@@ -144,6 +144,13 @@ a.pretty-link:visited{
   flex-basis: 46%;
 }
 
+/* Involvement */
+#involvement {
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}
+
 /* Promotional video wrapper, to preserve aspect ratio */
 #promotional-video-wrapper {
   position: relative;
