@@ -6,7 +6,7 @@
 }
 
 #nav {
-    background-color: #758dac;
+    background-color: #aa0000;
     margin: 0;
     width: 100%;
     padding: 15px 0;
@@ -53,7 +53,6 @@
 
 #nav a{
     color: white;
-    background-color: #758dac;
     font-size: 1.15em;
     text-decoration: none;
     margin: 0px 15px;
