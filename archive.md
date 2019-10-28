@@ -1,7 +1,11 @@
 ---
 layout: textpost
 post_title: Event Archive
+title: "OHI/O: Event Archive"
 permalink: archive/
+keywords:
+  - event
+  - archive
 ---
 
 ## [&#9656;  DataFest](https://data-analytics.osu.edu/datafest)
