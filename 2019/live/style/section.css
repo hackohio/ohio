@@ -102,3 +102,16 @@
 .challenge-question p{
     color: #888888;
 }
+
+/** Challenges */
+#resource-container {
+    align-items: left;
+}
+
+.resource-section {
+    text-align: left;
+}
+
+.resource-section h1{
+    color: #bb0000;
+}
