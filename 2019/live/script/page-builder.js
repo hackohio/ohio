@@ -12,7 +12,7 @@ $(document).ready(function() {
         $("#content").append('<div id="'+id.substr(1)+'" class="section-page"></div>');
         $(id).load("sections/"+id.substr(1)+".html");
 
-        var page = window.location.hash.length == 0 ? '#about' : window.location.hash;
+        var page = window.location.hash.length == 0 ? '#general' : window.location.hash;
         if (!isMobile && id == page) {
             $(id).show();
         } else {
