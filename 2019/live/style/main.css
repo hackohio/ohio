@@ -51,6 +51,11 @@ h2 {
 
 a {
   color: #bb0000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 850px) {
