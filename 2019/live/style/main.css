@@ -1,140 +1,62 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body {
     font-family: 'proximanova', "Proxima Nova", Helvetica, Sans-Serif;
-    margin: 0;
-    padding: 0;
+    height: 100%;
     width: 100%;
 }
 
-#home {
-    position: fixed;
+#back {
+    position: absolute;
+    margin: 2vh 2vw;
+    pointer-events: none;
+}
+
+#info {
     text-align: center;
-    width: 100%;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    pointer-events: none;
 }
 
-h1 #home {
-    padding: 0 5px;
+#hack-logo{
+    width: 48%;
 }
 
-#hack-logo {
-    height: 37vh;
+.bold-msg {
+    font-weight: 750;
 }
 
-#content {
-    background-color: white;
-    margin: 0;
-    width: 100%;
-    position: relative;
+.gray {
+    color: #666666;
 }
 
-.spacer {
-    height: 2vh;
+.red {
+    color: #bb0000;
 }
 
-h1 {
-    font-size: 2.4em;
-    font-weight: 600;
-    margin: 3vh 0 2vh 0;
+.line {
+  display: inline-block;
 }
 
 h2 {
+    font-size: 2.4em;
+    font-weight: 575;
+    margin: 1.5vh;
+}
+
+h3 {
     font-size: 1.6em;
     font-weight: 200;
     margin: 1vh;
 }
 
 a {
-  color: #bb0000;
-  text-decoration: none;
+    text-decoration: none;
+    color: #bb0000;
+    pointer-events: all;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 850px) {
-    html {
-        font-size: 16px;
-    }
-	#hack-logo {
-		height: 37vh;
-	}
-}
-
-@media (max-width: 780px) {
-    html {
-        font-size: 16px;
-    }
-	#hack-logo {
-		height: 37vh;
-	}
-    #apply {
-        font-size: 1.6em;
-    }
-}
-
-@media (max-width: 724px) {
-    html {
-        font-size: 16px;
-    }
-	#hack-logo {
-		height: 35vh;
-	}
-    #apply {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 700px) {
-    html {
-        font-size: 14px;
-    }
-	#hack-logo {
-		height: 30vh;
-	}
-    #apply {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 620px) {
-    html {
-        font-size: 14px;
-    }
-	#hack-logo {
-		height: 25vh;
-	}
-    #apply {
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 400px) {
-    html {
-        font-size: 14px;
-    }
-	#hack-logo {
-		height: 24vh;
-	}
-    #apply {
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 275px) {
-    html {
-        font-size: 14px;
-    }
-	#hack-logo {
-		height: 10vh;
-	}
-    #apply {
-        font-size: .6em;
-    }
+.br {
+    height: 1.5vh;
 }

@@ -1,0 +1,140 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'proximanova', "Proxima Nova", Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#home {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 #home {
+    padding: 0 5px;
+}
+
+#hack-logo {
+    height: 37vh;
+}
+
+#content {
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+.spacer {
+    height: 2vh;
+}
+
+h1 {
+    font-size: 2.4em;
+    font-weight: 600;
+    margin: 3vh 0 2vh 0;
+}
+
+h2 {
+    font-size: 1.6em;
+    font-weight: 200;
+    margin: 1vh;
+}
+
+a {
+  color: #bb0000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+    html {
+        font-size: 16px;
+    }
+	#hack-logo {
+		height: 37vh;
+	}
+}
+
+@media (max-width: 780px) {
+    html {
+        font-size: 16px;
+    }
+	#hack-logo {
+		height: 37vh;
+	}
+    #apply {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 724px) {
+    html {
+        font-size: 16px;
+    }
+	#hack-logo {
+		height: 35vh;
+	}
+    #apply {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+	#hack-logo {
+		height: 30vh;
+	}
+    #apply {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 620px) {
+    html {
+        font-size: 14px;
+    }
+	#hack-logo {
+		height: 25vh;
+	}
+    #apply {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 14px;
+    }
+	#hack-logo {
+		height: 24vh;
+	}
+    #apply {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 275px) {
+    html {
+        font-size: 14px;
+    }
+	#hack-logo {
+		height: 10vh;
+	}
+    #apply {
+        font-size: .6em;
+    }
+}
