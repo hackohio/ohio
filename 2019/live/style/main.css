@@ -4,6 +4,26 @@ body {
     width: 100%;
 }
 
+@media screen and (min-width: 0px) and (min-height: 0px) {
+    body{font-size: 70%;}
+    #hack-logo{height: 100px}
+}
+
+@media screen and (min-width: 500px) and (min-height: 500px) {
+    body{font-size: 70%;}
+    #hack-logo{height: 250px}
+}
+
+@media screen and (min-width: 1000px) and (min-height: 700px) {
+    body{font-size: 85%;}
+    #hack-logo{height: 350px}
+}
+
+@media screen and (min-width: 1300px) and (min-height: 1000px) {
+    body{font-size: 100%;}
+    #hack-logo{height: 500px}
+}
+
 #back {
     position: absolute;
     margin: 2vh 2vw;
