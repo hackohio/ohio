@@ -138,3 +138,21 @@ a:hover {
         font-size: .6em;
     }
 }
+
+#container{
+    width: 100%;
+    
+}
+
+#contactSafety{
+    width: 50%;
+    float: left;
+}
+
+#afterwards{
+    width: 50%;
+    float: left;
+    margin-bottom: 100px;
+}
+
+
