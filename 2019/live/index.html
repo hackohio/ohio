@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="style/main.css">
     <link rel="stylesheet" type="text/css" href="style/section.css">
     <link rel="stylesheet" type="text/css" href="style/clock.css">
+    <link rel="stylesheet" type="text/css" href="style/particlesstyle.css">
     <link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script type="text/javascript" src="script/page-builder.js"></script>
@@ -23,6 +24,7 @@
 </head>
 <body>
 <div id="nav-spacer"></div>
+<div id="particles-js"></div>
     <!--Home content-->
     <div id="home">
         <img id="hack-logo" class="grow" src="img/hack-logo.svg" alt="HackOHI/O logo" />
@@ -57,10 +59,11 @@
         </nav>
     </span>
 
-    <table id="hype-events-list" style="display:none;"></table>
     <!--Section pages inserted via page-builder.js-->
     <div id="content"></div>
 
+    <script src="script/particles.min.js"></script>
+    <script src="script/particlesapp.js"></script>
     <script type="text/javascript" src="script/clock.js"></script>
     <script type="text/javascript" src="script/sheetrock.min.js"></script>
 </body>
