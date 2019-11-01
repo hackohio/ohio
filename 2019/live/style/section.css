@@ -115,3 +115,37 @@
 .resource-section h1{
     color: #bb0000;
 }
+
+/** Judging */
+#judging-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+}
+
+.judging-section {
+    text-align: left;
+}
+
+.judging-section h1{
+    color: #bb0000;
+}
+
+#prizes-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#prize {
+  max-height: 200px;
+}
+
+.prizes {
+  flex: 0 0 300px;
+}
+
+.prizes h2 {
+  color: #bb0000;
+}
