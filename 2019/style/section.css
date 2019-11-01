@@ -189,3 +189,14 @@
 #about img {
     width: 20%
 }
+
+/** Challenges */
+#challenge-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+}
+
+.challenge-question {
+    text-align: left;
+}
