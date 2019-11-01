@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,7 +12,6 @@ body {
 #home {
     position: fixed;
     text-align: center;
-    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -50,30 +49,33 @@ h2 {
 }
 
 a {
-  color: #bb0000;
-  text-decoration: none;
+    color: #bb0000;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 @media (max-width: 850px) {
     html {
         font-size: 16px;
     }
-	#hack-logo {
-		height: 37vh;
-	}
+    #home {
+      width: 90%;
+    }
+  	#hack-logo {
+  		height: 37vh;
+  	}
 }
 
 @media (max-width: 780px) {
     html {
         font-size: 16px;
     }
-	#hack-logo {
-		height: 37vh;
-	}
+  	#hack-logo {
+  		height: 37vh;
+  	}
     #apply {
         font-size: 1.6em;
     }
@@ -83,9 +85,9 @@ a:hover {
     html {
         font-size: 16px;
     }
-	#hack-logo {
-		height: 35vh;
-	}
+  	#hack-logo {
+  		height: 35vh;
+  	}
     #apply {
         font-size: 1.2em;
     }
@@ -95,9 +97,9 @@ a:hover {
     html {
         font-size: 14px;
     }
-	#hack-logo {
-		height: 30vh;
-	}
+  	#hack-logo {
+  		height: 30vh;
+  	}
     #apply {
         font-size: 1.2em;
     }
@@ -107,9 +109,9 @@ a:hover {
     html {
         font-size: 14px;
     }
-	#hack-logo {
-		height: 25vh;
-	}
+  	#hack-logo {
+  		height: 25vh;
+  	}
     #apply {
         font-size: 1em;
     }
@@ -119,9 +121,9 @@ a:hover {
     html {
         font-size: 14px;
     }
-	#hack-logo {
-		height: 24vh;
-	}
+  	#hack-logo {
+  		height: 24vh;
+  	}
     #apply {
         font-size: 1em;
     }
@@ -131,9 +133,9 @@ a:hover {
     html {
         font-size: 14px;
     }
-	#hack-logo {
-		height: 10vh;
-	}
+  	#hack-logo {
+  		height: 10vh;
+  	}
     #apply {
         font-size: .6em;
     }
