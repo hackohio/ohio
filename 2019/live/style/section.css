@@ -84,7 +84,7 @@
     border-right: 2px solid gray;
 }
 
-#container{
+#general-container{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
