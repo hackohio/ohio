@@ -61,7 +61,7 @@
     }
 }
 
-/** Schedule */
+/** General */
 #schedules {
     display: flex;
     flex-wrap: wrap;
@@ -82,6 +82,23 @@
 #schedule td:first-child {
     text-align: right;
     border-right: 2px solid gray;
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contactSafety{
+    float: left;
+    flex: 0 0 300px;
+}
+
+#afterwards{
+    float: left;
+    flex: 0 0 300px;
 }
 
 /** Challenges */
@@ -139,13 +156,13 @@
 }
 
 #prize {
-  max-height: 200px;
+    max-height: 200px;
 }
 
 .prizes {
-  flex: 0 0 300px;
+    flex: 0 0 300px;
 }
 
 .prizes h2 {
-  color: #bb0000;
+    color: #bb0000;
 }
