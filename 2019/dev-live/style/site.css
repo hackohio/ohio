@@ -7,6 +7,10 @@ body {
     color: #ffffff;
 }
 
+a {
+  color: #bb0000;
+}
+
 #content {
   margin-left: 300px;
   align-items: center;
@@ -28,7 +32,7 @@ body {
 	background-color: #FFFFFF;
 	color: black;
 	border: #45403d 0px solid;
-	padding:10px;
+	padding: 25px 50px;
 }
 
 .center {
@@ -62,4 +66,30 @@ body {
 
 .fourth{
 	width: 25%;
+}
+
+#schedules {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#schedule h2 {
+    text-align: center;
+    color: #bb0000;
+    font-weight: 500;
+}
+
+#schedule td {
+    padding: 7px 15px;
+    text-align: left;
+}
+
+#schedule td:first-child {
+    text-align: right;
+    border-right: 2px solid gray;
+}
+
+#schedule td:last-child {
+    border-left: 2px solid gray;
 }
