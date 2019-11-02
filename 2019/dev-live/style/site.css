@@ -35,39 +35,6 @@ a {
 	padding: 25px 50px;
 }
 
-.center {
-	text-align: center;
-}
-
-.col {
-	float:left;
-	display: block;
-	margin-right: 0;
-	text-align:center;
-	vertical-align: middle;
-	height:100%;
-}
-
-.col:first-child {
-	margin-left: 0;
-}
-
-.grp:before, .grp:after {
-	display: table;
-}
-
-.grp:after {
-	clear: both;
-}
-
-.half {
-	width: 50%;
-}
-
-.fourth{
-	width: 25%;
-}
-
 #schedules {
     display: flex;
     flex-wrap: wrap;
