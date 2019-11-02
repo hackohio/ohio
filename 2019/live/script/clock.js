@@ -2,7 +2,7 @@ initializeClock('countdown');
 
 function getTimeRemaining(){
   var hackingStarts = "2019-11-02T10:00:00-04:00";
-  var hackingEnds = "2019-11-03T10:00:00-05:00";
+  var hackingEnds = "2019-11-03T10:30:00-05:00";
   var time;
 
   if (Date.parse(hackingStarts) - Date.parse(new Date()) > 0) {
