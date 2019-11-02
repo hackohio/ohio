@@ -7,6 +7,10 @@ body {
     color: #ffffff;
 }
 
+a {
+  color: #bb0000;
+}
+
 #content {
   margin-left: 300px;
   align-items: center;
@@ -28,7 +32,7 @@ body {
 	background-color: #FFFFFF;
 	color: black;
 	border: #45403d 0px solid;
-	padding:10px;
+	padding: 25px 50px;
 }
 
 .center {
