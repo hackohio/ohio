@@ -1,37 +1,70 @@
-
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="description" content="OHI/O: Fostering a Tech Culture at Ohio State">
+    <meta name="keywords" content="Hackathon, OHIO, tech">
+    <meta name="author" content="OHI/O">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>HackOHI/O 2019</title>
 
     <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style/nav.css">
     <link rel="stylesheet" type="text/css" href="style/main.css">
-    <link rel="stylesheet" type="text/css" href="style/pixelTrail.css">
+    <link rel="stylesheet" type="text/css" href="style/section.css">
+    <link rel="stylesheet" type="text/css" href="style/clock.css">
+    <link rel="stylesheet" type="text/css" href="style/particlesstyle.css">
     <link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script type="text/javascript" src="script/pixelTrail.js"></script>
+    <script type="text/javascript" src="script/page-builder.js"></script>
+    <script type="text/javascript" src="script/nav.js"></script>
 </head>
 <body>
-<div id="back">
-    <a href="../index.html"><h3>< Main Site</h3></a>
-</div>
+<div id="nav-spacer"></div>
+<div id="particles-js"></div>
+    <!--Home content-->
+    <div id="home">
+        <img id="hack-logo" class="grow" src="img/hack-logo.svg" alt="HackOHI/O logo" />
+        <h1 class="bold-msg">HackOHI/O 2019 Live Site</h1>
+        <h2><b>Your source of info during the event</b></h2>
+        <br>
+        <h2>
+            <a target="_blank" href="https://www.google.com/maps/place/Ohio+Union/@39.9976772,-83.0107641,17z/data=!3m1!4b1!4m5!3m4!1s0x88388eb8c5837241:0x29e24cc55fefd423!8m2!3d39.9976772!4d-83.0085754"><img height="18px" src="img/location-pin.png" alt="pin"/></a>
+            Ohio Union - Columbus, Ohio
+        </h2>
+        <br>
+        <!--<h2><b>Hacking Ends:</b></h2>
+        <div id="countdown"></div>
+        <br>--><br>
+    </div>
 
-<div id="info">
-    <div class="br"></div>
-    <img id="hack-logo" class="grow" src="../img/hack-logo.svg" alt="HackOHI/O logo" />
-    <div class="br"></div>
+    <!--class section will also are sections to insert-->
+    <span id="nav-container">
+        <div id="mobile-nav">
+            <a id="nav-home" href="">Home</a>
+            <img src="img/menu.svg" id="mobile-menu"/>
+        </div>
+        <nav id="nav">
+            <a href="#general" class="section">General</a>
+            <a href="#announcements" class="section">Announcements</a>
+            <a href="#challenges" class="section">Challenges</a>
+            <a href="#resources" class="section">Resources</a>
+            <a href="#hardware" class="section">Hardware Loans</a>
+            <a href="#judging" class="section">Judging</a>
+            <!--<a href="#winners" class="section">Winners</a>-->
+            <a href="../" style="font-weight: 725">Main Site</a>
+        </nav>
+    </span>
 
-    <h2 class="bold-msg">The Ohio State University's annual hackathon.</h2>
-    <h3>
-        Ohio Union - Columbus, Ohio | November 2 - 3, 2019
-        <a target="_blank" href="https://www.google.com/maps/place/Ohio+Union,+Columbus,+OH+43210/@39.998361,-83.0099487,17z/data=!3m1!4b1!4m2!3m1!1s0x88388eb8e1ad7407:0x6eb50adaef6f6294"></a>
-    </h3>
-    <div class="br"></div>
+    <!--Section pages inserted via page-builder.js-->
+    <div id="content"></div>
 
-    <h2 class="red">Live site will open here Saturday Morning!</h2>
-    <h3 class="gray">
-        <span class="line">Join our event <a target="_blank" href="https://go.osu.edu/hackslack">slack workspace</a> to ask questions and talk to other participants! Slack will be our main source of communication during the event.</span><br>
-    </h3>
-</div>
+    <script src="script/particles.min.js"></script>
+    <script src="script/particlesapp.js"></script>
+    <script type="text/javascript" src="script/clock.js"></script>
+    <script type="text/javascript" src="script/sheetrock.min.js"></script>
 </body>
 </html>

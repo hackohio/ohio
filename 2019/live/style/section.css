@@ -61,7 +61,7 @@
     }
 }
 
-/** Schedule */
+/** General */
 #schedules {
     display: flex;
     flex-wrap: wrap;
@@ -84,6 +84,27 @@
     border-right: 2px solid gray;
 }
 
+#schedule td:last-child {
+    border-left: 2px solid gray;
+}
+
+#general-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contactSafety{
+    float: left;
+    flex: 0 0 300px;
+}
+
+#afterwards{
+    float: left;
+    flex: 0 0 300px;
+}
+
 /** Challenges */
 #challenge-container {
     display: flex;
@@ -101,4 +122,51 @@
 
 .challenge-question p{
     color: #888888;
+}
+
+/** Challenges */
+#resource-container {
+    align-items: left;
+}
+
+.resource-section {
+    text-align: left;
+}
+
+.resource-section h1{
+    color: #bb0000;
+}
+
+/** Judging */
+#judging-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+}
+
+.judging-section {
+    text-align: left;
+}
+
+.judging-section h1{
+    color: #bb0000;
+}
+
+#prizes-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#prize {
+    max-height: 200px;
+}
+
+.prizes {
+    flex: 0 0 300px;
+}
+
+.prizes h2 {
+    color: #bb0000;
 }
