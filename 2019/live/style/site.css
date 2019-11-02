@@ -24,6 +24,11 @@ a {
 	margin: 40px auto;
 }
 
+.wrapper {
+  margin: 0px auto;
+  width: 90%;
+}
+
 .header h1{
   margin: 5px;
 }
