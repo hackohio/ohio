@@ -93,3 +93,13 @@ a {
 #schedule td:last-child {
     border-left: 2px solid gray;
 }
+
+.map-img {
+	height: auto;
+	width: auto;
+	max-height: 100%;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
