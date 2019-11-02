@@ -18,15 +18,31 @@
 		<link rel="stylesheet" type="text/css" href="style/sidebar.css">
     <link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script type="text/javascript" src="script/nav.js"></script>
 	</head>
 	<body>
 		<div id="particles-js"></div>
+
+		<div id="mobile-nav">
+				<a id="nav-home" href="index.html">Home</a>
+				<div id="nav-links">
+					<a href="index.html">General</a>
+				  <a href="challenges.html">Challenges</a>
+				  <a href="resources.html">Resources</a>
+					<a href="hardware.html">Hardware</a>
+				  <a href="judging.html">Judging</a>
+					<!--<a href="winners.html">Winners</a>-->
+					<a href="/2019">Main Site</a>
+				</div>
+				<img src="img/menu.svg" id="mobile-menu" onclick="toggleNav()"/>
+		</div>
 
 		<div id="sidebar">
 			<div id="logo">
 				<img src="img/hack-logo.svg" height="250px" width="250px" />
 			</div>
 			<div id="countdown"></div>
+
 			<div id="nav">
 				<a href="index.html">General</a>
 			  <a href="challenges.html">Challenges</a>

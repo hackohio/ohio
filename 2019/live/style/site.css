@@ -52,6 +52,14 @@ a {
 	padding: 25px 50px;
 }
 
+.announcements {
+  padding: 15px 50px 15px 50px;
+}
+
+.judging {
+  padding: 15px 50px 25px 50px;
+}
+
 #schedules {
   display: flex;
   flex-wrap: wrap;
@@ -78,6 +86,47 @@ a {
   border-left: 2px solid gray;
 }
 
+#mobile-nav {
+  height: 45px;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #45403d;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: none;
+}
+
+#mobile-nav img{
+  height: 45%;
+  padding-right: 20px;
+}
+
+#nav-home {
+  color: white;
+  font-size: 1.15em;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+#nav-links {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 45px;
+  background-color: #45403d;
+}
+
+#nav-links a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  background-color: #45403d;
+}
+
 @media (max-width: 1000px) {
   .wrapper {
     margin: 0;
@@ -92,5 +141,26 @@ a {
     width: 90%;
     float: none;
     margin: 40px auto;
+  }
+}
+
+@media (max-width: 700px) {
+  #content {
+    margin-top: 65px;
+    margin-left: 0;
+  }
+  #mobile-nav {
+    display:flex;
+  }
+  .content-box {
+    padding: 25px 20px;
+  }
+
+  .announcements {
+    padding: 15px 20px 15px 20px;
+  }
+
+  .judging {
+    padding: 15px 20px 25px 20px;
   }
 }
