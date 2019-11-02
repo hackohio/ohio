@@ -1,10 +1,10 @@
 body {
-    font-family: 'proximanova', "Proxima Nova", Helvetica, Sans-Serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    color: #ffffff;
+  font-family: 'proximanova', "Proxima Nova", Helvetica, Sans-Serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
 }
 
 a {
@@ -24,6 +24,18 @@ a {
 	margin: 40px auto;
 }
 
+.left {
+  width: 48%;
+  float: left;
+  margin: 0px auto 40px auto;
+}
+
+.right{
+  width: 48%;
+  float: right;
+  margin: 0px auto 40px auto;
+}
+
 .wrapper {
   margin: 0px auto;
   width: 90%;
@@ -41,27 +53,44 @@ a {
 }
 
 #schedules {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #schedule h2 {
-    text-align: center;
-    color: #bb0000;
-    font-weight: 500;
+  text-align: center;
+  color: #bb0000;
+  font-weight: 500;
 }
 
 #schedule td {
-    padding: 7px 15px;
-    text-align: left;
+  padding: 7px 15px;
+  text-align: left;
 }
 
 #schedule td:first-child {
-    text-align: right;
-    border-right: 2px solid gray;
+  text-align: right;
+  border-right: 2px solid gray;
 }
 
 #schedule td:last-child {
-    border-left: 2px solid gray;
+  border-left: 2px solid gray;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    margin: 0;
+    width: 100%;
+  }
+  .right {
+    width: 90%;
+    float: none;
+    margin: 40px auto;
+  }
+  .left {
+    width: 90%;
+    float: none;
+    margin: 40px auto;
+  }
 }
