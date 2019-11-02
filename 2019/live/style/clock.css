@@ -1,11 +1,12 @@
 #countdown {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 0px 10px;
+    text-align: center;
 }
 
 #countdown > div {
-    width: 78px;
+    width: 75px;
 }
 
 .time {
