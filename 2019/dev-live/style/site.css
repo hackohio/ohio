@@ -33,7 +33,6 @@ body {
 	color: black;
 	border: #45403d 0px solid;
 	padding:10px;
-  height: 300px;
 }
 
 .center {
@@ -63,7 +62,7 @@ body {
 
 .half {
 	width: 50%;
-}
+} 
 
 .fourth{
 	width: 25%;

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+		<meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
+		<link rel="stylesheet" type="text/css" href="style/particlesstyle.css">
+		<link rel="stylesheet" type="text/css" href="style/sidebar.css">
+		<link rel="stylesheet" type="text/css" href="style/site.css">
+		<link rel="stylesheet" type="text/css" href="style/clock.css">
+		<link rel="stylesheet" type="text/css" href="style/responsive.css">
+	</head>
+	<body>
+		<div id="particles-js"></div>
+
+		<div id="sidebar">
+			<div id="logo">
+				<img src="img/hack-logo.svg" height="250px" width="250px" />
+			</div>
+			<div id="countdown"></div>
+			<div id="nav">
+				<a href="index.html">General</a>
+			  <a href="challenges.html">Challenges</a>
+			  <a href="resources.html">Resources</a>
+				<a href="hardware.html">Hardware</a>
+			  <a href="judging.html">Judging</a>
+				<a href="/2019">Main Site</a>
+			</div>
+		</div>
+
+		<div id="content">
+			<div class="wrapper">
+				{{ content }}
+			</div>
+		</div>
+
+		<script src="script/clock.js"></script>
+		<script src="script/particles.min.js"></script>
+		<script src="script/particlesapp.js"></script>
+	</body>
+</html>
