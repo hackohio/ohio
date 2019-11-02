@@ -13,10 +13,6 @@ body {
   text-align: center;
 }
 
-.wrapper {
-  align-items: center;
-}
-
 .header{
 	background-color: #45403d;
 	border: #45403d 3px solid;
@@ -62,7 +58,7 @@ body {
 
 .half {
 	width: 50%;
-} 
+}
 
 .fourth{
 	width: 25%;
