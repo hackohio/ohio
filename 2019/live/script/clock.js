@@ -5,14 +5,10 @@ function getTimeRemaining(){
   var hackingEnds = "2019-11-03T10:00:00-05:00";
   var time;
 
-  var beginsorends = document.getElementById('beginsorends');
-
   if (Date.parse(hackingStarts) - Date.parse(new Date()) > 0) {
     time = hackingStarts;
-    beginsorends.innerHTML = '<b>Hacking Begins:</b>'
   } else {
     time = hackingEnds;
-    beginsorends.innerHTML = '<b>Hacking Ends:</b>'
   }
   var t = Date.parse(time) - Date.parse(new Date());
   var seconds = Math.floor( (t/1000) % 60 );
