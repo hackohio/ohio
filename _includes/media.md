@@ -2,7 +2,8 @@
 [Program Information](../assets/pdf/2019-OHIO-Program-Overview.pdf)
 
 # Sponsorship Guide  
-[Sponsorship Information](../assets/pdf/2019-20-OHIO-Sponsorship-Info.pdf)
+&#8227; [2019-20 Sponsorship Information](../assets/pdf/2019-20-OHIO-Sponsorship-Info.pdf)  
+&#8227; [2020-21 Sponsorship Information](../assets/pdf/2020-21-OHIO-Sponsorship-Info.pdf)
 
 # Slides  
 &#8227; [2018 Program Report](../assets/pdf/2018-OHIO-annual-report.pdf)  
