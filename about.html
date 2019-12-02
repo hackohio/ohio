@@ -1,8 +1,9 @@
 ---
 layout: default
-style: about.css
-script: about.js
 ---
+
+<link rel="stylesheet" href="/assets/css/about.css" type="text/css">
+<script type="text/javascript" src="/assets/js/about.js"></script>
 
 <div class="toggle-button">
     <div id="about-page-btn" class="toggle-option selected"><h2><strong>About</strong></h2></div>
@@ -22,14 +23,14 @@ script: about.js
         {{ m1 | markdownify }}
     </div>
     <div id="media-page" style="display: none;">
-        <div class="red-header">
-            OHI/O<br>
-            MEDIA
-        </div>
-        <br>
+            <div class="red-header">
+                OHI/O<br>
+                MEDIA
+            </div>
+            <br>
 
-        {% capture m2 %}{% include media.md %}{% endcapture %}
-        {{ m2 | markdownify }}
+            {% capture m2 %}{% include media.md %}{% endcapture %}
+            {{ m2 | markdownify }}
+        </div>
+        <br><br><br><br>
     </div>
-    <br><br><br><br>
-</div>
