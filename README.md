@@ -28,7 +28,13 @@ root: Contains the main HTML pages and configuration files.
 3. This will build your code (which is saved under \_site) and start a local server  
 4. Open your browser and go to http://localhost:4000  
 
-Important files:  
+**Remote Container setup**:
+
+If don't want to install ruby locally, and you have Docker, you can use the [VS Code Remote Container](https://code.visualstudio.com/docs/remote/containers).
+Just open the project with the Dev container and run `bundle exec jekyll serve -H 0.0.0.0`.
+(Please don't setup an EC2 instance just to work on this project)
+
+**Important files**:
 .travis.yml: Contains the configuration for Travis CI  
 \_config.yml: Contains the configuration for Jekyll  
 Gemfile: Lists all the ruby dependencies that the project needs (used for Jekyll)  
