@@ -1,8 +1,8 @@
-const sheetURL = 'https://docs.google.com/spreadsheets/d/1-UUA5j1ZurP2ZsjdzH-Gd76jEegCs8EGy4rV5SuhpJI/edit#gid=0';
+const sheetURL = 'https://docs.google.com/spreadsheets/d/1fbtCptVlhUuUrm-JdBelXlSyyLAlgQDUDIV8NMVpxNU/edit#gid=0';
 
 $('#hypeevents-table').sheetrock({
   url: sheetURL,
-  query: "select * where dateDiff(C, now()) >= -1 order by C asc",
+  query: "select * where dateDiff(C, now()) >= -1 and I='y' order by C asc",
   callback: sheetrockCallback
 });
 
