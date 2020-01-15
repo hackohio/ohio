@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<meta property="og:title" content="MakeOHI/O 2020 | Build Something Amazing on Feb 2" />
+		<meta property="og:image" content="https://farm6.staticflickr.com/5811/31186148912_1c3c753a7a_k_d.jpg" />
+
+		<!-- Always forces latest IE rendering engine or request Chrome Frame -->
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="description" content="MakeOHI/O 2020: The Ohio State Makeathon">
+		<meta name="keywords" content="Makeathon, OHIO, MakeOHIO, 2020">
+		<meta name="author" content="OHI/O">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>MakeOHI/O 2020</title>
+
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="style/font-awesome-4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style/main.css">
+		<link rel="stylesheet" type="text/css" href="style/navbar.css">
+		<link rel="stylesheet" type="text/css" href="style/parallax.css">
+		<link rel="stylesheet" type="text/css" href="style/responsive.css">
+		<link rel="stylesheet" type="text/css" href="style/mobilenav.css">
+		<link rel="stylesheet" type="text/css" href="style/countdown.css">
+		<link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-51284668-6', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+		<script type="text/javascript" src="script/hypeevents.js"></script>
+		<script src="https://use.typekit.net/fov5wnm.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	</head>
+	<body>
+		<div class="tv" style="background-image: url(images/make-background.jpg)"></div>
+
+		<!-- Social media side bar -->
+		<div class ="social-media">
+			<a class="social-media-image" href="https://www.facebook.com/hackohio"><i class="social-media-fa fa fa-facebook fa-2x"></i></a>
+			<br><br>
+			<a class="social-media-image" href="https://twitter.com/hackohio"><i class="social-media-fa fa fa-twitter fa-2x"></i></a>
+			<br><br>
+			<a class="social-media-image" href="https://www.instagram.com/hackohio/"><i class="social-media-fa fa fa-instagram fa-2x"></i></a>
+			<br><br>
+			<a class="social-media-image" href="https://www.youtube.com/channel/UCJJzEGEjQrpVTY3zEQS0BpA"><i class="social-media-fa fa fa-youtube fa-2x"></i></a>
+			<br><br>
+			<a class="social-media-image" href="https://medium.com/@hackohio"><i class="social-media-fa fa fa-medium fa-2x"></i></a><br>
+		</div>
+
+		<!-- Nav for desktop -->
+		<div id="nav">
+			<div id="nav-wrapper">
+			<!-- Add the href's of these links to "pageIds" in nav.js -->
+			<div class="nav-div"><a id="reg-nav" href="https://reghackohio.com" target="_blank">REGISTER</a></div>
+			<div class="nav-div"><a id="home-back-nav" href="#home-back" class="secondary-page-link">HOME</a></div>
+			<div class="nav-div"><a id="about-page-nav" href="#about-page" class="secondary-page-link">ABOUT</a></div>
+			<div class="nav-div"><a id="hypeevents-page-nav" href="#hypeevents-page" class="secondary-page-link">HYPE EVENTS</a></div>
+			<div class="nav-div"><a id="schedule-page-nav" href="#schedule-page" class="secondary-page-link">SCHEDULE</a></div>
+			<div class="nav-div"><a id="sponsorlist-page-nav" href="#sponsorlist-page" class="secondary-page-link">SPONSORS</a></div>
+			<div class="nav-div"><a id="hardware-page-nav" href="#hardware-page" class="secondary-page-link">HARDWARE</a></div>
+			<div class="nav-div"><a id="faq-page-nav" href="#faq-page" class="secondary-page-link">FAQ</a></div>
+			<!--<div class="nav-div"><a id="live-site" href="live/index.html" style="color:#BB0000"><b>LIVE SITE</b></a></div>-->
+			</div>
+		</div>
+
+		<!-- Nav for mobile -->
+		<div id="mobilenav" style="display:none;">
+			<a href="#homepage" class="mobilenav-btn">Home</a>
+			<a href="https://reghackohio.com" class="mobilenav-btn">Register</a>
+			<a href="#about-page" class="mobilenav-btn">About</a>
+			<a href="#hypeevents-page" class="mobilenav-btn">Hype Events</a>
+			<a href="#schedule-page" class="mobilenav-btn">Schedule</a>
+			<a href="#sponsorlist-page" class="mobilenav-btn">Sponsors</a>
+			<a href="#hardware-page" class="mobilenav-btn">Hardware</a>
+			<a href="#faq-page" class="mobilenav-btn">FAQ</a>
+			<!--<a href="live/index.html" class="mobilenav-btn">Live Site</a>-->
+			<a id="mobilenav-sandwich" class="icon">&#9776;</a>
+		</div>
+
+		<div id="home-back"></div>
+
+		<div id="homepage">
+			<div class="content"> <!-- Do we need this "content" div?? -->
+				<br><br>
+				<img id="make-logo" class="grow" src="images/make_logo.png" width="300px" alt="MakeOHI/O logo" />
+				<br><br>
+				<h2 class="txt-red">The Ohio State University's<br>annual makeathon.</h2>
+				<br>
+				<a class="button" target="_blank" href="https://reghackohio.com">Register for MakeOHI/O</a>
+				<br><br>
+				<h3 class="txt-red">
+					<a target="_blank" href="https://www.google.com/maps/place/Knowlton+Hall,+Columbus,+OH+43210/@40.0035858,-83.0180133,18z/data=!3m1!4b1!4m5!3m4!1s0x88388e9651a8ead1:0xc9133d5253f3d948!8m2!3d40.0035858!4d-83.016919"><i class="fa fa-map-marker fa-1x"></i></a>
+					Knowlton Hall, Columbus, Ohio
+					<br>
+					February 29th - March 1st, 2020
+					<br><br>
+					<div id="countdown"></div>
+				</h3>
+			</div>
+			<div class="nav-spacer"></div>
+			<div id="mobilefooter" style="display:none;">
+				<div class="footer-socialmedia">
+					<a class="social-media-image" href="https://www.facebook.com/hackohio"><i class="social-media-fa-white fa fa-facebook fa-2x"></i></a>
+					<a class="social-media-image" href="https://twitter.com/hackohio"><i class="social-media-fa-white fa fa-twitter fa-2x"></i></a>
+					<a class="social-media-image" href="https://www.instagram.com/hackohio/"><i class="social-media-fa-white fa fa-instagram fa-2x"></i></a>
+					<a class="social-media-image" href="https://www.youtube.com/channel/UCJJzEGEjQrpVTY3zEQS0BpA"><i class="social-media-fa-white fa fa-youtube fa-2x"></i></a>
+					<a class="social-media-image" href="https://medium.com/@hackohio"><i class="social-media-fa-white fa fa-medium fa-2x"></i></a>
+				</div>
+				<p>Made with <i class="fa fa-heart"></i> in Columbus
+				</p>
+			</div>
+		</div>
+
+		<div id="about-page" class="secondary-page">
+			<div class="nav-spacer"></div>
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="about"></a>
+				<br><br>
+				<h1>Welcome to Columbus</h1>
+				<hr>
+				<p>
+					On February 29<sup>th</sup>, join us at MakeOHI/O&mdash;the Ohio State University's largest makeathon&mdash;for a weekend of building and creating real projects with awesome people.
+					Over 150 undergraduate and graduate students will design, build, and demonstrate projects to a live audience of students, faculty, and representatives from tech companies.
+					MakeOHI/O is put on by <a class="pretty-link" href="/">OHI/O</a>, a student-led organization that aims to build and foster the tech community at Ohio State University.
+				</p>
+				<br>
+				<p>
+					Meet other passionate, fun and creative students from OSU and universities across the nation.
+					Our industry partners are also sending professional developers, designers, marketers, and hustlers to provide mentorship.
+					If you're interested in participating, all attendees must adhere to our <a class="pretty-link" href="pdf/2020_code_of_conduct.pdf" target="_blank">Code of Conduct</a>.
+				</p>
+				<br>
+				<div class="section grp">
+					<div class="col third">
+						<i class="grow fa fa-users fa-5x"></i>
+						<br>
+						<h2>Meet great people.</h2>
+					</div>
+					<div class="col third">
+						<i class="grow fa fa-pencil-square-o fa-5x"></i>
+						<br>
+						<h2>Learn something new.</h2>
+					</div>
+					<div class="col third">
+						<i class="grow fa fa-rocket fa-5x"></i>
+						<br>
+						<h2>Build something amazing.</h2>
+					</div>
+				</div>
+				<br class="clear"><br><br>
+				<div class="clear"></div>
+			</div>
+			<div class="filler"></div>
+		</div>
+
+		<div id="hypeevents-page" class="secondary-page">
+			<div class="nav-spacer"></div>
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="events"></a>
+				<div class="clear"></div>
+				<br><br>
+				<h1>Hype Events</h1>
+				<hr>
+				<p id="hypeevents-description">
+					OHI/O, our partnering student organizations, and our sponsors are hosting a series of great events leading up to the makeathon.
+					These events include tech talks, workshops, and social gatherings that help students prepare for the makeathon, gather ideas, and build teams!
+					For other events check out the community events on our <a class="pretty-link" href="/">main page!</a>
+				</p>
+				<br>
+				<table id="hypeevents-table" style="display:none;"></table>
+				<div id="hypeevents"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="filler"></div>
+		</div>
+
+		<div id="faq-page" class="secondary-page">
+			<div class="nav-spacer"></div>
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="faq"></a>
+				<br><br>
+				<h1>F.A.Q.</h1>
+				<hr>
+				<br>
+				<p>
+					Here are some common questions that people ask. If you have any additional questions,
+					please contact us at <a class="pretty-link" href="mailto:makeohio@osu.edu">makeohio@osu.edu</a>.
+				</p>
+
+				<div class="section grp">
+					<div class= "col third">
+						<h3><b>What is a makeathon?</b></h3>
+						<p class="faqText">
+							A makeathon is similar to a hackathon. Both are events where participants build awesome projects from scratch in just a few short hours.
+							The difference between a MAKEathon and a HACKathon is that we are encouraging projects to be maker-oriented, and therefore physically making something!
+						</p>
+					</div>
+					<div class= "col third">
+						<h3><b>Who can participate?</b></h3>
+						<p class="faqText">
+							Anyone who is a student at a university! We encourage all levels of expertise to join.
+							Whether this is your first makeathon, or you've been to other make- or hackathons across the nation, MakeOHI/O provides an opportunity to collaborate and create something amazing.
+							All participants are expected to follow our <a class="pretty-link" href="pdf/2020_code_of_conduct.pdf" target="_blank">Code of Conduct</a>.
+						</p>
+					</div>
+
+					<div class= "col third">
+						<h3><b>I want to apply for MakeOHI/O! What's the timeline?</b></h3>
+						<p class="faqText">
+							Registration for MakeOHI/O is open now and will close on February 11th, 2020. Register <a class="pretty-link" href="https://reghackohio.com" target="_blank">here</a>!
+						</p>
+					</div>
+
+				</div>
+
+				<div class="section grp">
+					<div class= "col third">
+						<h3><b>What sort of projects do people make?</b></h3>
+						<p class="faqText">
+							All sorts of things! Previous projects have included mobile apps, websites, smart mirrors, light-up glasses, pancake printers...the possibilities are endless.
+						</p>
+					</div>
+
+					<div class= "col third">
+						<h3><b>Is this event free? What about food?</b></h3>
+						<p class="faqText">
+							MakeOHI/O is free to participate in! We'll be providing you with great meals, snacks, and drinks throughout the entire event. We've got participants' food restrictions covered, too.
+						</p>
+					</div>
+					<div class= "col third">
+						<h3><b>Do I need a team?</b></h3>
+						<p class="faqText">
+							All participants should be in teams of 2 to 4, but don't worry if you're coming in without a team. OHI/O provides opportunities before and during the makeathon to find a team.
+							We'll be posting more information on team formation events in our newsletters and on our social media accounts - be on the lookout!
+						</p>
+					</div>
+				</div>
+
+				<div class="section grp">
+					<div class= "col third">
+						<h3><b>Do I have to have an idea before attending/registering?</b></h3>
+						<p class="faqText">
+							Nope! Many students come up with an idea while at the makeathon.
+							By talking to fellow students and coming to our pre-hype events, you'll find opportunities to brainstorm ideas that pique your interest.
+							If you get stuck, we'll have a nice list of ideas to help you out.
+						</p>
+					</div>
+
+					<div class= "col third">
+						<h3><b>Can I mentor?</b></h3>
+						<p class="faqText">
+							Yes! We welcome individuals with knowledge and expertise in various topic areas to help mentor students at MakeOHI/O. If you're interested, please contact us to find out more information!
+						</p>
+					</div>
+
+					<div class= "col third">
+						<h3><b>What does it mean to join a team in the registration portal?</b></h3>
+						<p class="faqText">
+							Upon verifying your account, you can pick a team to join in the application portal. Please note that everyone on the team must join it individually!<br><br>
+							This gives us more information about who is coming in with a team and helps us better plan logistics and judging of the event.
+						</p>
+					</div>
+				</div>
+
+				<div class="section grp">
+					<div class= "col third">
+						<h3><b>How are projects judged?</b></h3>
+						<p class="faqText">
+							MakeOHI/O is proud to have dozens of judges consisting of academia, industry professionals, and alumni.
+							On Sunday, participants will share their projects with two sets of two judges, who will score the project based on several criteria: technical difficulty, functionality, intuitiveness, usefulness/impact, creativity, teamwork, and overall wow factor.
+							Remember - the competition is only a small part of the event! The most important part is to have fun and build something amazing.
+						</p>
+					</div>
+					<div class= "col third">
+						<h3><b>Are any projects not allowed?</b></h3>
+						<p class="faqText">
+							For safety reasons, projects that intend to interface with the 120V AC mains in any way other than direct power are discouraged. Even something as small as a relay controlling a lamp being on could be hazardous with exposed wires. For similar reasons, projects involving high voltage such as Tesla coils, jacob’s ladders, or plasma speakers are discouraged. If you are unsure if your project will be allowed, please ask!
+							We reserve the right to shut down any projects that we deem as unsafe. We want the event to be awesome and electrocution or other physical injury is not so great. Please bring your own fuses if you intend on working with the mains or otherwise high voltage project. Railguns, coil guns or any other projects with weapons are prohibited. Projects such as an induction furnace are similarly prohibited for an obvious fire hazard.
+						</p>
+					</div>
+					<div class= "col third">
+						<h3><b>Wow, this all sounds so great! Who hosts MakeOHI/O?</b></h3>
+						<p class="faqText">
+							MakeOHI/O is hosted by several Ohio State student organizations united under OHI/O.
+							You can check out our other events at <a class="pretty-link" href="/">https://hack.osu.edu</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="filler"></div>
+        </div>
+
+		<div id="sponsorlist-page" class="secondary-page">
+			<div class="nav-spacer"></div>
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="sponsors"></a>
+				<br><br>
+				<h1>Sponsors</h1>
+				<hr>
+				<p>
+					Without our sponsors and supporters, MakeOHI/O wouldn't be possible. By joining us, you'll be in touch with some of the best developers, designers, and builders in the state. Our team will ensure that you have an incredible experience.
+					<br><br>
+				</p>
+
+				<!-- Program -->
+				<!-- Microsoft -->
+				<div class="">
+					<a href="https://www.microsoft.com/">
+						<img class="sponsor-massive zoom-massive" src="images/sponsors/microsoft-logo.png" alt="Microsoft">
+					</a>
+				</div>
+				<br/><br/>
+
+				<!-- Platinum -->
+				<!-- Honda -->
+				<div class="">
+					<a href="https://www.honda.com/">
+						<img class="sponsor-huge zoom-huge" src="images/sponsors/honda-logo.png" alt="Honda">
+					</a>
+				</div>
+				<br/><br/>
+
+				<!-- Gold -->
+				<!-- AEP -->
+				<table class="sponsor-tb">
+					<tr>
+						<td> <!-- AEP -->
+							<div class="">
+								<a href="https://www.aep.com/">
+									<img class="sponsor-med zoom-big" src="images/sponsors/aep-logo.png" alt="AEP" style="max-width:300px">
+								</a>
+							</div>
+							<br/>
+						</td>
+						<td> <!-- Texas Instruments -->
+							<div class="">
+								<a href="http://www.ti.com/">
+									<img class="sponsor-med zoom-big" src="images/sponsors/ti-logo.png" alt="Texas Instruments">
+								</a>
+							</div>
+							<br/>
+						</td>
+					</tr>
+				</table>
+				<br/><br/>
+
+				<!-- Silver -->
+				<table class="sponsor-tb">
+					<tr>
+						<td> <!-- Battelle -->
+							<div class="">
+								<a href="http://www.battelle.org/our-work/national-security/cyber-innovations">
+									<img class="sponsor-med zoom-med" src="images/sponsors/battelle-logo.jpg" alt="Battelle">
+								</a>
+							</div>
+							<br/>
+						</td>
+					</tr>
+				</table>
+				<br><br>
+
+				<!-- Bronze -->
+
+				<h1>Supporters</h1>
+				<hr>
+				<br>
+				<table class="sponsor-tb">
+					<tr>
+						<td>
+							<!-- Bosch -->
+							<div class="">
+								<a href="https://www.bosch.us/">
+									<img class="sponsor-s-sm zoom-s-sm" src="images/sponsors/bosch-logo.jpg" alt="Bosch">
+								</a>
+							</div>
+						</td>
+						<td>
+							<!-- StickerMule -->
+							<div class="">
+								<a href="https://www.stickermule.com/supports/hackathons" target="_blank">
+									<img class="sponsor-s-sm zoom-s-sm" src="images/sponsors/stickermule-logo.png" alt="StickerMule">
+								</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+				<br><br>
+				<!-- OSU Sponsors -->
+				<div class="">
+					<img class="sponsor-osu zoom-osu" src="images/sponsors/OSU-departments-logo.png" alt="University Libraries, College of Engineering, the Office of the Chief Information Officer, and the Translational Data Analytics Institute.">
+				</div>
+				<br/><br/>
+			</div>
+			<div class="filler"></div>
+		</div>
+
+		<div id="schedule-page" class="secondary-page">
+			<div class="nav-spacer"></div>
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="schedule"></a>
+				<br><br>
+				<h1>Schedule</h1>
+				<hr>
+				<br>
+				<h2>Saturday, February 29th</h2>
+				<table class="schedule-table" style="width: 70%; margin: 0 auto;">
+					<tr>
+						<td style="width: 20%;" class="box-darkgray">
+							Time
+						</td>
+						<td style="width: 40%;" class="box-darkgray">
+							Event
+						</td>
+					</tr>
+					<tr>
+						<td class="box-gray">
+							9:30 AM
+						</td>
+						<td class="box-gray">
+							Check-in opens
+						</td>
+					</tr>
+					<tr>
+						<td>
+							10:30 AM
+						</td>
+						<td>
+							Opening Keynote
+						</td>
+					</tr>
+					<tr>
+						<td class="box-gray">
+							11:00 AM
+						</td>
+						<td class="box-gray">
+							Making Begins
+						</td>
+					</tr>
+					<tr>
+						<td>
+							1:30 PM
+						</td>
+						<td>
+							Lunch
+						</td>
+					</tr>
+					<tr>
+						<td class="box-gray">
+							6:00 PM
+						</td>
+						<td class="box-gray">
+							Dinner
+					</tr>
+					<tr>
+						<td>
+							9:00 PM
+						</td>
+						<td>
+							Snacks
+						</td>
+					</tr>
+				</table>
+				<div class="clear"></div>
+
+				<br><br>
+
+				<h2>Sunday, March 1st</h2>
+				<table class="schedule-table"  style="width: 70%; margin: 0 auto;">
+					<tr>
+						<td style="width: 20%;" class="box-darkgray">
+							Time
+						</td>
+						<td style="width: 40%;" class="box-darkgray">
+							Event
+						</td>
+					</tr>
+					<tr>
+						<td class="box-gray">
+							2:00 AM
+						</td>
+						<td class="box-gray">
+							Snacks
+						</td>
+					</tr>
+					<tr>
+						<td>
+							7:00 AM
+						</td>
+						<td>
+							Breakfast
+						</td>
+					</tr>
+					<tr>
+						<td class="box-gray">
+							11:00 AM
+						</td>
+						<td class="box-gray">
+							Making Ends
+						</td>
+					</tr>
+					<tr>
+						<td>
+							11:30 AM
+						</td>
+						<td>
+							Lunch
+						</td>
+					</tr>
+					<tr>
+						<td class="box-gray">
+							12:00 PM
+						</td>
+						<td class="box-gray">
+							Judging Begins
+						</td>
+					</tr>
+					<tr>
+						<td>
+							1:30 PM
+						</td>
+						<td>
+							Showcase Begins
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="clear"></div>
+			<div class="filler"></div>
+		</div>
+
+		<div id="hardware-page" class="secondary-page">
+			<div class="nav-spacer"></div>
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="schedule"></a>
+				<br><br>
+				<h1>Hardware</h1>
+				<hr>
+				<br>
+				<h2>Available Hardware:</h2>
+					<div class="col third">
+						<div class="media-list">
+							<ul style="list-style: none;">
+								<li>Jumper Wire</li>
+								<li>1-4 USB Hub</li>
+								<li>3-Button Mice</li>
+								<li>Micro-SD Card Reader</li>
+								<li>Li-Ion Battery: (500mAH - 2500mAH)</li>
+								<li>Micro SD Cards and Readers</li>
+								<li>5V DC Barrell Jacks</li>
+								<li>Male Female Headers</li>
+								<li>Breadboards</li>
+								<li>Multimeters</li>
+								<li>Batteries</li>
+								<li>Single Color LEDs</li>
+								<li>Resistors</li>
+								<li>Potentiometers</li>
+								<li>Resistors</li>
+								<li>Potentiometers</li>
+								<li>Diodes</li>
+								<li>Push Buttons</li>
+								<li>Wire</li>
+								<li>Stepper Motors</li>
+								<li>DC Motors</li>
+								<li>Servos</li>
+								<li>Small Speakers</li>
+								<li>Assortment of Power Supplies</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col third">
+						<div class ="media-list">
+							<ul style="list-style: none;">
+								<li>Raspberry Pi Camera</li>
+								<li>Leap Motion</li>
+								<li>Raspberry Pi 2 Model B</li>
+								<li>SparkFun Maker Kit</li>
+								<li>Raspberry Pi Zero v1.3</li>
+								<li>Elegoo Sensor kit for Arduino</li>
+								<li>MSP 430 P401R/ FR6989 / CC3100 MCU</li>
+								<li>SensorTag IoT Kit CC2650STK</li>
+								<li>Sensor Hub BoosterPack</li>
+								<li>Arduino Uno</li>
+								<li>Arduino Nano</li>
+								<li>Resistors</li>
+								<li>MSP430</li>
+								<li>Raspberry Pi 3</li>
+								<li>Raspberry Pi 2 Model B</li>
+								<li>Raspberry Pi Zero</li>
+								<li>Seed Studio base Shield</li>
+								<li>Arduino LC Studio SD Reader</li>
+								<li>Beagle Board Black</li>
+								<li>Ardx Kit</li>
+								<li>Sunfounder Kit</li>
+								<li>Launchpad Dev Kit</li>
+								<li>Intel Galileo</li>
+								<li>Assortment of ICs</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col third">
+						<div class ="media-list">
+							<ul style="list-style: none;">
+								<li>Wireless Router</li>
+								<li>2GB Ram Server</li>
+								<li>Walkie Talkies</li>
+								<li>Computer Mouse</li>
+								<li>7 Segment Displays</li>
+								<li>LCD screens</li>
+								<li>DC Buzzer</li>
+								<li>nRF24L01</li>
+								<li>ESP8266</li>
+								<li>Sensors:</li>
+								 	<ul>
+									    <li>Light Sensor</li>
+									    <li>Temperature Sensor</li>
+									    <li>PIR Motion Sensor</li>
+									    <li>Force Sensor</li>
+									    <li>IR Sensor</li>
+									    <li>Others</li>
+		                    					</ul>
+								<li>Cables:</li>
+								 	<ul>
+									    <li>HDMI</li>
+									    <li>HDMI to USB</li>
+									    <li>HDMI to Micro</li>
+									    <li>Aux Cord 3.5mm</li>
+									    <li>Ethernet</li>
+									    <li>Power Cables</li>
+									    <li>HDMI to VGA</li>
+		                    					</ul>
+							</ul>
+						</div>
+					</div>
+				<div class="clear"></div>
+			</div>
+			<div class="filler"></div>
+		</div>
+		<div id="mainfooter" class="center">
+			<div><img class="footer-img" src="images/layout/footer-triangles-gray.png"></div>
+			<div class="mainfooter-content center">
+				<h2 class="txt-white">Brought to you by&#8230;</h2>
+				<p>
+					<a class="footer" href="/"><img class="organizer-lg" src="images/ohio.png" alt="OHI/O"></a>
+					<br><br>
+					<a class="footer" href="http://electronicsclub.osu.edu/"><img class="organizer-sm" src="images/electronics_club_logo.png" alt="Electronics Club"></a>
+					<br/><br/>
+					Made with <i class="fa fa-heart"></i> in Columbus
+				</p>
+				<br>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="script/nav.js"></script>
+		<script src="script/clock.js"></script>
+	</body>
+</html>
