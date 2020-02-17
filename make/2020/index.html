@@ -38,9 +38,10 @@
 		</script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
-		<script type="text/javascript" src="script/hypeevents.js"></script>
 		<script src="https://use.typekit.net/fov5wnm.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<script src='script/spin.min.js' defer></script>
+		<script src='script/spin.js' defer></script>
 	</head>
 	<body>
 		<div class="tv" style="background-image: url(images/make-background.jpg)"></div>
@@ -62,12 +63,11 @@
 		<div id="nav">
 			<div id="nav-wrapper">
 			<!-- Add the href's of these links to "pageIds" in nav.js -->
-			<div class="nav-div"><a id="reg-nav" href="https://reghackohio.com" target="_blank">REGISTER</a></div>
 			<div class="nav-div"><a id="home-back-nav" href="#home-back" class="secondary-page-link">HOME</a></div>
 			<div class="nav-div"><a id="about-page-nav" href="#about-page" class="secondary-page-link">ABOUT</a></div>
-			<div class="nav-div"><a id="hypeevents-page-nav" href="#hypeevents-page" class="secondary-page-link">HYPE EVENTS</a></div>
 			<div class="nav-div"><a id="schedule-page-nav" href="#schedule-page" class="secondary-page-link">SCHEDULE</a></div>
 			<div class="nav-div"><a id="sponsorlist-page-nav" href="#sponsorlist-page" class="secondary-page-link">SPONSORS</a></div>
+			<div class="nav-div"><a id="challenges-page-nav" href="#challenges-page" class="secondary-page-link">PRIZES</a></div>
 			<div class="nav-div"><a id="hardware-page-nav" href="#hardware-page" class="secondary-page-link">HARDWARE</a></div>
 			<div class="nav-div"><a id="faq-page-nav" href="#faq-page" class="secondary-page-link">FAQ</a></div>
 			<!--<div class="nav-div"><a id="live-site" href="live/index.html" style="color:#BB0000"><b>LIVE SITE</b></a></div>-->
@@ -77,11 +77,10 @@
 		<!-- Nav for mobile -->
 		<div id="mobilenav" style="display:none;">
 			<a href="#homepage" class="mobilenav-btn">Home</a>
-			<a href="https://reghackohio.com" class="mobilenav-btn">Register</a>
 			<a href="#about-page" class="mobilenav-btn">About</a>
-			<a href="#hypeevents-page" class="mobilenav-btn">Hype Events</a>
 			<a href="#schedule-page" class="mobilenav-btn">Schedule</a>
 			<a href="#sponsorlist-page" class="mobilenav-btn">Sponsors</a>
+			<a href="#challenges-page" class="mobilenav-btn">Prizes</a>
 			<a href="#hardware-page" class="mobilenav-btn">Hardware</a>
 			<a href="#faq-page" class="mobilenav-btn">FAQ</a>
 			<!--<a href="live/index.html" class="mobilenav-btn">Live Site</a>-->
@@ -93,11 +92,12 @@
 		<div id="homepage">
 			<div class="content"> <!-- Do we need this "content" div?? -->
 				<br><br>
-				<img id="make-logo" class="grow" src="images/make_logo.png" width="300px" alt="MakeOHI/O logo" />
+				<img id="make-logo" class="tooltip" src="images/make_logo.png" width="300px" alt="MakeOHI/O logo"
+					 title="Spin me by dragging with your mouse and then releasing!"/>
 				<br><br>
 				<h2 class="txt-red">The Ohio State University's<br>annual makeathon.</h2>
 				<br>
-				<a class="button" target="_blank" href="https://reghackohio.com">Register for MakeOHI/O</a>
+				<!--<a class="button" target="_blank" href="https://reghackohio.com">Register for MakeOHI/O</a>-->
 				<br><br>
 				<h3 class="txt-red">
 					<a target="_blank" href="https://www.google.com/maps/place/Knowlton+Hall,+Columbus,+OH+43210/@40.0035858,-83.0180133,18z/data=!3m1!4b1!4m5!3m4!1s0x88388e9651a8ead1:0xc9133d5253f3d948!8m2!3d40.0035858!4d-83.016919"><i class="fa fa-map-marker fa-1x"></i></a>
@@ -165,28 +165,6 @@
 			<div class="filler"></div>
 		</div>
 
-		<div id="hypeevents-page" class="secondary-page">
-			<div class="nav-spacer"></div>
-			<div class="filler"></div>
-			<div class="innerContent center">
-				<a name="events"></a>
-				<div class="clear"></div>
-				<br><br>
-				<h1>Hype Events</h1>
-				<hr>
-				<p id="hypeevents-description">
-					OHI/O, our partnering student organizations, and our sponsors are hosting a series of great events leading up to the makeathon.
-					These events include tech talks, workshops, and social gatherings that help students prepare for the makeathon, gather ideas, and build teams!
-					For other events check out the community events on our <a class="pretty-link" href="/">main page!</a>
-				</p>
-				<br>
-				<table id="hypeevents-table" style="display:none;"></table>
-				<div id="hypeevents"></div>
-			</div>
-			<div class="clear"></div>
-			<div class="filler"></div>
-		</div>
-
 		<div id="faq-page" class="secondary-page">
 			<div class="nav-spacer"></div>
 			<div class="filler"></div>
@@ -221,7 +199,8 @@
 					<div class= "col third">
 						<h3><b>I want to apply for MakeOHI/O! What's the timeline?</b></h3>
 						<p class="faqText">
-							Registration for MakeOHI/O is open now and will close on February 11th, 2020. Register <a class="pretty-link" href="https://reghackohio.com" target="_blank">here</a>!
+							Registration for MakeOHI/O is open now closed. You will be notified if you were accepted and then asked to fill out a confirmation.
+							Acceptances are starting to be sent out. If you have any questions, feel free to reach out to <a class="pretty-link" href="mailto:registerhackohio@gmail.com">registerhackohio@gmail.com</a>.
 						</p>
 					</div>
 
@@ -255,7 +234,7 @@
 						<h3><b>Do I have to have an idea before attending/registering?</b></h3>
 						<p class="faqText">
 							Nope! Many students come up with an idea while at the makeathon.
-							By talking to fellow students and coming to our pre-hype events, you'll find opportunities to brainstorm ideas that pique your interest.
+							By talking to fellow students you'll find opportunities to brainstorm ideas that pique your interest.
 							If you get stuck, we'll have a nice list of ideas to help you out.
 						</p>
 					</div>
@@ -317,6 +296,7 @@
 					Without our sponsors and supporters, MakeOHI/O wouldn't be possible. By joining us, you'll be in touch with some of the best developers, designers, and builders in the state. Our team will ensure that you have an incredible experience.
 					<br><br>
 				</p>
+
 				<!-- Program -->
 				<!-- Microsoft -->
 				<div class="">
@@ -423,6 +403,88 @@
 				<br/><br/>
 			</div>
 			<div class="filler"></div>
+		</div>
+
+		<div id="challenges-page" class="secondary-page">
+			<div class="nav-spacer"></div>
+			<div class="filler"></div>
+			<div class="innerContent center">
+				<a name="challenges"></a>
+				<div id="challenge-container">
+					<div class="challenge-question">
+						<h3>
+							Overall Winner
+						</h3>
+						<p>
+							<b>Prize:</b> Microsoft Laptop
+						</p>
+					</div>
+
+					<div class="challenge-question">
+						<h3>
+							Second Place
+						</h3>
+						<p>
+							<b>Prize:</b> Microsoft Headphones
+						</p>
+					</div>
+
+					<div class="challenge-question">
+						<h3>
+							Third Place
+						</h3>
+						<p>
+							<b>Prize:</b> Oculus Go Headset
+						</p>
+					</div>
+
+					<div class="challenge-question">
+						<h3>
+							Most Creative
+						</h3>
+						<p>
+							<b>Prize:</b> Raspberry Pi 4 Kit
+						</p>
+					</div>
+
+					<div class="challenge-question">
+						<h3>
+							Most Impactful
+						</h3>
+						<p>
+							<b>Prize:</b> Drones
+						</p>
+					</div>
+
+					<div class="challenge-question">
+						<h3>
+							Most Technically Difficult
+						</h3>
+						<p>
+							<b>Prize:</b> Projector
+						</p>
+					</div>
+
+					<div class="challenge-question">
+						<h3>
+							Most Polished
+						</h3>
+						<p>
+							<b>Prize:</b> Soldering Station
+						</p>
+					</div>
+
+					<div class="challenge-question">
+						<h3>
+							Best In House Sprint
+						</h3>
+						<p>
+							<b>Prize:</b> Arduino
+						</p>
+					</div>
+				</div>
+
+			</div>
 		</div>
 
 		<div id="schedule-page" class="secondary-page">
