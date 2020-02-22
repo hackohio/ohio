@@ -220,6 +220,10 @@ h2 {
 	transition: transform .5s;
 	max-width: 450px;
 }
+.zoom-big-s {
+	transition: transform .5s;
+	max-width: 300px;
+}
 .zoom-big:hover {
 	transform: scale(1.1)
 }
@@ -266,6 +270,21 @@ h2 {
 }
 .zoom-s-sm:hover {
 	transform: scale(1.1)
+}
+
+@media screen and (max-width: 750px) {
+	table, thead, tbody, th, td, tr {
+			display: block;
+	}
+	.zoom-big {
+		max-width: 200px;
+	}
+	.zoom-big-s {
+		max-width: 200px;
+	}
+	.zoom-med {
+		max-width: 175px;
+	}
 }
 
 .box-gray {

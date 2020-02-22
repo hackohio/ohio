@@ -107,10 +107,12 @@
 }
 
 @media screen and (max-width: 630px) {
-    .countdown-container {
-			display: none;
-    }
 		h1 {
 			font-size: 27pt;
 		}
+
+@media screen and (max-width: 450px) {
+    #countdown {
+			display: none;
+    }
 }
