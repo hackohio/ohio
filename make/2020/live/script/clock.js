@@ -1,14 +1,14 @@
 initializeClock('countdown');
 
 function getTimeRemaining(){
-  var hackingStarts = "2019-11-02T10:00:00-04:00";
-  var hackingEnds = "2019-11-03T10:30:00-05:00";
+  var makingStarts = "2020-02-29T11:00:00-05:00";
+  var makingEnds = "2020-03-01T11:00:00-05:00";
   var time;
 
-  if (Date.parse(hackingStarts) - Date.parse(new Date()) > 0) {
-    time = hackingStarts;
+  if (Date.parse(makingStarts) - Date.parse(new Date()) > 0) {
+    time = makingStarts;
   } else {
-    time = hackingEnds;
+    time = makingEnds;
   }
   var t = Date.parse(time) - Date.parse(new Date());
   var seconds = Math.floor( (t/1000) % 60 );
