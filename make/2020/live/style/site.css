@@ -1,0 +1,166 @@
+body {
+  font-family: 'proximanova', "Proxima Nova", Helvetica, Sans-Serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+}
+
+a {
+  color: #bb0000;
+}
+
+#content {
+  margin-left: 300px;
+  align-items: center;
+  text-align: center;
+}
+
+.header{
+	background-color: #45403d;
+	border: #45403d 3px solid;
+  width: 90%;
+	margin: 40px auto;
+}
+
+.left {
+  width: 48%;
+  float: left;
+  margin: 0px auto 40px auto;
+}
+
+.right{
+  width: 48%;
+  float: right;
+  margin: 0px auto 40px auto;
+}
+
+.wrapper {
+  margin: 0px auto;
+  width: 90%;
+}
+
+.header h1{
+  margin: 5px;
+}
+
+.content-box{
+	background-color: #FFFFFF;
+	color: black;
+	border: #45403d 0px solid;
+	padding: 25px 50px;
+}
+
+.announcements {
+  padding: 15px 50px 15px 50px;
+}
+
+.judging {
+  padding: 15px 50px 25px 50px;
+}
+
+#schedules {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#schedule h2 {
+  text-align: center;
+  color: #bb0000;
+  font-weight: 500;
+}
+
+#schedule td {
+  padding: 7px 15px;
+  text-align: left;
+}
+
+#schedule td:first-child {
+  text-align: right;
+  border-right: 2px solid gray;
+}
+
+#schedule td:last-child {
+  border-left: 2px solid gray;
+}
+
+#mobile-nav {
+  height: 45px;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #45403d;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: none;
+}
+
+#mobile-nav img{
+  height: 45%;
+  padding-right: 20px;
+}
+
+#nav-home {
+  color: white;
+  font-size: 1.15em;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+#nav-links {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 45px;
+  background-color: #45403d;
+}
+
+#nav-links a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  background-color: #45403d;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    margin: 0;
+    width: 100%;
+  }
+  .right {
+    width: 90%;
+    float: none;
+    margin: 40px auto;
+  }
+  .left {
+    width: 90%;
+    float: none;
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 700px) {
+  #content {
+    margin-top: 65px;
+    margin-left: 0;
+  }
+  #mobile-nav {
+    display:flex;
+  }
+  .content-box {
+    padding: 25px 20px;
+  }
+
+  .announcements {
+    padding: 15px 20px 15px 20px;
+  }
+
+  .judging {
+    padding: 15px 20px 25px 20px;
+  }
+}

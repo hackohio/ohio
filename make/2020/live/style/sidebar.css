@@ -1,0 +1,38 @@
+#sidebar {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333333;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#logo {
+  width: 100%;
+  padding: 25px;
+}
+
+#nav {
+  margin: 20px 40px;
+}
+
+#nav a {
+  padding: 10px 0px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+}
+
+#nav a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  #sidebar {
+    display: none;
+  }
+}
