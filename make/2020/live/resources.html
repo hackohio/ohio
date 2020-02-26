@@ -1,166 +1,175 @@
----
-layout: 2019live
----
-
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-		<meta name="description" content="OHI/O: Fostering a Tech Culture at Ohio State">
-		<meta name="keywords" content="Makeathon, OHIO, tech">
-		<meta name="author" content="OHI/O">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta name="description" content="OHI/O: Fostering a Tech Culture at Ohio State">
+        <meta name="keywords" content="Makeathon, OHIO, tech">
+        <meta name="author" content="OHI/O">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>MakeOHI/O 2020</title>
+        <title>MakeOHI/O 2020</title>
 
-		<link rel="shortcut icon" href="img/favicon.ico">
-		<link rel="stylesheet" type="text/css" href="style/site.css">
-		<link rel="stylesheet" type="text/css" href="style/clock.css">
-		<link rel="stylesheet" type="text/css" href="style/particlesstyle.css">
-		<link rel="stylesheet" type="text/css" href="style/sidebar.css">
-		<link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-		<script type="text/javascript" src="script/nav.js"></script>
-	</head>
-	<body data-gr-c-s-loaded="true" class="vsc-initialized">
-		<div id="particles-js"><canvas class="particles-js-canvas-el" width="1031" height="810" style="width: 100%; height: 100%;"></canvas></div>
-		<div id="mobile-nav">
-			<a id="nav-home" href="index.html">Home</a>
-			<div id="nav-links">
-				<a href="challenges.html">Challenges</a>
-				<a href="resources.html">Resources</a>
-				<a href="hardware.html">Hardware</a>
-				<a href="judging.html">Judging</a>
-				<a href="winners.html">Winners</a>
-				<a href="../index.html">Main Site</a>
-			</div>
-			<img src="img/menu.svg" id="mobile-menu" onclick="toggleNav()">
-		</div>
-		<div id="sidebar">
-			<div id="logo">
-				<img src="img/make_logo_2020.svg" height="250px" width="250px">
-			</div>
+        <link rel="shortcut icon" href="../images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style/site.css">
+        <link rel="stylesheet" type="text/css" href="style/clock.css">
+        <link rel="stylesheet" type="text/css" href="style/particlesstyle.css">
+        <link rel="stylesheet" type="text/css" href="style/sidebar.css">
+        <link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script type="text/javascript" src="script/nav.js"></script>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <!-- Nav for mobile -->
+        <div id="mobile-nav">
+            <a id="nav-home" href="index.html">Home</a>
+            <div id="nav-links">
+                <a href="challenges.html">Challenges</a>
+                <a href="resources.html">Resources</a>
+                <a href="hardware.html">Hardware</a>
+                <a href="judging.html">Judging</a>
+                <a href="winners.html">Winners</a>
+                <a href="../index.html">Main Site</a>
+            </div>
+            <img src="img/menu.svg" id="mobile-menu" onclick="toggleNav()">
+        </div>
 
-			<!--<div id="countdown"></div>-->
+        <div id="sidebar">
+            <div id="logo">
+                <img src="img/make_logo_2020.svg" height="250px" width="250px">
+            </div>
 
-			<div id="nav">
-				<a href="index.html">General</a>
-				<a href="challenges.html">Challenges</a>
-				<a href="resources.html">Resources</a>
-				<a href="hardware.html">Hardware</a>
-				<a href="judging.html">Judging</a>
-				<a href="winners.html">Winners</a>
-				<a href="../index.html">Main Site</a>
-			</div>
-		</div>
-		<div id="content">
-			<div class="header">
-				<h1>Starting out?</h1>
-				<div class="content-box">
-					New to building? No problem! Makeathons are a great opportunity to learn new things.
-					<br>
-					Building projects is a great way to learn as you go. This page contains links to free stuff and resources to help MakeOHI/O participants out, but it definitely doesn't end here.
-					Use your favorite search engines to find new tools, tutorials, programming languages, and more - and if you ever get stuck or need suggestions,
-					<a class="pretty-link" href="https://go.osu.edu/hackohio2019slack">call a mentor</a>!
+            <div id="countdown"></div>
 
-					<h2>Can't think of an idea?</h2>
-					Check out this <a href="">pdf</a> for ideas to make your own and run with -- or just to use for inspiration!
-				</div>
-			</div>
+            <!-- Nav for desktop -->
+            <div id="nav">
+                <a href="index.html">General</a>
+                <a href="challenges.html">Challenges</a>
+                <a href="resources.html">Resources</a>
+                <a href="hardware.html">Hardware</a>
+                <a href="judging.html">Judging</a>
+                <a href="winners.html">Winners</a>
+                <a href="../index.html">Main Site</a>
+            </div>
+        </div>
+        <div id="content">
+            <div class="header">
+                <h1>Starting out?</h1>
+                <div class="content-box">
+                    New to building? No problem! Makeathons are a great opportunity to learn new things.
+                    Building projects is a great way to learn as you go.
+                    <br><br>
+                    This page contains links to free stuff and
+                    resources to help MakeOHI/O participants out, but it definitely doesn't end here.
+                    <br>
+                    Use your favorite search engines to find new tools, tutorials, programming languages, and more - and
+                    if you ever get stuck or need suggestions,
+                    <a class="pretty-link" href="">INSERT LINK</a>!
+                </div>
+            </div>
 
-			<div class="header">
-				<h1>INNOVATION STUDIO</h1>
-				<div class="content-box">
-					The Innovation Studio is a roving makerspace that is currently set up in Meiling Hall on south campus, but they've brought some of their tools for you to use!
+            <div class="header">
+                <h1>Resources</h1>
+                <div class="content-box">
+                    <div id="resources-container">
+                        <p>
+                            In need of some <strong>inspiration</strong>? Check out the <a
+                                href="challenges.html">challenges</a>! Or visit some of these sites:
+                        </p>
+                        <ul class="live-list" align="left">
+                            <li>
+                                <a class="pretty-link" href="https://howtomechatronics.com/">How To Mechatronics</a>
+                            </li>
+                            <li>
+                                <a class="pretty-link"
+                                   href="https://www.instructables.com/technology/">Instructables</a>
+                            </li>
+                            <li>
+                                <a class="pretty-link" href="https://www.thingiverse.com/">Thingiverse</a>
+                            </li>
+                            <li>
+                                <a class="pretty-link" href="https://makezine.com/projects/">Makezine</a>
+                            </li>
 
-					If you want to use a laser-cutter, 3D printers, or need other tools, visit their set-up on LOCATION!
-				</div>
-			</div>
+                        </ul>
+                        <p>
+                            Want to learn more more about some really versatile components? Check out these guides and
+                            references:
+                        </p>
 
-			<div class="header">
-				<h1>BOSCH</h1>
-				<div class="content-box">
-					Bosch has brought 3D printers and power tools! If you want to use these tools go to LOCATION.
-				</div>
-			</div>
+                        <ul class="live-list" align="left">
+                            <li>
+                                <a class="pretty-link"
+                                   href="https://www.allaboutcircuits.com/projects/control-a-motor-with-an-arduino/">DC
+                                    Motor Control with Arduino</a>
+                            </li>
+                            <li>
+                                <a class="pretty-link" href="https://www.baldengineer.com/led-basics.html">LEDs</a>
+                            </li>
+                            <li>
+                                <a class="pretty-link"
+                                   href="https://www.electroschematics.com/11276/esp8266-datasheet/">ESP8266
+                                    Wifi Module</a>
+                            </li>
+                            <li>
+                                <a class="pretty-link" href="https://www.blynk.cc/">Blynk</a>
+                            </li>
+                            <li>
+                                <a class="pretty-link"
+                                   href="https://howtomechatronics.com/tutorials/arduino/arduino-wireless-communication-nrf24l01-tutorial/">nRF24L01
+                                    RF Transceiver</a>
+                                <ul>
+                                    <li>
+                                        <a class="pretty-link" href="https://maniacbug.github.io/RF24/classRF24.html">Functions</a>
+                                    </li>
+                                    <li>
+                                        <a class="pretty-link"
+                                           href="https://www.sparkfun.com/datasheets/Components/nRF24L01_prelim_prod_spec_1_2.pdf">Data
+                                            Sheet</a>
+                                    </li>
+                                    <li>
+                                        <a class="pretty-link" href="https://github.com/nRF24/RF24Audio">Audio
+                                            transmission
+                                            library</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
+            <div class="wrapper">
+                <div class="header left">
+                    <h1>Innovation Studio</h1>
+                    <div class="content-box">
+                        <a class="pretty-link"
+                           href="https://nursing.osu.edu/offices-and-initiatives/office-innovation-and-strategic-partnerships/innovationstudio">The
+                            Innovation Studio</a> is a roving makerspace that is currently set up in Meiling Hall on
+                        south campus, but they've brought some of their tools for you to use!
 
+                        If you want to use a laser-cutter, 3D printers, or need other tools, visit their set-up on
+                        LOCATION!
+                        <br><br>
+                        <img id="sponsor" src="../images/sponsors/innovationstudio-logo.png">
+                    </div>
+                </div>
 
-			<div class="header">
-				<h1>Other Resources</h1>
-				<div class="content-box">
-					<p>
-						In need of some <strong>inspiration</strong>? Check out the <a href="judging.html">challenges</a>! Or visit some of these sites:
-					</p>
-					<ul class="live-list" align="left">
-					<li>
-						<a class="pretty-link" href="https://howtomechatronics.com/">How To Mechatronics</a>
-					</li>
-					<li>
-						<a class="pretty-link" href="https://www.instructables.com/technology/">Instructables</a>
-					</li>
-					<li>
-						<a class="pretty-link" href="https://www.thingiverse.com/">Thingiverse</a>
-					</li>
-					<li>
-						<a class="pretty-link" href="https://makezine.com/projects/">Makezine</a>
-					</li>
+                <div class="header right">
+                    <h1>Bosch</h1>
+                    <div class="content-box">
+                        Bosch has brought 3D printers and power tools! If you want to use these tools go to Room 177.
+                        <br><br>
+                        <img id="sponsor" src="../images/sponsors/bosch-logo.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-				</ul>
-					<p></p>
-					<br>
-					<p>
-						Want to learn more more about some really versatile components? Check out these guides and references:
-					</p>
-
-					<ul class="live-list" align="left">
-					<li>
-						<a class="pretty-link" href="https://www.allaboutcircuits.com/projects/control-a-motor-with-an-arduino/">DC Motor Control with Arduino</a>
-					</li>
-					<li>
-						<a class="pretty-link" href="https://www.baldengineer.com/led-basics.html">LEDs</a>
-					</li>
-					<li>
-						<a class="pretty-link" href="https://www.electroschematics.com/11276/esp8266-datasheet/">ESP8266 Wifi Module</a>
-					</li>
-					<li>
-						<a class="pretty-link" href="https://www.blynk.cc/">Blynk</a>
-					</li>
-					<li>
-						<a class="pretty-link" href="https://howtomechatronics.com/tutorials/arduino/arduino-wireless-communication-nrf24l01-tutorial/">nRF24L01 RF Transceiver</a>
-						<ul>
-							<li>
-								<a class="pretty-link" href="https://maniacbug.github.io/RF24/classRF24.html">Functions</a>
-							</li>
-							<li>
-								<a class="pretty-link" href="https://www.sparkfun.com/datasheets/Components/nRF24L01_prelim_prod_spec_1_2.pdf">Data Sheet</a>
-							</li>
-							<li>
-								<a class="pretty-link" href="https://github.com/nRF24/RF24Audio">Audio transmission library</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-					<p>
-
-					</p>
-
-
-				</div>
-			</div>
-			</div>
-
-		<script src="script/clock.js"></script>
-		<script src="script/particles.min.js"></script>
-		<script src="script/particlesapp.js"></script>
-		<script type="text/javascript" src="script/sheetrock.min.js"></script>
-		<script type="text/javascript" src="script/announcements.js" async=""></script>
-		<script type="text/javascript" src="script/winners.js" async=""></script>
-
-
-	</body>
+        <script src="script/clock.js"></script>
+        <script src="script/particles.min.js"></script>
+        <script src="script/particlesapp.js"></script>
+    </body>
 </html>
-
-
-

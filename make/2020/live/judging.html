@@ -1,170 +1,150 @@
----
-layout: 2019live
----
-
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-		<meta name="description" content="OHI/O: Fostering a Tech Culture at Ohio State">
-		<meta name="keywords" content="Makeathon, OHIO, tech">
-		<meta name="author" content="OHI/O">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+        <meta name="description" content="OHI/O: Fostering a Tech Culture at Ohio State">
+        <meta name="keywords" content="Makeathon, OHIO, tech">
+        <meta name="author" content="OHI/O">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>MakeOHI/O 2020</title>
+        <title>MakeOHI/O 2020</title>
 
-		<link rel="shortcut icon" href="img/favicon.ico">
-		<link rel="stylesheet" type="text/css" href="style/site.css">
-		<link rel="stylesheet" type="text/css" href="style/clock.css">
-		<link rel="stylesheet" type="text/css" href="style/particlesstyle.css">
-		<link rel="stylesheet" type="text/css" href="style/sidebar.css">
-		<link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-		<script type="text/javascript" src="script/nav.js"></script>
-	</head>
-	<body data-gr-c-s-loaded="true" class="vsc-initialized">
-		<div id="particles-js"><canvas class="particles-js-canvas-el" width="831" height="810" style="width: 100%; height: 100%;"></canvas></div>
-		<div id="mobile-nav">
-			<a id="nav-home" href="index.html">Home</a>
-			<div id="nav-links">
-				<a href="challenges.html">Challenges</a>
-				<a href="resources.html">Resources</a>
-				<a href="hardware.html">Hardware</a>
-				<a href="judging.html">Judging</a>
-				<a href="winners.html">Winners</a>
-				<a href="../index.html">Main Site</a>
-			</div>
-			<img src="img/menu.svg" id="mobile-menu" onclick="toggleNav()">
-		</div>
-		<div id="sidebar">
-			<div id="logo">
-				<img src="img/make_logo_2020.svg" height="250px" width="250px">
-			</div>
+        <link rel="shortcut icon" href="../images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="style/site.css">
+        <link rel="stylesheet" type="text/css" href="style/clock.css">
+        <link rel="stylesheet" type="text/css" href="style/particlesstyle.css">
+        <link rel="stylesheet" type="text/css" href="style/sidebar.css">
+        <link rel="stylesheet" type="text/css" href="https://www.osu.edu/assets/fonts/webfonts.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script type="text/javascript" src="script/nav.js"></script>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <!-- Nav for mobile -->
+        <div id="mobile-nav">
+            <a id="nav-home" href="index.html">Home</a>
+            <div id="nav-links">
+                <a href="challenges.html">Challenges</a>
+                <a href="resources.html">Resources</a>
+                <a href="hardware.html">Hardware</a>
+                <a href="judging.html">Judging</a>
+                <a href="winners.html">Winners</a>
+                <a href="../index.html">Main Site</a>
+            </div>
+            <img src="img/menu.svg" id="mobile-menu" onclick="toggleNav()">
+        </div>
 
-			<!--<div id="countdown"></div>-->
+        <div id="sidebar">
+            <div id="logo">
+                <img src="img/make_logo_2020.svg" height="250px" width="250px">
+            </div>
 
-			<div id="nav">
-				<a href="index.html">General</a>
-				<a href="challenges.html">Challenges</a>
-				<a href="resources.html">Resources</a>
-				<a href="hardware.html">Hardware</a>
-				<a href="judging.html">Judging</a>
-				<a href="winners.html">Winners</a>
-				<a href="../index.html">Main Site</a>
-			</div>
-		</div>
-		<div id="content">
-			<style>
-		#prizes-container {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: center;
-		}
+            <div id="countdown"></div>
 
-		#prize {
-			max-height: 200px;
-		}
+            <!-- Nav for desktop -->
+            <div id="nav">
+                <a href="index.html">General</a>
+                <a href="challenges.html">Challenges</a>
+                <a href="resources.html">Resources</a>
+                <a href="hardware.html">Hardware</a>
+                <a href="judging.html">Judging</a>
+                <a href="winners.html">Winners</a>
+                <a href="../index.html">Main Site</a>
+            </div>
+        </div>
+        <div id="content">
+            <div class="header">
+                <h1>Judging</h1>
+                <div class="content-box judging">
+                    <h1>Application</h1>
 
-		.prizes {
-			flex: 0 0 300px;
-		}
+                    Registration opens at 8:00 AM
+                    <br/>
+                    All teams must register to be judged by 11:00 AM at <a href="">INSERT LINK</a>
+                    <br/><br/>
+                    <hr/>
+                    <h1>Judging Criteria</h1>
 
-		.prizes h2 {
-			color: #bb0000;
-		}
-		</style>
+                    <strong>Technical Difficulty:</strong> How complex or difficult are the knowledge and skills needed
+                    to implement this project?<br/>
+                    <strong>Intuitiveness:</strong> Is the project easy for users to interact with? Is it easy for
+                    yourself or a new user to grasp?<br/>
+                    <strong>Impact/Usefulness:</strong> Does the project have real-world impact? What communities will
+                    it affect in a meaningful way?<br/>
+                    <strong>Craftsmanship:</strong> How is the quality of the build? Is it stable, clean, and
+                    aesthetically pleasing?<br/>
+                    <strong>Creativity:</strong> Have you seen this idea somewhere else before? Is there something
+                    unique and different?<br/>
+                    <strong>Wow Factor:</strong> Does the project captivate you or stimulate your fascination? Is there
+                    anything extra impressive about the amount of work, complexity, creativity, etc.?<br/>
+                    <strong>Polish:</strong> How well did the students work as a team and share the required work
+                    equally?<br/>
+                </div>
+            </div>
 
-			<div class="header">
-				<h1>Judging</h1>
-				<div class="content-box judging">
-					<h1>Application</h1>
+            <div class="header">
+                <h1>Awards and Prizes</h1>
+                <div class="content-box">
+                    <div id="judging-container">
+                        These are the official "Best Of" MakeOHI/O challenges and prizes.
+                        <br>
+                        These are judged separately from our Sponsor Challenges, so go check those out as well!
+                        <br>
+                        Each member of a winning team will be awarded a prize, up to 4 per team.
+                    </div>
 
-					Registration opens at INSERT TIME HERE
-					<br />
-					All teams must register to be judged by INSERT TIME HERE at <a href="">INSERT LINK</a>
-					<br /><br />
-					<hr />
-					<h1>Judging Criteria</h1>
+                    <br>
 
-					<strong>Technical Difficulty:</strong> How complex or difficult are the knowledge and skills needed to implement this project?<br />
-					<strong>Intuitiveness:</strong> Is the project easy for users to interact with? Is it easy for yourself or a new user to grasp?<br />
-					<strong>Impact/Usefulness:</strong> Does the project have real-world impact? What communities will it affect in a meaningful way?<br />
-					<strong>Craftsmanship:</strong> How is the quality of the build? Is it stable, clean, and aesthetically pleasing?<br />
-					<strong>Creativity:</strong> Have you seen this idea somewhere else before? Is there something unique and different?<br />
-					<strong>Wow Factor:</strong> Does the project captivate you or stimulate your fascination? Is there anything extra impressive about the amount of work, complexity, creativity, etc.?<br />
-					<strong>Polish:</strong> How well did the students work as a team and share the required work equally?<br />
-				</div>
-			</div>
+                    <div id="prizes-container">
+                        <div class="prizes">
+                            <h2><b>Overall Winner</b></h2>
+                            <h4>Microsoft Surface Go</h4>
+                            <img id="prize" src="../images/prizes/microsoft_surface_go.jpg">
+                        </div>
+                        <div class="prizes">
+                            <h2><b>2nd Place</b></h2>
+                            <h4>Microsoft Surface Headphones</h4>
+                            <img id="prize" src="../images/prizes/microsoft_surface_headphones.jpg">
+                        </div>
+                        <div class="prizes">
+                            <h2><b>3rd Place</b></h2>
+                            <h4>Oculus Go VR Headset</h4>
+                            <img id="prize" src="../images/prizes/oculus_go.jpg">
+                        </div>
+                        <div class="prizes">
+                            <h2><b>Most Creative</b></h2>
+                            <h4>Raspberry Pi 4 Starter Kit</h4>
+                            <img id="prize" src="../images/prizes/raspberry_pi4.jpg">
+                        </div>
+                        <div class="prizes">
+                            <h2><b>Most Impactful</b></h2>
+                            <h4>Holy Stone 170 Predator Drone</h4>
+                            <img id="prize" src="../images/prizes/hs170_drone.jpg">
+                        </div>
+                        <div class="prizes">
+                            <h2><b>Most Technically Difficult</b></h2>
+                            <h4>Dr. J Professional Projector</h4>
+                            <img id="prize" src="../images/prizes/drj_projector.jpg">
+                        </div>
+                        <div class="prizes">
+                            <h2><b>Most Polished</b></h2>
+                            <h4>Hakko Soldering Station</h4>
+                            <img id="prize" src="../images/prizes/hakko_solder.jpg">
+                        </div>
+                        <div class="prizes">
+                            <h2><b>Best In House Sprint</b></h2>
+                            <h4>ELEGOO Arduino Starter Kit</h4>
+                            <img id="prize" src="../images/prizes/elegoo_arduino.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-			<div class="header">
-				<h1>Awards and Prizes</h1>
-				<div class="content-box">
-					<div id="judging-container">
-						These are the official "Best Of" MakeOHI/O challenges and prizes.
-						<!--These are judged separately from our Sponsor Challenges, so go check those out as well!-->
-						<!--Each member of a winning team will be awarded a prize, up to 4 per team.-->
-					</div>
-
-					<br>
-
-					<div id="prizes-container">
-						<div class="prizes">
-							<h2><b>Overall Winner</b></h2>
-							<h4>Microsoft Surface Go</h4>
-							<img id="prize" src="img/prizes/microsoft_surface_go.jpg">
-						</div>
-						<div class="prizes">
-							<h2><b>2nd Place</b></h2>
-							<h4>Microsoft Surface Headphones</h4>
-							<img id="prize" src="img/prizes/microsoft_surface_headphones.jpg">
-						</div>
-						<div class="prizes">
-							<h2><b>3rd Place</b></h2>
-							<h4>Oculus Go VR Headset</h4>
-							<img id="prize" src="img/prizes/oculus_go.jpg">
-						</div>
-						<div class="prizes">
-							<h2><b>Most Creative</b></h2>
-							<h4>Raspberry Pi 4 Starter Kit</h4>
-							<img id="prize" src="img/prizes/raspberry_pi4.jpg">
-						</div>
-						<div class="prizes">
-							<h2><b>Most Impactful</b></h2>
-							<h4>Holy Stone 170 Predator Drone</h4>
-							<img id="prize" src="img/prizes/hs170_drone.jpg">
-						</div>
-						<div class="prizes">
-							<h2><b>Most Technically Difficult</b></h2>
-							<h4>Dr. J Professional Projector</h4>
-							<img id="prize" src="img/prizes/drj_projector.jpg">
-						</div>
-						<div class="prizes">
-							<h2><b>Most Polished</b></h2>
-							<h4>Hakko Soldering Station</h4>
-							<img id="prize" src="img/prizes/hakko_solder.jpg">
-						</div>
-						<div class="prizes">
-							<h2><b>Best In House Sprint</b></h2>
-							<h4>ELEGOO Arduino Starter Kit</h4>
-							<img id="prize" src="img/prizes/elegoo_arduino.jpg">
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-		<script src="script/clock.js"></script>
-		<script src="script/particles.min.js"></script>
-		<script src="script/particlesapp.js"></script>
-		<script type="text/javascript" src="script/sheetrock.min.js"></script>
-		<script type="text/javascript" src="script/announcements.js" async=""></script>
-		<script type="text/javascript" src="script/winners.js" async=""></script>
-
-
-	</body>
+        <script src="script/clock.js"></script>
+        <script src="script/particles.min.js"></script>
+        <script src="script/particlesapp.js"></script>
+    </body>
 </html>
-
-

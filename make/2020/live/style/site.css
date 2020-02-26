@@ -18,10 +18,10 @@ a {
 }
 
 .header{
-	background-color: #45403d;
-	border: #45403d 3px solid;
+  background-color: #45403d;
+  border: #45403d 3px solid;
   width: 90%;
-	margin: 40px auto;
+  margin: 40px auto;
 }
 
 .left {
@@ -37,8 +37,9 @@ a {
 }
 
 .wrapper {
-  margin: 0px auto;
+  margin: auto;
   width: 90%;
+  overflow: hidden;
 }
 
 .header h1{
@@ -127,6 +128,50 @@ a {
   background-color: #45403d;
 }
 
+#challenges-container, #resources-container {
+  text-align:left;
+}
+
+#prizes-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#prize {
+  max-height: 200px;
+  max-width: 300px;
+}
+
+.prizes {
+  flex: 0 0 300px;
+}
+
+.prizes h2 {
+  color: #bb0000;
+}
+
+#sponsor {
+  width: 60%;
+}
+
+.col {
+  float:left;
+  display: block;
+  margin-right: 0;
+  text-align:center;
+  vertical-align: middle;
+  height:100%;
+}
+.col:first-child {
+  margin-left: 0;
+}
+
+.half {
+  width: 50%;
+}
+
 @media (max-width: 1000px) {
   .wrapper {
     margin: 0;
@@ -141,6 +186,12 @@ a {
     width: 90%;
     float: none;
     margin: 40px auto;
+  }
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+  .half {
+    width: 100%;
   }
 }
 
