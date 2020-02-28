@@ -36,7 +36,7 @@ a {
 }
 
 .wrapper {
-  margin: 40px auto 40px auto;
+  margin: 40px auto;
   width: calc(90% + 6px);
   display: flex;
   justify-content: space-between
@@ -170,6 +170,10 @@ a {
 
 .half {
   width: 50%;
+}
+
+.clear {
+	clear:both;
 }
 
 @media (max-width: 1000px) {
