@@ -24,25 +24,25 @@ a {
   margin: 40px auto;
 }
 
-.left {
+.split {
+  background-color: #45403d;
+  border: #45403d 3px solid;
   width: 48%;
-  float: left;
-  margin: 0px auto 40px auto;
-}
-
-.right{
-  width: 48%;
-  float: right;
-  margin: 0px auto 40px auto;
-}
-
-.wrapper {
-  margin: 40px auto 0px auto;
-  width: 90%;
   overflow: hidden;
 }
 
-.header h1{
+.split .content-box {
+  height: 100%;
+}
+
+.wrapper {
+  margin: 40px auto 40px auto;
+  width: calc(90% + 6px);
+  display: flex;
+  justify-content: space-between
+}
+
+.header h1, .split h1{
   margin: 5px;
 }
 
@@ -175,14 +175,11 @@ a {
 @media (max-width: 1000px) {
   .wrapper {
     width: 100%;
+    display: block;
   }
-  .right {
+  .split {
     width: 90%;
-    float: none;
-  }
-  .left {
-    width: 90%;
-    float: none;
+    margin: 40px auto;
   }
   .col {
     margin: 1% 0 1% 0%;
