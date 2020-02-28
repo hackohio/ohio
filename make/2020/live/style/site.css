@@ -37,7 +37,7 @@ a {
 }
 
 .wrapper {
-  margin: auto;
+  margin: 40px auto 0px auto;
   width: 90%;
   overflow: hidden;
 }
@@ -174,18 +174,15 @@ a {
 
 @media (max-width: 1000px) {
   .wrapper {
-    margin: 0;
     width: 100%;
   }
   .right {
     width: 90%;
     float: none;
-    margin: 40px auto;
   }
   .left {
     width: 90%;
     float: none;
-    margin: 40px auto;
   }
   .col {
     margin: 1% 0 1% 0%;
