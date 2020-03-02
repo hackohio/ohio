@@ -32,7 +32,7 @@ html, body, section {
   min-height: 100vh;
   z-index: 10;
   color: white;
-  background-color: #000000;
+  background-color: #171717;
   display: flex;
   flex-wrap: wrap;
   flex: 1;
@@ -40,7 +40,7 @@ html, body, section {
 
 .show-left-half {
   display: flex;
-  background-color: #000000;
+  background-color: #171717;
   padding-left: 2rem;
   padding-right: 2rem;
   opacity: 0.87;
@@ -90,10 +90,6 @@ html, body, section {
   animation-fill-mode: forwards;
   opacity: 0;
   margin: 80px auto 30px auto;
-}
-
-.show-left-footer {
-  padding-bottom: 1.75rem;
 }
 
 .show-right-half {
@@ -222,6 +218,23 @@ html, body, section {
   float: right;
 }
 
+.show-left-footer {
+  position: relative;
+}
+
+.show-left-footer-left {
+  padding-bottom: 1.75rem;
+  float: left;
+}
+
+.show-left-footer-right {
+  padding-bottom: 3rem;
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .show-right-footer {
   padding-bottom: 3rem;
 }
@@ -230,7 +243,7 @@ html, body, section {
   padding-bottom: calc(1.75rem - 7px);
 }
 
-.show-demo-link {
+.show-ticket-link {
   animation: fadeIn 2.5s ease-out 3s 1;
   animation-fill-mode: forwards;
   background-color: rgba(0, 0, 0, 0.3);
@@ -251,6 +264,35 @@ html, body, section {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+}
+
+.show-ticket-link:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.show-demo-link {
+  animation: fadeIn 2.5s ease-out 3s 1;
+  animation-fill-mode: forwards;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  height: 60px;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-right: -2rem;
+  min-width: 220px;
+  opacity: 0;
+  outline: 0;
+  padding: 0 30px 0 30px;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  float: right;
 }
 
 .show-demo-link:hover {
@@ -276,9 +318,21 @@ html, body, section {
   }
   .show-left-footer {
     margin: 0 auto;
+    float: none;
+    position: static;
   }
-  .show-champagne-glasses {
+  .show-left-footer-left {
+    float: none;
+  }
+  .show-left-footer-right {
+    float: none;
+    position: static;
+    bottom: auto;
+  }
+  .show-champagne-glasses img{
     margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .show-right-footer {
     margin: auto;
@@ -286,9 +340,13 @@ html, body, section {
   .show-logo-secondary {
     display: none;
   }
-  .show-demo-link {
+  .show-ticket-link {
     margin-top: 50px;
     margin-left: 0;
+  }
+  .show-demo-link {
+    margin-top: 50px;
+    margin-right: 0;
   }
 }
 
