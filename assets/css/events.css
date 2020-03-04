@@ -3,15 +3,12 @@ body {
 }
 
 h1 {
-  font-weight: 600;
-  letter-spacing: 1px;
   font-size: 32pt;
-  line-height: 37pt;
   margin-bottom: 26px;
   box-sizing: border-box;
 }
 
-h2 {
+.events-secondary-page h2 {
   font-weight: 600;
   font-size: 24pt;
   line-height: 25pt;

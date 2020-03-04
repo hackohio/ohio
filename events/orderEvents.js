@@ -11,7 +11,7 @@ JSON structure:
   description: not required
 */
 
-const url = 'https://raw.githubusercontent.com/hackohio/ohio/master/events/events.json';
+const url = 'events/events.json';
 let pastEvents = [];
 let upcomingEvents = [];
 
@@ -81,7 +81,11 @@ function createEventBlock(event) {
   if (event.endDate) {
     const start = event.startDate.split(" ");
     const end = event.endDate.split(" ");
-    elem += start[0] + " " + start[1].substring(0, start[1].length - 1) + " - " + end[1].substring(0, start[1].length - 1) + ", " + start[2];
+    if (start[0] == end[0]){
+      elem += start[0] + " " + start[1].substring(0, start[1].length - 1) + " - " + end[1].substring(0, end[1].length - 1) + ", " + start[2];
+    } else {
+      elem += start[0] + " " + start[1].substring(0, start[1].length - 1) + " - " + end[0] + " " + end[1].substring(0, end[1].length - 1) + ", " + start[2];
+    }
   } else {
     elem += event.startDate;
   }
