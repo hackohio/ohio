@@ -71,12 +71,12 @@ function insertEventsIntoPage() {
 }
 
 function createEventBlock(event) {
-  let elem = "<h2><a href=\"";
+  let elem = "";
   if (event.site) {
-    elem += event.site;
+    elem += "<h2><a href=\"" + event.site + "\">" + event.eventName + "</a></h2><p><span>";
+  } else {
+    elem += "<h2>" + event.eventName + "</h2><p><span>";
   }
-
-  elem += "\">" + event.eventName + "</a></h2><p><span>";
 
   if (event.endDate) {
     const start = event.startDate.split(" ");
