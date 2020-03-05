@@ -97,13 +97,6 @@
     "description": "HackOHI/O is the Ohio State University's largest hackathon, and our flagship event. Check out our fifth year of building and creating real projects with awesome people."
   },
   {
-    "eventName": "MakeOHI/O 2017",
-    "startDate": "Mar 5, 2017",
-    "endDate": "Mar 6, 2017",
-    "location": "Knowlton Hall",
-    "description": "Check out this year's biggest and best hardware event at The Ohio State University. Build something amazing!"
-  },
-  {
     "eventName": "High School I/O 2017",
     "site": "hs/2017",
     "startDate": "Apr 15, 2017",
@@ -118,11 +111,33 @@
     "description": "The dedication that students put into their tech projects both in and out of the classroom is what drives the amazing tech culture at Ohio State. ShowOHI/O is a showcase event to give students the opportunity to demo their work and network with Columbus tech and analytics professionals. <a href=\"https://www.flickr.com/photos/hackohio/sets/72157679899291742\">Photos from the event!</a>"
   },
   {
+    "eventName": "MakeOHI/O 2017",
+    "startDate": "Mar 5, 2017",
+    "endDate": "Mar 6, 2017",
+    "location": "Knowlton Hall",
+    "description": "Check out this year's biggest and best hardware event at The Ohio State University. Build something amazing!"
+  },
+  {
     "eventName": "HackOHI/O 2016",
     "site": "2016",
     "startDate": "Nov 19, 2016",
     "endDate": "Nov 20, 2016",
     "location": "The Ohio Union",
     "description": "Join us at at Ohio State's largest annual hackathon, powered by AWS. Over 700 undergraduate and graduate students will design, build, and demonstrate projects to a live audience of students, faculty, and representatives from tech companies."
+  },
+  {
+    "eventName": "Makeathon 2016",
+    "startDate": "Mar 5, 2016",
+    "endDate": "Mar 6, 2016",
+    "location": "Knowlton Hall",
+    "description": "From the same folks that brought you Makeathon 2015 and OHI/O 2015 comes this year’s best hardware event. Make something new, amazing and fun with a group of friends at our 24-hour hardware-focused hackathon."
+  },
+  {
+    "eventName": "OHI/O 2015",
+    "site": "2015",
+    "startDate": "Nov 14, 2015",
+    "endDate": "Nov 15, 2015",
+    "location": "The Ohio Union",
+    "description": "OHI/O 2015 is a 24-hour hackathon that brings together over 500 students from over 30 schools and a variety of disciplines to build working projects. 23 sponsors joined us from around the nation, along with mentors and judges from Ohio State’s faculty, alumni, and industry partners."
   }
 ]
