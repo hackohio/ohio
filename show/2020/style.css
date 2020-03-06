@@ -334,14 +334,23 @@ html, body, section {
     margin-left: auto;
     margin-right: auto;
   }
+  .show-right-header {
+    order: 2;
+  }
+  .show-right-main-content {
+    order: 3;
+    margin: 50px 0 120px;
+  }
   .show-right-footer {
-    margin: auto;
+    order: 1;
+    margin: 0 auto;
+    padding: 0;
   }
   .show-logo-secondary {
     display: none;
   }
   .show-ticket-link {
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: 0;
   }
   .show-demo-link {
