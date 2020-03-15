@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" href="/assets/images/favicon.ico">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 	</head>
 	<body class="is-preload">
 
@@ -24,8 +26,7 @@
 				<h1>High School I/O 2020</h1>
 				<p>
 					Central Ohio's one day hackathon for high schoolers.
-					<br />
-					March 28th, 2020 @ Root Insurance - 80 E Rich St, Columbus, Ohio - <a href="https://forms.gle/kg8dgEBgD7QVY3dAA"><b>Register now</b></a>
+					<p style="text-decoration: line-through;">March 28th, 2020 @ Root Insurance - 80 E Rich St, Columbus, Ohio - <a href="https://forms.gle/kg8dgEBgD7QVY3dAA"><b>Register now</b></a></p>
 					<!-- March 28th, 2020 - Location TBD - <a href="/"><b>Register now</b></a> -->
 				</p>
 			</header>
@@ -43,6 +44,20 @@
 
 			<!-- Main -->
 			<div id="main">
+
+				<!-- About -->
+				<section id="warning" class="main">
+					<div class="spotlight">
+						<div class="content">
+							<header class="major">
+								<h2><b>Event Cancellation</b></h2>
+							</header>
+							<p>
+								Due to concern around COVID-19, High School I/O 2020 has been postponed until fall.
+							</p>
+						</div>
+					</div>
+				</section>
 
 				<!-- About -->
 				<section id="about" class="main">
@@ -187,6 +202,15 @@
 			})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 			ga('create', 'UA-51284668-6', 'auto');
 			ga('send', 'pageview');
+		</script>
+
+		<script>
+			Swal.fire({
+				title: 'Event Cancellation',
+				text: 'Due to concern around COVID-19, High School I/O 2020 has been postponed until fall.',
+				icon: 'warning',
+				confirmButtonText: 'Continue'
+			});
 		</script>
 	</body>
 </html>
