@@ -1,17 +1,10 @@
 [
   {
-    "eventName": "ShowOHI/O 2020",
-    "site": "show/2020",
-    "startDate": "Apr 10, 2020",
-    "location": "The Longaberger Alumni House",
-    "description": "Ohio State students have been working hard to build a lot of cool things: anything from websites, robots, games, cool data visualizations, and more. These talented students will be showcasing their creations at ShowOHI/O and this is your opportunity as a member of the community to come see what they are working on."
-  },
-  {
-    "eventName": "High School I/O 2020",
-    "site": "hs/2020",
-    "startDate": "Mar 28, 2020",
-    "location": "Root Insurance - 80 E Rich St",
-    "description": "On March 28th, join us at High School I/O—a one day hackathon for high schoolers hosted by OHI/O, Ohio State's hackathon program. We aim to provide high school students an opportunity to learn about computer science in a fun, engaging, and inclusive environment."
+    "eventName": "HackOHI/O 2020",
+    "startDate": "Nov 14, 2020",
+    "endDate": "Nov 15, 2020",
+    "location": "The Ohio Union",
+    "description": "HackOHI/O is Ohio's largest hackathon and our flagship event. Check out our eighth year of building and creating awesome things."
   },
   {
     "eventName": "MakeOHI/O 2020",
