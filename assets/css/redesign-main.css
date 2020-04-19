@@ -185,6 +185,7 @@ a.pretty-link:visited{
   display: -webkit-flex;
   display: flex;
   margin: 0 15px;
+  justify-content: center;
 
   /* Must be relative for img to be absolutely positioned */
   position: relative;
@@ -197,18 +198,20 @@ a.pretty-link:visited{
 .event-box:hover {
   background-color: #080808;
 }
-.event-box-text {
-  /* Make sure text is at bottom */
-  margin-left: 5%;
-  margin-bottom: 4%;
-  align-self: flex-end;
 
+.event-box-text {
+  margin-left: 5%;
+  margin-top: 10%;
   font-size: 28px;
+  position: relative;
+  top: 10%;
 }
+
 .event-box img {
-  position: absolute;
-  top: 8%;
-  left: 5%;
+  position: relative;
+  top: 10%;
+  margin-top: 5%;
+  margin-left: 5%;
   height: 50%;
 }
 .event-box .event-coming-soon {
